@@ -61,6 +61,29 @@ jobs:
           "$(go env GOPATH)/bin/packwiz" curseforge export -o "KnightCraft5-${V}.zip"
           cp "KnightCraft5-${V}.zip" KnightCraft5.zip   # constant name -> stable latest URL
 
+      - name: Extract changelog notes for this version
+        id: notes
+        if: steps.check.outputs.publish == 'true'
+        env:
+          VERSION: ${{ steps.check.outputs.version }}
+          REPO: ${{ github.repository }}
+        run: |
+          awk -v hdr="## v$VERSION" '
+            $0==hdr {f=1; next}
+            f && /^## / {exit}
+            f {print}
+          ' CHANGELOG.md > notes.md
+          # strip leading/trailing blank lines; fall back if empty
+          sed -i -e '/./,$!d' notes.md
+          [ -s notes.md ] || echo "(Sürüm notu eklenmedi.)" > notes.md
+          DL="https://github.com/${REPO}/releases/latest/download/KnightCraft5.zip"
+          {
+            cat notes.md
+            echo
+            echo "📥 İNDİRME LİNK: $DL"
+            echo "CurseForge uygulamasında: Create Custom Profile → Import."
+          } > release_body.md
+
       - name: Publish release
         if: steps.check.outputs.publish == 'true'
         uses: softprops/action-gh-release@v2
@@ -70,15 +93,9 @@ jobs:
           files: |
             KnightCraft5-${{ steps.check.outputs.version }}.zip
             KnightCraft5.zip
-          body: |
-            KnightCraft 5 v${{ steps.check.outputs.version }} — CurseForge modpack.
+          body_path: release_body.md
 
-            **Direct download (always latest):**
-            https://github.com/${{ github.repository }}/releases/latest/download/KnightCraft5.zip
-
-            CurseForge uygulamasında: **Create Custom Profile → Import**.
-
-      - name: Notify webhook
+      - name: Notify Discord
         if: steps.check.outputs.publish == 'true'
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
@@ -90,7 +107,8 @@ jobs:
             exit 0
           fi
           DL="https://github.com/${REPO}/releases/latest/download/KnightCraft5.zip"
-          PAGE="https://github.com/${REPO}/releases/tag/v${VERSION}"
-          jq -n --arg v "$VERSION" --arg dl "$DL" --arg pg "$PAGE" \
-            '{content: "🛡️ **KnightCraft 5 v\($v)** yayınlandı!\n📥 İndir: \($dl)\n📝 Detay: \($pg)"}' \
-            | curl -sf -H "Content-Type: application/json" -d @- "$DISCORD_WEBHOOK"
+          jq -n --arg v "$VERSION" --arg dl "$DL" --rawfile notes notes.md '{
+            content: ("**KnightCraft 5 Güncelleme v\($v)** @here @everyone\n\n📥 İNDİRME LİNK: \($dl)"),
+            allowed_mentions: { parse: ["everyone"] },
+            embeds: [ { title: "Sürüm Notları", description: $notes, color: 16766720 } ]
+          }' | curl -sf -H "Content-Type: application/json" -d @- "$DISCORD_WEBHOOK"
