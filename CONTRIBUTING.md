@@ -7,6 +7,28 @@ düzenleyip kolay bir uygulamada Commit/Push'a tıklıyorsun. Mod listesini tek 
 
 ---
 
+## ⚡ Sadece config güncellemesi (en sık yapılan iş)
+
+Kurulumu bir kez yaptıktan sonra, ayar/script/quest değişiklikleri için günlük iş
+sadece bu — **terminal yok, mod indirmek yok:**
+
+```
+GitHub Desktop: Pull  →  oyunu yeniden başlat  →  düzenle & test et  →  Commit  →  Push
+```
+
+- **Pull** = herkesin son ayarlarını al. Değişiklikleri görmek için oyunu **kapatıp
+  yeniden aç** (Minecraft ayarları sadece açılışta okur).
+- **Pull'dan önce** kendi değişikliğini Commit'le ya da geri al, yoksa GitHub Desktop
+  pull'a izin vermez.
+- Aynı dosyayı aynı anda iki kişi düzenlerse çakışma olabilir — **sık pull at, küçük
+  commit'le** ve kimin neye dokunduğunu kabaca konuşun (örn. biri questler, biri loot).
+- `scripts/refresh-mods` **sadece mod listesi değişince** gerekir (nadiren). Sırf
+  config işi için ona dokunmana gerek yok.
+
+> Kurulumu hiç yapmadıysan önce aşağıdaki **Tek seferlik kurulum**'u tamamla.
+
+---
+
 ## Tek seferlik kurulum (~15 dk)
 
 Üç ücretsiz program lazım:
