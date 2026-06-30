@@ -1,0 +1,23 @@
+# Files packwiz should NOT index or ship in exports.
+.git/
+.gitignore
+.gitattributes
+.packwizignore
+README.md
+
+# World-specific — version-controlled but not distributed (defaultconfigs/ ships defaults instead).
+serverconfig/
+
+# Guards against runtime data if the pack dir is ever used as a live instance.
+logs/
+crash-reports/
+screenshots/
+saves/
+world/
+backups/
+journeymap/
+local/
+blueprints/
+servers.dat
+usercache.json
+.sl_password

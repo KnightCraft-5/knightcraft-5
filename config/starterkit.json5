@@ -7,6 +7,7 @@
 	"usePotionEffectsInStarterKit": true,
 	// If kit names should be formatted. Each word will be capitalized.
 	"formatKitNames": true,
+	// The text used above the kit choice screen, or if the mod is not installed in the chat. %s will be replaced with the player's name.
 	"chooseKitText": "%s, you can choose a starter kit!",
 	// Whether an announcement should be broadcasted to the server whenever a new player makes a kit choice. 'randomizeMultipleKitsToggle' must be disabled, and there must be at least 2 starter kits available.
 	"announcePlayerKitChoiceInDedicatedServer": true,

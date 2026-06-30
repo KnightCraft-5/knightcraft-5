@@ -1,0 +1,20 @@
+
+#Ana oyunla ilgili tüm yapılandırma öğeleri.
+[gameplay]
+	#minecolonies.config.enablecitizenvoices.comment [Varsayılan: true]
+	enablecitizenvoices = true
+	#Varsayılan olarak, diğer binaların yakınına bir şema yerleştirirken, önceden yerleştirilmiş binalar sanki 5. seviyedeymiş gibi görünecek ve etraflarında mavi bir çerçeve olacaktır. Bunu, istediğiniz takdirde devre dışı bırakabilirsiniz. [Varsayılan: true]
+	neighborbuildingrendering = true
+	#Bir yapının başka bir yapı ile komşu sayılması için ne kadar yakın olması gerektiğini belirtir, blok cinsinden. -1 = kesişiyor, 0 = temas ediyor [Varsayılan: 4, min: -2, maks: 16]
+	#Range: -2 ~ 16
+	neighborbuildingrange = 4
+	#İnşa gözlükleri takılıyken çalışma düzenini görebilmek için ne kadar yakın olmalısın (blok olarak). [Varsayılan: 50, min: 1, maks: 250]
+	#Range: 1 ~ 250
+	buildgogglerange = 50
+	#Doğru olduğunda, inşa aracını tutarken gösterilen koloni sınırları, koloninin takım renginde olacaktır. Yanlış olduğunda, içinde bulunduğunuz koloni beyaz olacak ve diğer tüm koloniler kırmızı olacaktır. [Varsayılan: true]
+	colonyteamborders = true
+	#Özel tatil içerikleri gösterilmeli mi? [Varsayılan: true]
+	holidayfeatures = true
+	#When true, dyed leather items will show a tooltip so that you know what color to use. [Varsayılan: true]
+	showdyetooltips = true
+

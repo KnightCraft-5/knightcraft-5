@@ -5,7 +5,7 @@ continueTimerWhileOffline = false
 #If true, knocked out players are still able to punch nearby enemies.
 allowUnarmedMelee = false
 #The time in ticks in which a player can still be rescued from death. 20 ticks are one second. Set to 0 to disable the timer.
-ticksUntilDeath = 2400
+ticksUntilDeath = 600
 #Effects applied to a player when rescued, in the format "effect|duration|amplifier"
 rescueRespawnEffects = ["minecraft:hunger|600|0", "minecraft:weakness|1200|0"]
 #The amount of health to respawn with when a player was rescued, out of 20.
@@ -28,4 +28,6 @@ glowOnKnockout = true
 allowPistols = false
 #Set to false to remove the Accept your Fate button and force players to wait out the timer.
 allowAcceptingFate = true
+#The source entity types that kill a player instantly, without a K.O. period.
+instantDeathEntityTypes = []
 

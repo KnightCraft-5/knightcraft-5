@@ -1,25 +1,34 @@
-# ---- Mod jars (large binaries, not versioned) ----
-# Mod contents are tracked via mods/mods-list.txt instead.
+# ---- Mod/shader jars ----
+# Resolved via packwiz metadata (.pw.toml), downloaded on install — not stored.
+# Exception: jars CurseForge blocks from API redistribution must be bundled.
 mods/*.jar
-mods/.connector/
-mods/*.jar.disabled
+!mods/Dungeon-Realm-1.20.1-1.1.7.jar
+!mods/tl_skin_cape_forge_1.20_1.20.1-1.32.jar
 
-# ---- Generated / runtime data ----
+# ---- Runtime / instance data (from a CurseForge export or a live instance) ----
 logs/
 crash-reports/
+screenshots/
 saves/
 world/
 backups/
+journeymap/
+local/
+blueprints/
 *.log
 *.log.gz
 hs_err_pid*.log
 
-# ---- Launcher / instance metadata ----
-.fabric/
-.mixin.out/
-libraries/
-versions/
-natives/
+# ---- Personal / sensitive instance files ----
+servers.dat
+servers.dat_old
+usercache.json
+.sl_password
+*.local.properties
+
+# ---- Caches ----
+.cache/
+.packwiz-cache/
 
 # ---- OS / editor junk ----
 .DS_Store

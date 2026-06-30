@@ -192,6 +192,94 @@
       "is_scaled_by_crd": false
     },
     "mob_groups": {
+      "barrel_zombie": {
+        "required_game_stage": "expert",
+        "chance": 0.15,
+        "is_scaled_by_crd": true,
+        "leader_types": [
+          {
+            "type": "born_in_chaos_v1:barrel_zombie",
+            "equipment": "minecraft:"
+          }
+        ],
+        "sidekicks_count": {
+          "min": 1,
+          "max": 3
+        },
+        "sidekick_types": [
+          {
+            "type": "born_in_chaos_v1:zombie_fisherman",
+            "equipment": "minecraft:"
+          }
+        ]
+      },
+      "bonescaller": {
+        "required_game_stage": "expert",
+        "chance": 0.15,
+        "is_scaled_by_crd": true,
+        "leader_types": [
+          {
+            "type": "born_in_chaos_v1:bonescaller",
+            "equipment": "minecraft:"
+          }
+        ],
+        "sidekicks_count": {
+          "min": 1,
+          "max": 3
+        },
+        "sidekick_types": [
+          {
+            "type": "born_in_chaos_v1:door_knight",
+            "equipment": "minecraft:"
+          }
+        ]
+      },
+      "fallen_chaos_knight": {
+        "required_game_stage": "expert",
+        "chance": 0.15,
+        "is_scaled_by_crd": true,
+        "leader_types": [
+          {
+            "type": "born_in_chaos_v1:fallen_chaos_knight",
+            "equipment": "minecraft:"
+          }
+        ],
+        "sidekicks_count": {
+          "min": 1,
+          "max": 3
+        },
+        "sidekick_types": [
+          {
+            "type": "born_in_chaos_v1:dark_vortex",
+            "equipment": "minecraft:"
+          },
+          {
+            "type": "born_in_chaos_v1:fallen_chaos_knight",
+            "equipment": "minecraft:"
+          }
+        ]
+      },
+      "mother_spider": {
+        "required_game_stage": "expert",
+        "chance": 0.15,
+        "is_scaled_by_crd": true,
+        "leader_types": [
+          {
+            "type": "born_in_chaos_v1:mother_spider",
+            "equipment": "minecraft:"
+          }
+        ],
+        "sidekicks_count": {
+          "min": 2,
+          "max": 2
+        },
+        "sidekick_types": [
+          {
+            "type": "born_in_chaos_v1:swarmer",
+            "equipment": "minecraft:"
+          }
+        ]
+      },
       "piglins": {
         "required_game_stage": "expert",
         "chance": 0.25,
@@ -213,6 +301,52 @@
           }
         ]
       },
+      "seared_spirit": {
+        "required_game_stage": "expert",
+        "chance": 0.15,
+        "is_scaled_by_crd": true,
+        "leader_types": [
+          {
+            "type": "born_in_chaos_v1:seared_spirit",
+            "equipment": "minecraft:"
+          }
+        ],
+        "sidekicks_count": {
+          "min": 2,
+          "max": 4
+        },
+        "sidekick_types": [
+          {
+            "type": "born_in_chaos_v1:firelight",
+            "equipment": "minecraft:"
+          },
+          {
+            "type": "born_in_chaos_v1:bone_imp",
+            "equipment": "minecraft:"
+          }
+        ]
+      },
+      "skeleton_demoman": {
+        "required_game_stage": "expert",
+        "chance": 0.15,
+        "is_scaled_by_crd": true,
+        "leader_types": [
+          {
+            "type": "born_in_chaos_v1:skeleton_demoman",
+            "equipment": "minecraft:"
+          }
+        ],
+        "sidekicks_count": {
+          "min": 1,
+          "max": 3
+        },
+        "sidekick_types": [
+          {
+            "type": "born_in_chaos_v1:skeleton_demoman",
+            "equipment": "minecraft:"
+          }
+        ]
+      },
       "skeletons": {
         "required_game_stage": "normal",
         "chance": 0.1,
@@ -231,6 +365,130 @@
           {
             "type": "minecraft:skeleton",
             "equipment": "majruszsdifficulty:mob_groups/skeleton_sidekick"
+          }
+        ]
+      },
+      "spirit_guide": {
+        "required_game_stage": "expert",
+        "chance": 0.15,
+        "is_scaled_by_crd": true,
+        "leader_types": [
+          {
+            "type": "born_in_chaos_v1:spirit_guide",
+            "equipment": "minecraft:"
+          }
+        ],
+        "sidekicks_count": {
+          "min": 2,
+          "max": 3
+        },
+        "sidekick_types": [
+          {
+            "type": "born_in_chaos_v1:siamese_skeletons",
+            "equipment": "minecraft:"
+          }
+        ]
+      },
+      "spiritof_chaos": {
+        "required_game_stage": "master",
+        "chance": 0.15,
+        "is_scaled_by_crd": true,
+        "leader_types": [
+          {
+            "type": "born_in_chaos_v1:fallen_chaos_knight",
+            "equipment": "minecraft:"
+          },
+          {
+            "type": "born_in_chaos_v1:mother_spider",
+            "equipment": "minecraft:"
+          },
+          {
+            "type": "born_in_chaos_v1:dire_hound_leader",
+            "equipment": "minecraft:"
+          },
+          {
+            "type": "born_in_chaos_v1:glutton_fish",
+            "equipment": "minecraft:"
+          },
+          {
+            "type": "born_in_chaos_v1:nightmare_stalker",
+            "equipment": "minecraft:"
+          },
+          {
+            "type": "born_in_chaos_v1:missioner",
+            "equipment": "minecraft:"
+          },
+          {
+            "type": "born_in_chaos_v1:krampus",
+            "equipment": "minecraft:"
+          },
+          {
+            "type": "born_in_chaos_v1:sir_pumpkinhead",
+            "equipment": "minecraft:"
+          },
+          {
+            "type": "born_in_chaos_v1:supreme_bonescaller",
+            "equipment": "minecraft:"
+          },
+          {
+            "type": "born_in_chaos_v1:lifestealer_true_form",
+            "equipment": "minecraft:"
+          }
+        ],
+        "sidekicks_count": {
+          "min": 1,
+          "max": 1
+        },
+        "sidekick_types": [
+          {
+            "type": "born_in_chaos_v1:spiritof_chaos",
+            "equipment": "minecraft:"
+          }
+        ]
+      },
+      "supreme_bonescaller": {
+        "required_game_stage": "expert",
+        "chance": 0.15,
+        "is_scaled_by_crd": true,
+        "leader_types": [
+          {
+            "type": "born_in_chaos_v1:supreme_bonescaller",
+            "equipment": "minecraft:"
+          }
+        ],
+        "sidekicks_count": {
+          "min": 1,
+          "max": 3
+        },
+        "sidekick_types": [
+          {
+            "type": "born_in_chaos_v1:fallen_chaos_knight",
+            "equipment": "minecraft:"
+          },
+          {
+            "type": "born_in_chaos_v1:skeleton_thrasher",
+            "equipment": "minecraft:"
+          }
+        ]
+      },
+      "swarmer": {
+        "required_game_stage": "expert",
+        "chance": 0.15,
+        "is_scaled_by_crd": true,
+        "leader_types": [
+          {
+            "type": "born_in_chaos_v1:swarmer",
+            "equipment": "minecraft:"
+          }
+        ],
+        "sidekicks_count": {
+          "min": 1,
+          "max": 3
+        },
+        "sidekick_types": [
+          {
+            "type": "born_in_chaos_v1:bloody_gadfly",
+            "equipment": "minecraft:"
           }
         ]
       },
@@ -276,6 +534,31 @@
           {
             "type": "minecraft:husk",
             "equipment": "majruszsdifficulty:undead_army/wave_2_mob"
+          }
+        ]
+      },
+      "zombie_bruiser": {
+        "required_game_stage": "expert",
+        "chance": 0.15,
+        "is_scaled_by_crd": true,
+        "leader_types": [
+          {
+            "type": "born_in_chaos_v1:zombie_bruiser",
+            "equipment": "minecraft:"
+          }
+        ],
+        "sidekicks_count": {
+          "min": 1,
+          "max": 3
+        },
+        "sidekick_types": [
+          {
+            "type": "born_in_chaos_v1:zombie_clown",
+            "equipment": "minecraft:"
+          },
+          {
+            "type": "born_in_chaos_v1:zombie_lumberjack",
+            "equipment": "minecraft:"
           }
         ]
       },
@@ -427,24 +710,12 @@
       {
         "mobs": [
           {
-            "type": "minecraft:zombie",
-            "equipment": "majruszsdifficulty:undead_army/wave_1_mob",
-            "count": 2
+            "type": "born_in_chaos_v1:siamese_skeletons",
+            "count": 3
           },
           {
-            "type": "minecraft:skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_1_mob",
-            "count": 2
-          },
-          {
-            "type": "minecraft:zombie",
-            "equipment": "majruszsdifficulty:undead_army/wave_1_mob",
-            "count": 2
-          },
-          {
-            "type": "minecraft:skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_1_mob",
-            "count": 2
+            "type": "born_in_chaos_v1:spirit_guide",
+            "count": 3
           }
         ],
         "game_stage": "normal",
@@ -453,24 +724,12 @@
       {
         "mobs": [
           {
-            "type": "minecraft:zombie",
-            "equipment": "majruszsdifficulty:undead_army/wave_2_mob",
-            "count": 2
-          },
-          {
-            "type": "minecraft:skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_2_mob",
+            "type": "born_in_chaos_v1:door_knight",
             "count": 3
           },
           {
-            "type": "minecraft:zombie",
-            "equipment": "majruszsdifficulty:undead_army/wave_2_mob",
+            "type": "born_in_chaos_v1:bonescaller",
             "count": 3
-          },
-          {
-            "type": "minecraft:skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_2_mob",
-            "count": 2
           }
         ],
         "game_stage": "normal",
@@ -479,28 +738,24 @@
       {
         "mobs": [
           {
-            "type": "minecraft:zombie",
-            "equipment": "majruszsdifficulty:undead_army/wave_3_mob",
-            "count": 3
+            "type": "born_in_chaos_v1:skeleton_thrasher",
+            "count": 2
           },
           {
-            "type": "minecraft:skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_3_skeleton",
-            "count": 3
+            "type": "born_in_chaos_v1:dark_vortex",
+            "count": 2
           },
           {
-            "type": "minecraft:husk",
-            "equipment": "majruszsdifficulty:undead_army/wave_3_mob",
-            "count": 3
+            "type": "born_in_chaos_v1:fallen_chaos_knight",
+            "count": 1
           },
           {
-            "type": "minecraft:stray",
-            "equipment": "majruszsdifficulty:undead_army/wave_3_skeleton",
-            "count": 3
+            "type": "born_in_chaos_v1:supreme_bonescaller",
+            "count": 1
           }
         ],
         "boss": {
-          "type": "majruszsdifficulty:tank",
+          "type": "born_in_chaos_v1:nightmare_stalker",
           "count": 1
         },
         "game_stage": "normal",
@@ -509,48 +764,12 @@
       {
         "mobs": [
           {
-            "type": "minecraft:zombie",
-            "equipment": "majruszsdifficulty:undead_army/wave_4_mob",
+            "type": "born_in_chaos_v1:swarmer",
+            "count": 6
+          },
+          {
+            "type": "born_in_chaos_v1:mother_spider",
             "count": 2
-          },
-          {
-            "type": "minecraft:wither_skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_4_mob",
-            "count": 1
-          },
-          {
-            "type": "minecraft:skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_4_skeleton",
-            "count": 2
-          },
-          {
-            "type": "minecraft:wither_skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_4_mob",
-            "count": 1
-          },
-          {
-            "type": "majruszsdifficulty:tank",
-            "count": 1
-          },
-          {
-            "type": "minecraft:husk",
-            "equipment": "majruszsdifficulty:undead_army/wave_4_mob",
-            "count": 3
-          },
-          {
-            "type": "minecraft:wither_skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_4_mob",
-            "count": 1
-          },
-          {
-            "type": "minecraft:stray",
-            "equipment": "majruszsdifficulty:undead_army/wave_4_skeleton",
-            "count": 3
-          },
-          {
-            "type": "minecraft:wither_skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_4_mob",
-            "count": 1
           }
         ],
         "game_stage": "expert",
@@ -559,42 +778,28 @@
       {
         "mobs": [
           {
-            "type": "minecraft:zombie",
-            "equipment": "majruszsdifficulty:undead_army/wave_5_mob",
-            "count": 1
-          },
-          {
-            "type": "minecraft:skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_5_skeleton",
-            "count": 1
-          },
-          {
-            "type": "minecraft:stray",
-            "equipment": "majruszsdifficulty:undead_army/wave_5_skeleton",
-            "count": 3
-          },
-          {
-            "type": "minecraft:wither_skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_5_mob",
+            "type": "born_in_chaos_v1:skeleton_thrasher",
             "count": 2
           },
           {
-            "type": "majruszsdifficulty:tank",
+            "type": "born_in_chaos_v1:dark_vortex",
+            "count": 2
+          },
+          {
+            "type": "born_in_chaos_v1:nightmare_stalker",
             "count": 1
           },
           {
-            "type": "minecraft:husk",
-            "equipment": "majruszsdifficulty:undead_army/wave_5_mob",
-            "count": 3
+            "type": "born_in_chaos_v1:fallen_chaos_knight",
+            "count": 2
           },
           {
-            "type": "minecraft:wither_skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_5_mob",
+            "type": "born_in_chaos_v1:supreme_bonescaller",
             "count": 2
           }
         ],
         "boss": {
-          "type": "majruszsdifficulty:cerberus",
+          "type": "born_in_chaos_v1:lifestealer_true_form",
           "count": 1
         },
         "game_stage": "expert",
@@ -603,36 +808,15 @@
       {
         "mobs": [
           {
-            "type": "minecraft:zombie",
-            "equipment": "majruszsdifficulty:undead_army/wave_6_mob",
+            "type": "born_in_chaos_v1:zombie_clown",
+            "count": 6
+          },
+          {
+            "type": "born_in_chaos_v1:nightmare_stalker",
             "count": 1
           },
           {
-            "type": "minecraft:skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_6_skeleton",
-            "count": 1
-          },
-          {
-            "type": "majruszsdifficulty:tank",
-            "count": 1
-          },
-          {
-            "type": "minecraft:stray",
-            "equipment": "majruszsdifficulty:undead_army/wave_6_skeleton",
-            "count": 1
-          },
-          {
-            "type": "minecraft:husk",
-            "equipment": "majruszsdifficulty:undead_army/wave_6_mob",
-            "count": 1
-          },
-          {
-            "type": "minecraft:wither_skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_6_wither_skeleton",
-            "count": 1
-          },
-          {
-            "type": "majruszsdifficulty:cerberus",
+            "type": "born_in_chaos_v1:lifestealer_true_form",
             "count": 1
           }
         ],

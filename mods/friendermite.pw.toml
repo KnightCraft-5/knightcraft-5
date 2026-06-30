@@ -1,0 +1,13 @@
+name = "Friendermite"
+filename = "Friendermite_FORGE_v1.0.6_mc1.20.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "9afa464397fa8614d80c8ed220a5c6f560107bec"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4577630
+project-id = 350337

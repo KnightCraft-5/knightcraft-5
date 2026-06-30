@@ -1,0 +1,13 @@
+name = "Easy NPC: Core"
+filename = "easy_npc-forge-1.20.1-6.19.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "75a37d2ddb84dc5e70a7d927bf89c43ca1a48830"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8233097
+project-id = 1308987

@@ -21,4 +21,5 @@
 	epicDrop = false
 	#Range: > 0
 	skillReplaceCooldown = 6000
+	allow_vanilla_melee = true
 
