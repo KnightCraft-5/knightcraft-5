@@ -1,53 +1,96 @@
-name: Build modpack zip
+name: Publish release on version bump
 
-# Cuts a distributable CurseForge zip with one click — no local tools, any OS.
-# Run it from the website: Actions tab -> "Build modpack zip" -> Run workflow.
-# The finished .zip appears under the repo's Releases.
+# Publishes a release ONLY when pack.toml's version is bumped to one not released
+# before. Bumping the version and pushing IS the release trigger. A new release
+# always carries a stable download URL:
+#   https://github.com/KnightCraft-5/knightcraft-5/releases/latest/download/KnightCraft5.zip
 
 on:
+  push:
+    branches: [master]
+    paths: ['pack.toml']
   workflow_dispatch:
+    inputs:
+      force:
+        description: 'Publish even if this version was already released'
+        type: boolean
+        default: false
 
 permissions:
   contents: write
 
 jobs:
-  export:
+  release:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+
+      - name: Read version, decide whether to publish
+        id: check
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          VERSION=$(grep -m1 '^version' pack.toml | cut -d'"' -f2)
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+          if [ "${{ inputs.force }}" = "true" ]; then
+            echo "Force requested — will publish v$VERSION."
+            echo "publish=true" >> "$GITHUB_OUTPUT"
+          elif gh release view "v$VERSION" >/dev/null 2>&1; then
+            echo "v$VERSION already released — nothing to do."
+            echo "publish=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "New version v$VERSION — will publish."
+            echo "publish=true" >> "$GITHUB_OUTPUT"
+          fi
 
       - name: Set up Go
+        if: steps.check.outputs.publish == 'true'
         uses: actions/setup-go@v5
         with:
           go-version: stable
 
       - name: Install packwiz
+        if: steps.check.outputs.publish == 'true'
         run: go install github.com/packwiz/packwiz@latest
 
       - name: Export CurseForge zip
         id: export
+        if: steps.check.outputs.publish == 'true'
         run: |
-          VERSION=$(grep -m1 '^version' pack.toml | cut -d'"' -f2)
-          OUT="KnightCraft5-${VERSION}.zip"
-          "$(go env GOPATH)/bin/packwiz" curseforge export -o "$OUT"
-          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
-          echo "file=$OUT" >> "$GITHUB_OUTPUT"
-
-      - name: Upload artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: KnightCraft5-${{ steps.export.outputs.version }}
-          path: ${{ steps.export.outputs.file }}
+          V="${{ steps.check.outputs.version }}"
+          "$(go env GOPATH)/bin/packwiz" curseforge export -o "KnightCraft5-${V}.zip"
+          cp "KnightCraft5-${V}.zip" KnightCraft5.zip   # constant name -> stable latest URL
 
       - name: Publish release
+        if: steps.check.outputs.publish == 'true'
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: build-${{ github.run_number }}
-          name: KnightCraft 5 v${{ steps.export.outputs.version }} (build ${{ github.run_number }})
-          files: ${{ steps.export.outputs.file }}
+          tag_name: v${{ steps.check.outputs.version }}
+          name: KnightCraft 5 v${{ steps.check.outputs.version }}
+          files: |
+            KnightCraft5-${{ steps.check.outputs.version }}.zip
+            KnightCraft5.zip
           body: |
-            KnightCraft 5 — CurseForge modpack export.
+            KnightCraft 5 v${{ steps.check.outputs.version }} — CurseForge modpack.
 
-            Download the `.zip` below and import it in the CurseForge app:
-            **Create Custom Profile → Import → choose this zip**.
+            **Direct download (always latest):**
+            https://github.com/${{ github.repository }}/releases/latest/download/KnightCraft5.zip
+
+            CurseForge uygulamasında: **Create Custom Profile → Import**.
+
+      - name: Notify webhook
+        if: steps.check.outputs.publish == 'true'
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+          VERSION: ${{ steps.check.outputs.version }}
+          REPO: ${{ github.repository }}
+        run: |
+          if [ -z "$DISCORD_WEBHOOK" ]; then
+            echo "No DISCORD_WEBHOOK secret set — skipping notification."
+            exit 0
+          fi
+          DL="https://github.com/${REPO}/releases/latest/download/KnightCraft5.zip"
+          PAGE="https://github.com/${REPO}/releases/tag/v${VERSION}"
+          jq -n --arg v "$VERSION" --arg dl "$DL" --arg pg "$PAGE" \
+            '{content: "🛡️ **KnightCraft 5 v\($v)** yayınlandı!\n📥 İndir: \($dl)\n📝 Detay: \($pg)"}' \
+            | curl -sf -H "Content-Type: application/json" -d @- "$DISCORD_WEBHOOK"
