@@ -7,7 +7,7 @@ hem de Discord duyurusuna koyar. En yeni sürüm en üstte olsun.
 Bölüm başlıkları (gerekmeyeni sil): `🎉 Etkinlik`, `🔸 Bilgilendirme`,
 `🔺 Değişiklikler`, `💥 Hata Düzeltmeleri`.
 
-## v5.5.0
+## v5.0.0
 
 🔸 Bilgilendirme 🔸
 - KnightCraft 5'in ilk sürümü — paket artık packwiz ile dağıtılıyor.
