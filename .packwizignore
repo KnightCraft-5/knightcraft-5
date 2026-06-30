@@ -4,6 +4,10 @@
 .gitattributes
 .packwizignore
 README.md
+CONTRIBUTING.md
+CHANGELOG.md
+.github/
+scripts/
 
 # World-specific — version-controlled but not distributed (defaultconfigs/ ships defaults instead).
 serverconfig/
