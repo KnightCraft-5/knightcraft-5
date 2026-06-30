@@ -1,0 +1,31 @@
+# ---- Mod jars (large binaries, not versioned) ----
+# Mod contents are tracked via mods/mods-list.txt instead.
+mods/*.jar
+mods/.connector/
+mods/*.jar.disabled
+
+# ---- Generated / runtime data ----
+logs/
+crash-reports/
+saves/
+world/
+backups/
+*.log
+*.log.gz
+hs_err_pid*.log
+
+# ---- Launcher / instance metadata ----
+.fabric/
+.mixin.out/
+libraries/
+versions/
+natives/
+
+# ---- OS / editor junk ----
+.DS_Store
+Thumbs.db
+desktop.ini
+*~
+*.swp
+.idea/
+.vscode/
