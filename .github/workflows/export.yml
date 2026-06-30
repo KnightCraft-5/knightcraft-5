@@ -1,0 +1,53 @@
+name: Build modpack zip
+
+# Cuts a distributable CurseForge zip with one click — no local tools, any OS.
+# Run it from the website: Actions tab -> "Build modpack zip" -> Run workflow.
+# The finished .zip appears under the repo's Releases.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: stable
+
+      - name: Install packwiz
+        run: go install github.com/packwiz/packwiz@latest
+
+      - name: Export CurseForge zip
+        id: export
+        run: |
+          VERSION=$(grep -m1 '^version' pack.toml | cut -d'"' -f2)
+          OUT="KnightCraft5-${VERSION}.zip"
+          "$(go env GOPATH)/bin/packwiz" curseforge export -o "$OUT"
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+          echo "file=$OUT" >> "$GITHUB_OUTPUT"
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: KnightCraft5-${{ steps.export.outputs.version }}
+          path: ${{ steps.export.outputs.file }}
+
+      - name: Publish release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: build-${{ github.run_number }}
+          name: KnightCraft 5 v${{ steps.export.outputs.version }} (build ${{ github.run_number }})
+          files: ${{ steps.export.outputs.file }}
+          body: |
+            KnightCraft 5 — CurseForge modpack export.
+
+            Download the `.zip` below and import it in the CurseForge app:
+            **Create Custom Profile → Import → choose this zip**.
