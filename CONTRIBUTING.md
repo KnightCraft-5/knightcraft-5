@@ -29,4 +29,4 @@ Bakımcıya söyle. Liste değişince sen sadece **Pull** at ve **refresh-mods**
 
 ## Sürüm çıkarma (bakımcı)
 
-GitHub → **Actions → Build modpack zip → Run workflow**. Zip **Releases** sekmesinde.
+`pack.toml` içindeki `version` satırını yükselt, commit'le, push'la. CI otomatik yayınlar. Zip **Releases**'te; sabit link `…/releases/latest/download/KnightCraft5.zip`.

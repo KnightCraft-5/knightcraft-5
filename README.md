@@ -6,6 +6,11 @@ Modların kendisi burada tutulmaz; `mods/*.pw.toml` içinde CurseForge kimliğiy
 
 **Pakete katkı için → [CONTRIBUTING.md](CONTRIBUTING.md)**
 
-## Sürüm çıkarma
+## Sürüm çıkarma (bakımcı)
 
-GitHub'da **Actions → Build modpack zip → Run workflow**. Hazır zip **Releases** sekmesinde çıkar, CurseForge uygulamasına aktarılır.
+`pack.toml` içindeki `version` satırını yükselt ve push'la — CI otomatik olarak **Releases**'e yayınlar (aynı sürüm zaten yayınlandıysa atlar).
+
+Sabit indirme linki (her zaman en son sürüm):
+`https://github.com/KnightCraft-5/knightcraft-5/releases/latest/download/KnightCraft5.zip`
+
+Sürüm kuralı: config-only → son rakam (`5.5.1`), mod değişikliği → orta (`5.6.0`), büyük elden geçirme → ilk (`6.0.0`).
