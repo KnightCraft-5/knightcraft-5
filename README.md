@@ -1,34 +1,42 @@
 # KnightCraft 5
 
-A Minecraft **Forge 1.20.1** modpack (189 mods), managed with [packwiz](https://packwiz.infra.link/).
+[packwiz](https://packwiz.infra.link/) ile yönetilen bir Minecraft **Forge 1.20.1**
+mod paketi (189 mod).
 
-This repo is the **source of truth**: mod versions, configs, scripts, and the custom
-main menu. Mod jars themselves are *not* stored here — they're referenced by CurseForge
-project/file ID in `mods/*.pw.toml` and downloaded on install.
+Bu depo paketin **ana kaynağıdır**: mod sürümleri, ayarlar (config), scriptler ve
+özel ana menü burada tutulur. Mod dosyalarının (jar) kendisi burada saklanmaz —
+`mods/*.pw.toml` içinde CurseForge proje/dosya kimliğiyle işaret edilir ve kurulum
+sırasında indirilir.
 
-## Layout
+## Klasör yapısı
 
-| Path | What |
+| Yol | Açıklama |
 |------|------|
-| `pack.toml` / `index.toml` | packwiz pack metadata + file index |
-| `mods/*.pw.toml` | one file per mod — CurseForge ID + hash |
-| `*.pw.toml` (root) | shaderpacks (Complementary, Sildur's) |
-| `config/`, `defaultconfigs/`, `kubejs/` | mod configuration & scripts |
-| `packmenu/`, `resourcepacks/` | custom main menu and bundled resource packs |
-| `serverconfig/` | server-side config (versioned, not shipped in exports) |
+| `pack.toml` / `index.toml` | packwiz paket bilgisi + dosya dizini |
+| `mods/*.pw.toml` | her mod için bir dosya — CurseForge kimliği + hash |
+| `*.pw.toml` (kök) | shader paketleri (Complementary, Sildur's) |
+| `config/`, `defaultconfigs/`, `kubejs/` | mod ayarları ve scriptler |
+| `packmenu/`, `resourcepacks/` | özel ana menü ve paket içi doku paketleri |
+| `serverconfig/` | sunucu tarafı ayarlar (depoda tutulur, dışa aktarmaya dahil edilmez) |
 
-## Build a distributable pack
+## Pakete katkıda bulunmak
+
+Paketi geliştiriyorsan kurulum ve günlük akış için **[CONTRIBUTING.md](CONTRIBUTING.md)**
+dosyasına bak (terminal gerekmez — GitHub Desktop + Prism Launcher).
+
+## Dağıtılabilir paket oluşturma
 
 ```bash
 packwiz curseforge export -o KnightCraft5.zip
 ```
 
-Import `KnightCraft5.zip` into the CurseForge app (Create Custom Profile → Import).
+`KnightCraft5.zip` dosyasını CurseForge uygulamasına aktar
+(Create Custom Profile → Import).
 
-## Maintainer workflow
+## Bakımcı (maintainer) komutları
 
 ```bash
-packwiz curseforge add <slug>     # add a mod
-packwiz update --all              # bump everything to latest
-git add -A && git commit -m "..." # version the change
+packwiz curseforge add <slug>     # mod ekle
+packwiz update --all              # her şeyi en güncele yükselt
+git add -A && git commit -m "..." # değişikliği kaydet
 ```

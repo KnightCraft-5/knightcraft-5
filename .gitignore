@@ -26,9 +26,22 @@ usercache.json
 .sl_password
 *.local.properties
 
-# ---- Caches ----
+# ---- Caches & packwiz-installer artifacts ----
 .cache/
 .packwiz-cache/
+packwiz-installer*.jar
+.packwiz-installer*
+
+# ---- Runtime files the game writes into the pack root (dev = .minecraft) ----
+optionsof.txt
+optionsshaders.txt
+hotbar.nbt
+realms_persistence.json
+.mixin.out/
+
+# ---- Build artifacts (exported packs in repo root) ----
+# Note: resourcepacks/*.zip stay tracked — only root-level export zips are ignored.
+/*.zip
 
 # ---- OS / editor junk ----
 .DS_Store
@@ -38,6 +51,3 @@ desktop.ini
 *.swp
 .idea/
 .vscode/
-
-# Built distributable (attached to GitHub Releases instead)
-KnightCraft5-*.zip
