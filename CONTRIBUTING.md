@@ -1,34 +1,34 @@
 # KnightCraft 5 geliştirme
 
-Ayar, script ve quest düzenlemeleri için komut satırına ihtiyacın yok; hepsini GitHub Desktop üzerinden yaparsın. Mod ekleyip çıkarmayı ise packwiz ile lokalde hallediyoruz.
+Paket packwiz ile yönetiliyor. Depoda mod listesi (packwiz metadatası), ayarlar, scriptler ve quest'ler var; mod dosyalarının (jar) kendisi tutulmuyor. Oynamak ve test etmek için paketi CurseForge zip'i olarak dışa aktarıp bir launcher'a aktarıyoruz; launcher bütün modları CurseForge'dan indiriyor. Böylece kimse jar taşımıyor.
 
-## Kurulum
+## Ayar, script ve quest düzenleme
 
-Önce şu üç programı kur: [Prism Launcher](https://prismlauncher.org/), [Git](https://git-scm.com/downloads) ve [GitHub Desktop](https://desktop.github.com/).
-
-1. Prism'de Minecraft 1.20.1 ve Forge 47.4.10 ile yeni bir instance oluştur. Bu aşamada çalıştırma.
-2. Instance'ı seçip sağdaki Folder butonuna bas. Açılan klasör instance klasörüdür; içinde `instance.cfg`, `mmc-pack.json` ve boş bir `minecraft` klasörü bulunur. `instance.cfg` ve `mmc-pack.json` dosyalarını silme, Prism'in bunlara ihtiyacı var. Sadece içindeki boş `minecraft` klasörünü sil.
-3. GitHub Desktop'ta `KnightCraft-5/knightcraft-5` deposunu klonla. Klonlama penceresindeki "Local path"i, sildiğin `minecraft` klasörünün yerine ayarla; yani yol `.../instances/<instance-adı>/minecraft` ile bitmeli. GitHub Desktop'un sona otomatik eklediği depo adını `minecraft` ile değiştir, klasörü kendisi oluşturur.
-4. Modları indir: Windows'ta `scripts\refresh-mods.bat`, Mac veya Linux'ta `scripts/refresh-mods.sh` dosyasını çalıştır.
-
-Bu kadar. Artık Prism'den başlatıp paketi oynayabilirsin.
-
-## Çalışma akışı
-
-Çalışmaya başlamadan önce GitHub Desktop'ta Pull yaparak herkesin son değişikliklerini al. Ayarları ya da scriptleri düzenle, oyunu yeniden başlatıp test et. KubeJS ve datapack değişikliklerinde oyunu kapatmana gerek yok; oyun içinde `/reload` (KubeJS scriptleri için `/kubejs reload`) yeterli. Sonuçtan memnunsan Commit ve Push yap.
-
-İki küçük not: Pull'dan önce kendi değişikliğini kaydetmezsen GitHub Desktop izin vermez, ve aynı dosyayı iki kişi aynı anda düzenlerse çakışma çıkar. O yüzden sık commit yapın ve kimin neye baktığını aranızda konuşun.
-
-Biri yeni bir mod eklediğinde, o modu kendi oyununa almak için Pull yapıp refresh-mods'u tekrar çalıştırman gerekir. Sadece config değiştiyse buna gerek yok, Pull yapman yeterli.
+Bunun için packwiz gerekmez. Depoyu klonla, `config`, `kubejs`, `defaultconfigs` ya da `serverconfig` altındaki dosyaları düzenle, commit'leyip push'la. Değişikliği oyunda görmek için aşağıdaki "Paketi oynama/test etme" adımını izle.
 
 ## Mod ekleme ve çıkarma
 
-Modları packwiz ile lokalde yönetiyoruz. Eklemek için `packwiz curseforge add <curseforge-linki>`, çıkarmak için `packwiz remove <mod-adı>` çalıştır; sonra değişikliği commit'leyip push'la. Diğerleri Pull yapıp refresh-mods'u çalıştırınca mod onların da oyununa iner ya da oradan kalkar.
+Bunun için [packwiz](https://packwiz.infra.link/) kur (Go ile: `go install github.com/packwiz/packwiz@latest`).
 
-CurseForge'da olmayan modlar için: Modrinth'teyse `packwiz modrinth add <ad>`, doğrudan indirme linki varsa `packwiz url add <ad> <link>` kullan. İkisi de olmuyorsa (indirilemeyen ya da dağıtımı kapalı mod) jar'ı doğrudan pakete göm: `scripts/bundle-jar.sh <jar-yolu>` (Windows'ta `scripts\bundle-jar.bat`). Jar depoya girer, herkes Pull + refresh-mods ile alır.
+- Eklemek: `packwiz curseforge add <curseforge-linki-veya-adı>`
+- Çıkarmak: `packwiz remove <mod-adı>`
+- CurseForge'da yoksa: Modrinth'teyse `packwiz modrinth add <ad>`, doğrudan indirme linki varsa `packwiz url add <ad> <link>`. Hiçbiri olmuyorsa jar'ı doğrudan göm: `scripts/bundle-jar.sh <jar-yolu>` (Windows'ta `scripts\bundle-jar.bat`).
 
-Eklediğin ya da çıkardığın mod, yeni bir sürüm çıkana kadar oyunculara ulaşmaz.
+Ardından commit'leyip push'la.
 
-## Sürüm çıkarma
+## Paketi oynama/test etme
 
-`pack.toml` dosyasındaki `version` satırını yükselt, commit'le ve push'la; gerisini CI hallediyor. Hazır zip, Releases sekmesinde yayınlanır. Yeni sürüm herkese duyuru gönderdiği için gerçekten hazır olduğundan emin ol.
+Paketi tek komutla CurseForge zip'i olarak dışa aktar:
+
+    packwiz curseforge export -o KnightCraft5.zip
+
+Bu zip'i bir launcher'a aktar; modların hepsi otomatik iner:
+
+- CurseForge uygulaması: Create Custom Profile → Import → zip'i seç. En sorunsuz yol.
+- Prism Launcher: Add Instance → Import → CurseForge zip'ini seç.
+
+Yeni sürüm çıkarmak (oyunculara göndermek) için `pack.toml` içindeki `version` satırını yükselt, commit'le ve push'la; CI paketi otomatik olarak Releases'e koyar.
+
+## Not: Linux + Prism'de Forge kurulum hatası
+
+Prism'de Forge kurarken "Processor failed, invalid outputs" hatası alırsan instance'ın Java'sını gamma yerine Temurin 17'ye çevir (Settings → Java). Prism'in indirdiği gamma runtime'ı bu Forge sürümünün kurulumunu bozuyor. CurseForge uygulamasında bu sorun yok.

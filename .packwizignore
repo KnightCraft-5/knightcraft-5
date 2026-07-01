@@ -18,11 +18,6 @@ serverconfig/
 mods/*.jar
 !mods/Dungeon-Realm-1.20.1-1.1.7.jar
 !mods/tl_skin_cape_forge_1.20_1.20.1-1.32.jar
-!mods/aquaculturedelight-1.1.1-forge-1.20.1.jar
-!mods/easy_npc_bundle-forge-1.20.1-6.19.0.jar
-!mods/entityculling-forge-1.10.2-mc1.20.1.jar
-!mods/realmrpg_skeletons-1.1.0-forge-1.20.1.jar
-!mods/threateningly_mobs-1.1.1-forge-1.20.1.jar
 
 # Guards against runtime data if the pack dir is ever used as a live instance.
 logs/
