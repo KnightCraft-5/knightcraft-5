@@ -1700,11 +1700,6 @@ hash = "0f4c2198603cd84a14dc6741729d0b0dcf509574776e620c36c3e7180082db32"
 metafile = true
 
 [[files]]
-file = "mods/aquaculture-delight.pw.toml"
-hash = "624514fd57a5bad649068f8f2d6c45d88228249a266bd61b45cb749c42499766"
-metafile = true
-
-[[files]]
 file = "mods/aquaculture.pw.toml"
 hash = "04aae524d364de0ec8ac66db6eaff094b9c9b9d69e5de89f11acb2a00ce35261"
 metafile = true
@@ -1890,11 +1885,6 @@ hash = "b1ad24675b0e91a32dcd067a21baf0a6e8ca614a0a51cf0b53369d8c8e2621d7"
 metafile = true
 
 [[files]]
-file = "mods/easy-npc.pw.toml"
-hash = "b67d86fe655a947523c620b84f45b7935910603810a79951fcf47b1219aa5354"
-metafile = true
-
-[[files]]
 file = "mods/elytra-slot.pw.toml"
 hash = "c94b9427a8d7f0e6aa0a1779c68bde63b98b4adc1968b48adad521f51bde84f3"
 metafile = true
@@ -1907,11 +1897,6 @@ metafile = true
 [[files]]
 file = "mods/enchantment-descriptions.pw.toml"
 hash = "e4c69a3551a4343fc76fb135266aecac0042863693f04d2c58a26c71b6e988d9"
-metafile = true
-
-[[files]]
-file = "mods/entityculling.pw.toml"
-hash = "c3949a05316d204a61e901c10b1e62c3dabf7cfd4373ece8152187545bed564c"
 metafile = true
 
 [[files]]
@@ -2365,11 +2350,6 @@ hash = "b613f3c2e55bdf5562585e98b03b1513ae26a003b32a19cd2fce076e293d7652"
 metafile = true
 
 [[files]]
-file = "mods/realm-rpg-fallen-adventurers.pw.toml"
-hash = "5cbc2a1d0ba8c484dd895f33af1dc7c068eaef2329b070fc040b2c3946d18d9d"
-metafile = true
-
-[[files]]
 file = "mods/rhino.pw.toml"
 hash = "ca4411ac6d8a9a892948bb63cd0ba52ae5523ca5e257632d6ae8c933b660c5ee"
 metafile = true
@@ -2512,11 +2492,6 @@ metafile = true
 [[files]]
 file = "mods/thermal-foundation.pw.toml"
 hash = "626f0ea226f55c453930ef387b32ad090c8defdd07792fe0aefc4b5afa87cb46"
-metafile = true
-
-[[files]]
-file = "mods/threateningly-mobs.pw.toml"
-hash = "7991775ab1c5c6f3f173feef4b8e9bf993e0c7b4182a1f8617c362d2044bd165"
 metafile = true
 
 [[files]]
