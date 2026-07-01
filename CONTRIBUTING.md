@@ -1,36 +1,32 @@
-# KnightCraft 5 — Geliştirme
+# KnightCraft 5 geliştirme
 
-Terminal yok. Ayarları düzenlersin, GitHub Desktop'ta kaydedersin. Mod listesini bakımcı yönetir.
+Paketi geliştirmek için komut satırına ihtiyacın yok. Ayarları düzenler, değişiklikleri GitHub Desktop üzerinden kaydedersin. Mod listesini bakımcı yönetir.
 
-## Kurulum (bir kez)
+## Kurulum
 
-Şunları kur: [Prism Launcher](https://prismlauncher.org/), [Git](https://git-scm.com/downloads), [GitHub Desktop](https://desktop.github.com/).
+Önce şu üç programı kur: [Prism Launcher](https://prismlauncher.org/), [Git](https://git-scm.com/downloads) ve [GitHub Desktop](https://desktop.github.com/).
 
-1. Prism'de yeni instance: Minecraft 1.20.1 + Forge 47.4.10. Bir kez çalıştır, kapat.
-2. Prism'de instance → **Folder** → `minecraft` klasörünü aç, içini boşalt.
-3. GitHub Desktop → **Clone** → `KnightCraft-5/knightcraft-5`, hedef klasör olarak o `minecraft` klasörünü seç.
-4. Modları indir: Windows'ta `scripts\refresh-mods.bat`, Mac/Linux'ta `scripts/refresh-mods.sh`.
+1. Prism'de Minecraft 1.20.1 ve Forge 47.4.10 ile yeni bir instance oluştur. Kurulumun bitmesi için bir kez açıp kapat.
+2. Prism'de instance'ı seçip Folder'a tıkla, açılan `minecraft` klasörünün içini boşalt.
+3. GitHub Desktop'ta `KnightCraft-5/knightcraft-5` deposunu klonla; klasör olarak da az önce boşalttığın `minecraft` klasörünü göster.
+4. Modları indir: Windows'ta `scripts\refresh-mods.bat`, Mac veya Linux'ta `scripts/refresh-mods.sh` dosyasını çalıştır.
 
-Prism'den başlat — paketi oynuyorsun.
+Bu kadar. Artık Prism'den başlatıp paketi oynayabilirsin.
 
-## Günlük iş
+## Çalışma akışı
 
-GitHub Desktop'ta: **Pull → düzenle → Commit → Push**
+Çalışmaya başlamadan önce GitHub Desktop'ta Pull yaparak herkesin son değişikliklerini al. Ayarları ya da scriptleri düzenle, oyunu yeniden başlatıp test et. KubeJS ve datapack değişikliklerinde oyunu kapatmana gerek yok; oyun içinde `/reload` (KubeJS scriptleri için `/kubejs reload`) yeterli. Sonuçtan memnunsan Commit ve Push yap.
 
-- Başlamadan **Pull** at (herkesin son halini al).
-- Ayarı değiştir, oyunu yeniden başlat ve test et. KubeJS/datapack için yeniden başlatmadan `/reload` (scriptler için `/kubejs reload`).
-- İyiyse **Commit** + **Push**.
+İki küçük not: Pull'dan önce kendi değişikliğini kaydetmezsen GitHub Desktop izin vermez, ve aynı dosyayı iki kişi aynı anda düzenlerse çakışma çıkar. O yüzden sık commit yapın ve kimin neye baktığını aranızda konuşun.
 
-Pull'dan önce kendi değişikliğini kaydet, yoksa GitHub Desktop izin vermez. Aynı dosyayı aynı anda iki kişi düzenlerse çakışır — sık commit atın, kimin neye baktığını konuşun.
+Biri yeni bir mod eklediğinde, o modu kendi oyununa almak için Pull yapıp refresh-mods'u tekrar çalıştırman gerekir. Sadece config değiştiyse buna gerek yok, Pull yapman yeterli.
 
-## Mod ekleme (kendin, terminalsiz)
+## Mod ekleme
 
-1. Eklemek istediğin modun **CurseForge linkini** kopyala.
-2. GitHub → **Actions → Add a mod → Run workflow** → linki (ya da sadece mod adını) yapıştır → **Run**.
-3. Bitince GitHub Desktop'ta **Pull** at, sonra **refresh-mods** çalıştır — mod inip oyuna gelir.
+Eklemek istediğin modun CurseForge linkini kopyala. [Add a mod](https://github.com/KnightCraft-5/knightcraft-5/actions/workflows/add-mod.yml) sayfasına gidip Run workflow'a bas ve linki yapıştır. İşlem bitince GitHub Desktop'ta Pull yap, ardından refresh-mods'u tekrar çalıştır; mod inip oyuna gelir.
 
-Mod silme / sürüm düşürme için bakımcıya söyle. Eklediğin mod, bakımcı bir sürüm çıkarana kadar oyunculara gitmez.
+Mod silmek ya da sürüm düşürmek istersen bakımcıya söyle. Eklediğin mod, bakımcı yeni bir sürüm çıkarana kadar oyunculara ulaşmaz.
 
-## Sürüm çıkarma (bakımcı)
+## Sürüm çıkarma
 
-`pack.toml` içindeki `version` satırını yükselt, commit'le, push'la. CI otomatik yayınlar. Zip **Releases**'te; sabit link `…/releases/latest/download/KnightCraft5.zip`.
+Bu kısım bakımcı içindir. `pack.toml` dosyasındaki `version` satırını yükselt, commit'le ve push'la; gerisini CI hallediyor. Hazır zip, Releases sekmesinde yayınlanır.
