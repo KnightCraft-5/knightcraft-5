@@ -25,6 +25,8 @@ Biri yeni bir mod eklediğinde, o modu kendi oyununa almak için Pull yapıp ref
 
 Modları packwiz ile lokalde yönetiyoruz. Eklemek için `packwiz curseforge add <curseforge-linki>`, çıkarmak için `packwiz remove <mod-adı>` çalıştır; sonra değişikliği commit'leyip push'la. Diğerleri Pull yapıp refresh-mods'u çalıştırınca mod onların da oyununa iner ya da oradan kalkar.
 
+CurseForge'da olmayan modlar için: Modrinth'teyse `packwiz modrinth add <ad>`, doğrudan indirme linki varsa `packwiz url add <ad> <link>` kullan. İkisi de olmuyorsa (indirilemeyen ya da dağıtımı kapalı mod) jar'ı doğrudan pakete göm: `scripts/bundle-jar.sh <jar-yolu>` (Windows'ta `scripts\bundle-jar.bat`). Jar depoya girer, herkes Pull + refresh-mods ile alır.
+
 Eklediğin ya da çıkardığın mod, yeni bir sürüm çıkana kadar oyunculara ulaşmaz.
 
 ## Sürüm çıkarma
