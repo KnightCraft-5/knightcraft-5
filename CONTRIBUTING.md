@@ -6,9 +6,9 @@ Paketi geliştirmek için komut satırına ihtiyacın yok. Ayarları düzenler, 
 
 Önce şu üç programı kur: [Prism Launcher](https://prismlauncher.org/), [Git](https://git-scm.com/downloads) ve [GitHub Desktop](https://desktop.github.com/).
 
-1. Prism'de Minecraft 1.20.1 ve Forge 47.4.10 ile yeni bir instance oluştur. Kurulumun bitmesi için bir kez açıp kapat.
-2. Prism'de instance'ı seçip Folder'a tıkla, açılan `minecraft` klasörünün içini boşalt.
-3. GitHub Desktop'ta `KnightCraft-5/knightcraft-5` deposunu klonla; klasör olarak da az önce boşalttığın `minecraft` klasörünü göster.
+1. Prism'de Minecraft 1.20.1 ve Forge 47.4.10 ile yeni bir instance oluştur. Bu aşamada çalıştırma.
+2. Instance'ı seçip sağdaki Folder butonuna bas. Açılan klasör instance klasörüdür; içinde `instance.cfg`, `mmc-pack.json` ve boş bir `minecraft` klasörü bulunur. `instance.cfg` ve `mmc-pack.json` dosyalarını silme, Prism'in bunlara ihtiyacı var. Sadece içindeki boş `minecraft` klasörünü sil.
+3. GitHub Desktop'ta `KnightCraft-5/knightcraft-5` deposunu klonla. Klonlama penceresindeki "Local path"i, sildiğin `minecraft` klasörünün yerine ayarla; yani yol `.../instances/<instance-adı>/minecraft` ile bitmeli. GitHub Desktop'un sona otomatik eklediği depo adını `minecraft` ile değiştir, klasörü kendisi oluşturur.
 4. Modları indir: Windows'ta `scripts\refresh-mods.bat`, Mac veya Linux'ta `scripts/refresh-mods.sh` dosyasını çalıştır.
 
 Bu kadar. Artık Prism'den başlatıp paketi oynayabilirsin.
