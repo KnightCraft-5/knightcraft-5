@@ -1,6 +1,6 @@
 # KnightCraft 5 geliştirme
 
-Paketi geliştirmek için komut satırına ihtiyacın yok. Ayarları düzenler, değişiklikleri GitHub Desktop üzerinden kaydedersin. Mod listesini bakımcı yönetir.
+Ayar, script ve quest düzenlemeleri için komut satırına ihtiyacın yok; hepsini GitHub Desktop üzerinden yaparsın. Mod ekleyip çıkarmayı ise packwiz ile lokalde hallediyoruz.
 
 ## Kurulum
 
@@ -21,12 +21,12 @@ Bu kadar. Artık Prism'den başlatıp paketi oynayabilirsin.
 
 Biri yeni bir mod eklediğinde, o modu kendi oyununa almak için Pull yapıp refresh-mods'u tekrar çalıştırman gerekir. Sadece config değiştiyse buna gerek yok, Pull yapman yeterli.
 
-## Mod ekleme
+## Mod ekleme ve çıkarma
 
-Eklemek istediğin modun CurseForge linkini kopyala. [Add a mod](https://github.com/KnightCraft-5/knightcraft-5/actions/workflows/add-mod.yml) sayfasına gidip Run workflow'a bas ve linki yapıştır. İşlem bitince GitHub Desktop'ta Pull yap, ardından refresh-mods'u tekrar çalıştır; mod inip oyuna gelir.
+Modları packwiz ile lokalde yönetiyoruz. Eklemek için `packwiz curseforge add <curseforge-linki>`, çıkarmak için `packwiz remove <mod-adı>` çalıştır; sonra değişikliği commit'leyip push'la. Diğerleri Pull yapıp refresh-mods'u çalıştırınca mod onların da oyununa iner ya da oradan kalkar.
 
-Mod silmek ya da sürüm düşürmek istersen bakımcıya söyle. Eklediğin mod, bakımcı yeni bir sürüm çıkarana kadar oyunculara ulaşmaz.
+Eklediğin ya da çıkardığın mod, yeni bir sürüm çıkana kadar oyunculara ulaşmaz.
 
 ## Sürüm çıkarma
 
-Bu kısım bakımcı içindir. `pack.toml` dosyasındaki `version` satırını yükselt, commit'le ve push'la; gerisini CI hallediyor. Hazır zip, Releases sekmesinde yayınlanır.
+`pack.toml` dosyasındaki `version` satırını yükselt, commit'le ve push'la; gerisini CI hallediyor. Hazır zip, Releases sekmesinde yayınlanır. Yeni sürüm herkese duyuru gönderdiği için gerçekten hazır olduğundan emin ol.
