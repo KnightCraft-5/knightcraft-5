@@ -1,0 +1,24 @@
+{
+  "startMoney": 100,
+  "moneyLossOnDeath": 0,
+  "paycheckEnabled": false,
+  "paycheckAmount": 50,
+  "villagerConfig": {
+    "tradesEnabled": true,
+    "tradeL1RawIronAmount": 5,
+    "tradeL2DiamondAmount": 3,
+    "tradeL3RawCopperAmount": 5,
+    "tradeL4RawIronAmount": 3,
+    "tradeL4DiamondAmount": 2,
+    "tradeL5GoldenAppleAmount": 1,
+    "tradeL5NetherStarAmount": 1,
+    "tradeL1EuroAmount": 1,
+    "tradeL2EuroAmount": 1,
+    "tradeL3EuroAmount": 1,
+    "tradeL4RawIronEuroAmount": 1,
+    "tradeL4DiamondEuroAmount": 1,
+    "tradeL5GoldenAppleEuroAmount": 1,
+    "tradeL5NetherStarEuroAmount": 1,
+    "chestshopEnabled": true
+  }
+}
