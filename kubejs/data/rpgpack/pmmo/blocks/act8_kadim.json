@@ -1,0 +1,25 @@
+{
+	"override": true,
+	"isTagFor": [
+		"create:mechanical_crafter",
+		"create:railway_casing",
+		"create:packager",
+		"create:stock_ticker",
+		"create:stock_link",
+		"createaddition:electric_motor",
+		"createaddition:alternator",
+		"createaddition:tesla_coil",
+		"createaddition:modular_accumulator",
+		"extendedcrafting:basic_auto_table",
+		"extendedcrafting:advanced_auto_table",
+		"extendedcrafting:elite_auto_table",
+		"extendedcrafting:ultimate_auto_table",
+		"extendedcrafting:auto_ender_crafter",
+		"extendedcrafting:auto_flux_crafter",
+		"extendedcrafting:crafting_core",
+		"extendedcrafting:compressor"
+	],
+	"requirements": {
+		"PLACE": { "engineering": 80 }
+	}
+}

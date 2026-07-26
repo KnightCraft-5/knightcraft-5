@@ -1,0 +1,14 @@
+{
+	"override": true,
+	"isTagFor": [
+		"storagenetwork:inventory_remote",
+		"storagenetwork:crafting_remote",
+		"storagenetwork:expanded_remote",
+		"storagenetwork:picker_remote",
+		"storagenetwork:builder_remote",
+		"storagenetwork:collector_remote"
+	],
+	"requirements": {
+		"USE": { "engineering": 80 }
+	}
+}

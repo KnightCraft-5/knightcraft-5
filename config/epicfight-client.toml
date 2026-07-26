@@ -53,7 +53,7 @@ provider = "NULL"
 		#Range: -2 ~ 5
 		vertical_location = 0
 		#Range: 6 ~ 10
-		zoom = 3
+		zoom = 6
 		#Range: 5 ~ 25
 		lock_on_range = 20
 		lock_on_quick_shift = true

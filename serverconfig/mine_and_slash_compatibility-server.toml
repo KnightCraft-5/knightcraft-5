@@ -57,7 +57,7 @@ COMPATIBILITY_PRESETS = "ORIGINAL_MODE"
 		HEALTH_SYSTEM = "IMAGINARY_MINE_AND_SLASH_HEALTH"
 		DISABLE_VANILLA_HEALTH_REGEN = true
 		#When trying to attack on low energy, you will get slow and hunger.
-		ENERGY_PENALTY = true
+		ENERGY_PENALTY = false
 		IGNORE_WEAPON_REQUIREMENTS_FOR_SPELLS = false
 		#The balance datapack the game will use. Compat mode for example has lower stat scalings by default.
 		#Allowed Values: ORIGINAL_BALANCE, COMPAT_BALANCE
@@ -70,9 +70,9 @@ COMPATIBILITY_PRESETS = "ORIGINAL_MODE"
 		ITEM_DAMAGE_CAP_PER_HIT = 25
 		#Enables item damage cap. WARNING! Disabling this means your items will instantly break if you get hit by a high level mob
 		#This only works for when you take damage and only works for armor!
-		CAP_ITEM_DAMAGE = false
+		CAP_ITEM_DAMAGE = true
 		#By default you have a lot of free newbie resistances at the start but they go in minus upon reaching certain levels. Best disabled if playing without high level scaling.
-		ENABLE_MINUS_RESISTS_PER_LEVEL = true
+		ENABLE_MINUS_RESISTS_PER_LEVEL = false
 		#Range: 0.0 ~ 100.0
 		MOB_FLAT_DAMAGE_BONUS = 6.0
 		#Range: 0.0 ~ 100.0
@@ -81,7 +81,7 @@ COMPATIBILITY_PRESETS = "ORIGINAL_MODE"
 		STAT_REQUIREMENTS_MULTIPLIER = 1.0
 		#Range: 0.0 ~ 100.0
 		SPELL_BASE_DAMAGE_MULTIPLIER = 1.0
-		DISABLE_MOB_IFRAMES = true
+		DISABLE_MOB_IFRAMES = false
 		#This decides how much of the vanilla>mns converted damage is lost.
 		#Range: 0 ~ 100
 		DAMAGE_CONVERSION_LOSS = 100

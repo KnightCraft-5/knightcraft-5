@@ -1,0 +1,53 @@
+{
+  "item.takesapillage.archer_spawn_egg": "Okçu Doğurma Yumurtası",
+  "item.takesapillage.skirmisher_spawn_egg": "Akıncı Doğurma Yumurtası",
+  "item.takesapillage.legioner_spawn_egg": "Lejyoner Doğurma Yumurtası",
+
+  "item.takesapillage.ravager_horn": "Yıkıcı Boynuzu",
+  "item.takesapillage.bastille_blues_music_disc": "Müzik Diski",
+  "item.takesapillage.bastille_blues_music_disc.desc": "izofar - Bastille Blues",
+
+  "entity.takesapillage.clay_golem": "Kil Golem",
+  "entity.takesapillage.archer": "Okçu",
+  "entity.takesapillage.skirmisher": "Akıncı",
+  "entity.takesapillage.legioner": "Lejyoner",
+
+  "subtitle.takesapillage.entity.clay_golem.attack": "Kil Golem saldırıyor",
+  "subtitle.takesapillage.entity.clay_golem.damage": "Kil Golem çatlıyor",
+  "subtitle.takesapillage.entity.clay_golem.death": "Kil Golem ölüyor",
+  "subtitle.takesapillage.entity.clay_golem.hurt": "Kil Golem acı çekiyor",
+  "subtitle.takesapillage.entity.clay_golem.repair": "Kil Golem onarılıyor",
+  "subtitle.takesapillage.entity.clay_golem.step": "Kil Golem adım atıyor",
+
+  "subtitle.takesapillage.entity.legioner.ambient": "Lejyoner mırıldanıyor",
+  "subtitle.takesapillage.entity.legioner.celebrate": "Lejyoner zafer kutluyor",
+  "subtitle.takesapillage.entity.legioner.death": "Lejyoner ölüyor",
+  "subtitle.takesapillage.entity.legioner.hurt": "Lejyoner acı çekiyor",
+
+  "advancements.takesapillage.root.title": "It Takes A Pillage",
+  "advancements.takesapillage.root.description": "Ana Dünya'yı gez ve yeni yapıları bul!",
+  "advancements.takesapillage.bastille.title": "Eh-eh-oh, eh-oh",
+  "advancements.takesapillage.bastille.description": "Bir Bastille bul",
+  "advancements.takesapillage.pillager_camp.title": "Kamp Ateşi Şarkısı Şarkısı",
+  "advancements.takesapillage.pillager_camp.description": "Bir Yağmacı Kampı bul",
+
+  "death.attack.clay_golem": "%1$s, %2$s tarafından pataklandı",
+  "death.attack.clay_golem.item": "%1$s, %3$s kullanan %2$s tarafından pataklandı",
+  "death.attack.archer": "%1$s, %2$s tarafından uzaktan vuruldu",
+  "death.attack.archer.item": "%1$s, %3$s kullanan %2$s tarafından uzaktan vuruldu",
+  "death.attack.skirmisher": "%1$s, %2$s tarafından doğrandı",
+  "death.attack.skirmisher.item": "%1$s, %3$s kullanan %2$s tarafından doğrandı",
+  "death.attack.legioner": "%1$s, %2$s tarafından yere serildi",
+  "death.attack.legioner.item": "%1$s, %3$s kullanan %2$s tarafından yere serildi",
+
+  "takesapillage.configGui.title": "It Takes a Pillage - Ayarlar",
+  "takesapillage.configGui.replaceIronGolems.title": "Kil Golem Doğması",
+  "takesapillage.configGui.peacefulGolemRate.title": "Barışçıl Zorlukta Kil Golem Oranı",
+  "takesapillage.configGui.easyGolemRate.title": "Kolay Zorlukta Kil Golem Oranı",
+  "takesapillage.configGui.normalGolemRate.title": "Normal Zorlukta Kil Golem Oranı",
+  "takesapillage.configGui.hardGolemRate.title": "Zor Zorlukta Kil Golem Oranı",
+  "takesapillage.configGui.removeBadOmen.title": "Süt Kötü Kehaneti Giderir",
+  "takesapillage.configGui.pillageSiegesOccur.title": "Yağma Kuşatmaları",
+
+  "instrument.takesapillage.raid_horn": "Baskın Borusu"
+}

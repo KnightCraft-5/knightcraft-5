@@ -1,0 +1,35 @@
+# --- Secrets ---------------------------------------------------------------
+# SimpleLogin stores the password in PLAINTEXT. Never commit this.
+.sl_password
+
+# --- Binaries --------------------------------------------------------------
+# Mods and resource packs are distributed through the launcher manifest,
+# not through git. ~650 MB of jars does not belong in a repository.
+mods/
+removed-mods/
+resourcepacks/
+KC5 1.9/
+
+# --- World and player state ------------------------------------------------
+saves/
+logs/
+crash-reports/
+journeymap/
+local/
+modernfix/
+blueprints/
+config/spark/tmp/
+config/jei/world/
+
+# --- Caches and per-install files ------------------------------------------
+data/serilum/
+patchouli_data.json
+rhino.local.properties
+options.txt
+servers.dat
+servers.dat_old
+usercache.json
+usernamecache.json
+.qmenu_opened.marker
+config/skinrestorer/mojang_profile_cache.json
+config/voicechat/username-cache.json

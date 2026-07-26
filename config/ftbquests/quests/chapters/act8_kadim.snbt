@@ -1,0 +1,409 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "act8_kadim"
+	group: ""
+	icon: "cataclysm:witherite_block"
+	id: "1000000000000A08"
+	order_index: 7
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2000000000000B81"]
+			description: [
+				"End'in derinliklerinde bir muhafız duruyor. Zırhı hiçbir kılıcın delmediği."
+				""
+				"§7A guardian stands deep in the End, in armour no blade has pierced.§r"
+			]
+			icon: "cataclysm:gauntlet_of_guard"
+			id: "2000000000000A81"
+			rewards: [{
+				id: "4000000000000A81"
+				type: "xp_levels"
+				xp_levels: 50
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Guardian of the End"
+			tasks: [{
+				id: "3000000000000A81"
+				item: "cataclysm:gauntlet_of_guard"
+				type: "item"
+			}]
+			title: "Sonun Bekçisi"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2000000000000A81"]
+			description: [
+				"Kadim Fabrika'nın en dibinde bekleyen şey bu sunucudaki en zor dövüştür."
+				"Tek başına gitme. Gerçekten gitme."
+				""
+				"§7What waits at the bottom of the Ancient Factory is the hardest fight on this server."
+				"§7Do not go alone. Truly, do not.§r"
+			]
+			icon: "cataclysm:witherite_block"
+			id: "2000000000000A82"
+			rewards: [{
+				id: "4000000000000A82"
+				type: "xp_levels"
+				xp_levels: 60
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "End of the Harbinger"
+			tasks: [{
+				id: "3000000000000A82"
+				item: "cataclysm:witherite_block"
+				type: "item"
+			}]
+			title: "Habercinin Sonu"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2000000000000A82"
+				"2000000000000C25"
+				"2000000000000C12"
+			]
+			description: [
+				"Artık makineler makine yapabilir."
+				"Buraya kadar gelen herkes bunu hak etti."
+				""
+				"§8Ödül: Mühendislik 80§r"
+				""
+				"§7Now machines can build machines."
+				"§7Everyone who made it this far has earned it."
+				""
+				"§eGerekli:§r 4 Zindan Kalıntısı ve 2 Geçit Parçası."
+				"Kalıntılar Uber Patronlardan, Geçit Parçaları The Obliterator'dan"
+				"(450 can, her ölümde 2-4 parça)."
+				""
+				"§cStrateji:§r Bu, Otomatik Tezgah'ın tam maliyetidir. Yani bu"
+				"görevi bitirdiğinde elinde tezgahı kurmaya yetecek malzeme"
+				"zaten olacak. En az iki zindan baskını planla."
+				""
+				"§7Requires 4 General Relics and 2 Portal Shards. Relics from Uber"
+				"§7Bosses, shards from The Obliterator (450 HP, drops 2-4)."
+				"§7Strategy: this is exactly the Auto Table's own cost, so finishing"
+				"§7this quest leaves you able to build one. Plan two dungeon raids."
+				""
+				"§8Reward: Engineering 80§r"
+			]
+			icon: "extendedcrafting:basic_auto_table"
+			id: "2000000000000A83"
+			rewards: [
+				{
+					command: "/pmmo admin @p set engineering level 80"
+					elevate_perms: true
+					id: "4000000000000A83"
+					silent: true
+					title: "Mühendislik 80 / Engineering 80"
+					type: "command"
+				}
+				{
+					command: "/say @p artik bir Kadim Muhendis. / is now an Ancient Engineer."
+					elevate_perms: true
+					id: "4000000000000A84"
+					type: "command"
+				}
+			]
+			shape: "gear"
+			size: 2.5d
+			subtitle: "The Ancient Engineer"
+			tasks: [
+				{
+					count: 4L
+					id: "3000000000000A83"
+					item: "dungeon_realm:general_relic"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "3000000000000A85"
+					item: "legendary_monsters:portal_shard"
+					type: "item"
+				}
+			]
+			title: "Kadim Mühendis"
+			x: 6.25d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2000000000000A72"]
+			description: [
+				"Gökyüzü yok. Zemin yok. Sadece boşluk ve taş."
+				""
+				"§7No sky. No ground. Only void and stone.§r"
+			]
+			icon: "minecraft:end_stone"
+			id: "2000000000000B81"
+			rewards: [{
+				id: "4000000000000B81"
+				type: "xp"
+				xp: 400
+			}]
+			subtitle: "Step into the End"
+			tasks: [{
+				dimension: "minecraft:the_end"
+				id: "3000000000000B81"
+				type: "dimension"
+			}]
+			title: "End'e Adım"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2000000000000B81"]
+			description: [
+				"Mor kulelerde kanat var. Almak isteyen çok, dönen az."
+				""
+				"§7There are wings in the purple towers."
+				"§7Many go for them. Few come back.§r"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:elytra"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2000000000000B82"
+			optional: true
+			rewards: [{
+				id: "4000000000000B82"
+				type: "xp_levels"
+				xp_levels: 35
+			}]
+			shape: "square"
+			subtitle: "The End City"
+			tasks: [{
+				id: "3000000000000B82"
+				item: {
+					Count: 1
+					id: "minecraft:elytra"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "End Şehri"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2000000000000B81"]
+			description: [
+				"Habercinin karşısına elmasla çıkma."
+				""
+				"§7Do not face the Harbinger in diamond.§r"
+			]
+			icon: "minecraft:netherite_ingot"
+			id: "2000000000000B83"
+			optional: true
+			rewards: [{
+				id: "4000000000000B83"
+				type: "xp_levels"
+				xp_levels: 30
+			}]
+			shape: "square"
+			subtitle: "Netherite"
+			tasks: [{
+				count: 4L
+				id: "3000000000000B83"
+				item: "minecraft:netherite_ingot"
+				type: "item"
+			}]
+			title: "Netherit"
+			x: 2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2000000000000A83"]
+			description: [
+				"Otomatik masanın kalbi. Ucuz değil, olmamalı da."
+				""
+				"§7The heart of the auto-table. It is not cheap, nor should it be.§r"
+			]
+			icon: "extendedcrafting:crystaltine_ingot"
+			id: "2000000000000B84"
+			optional: true
+			rewards: [{
+				id: "4000000000000B84"
+				type: "xp"
+				xp: 500
+			}]
+			shape: "square"
+			subtitle: "Crystaltine"
+			tasks: [{
+				count: 4L
+				id: "3000000000000B84"
+				item: "extendedcrafting:crystaltine_ingot"
+				type: "item"
+			}]
+			title: "Kristaltin"
+			x: 9.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["2000000000000A83"]
+			description: [
+				"Kurduğun an bu sunucudaki işin değişir."
+				"Artık bir zanaatkâr değil, bir fabrikatörsün."
+				""
+				"§7The moment you build it, your role on this server changes."
+				"§7You are no longer a craftsman. You are a factory.§r"
+			]
+			icon: "extendedcrafting:basic_auto_table"
+			id: "2000000000000B85"
+			optional: true
+			rewards: [{
+				id: "4000000000000B85"
+				type: "xp_levels"
+				xp_levels: 40
+			}]
+			shape: "square"
+			subtitle: "The Endless Bench"
+			tasks: [{
+				id: "3000000000000B85"
+				item: "extendedcrafting:basic_auto_table"
+				type: "item"
+			}]
+			title: "Sonsuz Tezgâh"
+			x: 9.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2000000000000B81"]
+			dependency_requirement: "one_completed"
+			description: [
+				"§4Zorluk: Çok Zor§r"
+				""
+				"Annihilation Pursuer - 210 can ama acımasız."
+				""
+				"§bKullanım:§r Mekanik Zanaatkar"
+				""
+				"§7Difficulty: Very Hard - Annihilation Pursuer (210 HP, brutal)."
+				"§7Used for: Mechanical Crafter.§r"
+			]
+			icon: "legendary_monsters:eye_crystal"
+			id: "2000000000000C11"
+			optional: true
+			rewards: [{
+				id: "4000000000000D11"
+				type: "xp_levels"
+				xp_levels: 35
+			}]
+			shape: "diamond"
+			subtitle: "Eye Crystal - the Mechanical Crafter"
+			tasks: [{
+				consume_items: false
+				id: "3000000000000D11"
+				item: "legendary_monsters:eye_crystal"
+				type: "item"
+			}]
+			title: "Göz Kristali"
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2000000000000B81"]
+			dependency_requirement: "one_completed"
+			description: [
+				"§4Zorluk: Çok Zor§r"
+				""
+				"The Obliterator - 450 can. Her ölümde 2-4 parça düşer."
+				"Otomatik Tezgah 2 parça VE 4 kalıntı ister."
+				""
+				"§7Difficulty: Very Hard - The Obliterator (450 HP), drops 2-4."
+				"§7The Auto Table wants 2 shards AND 4 relics.§r"
+			]
+			icon: "legendary_monsters:portal_shard"
+			id: "2000000000000C12"
+			optional: true
+			rewards: [{
+				id: "4000000000000D12"
+				type: "xp_levels"
+				xp_levels: 35
+			}]
+			shape: "diamond"
+			subtitle: "Portal Shard - the Auto Table"
+			tasks: [{
+				consume_items: false
+				id: "3000000000000D12"
+				item: "legendary_monsters:portal_shard"
+				type: "item"
+			}]
+			title: "Geçit Parçası"
+			x: 3.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["2000000000000B81"]
+			dependency_requirement: "one_completed"
+			description: [
+				"§4Zorluk: Çok Zor§r"
+				""
+				"Boşluk Solucanı - End'in en tehlikeli avı. Her ölümde 2 diş."
+				""
+				"§bKullanım:§r Nihai Boru Yükseltmesi"
+				""
+				"§7Difficulty: Very Hard - the Void Worm, the End's deadliest hunt."
+				"§7Drops 2 guaranteed. Used for: Ultimate Pipe Upgrade.§r"
+			]
+			icon: "alexsmobs:void_worm_mandible"
+			id: "2000000000000C13"
+			optional: true
+			rewards: [{
+				id: "4000000000000D13"
+				type: "xp_levels"
+				xp_levels: 35
+			}]
+			shape: "diamond"
+			subtitle: "Void Worm Mandible - Ultimate pipes"
+			tasks: [{
+				consume_items: false
+				id: "3000000000000D13"
+				item: "alexsmobs:void_worm_mandible"
+				type: "item"
+			}]
+			title: "Boşluk Solucanı Dişi"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2000000000000B81"]
+			description: [
+				"Seviye 60'a ulaş. Bu sunucudaki tavan."
+				""
+				"§7Reach character level 60 - the ceiling on this server.§r"
+			]
+			icon: "cataclysm:witherite_block"
+			id: "2000000000000C25"
+			rewards: [{
+				command: "/mine_and_slash points cheat_give @p stats 50"
+				elevate_perms: true
+				id: "4000000000000C06"
+				silent: true
+				title: "50 Stat Puanı / 50 Stat Points"
+				type: "command"
+			}]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "Ancient Hero - level 60"
+			tasks: [{
+				id: "3000000000000C06"
+				title: "Seviye 60 / Level 60"
+				type: "custom"
+			}]
+			title: "Kadim Kahraman"
+			x: 3.0d
+			y: -2.0d
+		}
+	]
+	subtitle: ["Act VIII - The Ancient"]
+	title: "8. Perde - Kadim"
+}

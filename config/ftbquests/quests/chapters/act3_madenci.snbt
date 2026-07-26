@@ -1,0 +1,876 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "act3_madenci"
+	group: ""
+	icon: "create:cogwheel"
+	id: "1000000000000A03"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2000000000000A22"]
+			description: [
+				"Taşın altında eski şeyler uyur."
+				""
+				"§7Old things sleep beneath the stone.§r"
+			]
+			icon: "minecraft:deepslate"
+			id: "2000000000000A31"
+			rewards: [{
+				id: "4000000000000A31"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "Into the Deep"
+			tasks: [{
+				count: 3L
+				id: "3000000000000A31"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			title: "Derinlere"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2000000000000B32"]
+			description: [
+				"Geceleri avlanan bir şey var. Onu bul, sonra pençesini söküp getir."
+				""
+				"§7Something hunts at night. Find it, then take its claw.§r"
+			]
+			icon: "born_in_chaos_v1:nightmare_claw"
+			id: "2000000000000A32"
+			rewards: [{
+				id: "4000000000000A32"
+				type: "xp_levels"
+				xp_levels: 15
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "The Nightmare's Claw"
+			tasks: [{
+				id: "3000000000000A32"
+				item: "born_in_chaos_v1:nightmare_claw"
+				type: "item"
+			}]
+			title: "Kabusun Pençesi"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2000000000000A32"
+				"2000000000000C20"
+			]
+			description: [
+				"Artık dişlileri çevirmeyi öğrenebilirsin."
+				"Ama gücün hâlâ kendi kolunda - başka bir yerde değil."
+				""
+				"§eGerekli:§r Usta boş elle gelen çırağı kabul etmez. Kendi"
+				"alaşımını dök ve bir kol kranı getir - kranı çevirecek olan"
+				"hâlâ senin kolun."
+				""
+				"§cDikkat:§r Andezit alaşımı bu pakette ucuz değil. Bir alaşım"
+				"2 andezit VE 2 demir külçe ister, yani 8 alaşım = 16 demir."
+				"Bu görevi madene inmeden bitiremezsin."
+				""
+				"§8Ödül: Mühendislik 10 - dişli, mil ve kol kranı yerleştirebilirsin§r"
+				""
+				"§7You may now learn to turn the gears."
+				"§7But the power is still your own arm, and nowhere else."
+				""
+				"§7The master takes no empty-handed apprentice. Cast your own alloy and"
+				"§7bring a hand crank - the arm that turns it is still yours."
+				"§7Andesite alloy is not cheap here: 2 andesite AND 2 iron ingots each,"
+				"§7so 8 alloy costs 16 iron. You will not finish this above ground.§r"
+				""
+				"§8Reward: Engineering 10 - you may place cogs, shafts and hand cranks§r"
+			]
+			icon: "create:hand_crank"
+			id: "2000000000000A33"
+			rewards: [
+				{
+					command: "/pmmo admin @p set engineering level 10"
+					elevate_perms: true
+					id: "4000000000000A33"
+					silent: true
+					title: "Mühendislik 10 / Engineering 10"
+					type: "command"
+				}
+				{
+					count: 16
+					id: "4000000000000A34"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "The Millwright's Secret"
+			tasks: [
+				{
+					count: 8L
+					id: "3000000000000A33"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
+				{
+					id: "3100000000000A33"
+					item: "create:hand_crank"
+					type: "item"
+				}
+			]
+			title: "Değirmencinin Sırrı"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2000000000000A31"]
+			description: [
+				"Kabusu aramadan önce gecede hayatta kalmayı öğren."
+				""
+				"§7Learn to survive the night before you go looking for the nightmare.§r"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2000000000000B32"
+			rewards: [{
+				id: "4000000000000B32"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+			subtitle: "The Night Watch"
+			tasks: [
+				{
+					entity: "minecraft:zombie"
+					id: "3000000000000B32"
+					type: "kill"
+					value: 40L
+				}
+				{
+					entity: "minecraft:skeleton"
+					id: "3000000000000B33"
+					type: "kill"
+					value: 30L
+				}
+			]
+			title: "Gece Nöbeti"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2000000000000A31"]
+			description: [
+				"Bir makineyi kuramazsan, tamir de edemezsin."
+				""
+				"§bNeden:§r Gözlük bir makineye baktığında hız, gerilim ve akışkan"
+				"seviyesini gösterir. İngiliz anahtarı blokları döndürür ve söker -"
+				"onsuz yanlış yerleştirdiğin her makineyi kırıp yeniden yaparsın."
+				""
+				"§eTarif:§r Gözlük = altın külçe + cam. Anahtar = altın + andezit alaşımı."
+				""
+				"§7You cannot repair what you cannot read. Goggles show speed, stress and"
+				"§7fluid levels. The wrench rotates and dismantles - without it every"
+				"§7misplaced machine gets broken and rebuilt.§r"
+			]
+			icon: "create:goggles"
+			id: "2000000000000B31"
+			optional: true
+			rewards: [{
+				id: "4000000000000E31"
+				type: "xp"
+				xp: 120
+			}]
+			shape: "square"
+			subtitle: "The Engineer's Tools"
+			tasks: [
+				{
+					id: "3000000000000B31"
+					item: "create:goggles"
+					type: "item"
+				}
+				{
+					id: "3000000000000B37"
+					item: "create:wrench"
+					type: "item"
+				}
+			]
+			title: "Mühendisin Aletleri"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2000000000000A31"]
+			description: [
+				"Bu sunucuda can, hayatta kalmanın kendisidir."
+				""
+				"§bNeden:§r Ignis gibi patronlar azami canının yüzdesi kadar vurur -"
+				"ama sabit hasar da alırsın. Havuzun ne kadar büyükse o kadar çok"
+				"hata payın olur. Kalp kristali azami canını kalıcı olarak arttırır."
+				""
+				"§eTarif:§r Ametist + altın + nether yıldızı parçaları. Ametist mağaraları"
+				"Y=0 civarında geode olarak bulunur."
+				""
+				"§7Health IS survival here. Bosses like Ignis hit for a percentage of your"
+				"§7max, but you take flat damage too - a bigger pool means more mistakes"
+				"§7survived. Heart crystals raise your maximum permanently.§r"
+			]
+			icon: "bhc:soul_heart_crystal"
+			id: "2000000000000B33"
+			optional: true
+			rewards: [{
+				id: "4000000000000E32"
+				type: "xp"
+				xp: 140
+			}]
+			shape: "square"
+			subtitle: "The Soul Heart"
+			tasks: [{
+				id: "3000000000000B34"
+				item: "bhc:soul_heart_crystal"
+				type: "item"
+			}]
+			title: "Ruh Kalbi"
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2000000000000A31"]
+			description: [
+				"Kılıç tek yol değil."
+				""
+				"§bNeden:§r Ars Nouveau bu paketteki ikinci güç sistemi. Kendi"
+				"büyülerini yazarsın - iyileştirme, ışınlanma, alan hasarı."
+				"Zindan baskınlarında bir büyücü grubun hayatta kalmasını sağlar."
+				""
+				"§eStrateji:§r Kitabı yap, sonra Imbuement Chamber kur. Ametist"
+				"odakları da burada işe yarar."
+				""
+				"§7The sword is not the only path. Ars Nouveau is the pack's second power"
+				"§7system - you write your own spells: healing, blink, area damage."
+				"§7On a dungeon raid, a mage keeps the group alive.§r"
+			]
+			icon: "ars_nouveau:novice_spell_book"
+			id: "2000000000000B34"
+			optional: true
+			rewards: [{
+				id: "4000000000000E33"
+				type: "xp"
+				xp: 140
+			}]
+			shape: "square"
+			subtitle: "The Apprentice Mage"
+			tasks: [{
+				id: "3000000000000B35"
+				item: "ars_nouveau:novice_spell_book"
+				type: "item"
+			}]
+			title: "Çırak Büyücü"
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2000000000000A33"]
+			description: [
+				"Kendi elinle çevir. Nehri sonra çağırırsın."
+				""
+				"§bNeden:§r Ustanın verdiği alaşım sadece başlangıç. Gerçek bir"
+				"aktarma hattı kurmak için küçük ve büyük dişliyi birlikte"
+				"kullanman gerekir - hız oranını değiştiren şey budur."
+				""
+				"§eStrateji:§r Büyük dişli küçük dişliden yapılır, yani 8 büyük"
+				"dişli 8 küçük dişli daha demek - toplam 24 dişlilik alaşım."
+				"Ustanın verdiği 16 alaşım tam yetmez, biraz daha dök."
+				"Hattı kol kranı ile çevir; su çarkı 4. Perde'de gelecek."
+				""
+				"§7Turn it with your own hand. You may call the river later."
+				"§7The master's alloy is only a start - a real drivetrain needs small"
+				"§7and large cogs together, since that is what changes the speed ratio."
+				"§7Large cogs are made from small ones, so this is 24 cogs of alloy in"
+				"§7total: the master's 16 will not quite cover it. Drive it with the"
+				"§7hand crank - the water wheel comes in Act IV.§r"
+			]
+			icon: "create:cogwheel"
+			id: "2000000000000B35"
+			optional: true
+			rewards: [{
+				count: 8
+				id: "4000000000000B35"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "The First Cog"
+			tasks: [
+				{
+					count: 16L
+					id: "3000000000000B36"
+					item: "create:cogwheel"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "3100000000000B36"
+					item: "create:large_cogwheel"
+					type: "item"
+				}
+			]
+			title: "İlk Dişli"
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2000000000000A31"]
+			description: [
+				"Seviye 5'e ulaş."
+				""
+				"Bu sunucuda zırhın seni korumaz - seviyen ve teçhizatının"
+				"istatistikleri korur. Seviye atlamak hayatta kalmaktır."
+				""
+				"§7Reach character level 5."
+				""
+				"§7On this server your armour does not protect you - your level and"
+				"§7your gear's stats do. Levelling IS survival.§r"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2000000000000C20"
+			rewards: [{
+				command: "/mine_and_slash points cheat_give @p stats 5"
+				elevate_perms: true
+				id: "4000000000000C01"
+				silent: true
+				title: "5 Stat Puanı / 5 Stat Points"
+				type: "command"
+			}]
+			shape: "circle"
+			size: 1.5d
+			subtitle: "Apprentice - level 5"
+			tasks: [{
+				id: "3000000000000C01"
+				title: "Seviye 5 / Level 5"
+				type: "custom"
+			}]
+			title: "Çırak Dövüşçü"
+			x: 6.0d
+			y: -2.25d
+		}
+		{
+			dependencies: ["2000000000000A33"]
+			description: [
+				"25 stat puanı harca."
+				""
+				"Puan harcamadan teçhizat kullanamazsın. Seviye tek başına"
+				"yetmez - puanları dağıtman gerekir."
+				""
+				"§7Spend 25 stat points."
+				""
+				"§7You cannot use gear without spending points. Level alone is not"
+				"§7enough - you must allocate.§r"
+			]
+			icon: "minecraft:redstone"
+			id: "2000000000000C26"
+			optional: true
+			rewards: [{
+				id: "4000000000000C11"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+			shape: "square"
+			subtitle: "Invest in Power - 25 points spent"
+			tasks: [{
+				id: "3000000000000C11"
+				title: "25 puan harcandı / 25 points spent"
+				type: "custom"
+			}]
+			title: "Güce Yatırım"
+			x: 8.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2000000000000B34"]
+			description: [
+				"Kitap büyüyü taşır ama yazmaz. Yazmak için masa gerekir."
+				""
+				"§bNe yapar:§r Kitabı masaya koy, sağ tıkla, glifleri sırayla"
+				"diz. Biçim önce, etkiler sonra. Kaydet ve kitabın o büyüyü"
+				"öğrenmiş olur."
+				""
+				"§eİpucu:§r Kitapta birden fazla büyü yuvası var. Farklı"
+				"durumlar için farklı büyüler hazırla - biri saldırı, biri"
+				"kazma, biri kaçış."
+				""
+				"§7The book carries spells but cannot write them. Place the book on"
+				"§7the table, right-click, and lay out glyphs in order: form first,"
+				"§7then effects. The book has several slots - prepare one for attack,"
+				"§7one for mining, one for escape.§r"
+			]
+			icon: "ars_nouveau:scribes_table"
+			id: "2000000000000F02"
+			rewards: [{
+				id: "4000000000000F02"
+				type: "xp"
+				xp: 120
+			}]
+			subtitle: "The Scribe's Table"
+			tasks: [{
+				id: "3000000000000F02"
+				item: "ars_nouveau:scribes_table"
+				type: "item"
+			}]
+			title: "Yazıcının Masası"
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2000000000000F02"]
+			description: [
+				"Biçim olmadan büyü olmaz. Mermi en temel biçimdir."
+				""
+				"§bNe yapar:§r Büyüyü bir ok gibi ileri fırlatır. Neye çarparsa"
+				"etkiler orada çözülür."
+				""
+				"§eDiğer biçimler:§r Dokunuş (yakın menzil), Kendine (kendi"
+				"üzerinde), Ayak Altı (durduğun yer), Yörünge (etrafında döner),"
+				"Duvar, Rün (yere kurulan tuzak)."
+				""
+				"§7No form, no spell. Projectile throws the spell forward like an"
+				"§7arrow - whatever it hits, the effects resolve there."
+				"§7Other forms: Touch, Self, Underfoot, Orbit, Wall, Rune.§r"
+			]
+			icon: "ars_nouveau:glyph_projectile"
+			id: "2000000000000F03"
+			rewards: [{
+				id: "4000000000000F03"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "hexagon"
+			subtitle: "First Form: Projectile"
+			tasks: [{
+				id: "3000000000000F03"
+				item: "ars_nouveau:glyph_projectile"
+				type: "item"
+			}]
+			title: "İlk Biçim: Mermi"
+			x: 10.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2000000000000F03"]
+			description: [
+				"Biçim nereye gittiğini söyler. Etki ne olduğunu."
+				""
+				"§bMermi + Zarar§r = bu paketteki ilk gerçek büyün."
+				"Kılıç menzilinin dışından hasar vermeni sağlar."
+				""
+				"§eStrateji:§r Ignis gibi patronlarda menzil hayattır. Bir büyücü"
+				"uzaktan vurur, yakın dövüşçüler öne çıkar."
+				""
+				"§7The form says where, the effect says what."
+				"§7Projectile + Harm is your first real spell - damage from outside"
+				"§7sword range. On bosses like Ignis, range is life.§r"
+			]
+			icon: "ars_nouveau:glyph_harm"
+			id: "2000000000000F04"
+			rewards: [{
+				id: "4000000000000F04"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "hexagon"
+			subtitle: "First Effect: Harm"
+			tasks: [{
+				id: "3000000000000F04"
+				item: "ars_nouveau:glyph_harm"
+				type: "item"
+			}]
+			title: "İlk Etki: Zarar"
+			x: 12.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2000000000000F03"]
+			description: [
+				"Kazma yorulur. Büyü yorulmaz."
+				""
+				"§bDokunuş + Kır§r = kazmasız madencilik."
+				"§bMermi + Kır + Alan§r = uzaktan koca bir delik."
+				""
+				"§eÖnemli:§r Güçlendir glifi Kır'ın hasat seviyesini yükseltir -"
+				"yani elmas ve obsidyeni de kırabilir hale gelir."
+				""
+				"§7A pickaxe tires. A spell does not. Touch + Break is mining"
+				"§7without a pickaxe. Amplify raises Break's harvest level, so it"
+				"§7will cut diamond and obsidian.§r"
+			]
+			icon: "ars_nouveau:glyph_break"
+			id: "2000000000000F05"
+			rewards: [{
+				id: "4000000000000F05"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "hexagon"
+			subtitle: "The Break Glyph"
+			tasks: [{
+				id: "3000000000000F05"
+				item: "ars_nouveau:glyph_break"
+				type: "item"
+			}]
+			title: "Kırma Büyüsü"
+			x: 12.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"2000000000000F04"
+				"2000000000000F05"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"Büyü bedava değildir. Kaynak ister."
+				""
+				"§bNe yapar:§r Kaynak (Source), Ars Nouveau'nun manasıdır."
+				"Kitabın kendi kaynağını yavaşça doldurur, ama büyük büyüler"
+				"için altyapı kurman gerekir."
+				""
+				"§eNasıl yapılır:§r Imbuement Chamber ile lapis lazuli'den"
+				"dönüştürülür. Bu paketteki ilk büyü makinesi budur."
+				""
+				"§7Magic is not free - it costs Source, Ars Nouveau's mana."
+				"§7Your book refills slowly on its own, but big spells need"
+				"§7infrastructure. Source Gems are made in the Imbuement Chamber.§r"
+			]
+			icon: "ars_nouveau:source_gem"
+			id: "2000000000000F06"
+			rewards: [{
+				id: "4000000000000F06"
+				type: "xp"
+				xp: 180
+			}]
+			subtitle: "Source Gem"
+			tasks: [{
+				count: 8L
+				id: "3000000000000F06"
+				item: "ars_nouveau:source_gem"
+				type: "item"
+			}]
+			title: "Kaynak Taşı"
+			x: 14.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2000000000000F06"]
+			description: [
+				"Büyünün ilk makinesi."
+				""
+				"§bNe yapar:§r Kaynak harcayarak eşya dönüştürür - kaynak taşı,"
+				"gliflerin bazıları, temel büyü malzemeleri."
+				""
+				"§eStrateji:§r Yanına Kaynak Kavanozu koy ve bir Sourcelink ile"
+				"besle. Agronomic Sourcelink ekin büyümesinden kaynak üretir -"
+				"bir buğday tarlasının yanına kur, kendi kendine dolar."
+				""
+				"§7The first machine of magic. Spends Source to transmute items."
+				"§7Put a Source Jar beside it and feed that with a Sourcelink."
+				"§7The Agronomic Sourcelink makes Source from crop growth - build"
+				"§7it beside a wheat field and it fills itself.§r"
+			]
+			icon: "ars_nouveau:imbuement_chamber"
+			id: "2000000000000F07"
+			rewards: [{
+				id: "4000000000000F07"
+				type: "xp_levels"
+				xp_levels: 15
+			}]
+			subtitle: "The Imbuement Chamber"
+			tasks: [{
+				id: "3000000000000F07"
+				item: "ars_nouveau:imbuement_chamber"
+				type: "item"
+			}]
+			title: "Imbuement Chamber"
+			x: 16.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2000000000000F06"]
+			description: [
+				"Bir büyücü kaynağı biriktirendir."
+				""
+				"§bKaynak Kavanozu§r kaynağı depolar."
+				"§bSourcelink§r kaynak üretir - Agronomic (ekin), Vitalic (hayvan),"
+				"Mycelial (mantar), Alchemical (iksir)."
+				"§bSource Relay§r kavanozlar arasında kaynak taşır."
+				""
+				"§eStrateji:§r Üssünde tek bir kaynak deposu kur, relay'lerle"
+				"bütün büyü makinelerine dağıt. MineColonies çiftliğinin yanına"
+				"Agronomic koyarsan kaynak hiç bitmez."
+				""
+				"§7A mage is someone who stockpiles Source. Jars store it,"
+				"§7Sourcelinks generate it, Relays move it between them."
+				"§7Put an Agronomic Sourcelink beside a colony farm and you will"
+				"§7never run dry.§r"
+			]
+			icon: "ars_nouveau:source_jar"
+			id: "2000000000000F08"
+			rewards: [{
+				id: "4000000000000F08"
+				type: "xp_levels"
+				xp_levels: 15
+			}]
+			subtitle: "Source Infrastructure"
+			tasks: [
+				{
+					id: "3000000000000F08"
+					item: "ars_nouveau:source_jar"
+					type: "item"
+				}
+				{
+					id: "3000000000000F09"
+					item: "ars_nouveau:agronomic_sourcelink"
+					type: "item"
+				}
+			]
+			title: "Kaynak Altyapısı"
+			x: 16.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"2000000000000F07"
+				"2000000000000F08"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"Aynı büyü, farklı sonuç."
+				""
+				"§bGüçlendir (Amplify)§r etkinin gücünü arttırır - daha çok hasar,"
+				"daha yüksek hasat seviyesi."
+				"§bAlan (AOE)§r etkiyi geniş bir alana yayar."
+				"§bDelip Geç (Pierce)§r merminin durmasını engeller."
+				"§bHızlandır§r merminin hızını arttırır."
+				""
+				"§eÖrnek:§r Mermi + Zarar + Güçlendir + Güçlendir = tek hedefe"
+				"çok ağır hasar. Mermi + Zarar + Alan = kalabalığa karşı."
+				""
+				"§7The same spell, a different outcome. Amplify raises power, AOE"
+				"§7spreads it, Pierce stops the projectile being stopped."
+				"§7Projectile + Harm + Amplify + Amplify hits one target hard;"
+				"§7Projectile + Harm + AOE clears a crowd.§r"
+			]
+			icon: "ars_nouveau:glyph_amplify"
+			id: "2000000000000F10"
+			optional: true
+			rewards: [{
+				id: "4000000000000F10"
+				type: "xp_levels"
+				xp_levels: 20
+			}]
+			shape: "hexagon"
+			subtitle: "Augment Glyphs"
+			tasks: [
+				{
+					id: "3000000000000F10"
+					item: "ars_nouveau:glyph_amplify"
+					type: "item"
+				}
+				{
+					id: "3000000000000F11"
+					item: "ars_nouveau:glyph_aoe"
+					type: "item"
+				}
+			]
+			title: "Güçlendirme Glifleri"
+			x: 18.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"2000000000000F07"
+				"2000000000000F08"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"En iyi zırh, orada olmamaktır."
+				""
+				"§bKendine + Işınlan (Blink)§r = anında öne ışınlanma."
+				"§bKendine + Sıçra (Leap)§r = havaya fırlama."
+				""
+				"§eStrateji:§r Bu paketteki patronlar zırhı delip geçer. Ignis'in"
+				"alev alanlarından, Habercinin lazerlerinden kaçmanın tek yolu"
+				"orada durmamaktır. Bir kaçış büyüsü canını kurtarır - ve"
+				"canların sayılı."
+				""
+				"§7The best armour is not being there. Self + Blink teleports you"
+				"§7forward; Self + Leap throws you up. Bosses here punch through"
+				"§7armour - not standing in it is the only real defence, and your"
+				"§7lives are counted.§r"
+			]
+			icon: "ars_nouveau:glyph_blink"
+			id: "2000000000000F12"
+			optional: true
+			rewards: [{
+				id: "4000000000000F12"
+				type: "xp_levels"
+				xp_levels: 20
+			}]
+			shape: "hexagon"
+			subtitle: "The Art of Escape"
+			tasks: [{
+				id: "3000000000000F12"
+				item: "ars_nouveau:glyph_blink"
+				type: "item"
+			}]
+			title: "Kaçış Sanatı"
+			x: 18.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"2000000000000F07"
+				"2000000000000F08"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"Grubun en değerli üyesi vuran değil, ayakta tutandır."
+				""
+				"§bDokunuş + İyileştir§r = yoldaşını iyileştir."
+				"§bMermi + İyileştir§r = uzaktan iyileştirme."
+				""
+				"§eNeden önemli:§r Zindan patronları tek başına indirilmez."
+				"Hardcore Revival ile yere düşen bir yoldaş 120 saniye bekler -"
+				"ama düşmeden önce iyileştirebilirsen hiç düşmez."
+				""
+				"§7The most valuable member of a group is not the one who hits,"
+				"§7it is the one who keeps people standing. Uber Bosses are not"
+				"§7soloable. A downed ally waits 120 seconds - but healed in time,"
+				"§7they never go down at all.§r"
+			]
+			icon: "ars_nouveau:glyph_heal"
+			id: "2000000000000F13"
+			optional: true
+			rewards: [{
+				id: "4000000000000F13"
+				type: "xp_levels"
+				xp_levels: 25
+			}]
+			shape: "hexagon"
+			subtitle: "The Healer"
+			tasks: [{
+				id: "3000000000000F13"
+				item: "ars_nouveau:glyph_heal"
+				type: "item"
+			}]
+			title: "Şifacı"
+			x: 18.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"2000000000000F10"
+				"2000000000000F12"
+				"2000000000000F13"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"Çırak kitabı üç glif taşır. Büyücü kitabı daha fazlasını."
+				""
+				"§bNe değişir:§r Daha uzun büyüler, daha çok yuva, daha fazla"
+				"kaynak kapasitesi. Gerçek büyüler ancak burada başlar."
+				""
+				"§eNasıl:§r Enchanting Apparatus ile yükseltilir - Arcane"
+				"Pedestal'lar kurup ortasına apparatus koy, malzemeleri"
+				"pedestallara diz."
+				""
+				"§7The novice book carries three glyphs. The Mage's book carries"
+				"§7more - longer spells, more slots, more Source. Real spellcraft"
+				"§7starts here. Upgraded at the Enchanting Apparatus, surrounded"
+				"§7by Arcane Pedestals.§r"
+			]
+			icon: "ars_nouveau:apprentice_spell_book"
+			id: "2000000000000F14"
+			rewards: [{
+				id: "4000000000000F14"
+				type: "xp_levels"
+				xp_levels: 35
+			}]
+			subtitle: "The Mage's Spell Book"
+			tasks: [
+				{
+					id: "3000000000000F14"
+					item: "ars_nouveau:enchanting_apparatus"
+					type: "item"
+				}
+				{
+					id: "3000000000000F15"
+					item: "ars_nouveau:apprentice_spell_book"
+					type: "item"
+				}
+			]
+			title: "Büyücünün Kitabı"
+			x: 20.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2000000000000F14"]
+			description: [
+				"Bu yolun sonu."
+				""
+				"§bBaş Büyücü Kitabı§r bu paketteki en güçlü büyü aracıdır."
+				"En uzun büyü zincirlerini ve en yüksek kaynak havuzunu taşır."
+				""
+				"§eBundan sonra:§r Ritual Brazier ile ritüeller, Ars Elemental"
+				"ile element odakları, familiarlar. Büyü burada bitmez -"
+				"sadece artık kendi yolunu çizecek kadar biliyorsun."
+				""
+				"§7The end of this path. The Archmage Book carries the longest"
+				"§7spell chains and the deepest Source pool in the pack."
+				"§7Beyond it: Ritual Braziers, Ars Elemental's elemental foci,"
+				"§7familiars. Magic does not end here - you simply know enough"
+				"§7to chart your own course now.§r"
+			]
+			icon: "ars_nouveau:archmage_spell_book"
+			id: "2000000000000F16"
+			rewards: [
+				{
+					id: "4000000000000F16"
+					type: "xp_levels"
+					xp_levels: 60
+				}
+				{
+					command: "/say @p artik bir Bas Buyucu. / is now an Archmage."
+					elevate_perms: true
+					id: "4000000000000F17"
+					type: "command"
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "The Archmage"
+			tasks: [{
+				id: "3000000000000F16"
+				item: "ars_nouveau:archmage_spell_book"
+				type: "item"
+			}]
+			title: "Baş Büyücü"
+			x: 22.0d
+			y: 3.0d
+		}
+	]
+	subtitle: ["Act III - The Delver"]
+	title: "3. Perde - Madenci"
+}

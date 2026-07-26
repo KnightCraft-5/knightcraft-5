@@ -1,0 +1,407 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "act7_ejderha"
+	group: ""
+	icon: "iceandfire:fire_dragon_heart"
+	id: "1000000000000A07"
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2000000000000B71"]
+			description: [
+				"Bir ejderha öldürmek tek başına yapılacak iş değildir."
+				"Leşini kes, kalbini al. Kalp asla iki kez verilmez."
+				""
+				"§7Killing a dragon is not work for one person."
+				"§7Carve the corpse and take the heart. A heart is never given twice.§r"
+			]
+			icon: "iceandfire:fire_dragon_heart"
+			id: "2000000000000A71"
+			rewards: [{
+				id: "4000000000000A71"
+				type: "xp_levels"
+				xp_levels: 40
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Heart of the Dragon"
+			tasks: [{
+				id: "3000000000000A71"
+				item: "iceandfire:fire_dragon_heart"
+				type: "item"
+			}]
+			title: "Ejderhanın Kalbi"
+			x: 0.75d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2000000000000A71"
+				"2000000000000C24"
+				"2000000000000C09"
+			]
+			description: [
+				"Artık eşyaların kendi kendine hareket edebilir."
+				"Ama unutma: bir ağ kurduğun an, onu savunmak da senin işin."
+				""
+				"§8Ödül: Mühendislik 60§r"
+				""
+				"§eGerekli:§r 3 Zindan Kalıntısı. Zindan Haritası ile bir zindana"
+				"gir ve Uber Patronu öldür - her patron 3 kalıntı verir, yani"
+				"tek bir başarılı baskın yeter."
+				""
+				"§cStrateji:§r Uber Patron tek başına indirilmez. Üç dört kişi"
+				"gidin, biri iyileştirme büyüsü taşısın. Kalıntı ayrıca Depo Ağı"
+				"Kökü'nün kendisi için de gerekli - toplam 6 tane lazım olacak."
+				""
+				"§7Your goods can now move on their own."
+				"§7But remember: the moment you build a network, defending it is your job too."
+				""
+				"§7Requires 3 General Relics. Enter a dungeon with a Dungeon Map and"
+				"§7kill the Uber Boss - 3 relics per boss, so one successful raid."
+				"§7Strategy: the Uber Boss is not soloable. Go with 3-4, bring a healer."
+				"§7You will need 6 relics total - 3 here, 3 for the Storage Root itself."
+				""
+				"§8Reward: Engineering 60§r"
+			]
+			icon: "storagenetwork:master"
+			id: "2000000000000A72"
+			rewards: [{
+				command: "/pmmo admin @p set engineering level 60"
+				elevate_perms: true
+				id: "4000000000000A72"
+				silent: true
+				title: "Mühendislik 60 / Engineering 60"
+				type: "command"
+			}]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "Networks and Vaults"
+			tasks: [{
+				count: 3L
+				id: "3000000000000A72"
+				item: "dungeon_realm:general_relic"
+				type: "item"
+			}]
+			title: "Ağlar ve Depolar"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2000000000000A63"]
+			description: [
+				"Ejderhaya gitmeden önce küçük canavarları öğren."
+				"Gorgon taşa çevirir, deniz yılanı boğar."
+				""
+				"§7Learn the lesser monsters before the dragon."
+				"§7A gorgon turns you to stone; a sea serpent drowns you.§r"
+			]
+			icon: "iceandfire:sea_serpent_fang"
+			id: "2000000000000B71"
+			rewards: [{
+				id: "4000000000000B71"
+				type: "xp_levels"
+				xp_levels: 30
+			}]
+			subtitle: "Lesser Hunts"
+			tasks: [
+				{
+					count: 4L
+					id: "3000000000000B71"
+					item: "iceandfire:sea_serpent_fang"
+					type: "item"
+				}
+				{
+					id: "3000000000000B72"
+					item: {
+						Count: 1
+						id: "iceandfire:gorgon_head"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Küçük Avlar"
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2000000000000A71"]
+			description: [
+				"Kemikleri bile silah olur."
+				""
+				"§bNe işe yarar:§r Ejderha kemiği kılıçları, baltaları ve zırhı -"
+				"Ice and Fire'ın en güçlü teçhizatı. 25 ayrı tarifte kullanılır."
+				""
+				"§eNerede:§r Ejderha leşini kazmayla kes. Bir ejderha 20-40 kemik"
+				"verir, yani tek av bu görevi bitirir. Ayrıca çöl ve buz"
+				"mağaralarındaki ejderha iskeletlerinden de toplanır."
+				""
+				"§7Used for: §bdragonbone swords, axes and armour§7 - Ice and Fire's"
+				"§7strongest gear, across 25 recipes."
+				"§7Where: mine the dragon corpse. One dragon gives 20-40 bones, so a"
+				"§7single hunt finishes this. Also from dragon skeletons in caves.§r"
+			]
+			icon: "iceandfire:dragonbone"
+			id: "2000000000000B72"
+			optional: true
+			rewards: [{
+				id: "4000000000000B72"
+				type: "xp"
+				xp: 300
+			}]
+			shape: "square"
+			subtitle: "Dragonbone"
+			tasks: [{
+				count: 16L
+				id: "3000000000000B73"
+				item: "iceandfire:dragonbone"
+				type: "item"
+			}]
+			title: "Ejderha Kemiği"
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2000000000000A71"]
+			description: [
+				"Leşi bir şişeyle kes. Kan tükenmez."
+				""
+				"§7Bottle the corpse. The blood does not run out.§r"
+			]
+			icon: "iceandfire:fire_dragon_blood"
+			id: "2000000000000B73"
+			optional: true
+			rewards: [{
+				id: "4000000000000B73"
+				type: "xp"
+				xp: 250
+			}]
+			shape: "square"
+			subtitle: "Dragon Blood"
+			tasks: [{
+				count: 4L
+				id: "3000000000000B74"
+				item: "iceandfire:fire_dragon_blood"
+				type: "item"
+			}]
+			title: "Ejderha Kanı"
+			x: 1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2000000000000A72"]
+			description: [
+				"Bir ağ, kablolarından güçlüdür."
+				""
+				"§7A network is only as strong as its cables.§r"
+			]
+			icon: "storagenetwork:kabel"
+			id: "2000000000000B74"
+			optional: true
+			rewards: [{
+				id: "4000000000000B74"
+				type: "xp"
+				xp: 200
+			}]
+			shape: "square"
+			subtitle: "Network Cable"
+			tasks: [{
+				count: 32L
+				id: "3000000000000B75"
+				item: "storagenetwork:kabel"
+				type: "item"
+			}]
+			title: "Ağ Kablosu"
+			x: 7.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"2000000000000A72"
+				"2000000000000C08"
+			]
+			description: [
+				"Senin yerine tutar, vurur, yerleştirir."
+				"Ama asla senin yerine düşünmez."
+				""
+				"§7It holds, strikes and places for you."
+				"§7But it never thinks for you.§r"
+			]
+			icon: "create:deployer"
+			id: "2000000000000B75"
+			optional: true
+			rewards: [{
+				id: "4000000000000B75"
+				type: "xp"
+				xp: 260
+			}]
+			shape: "square"
+			subtitle: "The Deployer"
+			tasks: [{
+				count: 4L
+				id: "3000000000000B76"
+				item: "create:deployer"
+				type: "item"
+			}]
+			title: "Yerleştirici"
+			x: 7.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2000000000000B71"]
+			description: [
+				"§cZorluk: Zor§r"
+				""
+				"Ender Golem - 150 can ama sert vurur. Garantili düşer."
+				""
+				"§bKullanım:§r Yerleştirici, Mıknatıs Yükseltmesi"
+				""
+				"§7Difficulty: Hard - Ender Golem (150 HP, hits hard). Guaranteed."
+				"§7Used for: Deployer, Magnet Upgrades.§r"
+			]
+			icon: "cataclysm:void_core"
+			id: "2000000000000C08"
+			optional: true
+			rewards: [{
+				id: "4000000000000D08"
+				type: "xp_levels"
+				xp_levels: 25
+			}]
+			shape: "hexagon"
+			subtitle: "Void Core - the Deployer"
+			tasks: [{
+				consume_items: false
+				id: "3000000000000D08"
+				item: "cataclysm:void_core"
+				type: "item"
+			}]
+			title: "Boşluk Çekirdeği"
+			x: 1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2000000000000B71"]
+			description: [
+				"§cZorluk: Zor§r"
+				""
+				"Donmuş Golem - 220 can, 16 hasar. Garantili düşer."
+				""
+				"§bKullanım:§r Depo Ağı Kökü"
+				""
+				"§7Difficulty: Hard - Frostbitten Golem (220 HP, 16 dmg). Guaranteed."
+				"§7Used for: Storage Network Root.§r"
+			]
+			icon: "legendary_monsters:frozen_rune"
+			id: "2000000000000C09"
+			optional: true
+			rewards: [{
+				id: "4000000000000D09"
+				type: "xp_levels"
+				xp_levels: 25
+			}]
+			shape: "hexagon"
+			subtitle: "Frozen Rune - the Storage Network"
+			tasks: [{
+				consume_items: false
+				id: "3000000000000D09"
+				item: "legendary_monsters:frozen_rune"
+				type: "item"
+			}]
+			title: "Donmuş Rün"
+			x: 0.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2000000000000B71"]
+			description: [
+				"§cZorluk: Zor§r"
+				""
+				"Clawdian - 225 can, 16 hasar. Garantili düşer."
+				"Gelişmiş Boru Yükseltmesi 4 tane ister. Dört ayrı av demek."
+				""
+				"§7Difficulty: Hard - Clawdian (225 HP, 16 dmg). Guaranteed."
+				"§7Advanced Pipe Upgrade wants FOUR. That is four separate hunts.§r"
+			]
+			icon: "cataclysm:chitin_claw"
+			id: "2000000000000C10"
+			optional: true
+			rewards: [{
+				id: "4000000000000D10"
+				type: "xp_levels"
+				xp_levels: 25
+			}]
+			shape: "hexagon"
+			subtitle: "Chitin Claw - pipe upgrades"
+			tasks: [{
+				consume_items: false
+				id: "3000000000000D10"
+				item: "cataclysm:chitin_claw"
+				type: "item"
+			}]
+			title: "Kitin Pençesi"
+			x: -3.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2000000000000B71"]
+			description: [
+				"Seviye 45'e ulaş."
+				""
+				"§7Reach character level 45.§r"
+			]
+			icon: "minecraft:nether_star"
+			id: "2000000000000C24"
+			rewards: [{
+				command: "/mine_and_slash points cheat_give @p stats 30"
+				elevate_perms: true
+				id: "4000000000000C05"
+				silent: true
+				title: "30 Stat Puanı / 30 Stat Points"
+				type: "command"
+			}]
+			shape: "hexagon"
+			subtitle: "Legend - level 45"
+			tasks: [{
+				id: "3000000000000C05"
+				title: "Seviye 45 / Level 45"
+				type: "custom"
+			}]
+			title: "Efsane"
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2000000000000A72"]
+			description: [
+				"120 stat puanı harca."
+				""
+				"§7Spend 120 stat points.§r"
+			]
+			icon: "minecraft:netherite_ingot"
+			id: "2000000000000C28"
+			optional: true
+			rewards: [{
+				id: "4000000000000C13"
+				type: "xp_levels"
+				xp_levels: 30
+			}]
+			shape: "square"
+			subtitle: "Mastery - 120 points spent"
+			tasks: [{
+				id: "3000000000000C13"
+				title: "120 puan harcandı / 120 points spent"
+				type: "custom"
+			}]
+			title: "Kusursuzluk"
+			x: 7.5d
+			y: 0.0d
+		}
+	]
+	subtitle: ["Act VII - The Dragonslayer"]
+	title: "7. Perde - Ejderha Avcısı"
+}

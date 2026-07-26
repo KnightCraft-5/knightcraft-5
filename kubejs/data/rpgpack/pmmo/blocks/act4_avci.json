@@ -1,0 +1,20 @@
+{
+	"override": true,
+	"isTagFor": [
+		"create:water_wheel",
+		"create:large_water_wheel",
+		"create:windmill_bearing",
+		"create:mechanical_press",
+		"create:basin",
+		"create:andesite_casing",
+		"create:chute",
+		"create:depot",
+		"create:andesite_funnel",
+		"create:andesite_tunnel",
+		"create:mechanical_saw",
+		"create:mechanical_drill"
+	],
+	"requirements": {
+		"PLACE": { "engineering": 20 }
+	}
+}

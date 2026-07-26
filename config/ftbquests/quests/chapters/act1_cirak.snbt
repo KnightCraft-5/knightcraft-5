@@ -1,0 +1,571 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "act1_cirak"
+	group: ""
+	icon: "minecraft:crafting_table"
+	id: "1000000000000A01"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Bu topraklarda yalnız başına hayatta kalamazsın."
+				"Önce elini taşın altına koy."
+				""
+				"§7You cannot survive these lands alone."
+				"§7Start with your hands.§r"
+			]
+			icon: "minecraft:oak_log"
+			id: "2000000000000A11"
+			rewards: [
+				{
+					count: 8
+					id: "4000000000000A11"
+					item: "minecraft:bread"
+					type: "item"
+				}
+				{
+					id: "4000000000000A12"
+					type: "xp"
+					xp: 30
+				}
+			]
+			shape: "circle"
+			size: 1.5d
+			subtitle: "The Waking"
+			tasks: [{
+				id: "3000000000000A11"
+				item: "minecraft:crafting_table"
+				type: "item"
+			}]
+			title: "Uyanış"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2000000000000A11"]
+			description: [
+				"Karanlık burada sadece bir renk değil."
+				"Ateşini hazırla."
+				""
+				"§7Darkness here is not merely a colour."
+				"§7Prepare your fire.§r"
+			]
+			icon: "minecraft:torch"
+			id: "2000000000000A12"
+			rewards: [{
+				count: 6
+				id: "4000000000000A13"
+				item: "minecraft:cooked_beef"
+				type: "item"
+			}]
+			subtitle: "Shelter"
+			tasks: [{
+				count: 16L
+				id: "3000000000000A12"
+				item: "minecraft:torch"
+				type: "item"
+			}]
+			title: "Sığınak"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2000000000000A12"]
+			description: [
+				"Çıraklık demirle biter."
+				""
+				"§7Apprenticeship ends with iron.§r"
+			]
+			icon: "minecraft:iron_ingot"
+			id: "2000000000000A13"
+			rewards: [{
+				id: "4000000000000A14"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			subtitle: "First Iron"
+			tasks: [{
+				count: 12L
+				id: "3000000000000A13"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			title: "İlk Demir"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2000000000000A11"]
+			description: [
+				"Ellerin iki tane. Taşıman gereken şey çok daha fazla."
+				""
+				"§bNeden:§r Bu pakette envanter alanı gerçek bir kısıt. Sırt çantası"
+				"yükseltmelerle büyür - mıknatıs, otomatik eritme, sandık."
+				""
+				"§eTarif:§r Deri + ip + ahşap sandık."
+				""
+				"§7Your hands hold two things. You need to carry far more."
+				"§7Inventory space is a real constraint here. The backpack grows with"
+				"§7upgrades - magnet, auto-smelt, storage.§r"
+			]
+			icon: "sophisticatedbackpacks:backpack"
+			id: "2000000000000B11"
+			optional: true
+			rewards: [{
+				id: "4000000000000E11"
+				type: "xp"
+				xp: 60
+			}]
+			shape: "square"
+			subtitle: "The Backpack"
+			tasks: [{
+				id: "3000000000000B11"
+				item: "sophisticatedbackpacks:backpack"
+				type: "item"
+			}]
+			title: "Sırt Çantası"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2000000000000A11"]
+			description: [
+				"Kılıç seni bir gün besler. Tarla her gün."
+				""
+				"§7A sword feeds you one day. A field feeds you every day.§r"
+			]
+			icon: "minecraft:wheat"
+			id: "2000000000000B13"
+			optional: true
+			rewards: [{
+				id: "4000000000000B13"
+				item: {
+					Count: 1
+					id: "minecraft:iron_hoe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "The First Field"
+			tasks: [{
+				count: 16L
+				id: "3000000000000B13"
+				item: "minecraft:bread"
+				type: "item"
+			}]
+			title: "İlk Tarla"
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2000000000000A11"]
+			description: [
+				"Ekmek karnını doyurur. Yemek seni ayakta tutar."
+				""
+				"§bNeden:§r Farmer's Delight yemekleri vanilla yemeklerinden çok daha"
+				"yüksek doygunluk verir - yani daha seyrek yemek zorunda kalırsın."
+				"Bazı tabaklar geçici buff da verir."
+				""
+				"§eTarif:§r Tencere = 3 tuğla + su kovası + demir külçe. Ocağın veya"
+				"kamp ateşinin üstüne koy, yanına bir sandık koy - kendi kendine pişirir."
+				""
+				"§7Bread fills your belly. A meal keeps you standing. Farmer's Delight"
+				"§7food gives far more saturation than vanilla, so you eat less often,"
+				"§7and some dishes grant temporary buffs. Set the pot on a campfire"
+				"§7with a chest beside it and it cooks on its own.§r"
+			]
+			icon: "farmersdelight:cooking_pot"
+			id: "2100000000000101"
+			optional: true
+			rewards: [{
+				id: "4100000000000101"
+				type: "xp"
+				xp: 60
+			}]
+			shape: "square"
+			subtitle: "Pot and Fire"
+			tasks: [{
+				id: "3100000000000101"
+				item: "farmersdelight:cooking_pot"
+				type: "item"
+			}]
+			title: "Tencere ve Ateş"
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2100000000000101"]
+			description: [
+				"İyi bir aşçının iki aleti vardır: keskin bir bıçak ve temiz bir tahta."
+				""
+				"§bNe yapar:§r Doğrama tahtası eti dilimlere, sebzeyi parçalara ayırır -"
+				"tek bir domuz pirzolasından iki porsiyon çıkarır. Bıçak aynı zamanda"
+				"hızlı vuran bir yakın dövüş silahıdır."
+				""
+				"§eStrateji:§r Tahtayı tencerenin yanına koy. Bu ikisi bu paketteki"
+				"bütün yemek zincirinin temeli - ilerideki Perdelerde bu tabaklar"
+				"gerçekten fark yaratacak."
+				""
+				"§7A good cook owns two tools: a sharp knife and a clean board."
+				"§7The cutting board splits meat and vegetables into more portions than"
+				"§7you started with, and the knife doubles as a fast melee weapon."
+				"§7Put the board next to the pot - together they feed everything later.§r"
+			]
+			icon: {
+				Count: 1
+				id: "farmersdelight:iron_knife"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2100000000000102"
+			optional: true
+			rewards: [{
+				id: "4100000000000102"
+				type: "xp"
+				xp: 80
+			}]
+			shape: "square"
+			subtitle: "Knife and Board"
+			tasks: [
+				{
+					id: "3100000000000102"
+					item: "farmersdelight:cutting_board"
+					type: "item"
+				}
+				{
+					id: "3100000000000103"
+					item: {
+						Count: 1
+						id: "farmersdelight:iron_knife"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Bıçak ve Tahta"
+			x: 4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2000000000000A12"]
+			description: [
+				"Suyun altında da bir dünya var, ve o dünya karşılıksız beslemez."
+				""
+				"§bNeden:§r Aquaculture oltası vanilla oltasından çok daha fazlasını"
+				"yakalar - onlarca balık türü, sandıklar, hatta gömülü hazine notları."
+				"Erken oyunda et bulmanın en güvenli yolu budur; balık avlarken"
+				"kimse sana saldırmaz."
+				""
+				"§eStrateji:§r Kancalar oltaya takılır ve ne yakaladığını değiştirir."
+				"Fileto bıçağı ile balıkları filetoya çevir - fileto çiğ balıktan"
+				"daha çok doyurur."
+				""
+				"§7There is a world under the water, and it does not feed you for free."
+				"§7The Aquaculture rod catches dozens of species, crates, even buried"
+				"§7treasure notes. Hooks change what you catch; the fillet knife turns"
+				"§7fish into fillets, which feed better than the raw fish did.§r"
+			]
+			icon: {
+				Count: 1
+				id: "aquaculture:iron_fishing_rod"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2100000000000103"
+			optional: true
+			rewards: [{
+				id: "4100000000000103"
+				type: "xp"
+				xp: 80
+			}]
+			shape: "square"
+			subtitle: "The Angler"
+			tasks: [
+				{
+					id: "3100000000000104"
+					item: {
+						Count: 1
+						id: "aquaculture:iron_fishing_rod"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "3100000000000105"
+					item: "aquaculture:fish_fillet_raw"
+					type: "item"
+				}
+			]
+			title: "Oltacı"
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2000000000000A12"]
+			description: [
+				"Uzaktan vuran adam, karşılık almayan adamdır."
+				""
+				"§bNe yapar:§r Sadak bir Curios yuvasına takılır ve okları envanterinden"
+				"çıkarır. Yay artık doğrudan sadaktan besleniyor - envanterin açılıyor."
+				""
+				"§eStrateji:§r Bu paketteki bütün erken patronlar yakın dövüşte seni"
+				"ezer. Yıkıcı, Kabus, Dövülmüş Şövalye - hepsine karşı ilk hasarı"
+				"uzaktan vermelisin. Demir ve elmas sadaklar daha fazla ok taşır."
+				""
+				"§7A man who strikes from range is a man who is not struck."
+				"§7The quiver sits in a Curios slot and feeds your bow directly, freeing"
+				"§7inventory space. Every early boss here crushes you in melee - open"
+				"§7with arrows. Iron and diamond quivers carry more.§r"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"nyfsquiver:quiver_holder": {
+						currentslot: 0
+						inventory: {
+							columns: 9
+							rows: 1
+							stack0: {
+								Count: 1b
+								id: "minecraft:air"
+							}
+							stack1: {
+								Count: 1b
+								id: "minecraft:air"
+							}
+							stack2: {
+								Count: 1b
+								id: "minecraft:air"
+							}
+							stack3: {
+								Count: 1b
+								id: "minecraft:air"
+							}
+							stack4: {
+								Count: 1b
+								id: "minecraft:air"
+							}
+							stack5: {
+								Count: 1b
+								id: "minecraft:air"
+							}
+							stack6: {
+								Count: 1b
+								id: "minecraft:air"
+							}
+							stack7: {
+								Count: 1b
+								id: "minecraft:air"
+							}
+							stack8: {
+								Count: 1b
+								id: "minecraft:air"
+							}
+							stacks: 9
+						}
+					}
+				}
+				id: "nyfsquiver:basic_quiver"
+				tag: {
+					Damage: 0
+					inventory: {
+						currentslot: 0
+						inventory: {
+							columns: 9
+							rows: 1
+							stack0: {
+								Count: 1b
+								id: "minecraft:air"
+							}
+							stack1: {
+								Count: 1b
+								id: "minecraft:air"
+							}
+							stack2: {
+								Count: 1b
+								id: "minecraft:air"
+							}
+							stack3: {
+								Count: 1b
+								id: "minecraft:air"
+							}
+							stack4: {
+								Count: 1b
+								id: "minecraft:air"
+							}
+							stack5: {
+								Count: 1b
+								id: "minecraft:air"
+							}
+							stack6: {
+								Count: 1b
+								id: "minecraft:air"
+							}
+							stack7: {
+								Count: 1b
+								id: "minecraft:air"
+							}
+							stack8: {
+								Count: 1b
+								id: "minecraft:air"
+							}
+							stacks: 9
+						}
+					}
+				}
+			}
+			id: "2100000000000104"
+			optional: true
+			rewards: [
+				{
+					count: 32
+					id: "4100000000000104"
+					item: "minecraft:arrow"
+					type: "item"
+				}
+				{
+					id: "4100000000000105"
+					type: "xp"
+					xp: 70
+				}
+			]
+			shape: "square"
+			subtitle: "The Quiver"
+			tasks: [
+				{
+					id: "3100000000000106"
+					item: {
+						Count: 1
+						id: "nyfsquiver:basic_quiver"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3100000000000107"
+					item: {
+						Count: 1
+						id: "minecraft:bow"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Sadak"
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2000000000000A13"]
+			description: [
+				"Zırhın altına giyilen şey, zırhın kendisi kadar önemlidir."
+				""
+				"§bNeden:§r Epic Knights kaftanı deri zırhtan daha iyi korur ve"
+				"demir gerektirmez - sadece yün ve deri. 1. Perde'de bulabileceğin"
+				"en iyi göğüslük budur."
+				""
+				"§eUnutma:§r Bu sunucuda zırhın tek başına seni korumaz. Seviyen ve"
+				"teçhizatının istatistikleri asıl işi yapar. Ama hiç zırhsız gezmek"
+				"de aptallıktır."
+				""
+				"§7What you wear under the armour matters as much as the armour."
+				"§7The Epic Knights gambeson beats leather and needs no iron - just wool"
+				"§7and leather. It is the best chestpiece you will find in Act I."
+				"§7Remember: armour alone does not protect you here. Your level and your"
+				"§7gear's stats do the real work.§r"
+			]
+			icon: {
+				Count: 1
+				id: "magistuarmory:gambeson_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2100000000000105"
+			optional: true
+			rewards: [{
+				id: "4100000000000106"
+				type: "xp_levels"
+				xp_levels: 6
+			}]
+			shape: "square"
+			subtitle: "The Gambeson"
+			tasks: [{
+				id: "3100000000000108"
+				item: {
+					Count: 1
+					id: "magistuarmory:gambeson_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Kaftan"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2000000000000B11"]
+			description: [
+				"Çantayı yapmak kolay. Onu işe yarar hale getirmek başka iş."
+				""
+				"§bMıknatıs Yükseltmesi§r yerdeki eşyaları sen yürürken toplar -"
+				"madende ve dövüş sonrasında hayat kurtarır."
+				"§bYığın Yükseltmesi§r her yuvanın taşıyabileceği miktarı katlar."
+				""
+				"§eStrateji:§r Yükseltmeler çantanın kendi arayüzünden takılır."
+				"Otomatik eritme yükseltmesi de erken oyunda çok işe yarar - madende"
+				"cevheri kazarken külçeye dönüşür."
+				""
+				"§7Making the backpack is easy. Making it useful is another job."
+				"§7The magnet upgrade sweeps up drops as you walk - a lifesaver in the"
+				"§7mine and after fights. Stack upgrades multiply what each slot holds."
+				"§7Upgrades are installed from the backpack's own screen.§r"
+			]
+			icon: "sophisticatedbackpacks:magnet_upgrade"
+			id: "2100000000000106"
+			optional: true
+			rewards: [{
+				id: "4100000000000107"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "square"
+			subtitle: "Load Capacity"
+			tasks: [
+				{
+					id: "3100000000000109"
+					item: "sophisticatedbackpacks:magnet_upgrade"
+					type: "item"
+				}
+				{
+					id: "310000000000010A"
+					item: "sophisticatedbackpacks:stack_upgrade_starter_tier"
+					type: "item"
+				}
+			]
+			title: "Yük Kapasitesi"
+			x: 0.0d
+			y: -4.0d
+		}
+	]
+	subtitle: ["Act I - The Apprentice"]
+	title: "1. Perde - Çırak"
+}

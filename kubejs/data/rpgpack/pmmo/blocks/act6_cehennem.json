@@ -1,0 +1,17 @@
+{
+	"override": true,
+	"isTagFor": [
+		"create:brass_casing",
+		"create:crushing_wheel",
+		"create:steam_engine",
+		"create:fluid_tank",
+		"create:blaze_burner",
+		"create:empty_blaze_burner",
+		"create:brass_funnel",
+		"create:brass_tunnel",
+		"pipez:universal_pipe"
+	],
+	"requirements": {
+		"PLACE": { "engineering": 45 }
+	}
+}
