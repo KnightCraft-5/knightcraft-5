@@ -165,5 +165,4 @@
 #minecolonies.config.debugging.comment
 [debugging]
 	#minecolonies.config.netherworkertakesdamage.comment [Default: true]
-	netherworkertakesdamage = true
 
