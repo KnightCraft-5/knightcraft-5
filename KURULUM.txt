@@ -1,0 +1,68 @@
+================================================================
+  KNIGHTCRAFT 5 - KURULUM / INSTALLATION
+  Minecraft 1.20.1  |  Forge 47.4.10
+================================================================
+
+--- TURKCE ----------------------------------------------------
+
+1) Minecraft 1.20.1 icin FORGE 47.4.10 kur.
+   https://files.minecraftforge.net  ->  1.20.1  ->  47.4.10
+
+   Onemli: Forge'u kurduktan sonra oyunu Forge profiliyle BIR KEZ
+   ac ve ana menude kapat. Boylece .minecraft klasoru hazirlanir.
+
+2) Bu zip'in icindekileri .minecraft klasorunun UZERINE cikar.
+   Sorulursa "birlestir / uzerine yaz" de.
+
+   Windows : %appdata%\.minecraft
+   Linux   : ~/.minecraft
+   macOS   : ~/Library/Application Support/minecraft
+
+3) Oyuna en az 6 GB RAM ver. Launcher > Profil > Ayarlar >
+   JVM argumanlari:  -Xmx6G
+
+4) Oyunu ac. Ilk acilis 3-5 dakika surebilir, normaldir.
+
+5) DILI TURKCE YAP:
+   Options > Language > Turkce (Turkiye)
+   Bu paketin gorev kitabi ve 17 modun cevirisi Turkce dilinde
+   hazirlandi. Dili degistirmezsen hepsi Ingilizce gorunur.
+
+6) Sunucuya baglan ve /register <sifre> <sifre> yaz.
+   Her giriste /login <sifre> gerekir.
+
+--- ENGLISH ---------------------------------------------------
+
+1) Install FORGE 47.4.10 for Minecraft 1.20.1, then launch the
+   Forge profile ONCE and quit at the main menu so that the
+   .minecraft folder is populated.
+
+2) Extract the contents of this zip ON TOP of .minecraft,
+   choosing "merge / overwrite" if prompted.
+
+3) Allocate at least 6 GB of RAM  ( -Xmx6G ).
+
+4) Launch. First start takes 3-5 minutes.
+
+5) SET THE LANGUAGE TO TURKISH: Options > Language > Turkce.
+   The quest book and 17 mods' translations are Turkish-only;
+   leaving the game in English hides all of it.
+
+6) On the server, run /register <password> <password> once,
+   then /login <password> on every join.
+
+--- NE ICERIR / WHAT IS INCLUDED ------------------------------
+
+  mods/           tum modlar / all mods
+  config/         ayarlar + gorev kitabi (config/ftbquests)
+  defaultconfigs/ yeni dunyalara kopyalanan sunucu ayarlari
+  kubejs/         tarifler, PMMO kapilari, Turkce ceviriler
+  packmenu/       menu gorseli
+
+  Kaydedilmis dunyalar, ayarlar (options.txt), sunucu listesi ve
+  kisisel dosyalar BILEREK dahil edilmedi - kendi ayarlarinin
+  uzerine yazmasin diye.
+
+  Saves, options.txt, the server list and personal caches are
+  deliberately NOT included so the pack cannot clobber your own
+  settings.

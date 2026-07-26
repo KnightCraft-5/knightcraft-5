@@ -1,0 +1,96 @@
+================================================================
+  KNIGHTCRAFT 5 - SUNUCU / SERVER
+  Minecraft 1.20.1  |  Forge 47.4.10  |  Java 17
+================================================================
+
+Bu paket, calisan bir sunucunun UZERINE cikarilmak icin tasarlandi.
+world/, server.properties, ops.json, whitelist.json ve eula.txt
+dosyalarina DOKUNMAZ. Guncelleme guvenlidir.
+
+This bundle is designed to be extracted ON TOP of a server root.
+It never touches world/, server.properties, ops.json, whitelist.json
+or eula.txt, so updating in place is safe.
+
+
+--- 1. ILK KURULUM / FRESH INSTALL ----------------------------
+
+  1) Forge 1.20.1-47.4.10 sunucusunu kur:
+       java -jar forge-1.20.1-47.4.10-installer.jar --installServer
+
+  2) Bu zip'i sunucu klasorune cikar (uzerine yaz).
+
+  3) eula.txt olustur:   eula=true
+
+  4) server.properties.example dosyasini server.properties olarak
+     yeniden adlandir ve duzenle.
+
+  5) user_jvm_args.txt icine:
+       -Xms2G
+       -Xmx8G
+       -XX:+UseG1GC
+       -XX:MaxGCPauseMillis=50
+
+  6) ./run.sh
+
+
+--- 2. GUNCELLEME / UPDATING ----------------------------------
+
+  1) Sunucuyu DURDUR. Dunya kaydini yedekle.
+
+  2) Bu zip'i sunucu klasorune cikar (uzerine yaz).
+
+  3) Eski mod dosyalarini temizle:
+       bash temizle.sh           <- ne silinecek, goster
+       bash temizle.sh --apply   <- sil
+
+     NEDEN: zip cikarmak dosya EKLER ve UZERINE YAZAR, ama asla
+     SILMEZ. Paketten cikarilan bir mod eski sunucuda kalir ve
+     cakismaya yol acar. temizle.sh bunu cozer.
+
+  4) SUNUCU AYARLARI (onemli):
+     PMMO, MineColonies, Mine and Slash gibi modlarin sunucu
+     ayarlari world/serverconfig/ icinde tutulur ve SADECE dunya
+     ilk olusturuldugunda defaultconfigs/ klasorunden kopyalanir.
+
+     Var olan bir dunyada bu ayarlari guncellemek icin ilgili
+     dosyayi world/serverconfig/ icinden SIL, sunucuyu baslat -
+     Forge dosyayi defaultconfigs/ icinden yeniden kopyalar.
+
+     Ornek:
+       rm world/serverconfig/pmmo-server.toml
+       rm world/serverconfig/mine_and_slash_compatibility-server.toml
+
+  5) Sunucuyu baslat.
+
+  6) Gorev kitabi guncellemesi icin sunucuyu yeniden baslatmaya
+     gerek yok:   /ftbquests reload
+
+
+--- 3. NE ICERIR / CONTENTS -----------------------------------
+
+  mods/                sunucu modlari (istemci-only modlar cikarildi)
+  config/              ayarlar + gorev kitabi (config/ftbquests)
+  defaultconfigs/      yeni dunyalara kopyalanan sunucu ayarlari
+  kubejs/              tarifler, PMMO kapilari
+  mods.manifest.txt    bu surumdeki mod listesi
+  temizle.sh           eski modlari temizleme araci
+  server.properties.example
+
+
+--- 4. DIKKAT / WARNINGS --------------------------------------
+
+  * HQM sinirli can (AUTO_HARDCORE) ACIK gelir. Canlari biten
+    oyuncu KALICI olarak banlanir ve envanteri silinir. Bu HQM
+    icinde sabit kodlanmistir, ayarla kapatilamaz.
+    Kapatmak isterseniz: config/hqm/config.json5 -> AUTO_HARDCORE
+
+  * online-mode=false ile SimpleLogin gerekir. Oyuncular
+    /register <sifre> <sifre> ile kayit olur.
+    BILINEN SORUN: hic kayit olmamis bir istemci "Joining world"
+    ekraninda takilabilir. Bunu oyunculara duyurun.
+
+  * Cevirilerin gorunmesi icin oyuncunun oyun dili Turkce olmali.
+
+  * HQM hardcore lives are ON. A player who runs out is banned
+    PERMANENTLY with their inventory wiped - this is hardcoded in
+    HQM and cannot be configured away.

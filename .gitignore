@@ -33,3 +33,6 @@ usernamecache.json
 .qmenu_opened.marker
 config/skinrestorer/mojang_profile_cache.json
 config/voicechat/username-cache.json
+
+# Built distribution bundles (uploaded to R2, not versioned here)
+knightcraft5-*.zip
