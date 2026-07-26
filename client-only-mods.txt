@@ -1,0 +1,20 @@
+# Filename prefixes of mods a dedicated server must not load.
+# Read by build-server-pack.sh (excludes them) and build-mrpack.sh
+# (marks them client-required / server-unsupported).
+# One prefix per line; blank lines and # comments ignored.
+AI-Improvements
+BetterThirdPerson
+Controlling
+durabilitytooltip
+embeddium
+EnchantmentDescriptions
+entityculling
+melody_forge
+MouseTweaks
+notenoughcrashes
+oculus
+overloadedarmorbar
+PackMenu
+SimpleDiscordRichPresence
+smoothchunk
+ToastControl
