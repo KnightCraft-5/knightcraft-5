@@ -1,0 +1,950 @@
+{
+ "count": 189,
+ "mods": [
+  {
+   "sha256": "575a4a8e00f982c064d54bb3e73e5cda2d14414de054a471a3daf3f58bdf560a",
+   "size": 29553,
+   "name": "AI-Improvements-1.20-0.5.2.jar"
+  },
+  {
+   "sha256": "838521c23cc0921e678e42ace538ee6ed297fcd7af5e67fb4b7ebc76fb5f9982",
+   "size": 350478,
+   "name": "Ancient-Obelisks-1.20.1-1.2.3.jar"
+  },
+  {
+   "sha256": "5ed8c17cf62837bb649d1054e3e4fe93c4d9bdec98fe9f332e2637a260da30da",
+   "size": 2803994,
+   "name": "Apotheosis-1.20.1-7.4.8.jar"
+  },
+  {
+   "sha256": "68487b11c0d4e2f67a85f2b04bf65e99ac15294f2923f4391f83e9542293187a",
+   "size": 227511,
+   "name": "ApothicAttributes-1.20.1-1.3.7.jar"
+  },
+  {
+   "sha256": "4c96cf0dd3363a8e15f9ef6b6bfc00ac7d4791e8e9eeebe19b8092c59e800f8f",
+   "size": 601839,
+   "name": "Aquaculture-1.20.1-2.5.7.jar"
+  },
+  {
+   "sha256": "e8b575996cc5ff40e010161cca8923b8367ce210999da7f00487d4ce0de63755",
+   "size": 61525,
+   "name": "BetterThirdPerson-Forge-1.20-1.9.0.jar"
+  },
+  {
+   "sha256": "7980d4a0beed1dcd2c283cf65f3c93f6b0085833f3ac490014979c95f1dfaf67",
+   "size": 343925,
+   "name": "Bookshelf-Forge-1.20.1-20.2.15.jar"
+  },
+  {
+   "sha256": "ba171d8cf146faa138563b4b7114742e1589fc444fce7503a1779eb80a8a4765",
+   "size": 502662,
+   "name": "Bountiful-6.0.4+1.20.1-forge.jar"
+  },
+  {
+   "sha256": "4d67b97040aa6f03333a0629d968a494eb1fb49e5fd6f91d0a6fd661118f24f2",
+   "size": 527817,
+   "name": "CBMultipart-1.20.1-3.3.0.159-universal.jar"
+  },
+  {
+   "sha256": "1d1cfcf386f182b1d0bdbe4bd4fc57b96234e8c7468e95e1575ad4dd6433243a",
+   "size": 20299,
+   "name": "Clumps-forge-1.20.1-12.0.0.4.jar"
+  },
+  {
+   "sha256": "754240e1cd05caaf511a808ddf6fc74ece68a8fca7d94548d9ac967287f7960d",
+   "size": 1473536,
+   "name": "CodeChickenLib-1.20.1-4.4.0.528-universal.jar"
+  },
+  {
+   "sha256": "516308a93824119f6a1ebc75425aa21ee8f8de0c331942793a054ba6d9c24944",
+   "size": 115280,
+   "name": "Controlling-forge-1.20.1-12.0.2.jar"
+  },
+  {
+   "sha256": "9e638c7e73d997bb4ecba4aa40de90e89dd15fdbc4235fb997eed9ad43c10cd3",
+   "size": 360700,
+   "name": "Corgilib-Forge-1.20.1-4.0.3.4.jar"
+  },
+  {
+   "sha256": "6bf5887393268e88ec76dff95af4742277bf955d5130464d4ccf792aed9ab6e8",
+   "size": 3271742,
+   "name": "CraftTweaker-forge-1.20.1-14.0.60.jar"
+  },
+  {
+   "sha256": "b586a3cd1de362c365f923e5c325273916822f4b3a792c0d9ff6747d7deb2be6",
+   "size": 271462,
+   "name": "Cucumber-1.20.1-7.0.16.jar"
+  },
+  {
+   "sha256": "71e1b8ceaf20c3102ae42ef2761ca47f30fe4cbd20ecbb687df2ce75d1785514",
+   "size": 758123,
+   "name": "Dungeon Crawl-1.20.1-2.3.15.jar"
+  },
+  {
+   "sha256": "beb18433b103903b3e412067330c87407435ee4114100e8e6fe8d4f61fac491e",
+   "size": 4170487,
+   "name": "Dungeon-Realm-1.20.1-1.1.8.jar"
+  },
+  {
+   "sha256": "f8f1254dbe7ed7c1d5403f20361a36f0d0587c82b71313e3f427c7f1ce7c8a90",
+   "size": 8762342,
+   "name": "DungeonsArise-1.20.x-2.1.58-release.jar"
+  },
+  {
+   "sha256": "909d1941d4ef6e4b7336738ee31380d6e1117c3c22feb70b64fed47f1cba2b07",
+   "size": 66883,
+   "name": "EnchantmentDescriptions-Forge-1.20.1-17.1.21.jar"
+  },
+  {
+   "sha256": "45f383531d72a4a933333c5c80eae9d2d920a4cb3d71936e21e436be81e9a84f",
+   "size": 657943,
+   "name": "ExtendedCrafting-1.20.1-6.0.10.jar"
+  },
+  {
+   "sha256": "5b2343d9b2c94f026c4e519e62d7e2adccaf88baf3d1a2a6d0daee89e28d3fb0",
+   "size": 12817,
+   "name": "FTBQuestsOptimizer-forge-2.1.0-1.20.1.jar"
+  },
+  {
+   "sha256": "5fb64717c368c2759e768873424a46ee5c40076600feadaac5403ca197aebe0f",
+   "size": 420179,
+   "name": "FallingTree-1.20.1-4.3.4.jar"
+  },
+  {
+   "sha256": "47aed94bb9192c4978fe199f9d3ca5895aeccfbe5b5a0869fdf3aa011c2641f7",
+   "size": 3313327,
+   "name": "FarmersDelight-1.20.1-1.3.2.jar"
+  },
+  {
+   "sha256": "970c11c090e7a364e2e006aabb5e573f79901e710e97195334ee5802317776e8",
+   "size": 6170,
+   "name": "FastFurnace-1.20.1-8.0.2.jar"
+  },
+  {
+   "sha256": "86d20c6879bf86ef76b3fd94998d3e5c3327acb5d5324b6eb0b5348354766620",
+   "size": 28188,
+   "name": "FastWorkbench-1.20.1-8.0.4.jar"
+  },
+  {
+   "sha256": "6128fc88fcb23a29915a69e62b452ad0978d884ce4d1d7f77fea3ce2bd89091c",
+   "size": 3067,
+   "name": "Friendermite_FORGE_v1.0.6_mc1.20.jar"
+  },
+  {
+   "sha256": "f6101d9f11b1aed6f97473b797b47201d03d8a9dcb2294f4bcb9d5f5cdbf413f",
+   "size": 632950,
+   "name": "GatewaysToEternity-1.20.1-4.2.6.jar"
+  },
+  {
+   "sha256": "9b62b6dedfd51591b64ae3476c19b3f0fd9474f4cf030a5d875370d130c30865",
+   "size": 1452133,
+   "name": "HQM-1.20.1-5.16.0-forge.jar"
+  },
+  {
+   "sha256": "91ad6b459e0c7a16a9f3dc90230248a696600ceec6646aa23263559b8648dbc3",
+   "size": 134551,
+   "name": "Iceberg-1.20.1-forge-1.1.25.jar"
+  },
+  {
+   "sha256": "a632c77975e5aedff6322b0072f8b0db3f5d4bf914df6bdcc87d1aea4d5f55f4",
+   "size": 553487,
+   "name": "Jade-1.20.1-Forge-11.13.3.jar"
+  },
+  {
+   "sha256": "ec9cbcd93547857e3254fab959b1bd1b1d49706d0bd32d72b7adb87bbac66c54",
+   "size": 122688,
+   "name": "JeiTweaker-forge-1.20.1-8.0.6.jar"
+  },
+  {
+   "sha256": "13e2012375d16663192cf67f5e4139335e5dcbeaf2adf7e8a4816b013802f96a",
+   "size": 24607,
+   "name": "JustEnoughProfessions-forge-1.20.1-3.0.1.jar"
+  },
+  {
+   "sha256": "311d3a83db489d27b96cd15deb690ce64c78cffb552c25c3dff85956a14ec09e",
+   "size": 276231,
+   "name": "JustEnoughResources-1.20.1-1.4.0.247.jar"
+  },
+  {
+   "sha256": "37d0c2b03a1f3aacb30498d67c35adaca99dc9ecd30f66f383016f4cbc85be8e",
+   "size": 325546,
+   "name": "Kambrik-6.1.1+1.20.1-forge.jar"
+  },
+  {
+   "sha256": "c29dcf940168208517b72f2d9965828b106a6b94cbea55d5001558c69a27b362",
+   "size": 73916104,
+   "name": "L_Enders_Cataclysm-3.31.jar"
+  },
+  {
+   "sha256": "1dcaade132905172d7373cf146d82f8d4f2c3220e02785b43a6f2cce92231e7a",
+   "size": 634987,
+   "name": "Library_of_Exile-1.20.1-2.1.5.jar"
+  },
+  {
+   "sha256": "6052e47c3981064bd5213728eaa3c5418289f6f85b07a1cd4dd1505239248838",
+   "size": 1625005,
+   "name": "Mantle-1.20.1-1.11.104.jar"
+  },
+  {
+   "sha256": "42dfd48bde740414027580f9aa35ac3cc8fb8453e30f35e72cbc7846e875bac1",
+   "size": 7984414,
+   "name": "Mine_and_Slash-1.20.1-6.4.0.jar"
+  },
+  {
+   "sha256": "47dd8eb3038701a86b52ab11592de1d7b25bdf84cfffebd5dd95227e6b2f0f1c",
+   "size": 12409,
+   "name": "Mine_and_lash-Compatibility-1.20.1-1.0.0.jar"
+  },
+  {
+   "sha256": "6c27d16aa715ac6613a55fc463739e2c7b78279e4e4c4cede299e4a2d4a70f08",
+   "size": 76237,
+   "name": "MouseTweaks-forge-mc1.20.1-2.25.1.jar"
+  },
+  {
+   "sha256": "74bd64fe43eefa4a81006184b7558ceff20f6579597c0c35baeb44e70cfaaf51",
+   "size": 3482,
+   "name": "MyServerIsCompatible-1.20-1.0.jar"
+  },
+  {
+   "sha256": "a6d21a08170dbfb6c3983b571bb2c1cd92aa93109f5b3a9b47101688dd81ea01",
+   "size": 19043613,
+   "name": "Oh-The-Biomes-Weve-Gone-Forge-1.8.0.jar"
+  },
+  {
+   "sha256": "b3495f6b0ffa38bc5bf7189e29a27eef0c23b58540dc2f32033889c2943e5694",
+   "size": 171966,
+   "name": "Oh-The-Trees-Youll-Grow-forge-1.20.1-1.7.0.jar"
+  },
+  {
+   "sha256": "fc33c41205dc2fd432dd07d5b5f28d105d7a99dced19220e9b3c6529c2f2af55",
+   "size": 543359,
+   "name": "PackMenu-1.20.1-6.1.2.jar"
+  },
+  {
+   "sha256": "05f7b5d52f6b8f0fd7f8b4822fa07a192d1394d83a264309c9d221d6d4fd21c5",
+   "size": 642732,
+   "name": "Patchouli-1.20.1-85-FORGE.jar"
+  },
+  {
+   "sha256": "b343d2068413d895deb45417f56d2c823fe07b173879c1b03575eebfc189011d",
+   "size": 102164,
+   "name": "PickUpNotifier-v8.0.0-1.20.1-Forge.jar"
+  },
+  {
+   "sha256": "1cdf906cfbcbb5e5be2ef1bb721f79a24b01bd2ac559c8cdbfb7693f62421571",
+   "size": 282474,
+   "name": "Placebo-1.20.1-8.6.3.jar"
+  },
+  {
+   "sha256": "f3077a9f817629b8e8929c1951042d1a1adc62d30b72adebd54d2b074a4faf4f",
+   "size": 1342987,
+   "name": "PuzzlesLib-v8.1.33-1.20.1-Forge.jar"
+  },
+  {
+   "sha256": "c90b96f049d92825c4a103721988c80d72e5ad380d17be46a0f53e114874c478",
+   "size": 14935230,
+   "name": "Quark-4.0-462.jar"
+  },
+  {
+   "sha256": "4908ea5694c1895ce1032efec54d0ba8226dbe9a93e09f093d8fa3c6d3d24b2e",
+   "size": 355287,
+   "name": "Saros-Money-Mod-Forge-1.20.1-3.5.6.jar"
+  },
+  {
+   "sha256": "6c9f1417950f548bf4d1aa53df316f75a1fd26d9fd6f6296aa3df330859575b8",
+   "size": 58254,
+   "name": "ScalingMobs-2.4.4.jar"
+  },
+  {
+   "sha256": "c1a76e93886210574d3f298c0461241fb711e52ac22c7a04d3236840f29e6576",
+   "size": 77732,
+   "name": "Searchables-forge-1.20.1-1.0.3.jar"
+  },
+  {
+   "sha256": "d25428542f15a1437613553902513b8a11d09e02266c223f15a70b5e8f778ae7",
+   "size": 103637,
+   "name": "ServerTabInfo-1.20-1.3.8.jar"
+  },
+  {
+   "sha256": "15dd4d346be150939ffe35d534a9eabfe3078f1499dc2d2d81154462f725e9eb",
+   "size": 1198997,
+   "name": "SimpleDiscordRichPresence-forge-4.0.3-build.40+mc1.20.1.jar"
+  },
+  {
+   "sha256": "1e923563c4d85793ef59849114c0a7c51ba1e1446e1976eeedb58acb81f52b44",
+   "size": 99700,
+   "name": "SimpleLogin-1.20.1-1.0.2-all.jar"
+  },
+  {
+   "sha256": "1db6f5595e5edc255db6800de9e0e1aa8e01e10d79d1784d549d70eb2cf53012",
+   "size": 509724,
+   "name": "SimpleStorageNetwork-1.20.1-1.13.2.jar"
+  },
+  {
+   "sha256": "54c1ced26b98a18a6a930f509bc40211f7f65bb02907a354d3c8a93db520c54a",
+   "size": 92488,
+   "name": "Temporary-Spawners-1.20.1-1.5.3.jar"
+  },
+  {
+   "sha256": "c109016f46ca9bdae69976bf080bbf2e8e5968cb66c0a78845f8ca6af5dbbeb1",
+   "size": 107532,
+   "name": "TerraBlender-forge-1.20.1-3.0.1.10.jar"
+  },
+  {
+   "sha256": "3a597f85447f1ad69db6d89b401beadfc42ba740717b77803969ec48361d5f21",
+   "size": 416897,
+   "name": "The-Harvest-1.20.1-1.1.3.jar"
+  },
+  {
+   "sha256": "e9923900cabbc12ffde7cc36113936f24b773bb33b22c19e4109cca52fc55ad6",
+   "size": 26957,
+   "name": "ToastControl-1.20.1-8.0.3.jar"
+  },
+  {
+   "sha256": "3265301a1b37e48cca45eabe51ddc80add6054a5e847b5ff66322c05419b9b3d",
+   "size": 124515,
+   "name": "Wallets-1.20.1-1.1.0.jar"
+  },
+  {
+   "sha256": "64a4aa07c73febc757946c4d89c4ce6f7cae5ecd6156df5a8d18419d32be6647",
+   "size": 20654930,
+   "name": "WeaponsOfMiracles-2.0.164-mc1.20.1-forge.jar"
+  },
+  {
+   "sha256": "101c30d01d0cf9d86190f578eb1e43bd06b64092e95662a00ef52946f472c7b1",
+   "size": 370524,
+   "name": "YungsApi-1.20-Forge-4.0.6.jar"
+  },
+  {
+   "sha256": "93c24e4075c51da0866f3fc92322bdb60e590ac2cd78dce275460839c54c36f5",
+   "size": 792381,
+   "name": "YungsBetterDungeons-1.20-Forge-4.0.4.jar"
+  },
+  {
+   "sha256": "6632e7bcc58325098e85bcb755483de7cb3af92a5ea548f3b5c0162cbf0dc1dc",
+   "size": 492998,
+   "name": "YungsBetterMineshafts-1.20-Forge-4.0.4.jar"
+  },
+  {
+   "sha256": "054b0a1be86510ed6bd05de66a29200f13f5603c0c9eb7e62074ddc3d19cb0e4",
+   "size": 473564,
+   "name": "YungsBetterStrongholds-1.20-Forge-4.0.3.jar"
+  },
+  {
+   "sha256": "728e49e81a088291c75835130f59357fe772d77c1f2de91c63872579d5485f6c",
+   "size": 136236,
+   "name": "YungsBridges-1.20-Forge-4.0.3.jar"
+  },
+  {
+   "sha256": "cd1786902a79434f8fd762d741019d9c8a79725fef7e30a89c153c934e1e6a9e",
+   "size": 1006518,
+   "name": "Zeta-1.0-31.jar"
+  },
+  {
+   "sha256": "16bc5bcc19db9029c24f951346ec71098e6f5b0afef96e61894a2e9407aad37c",
+   "size": 26350793,
+   "name": "alexsmobs-1.22.9.jar"
+  },
+  {
+   "sha256": "7b8e945da294b745e6aed9f88f28e232a767e032d7c2b8137a8ef36421d9fb33",
+   "size": 1187126,
+   "name": "alltheleaks-1.1.1+1.20.1-forge.jar"
+  },
+  {
+   "sha256": "2ce69432abd105aa9e8627d3294dacb747331d73b07725cd30650ad78eae00bb",
+   "size": 218740,
+   "name": "almostunified-forge-1.20.1-0.11.0.jar"
+  },
+  {
+   "sha256": "2ecb189991320d789cd2c539d770b5b52ad71eff93d186297d10853bcb6ee00a",
+   "size": 1301022,
+   "name": "amendments-1.20-2.2.5.jar"
+  },
+  {
+   "sha256": "e12419e43e3babc810af289403c5cd96bd7f09809b389acc6bb2f122b4b2a426",
+   "size": 47428,
+   "name": "appleskin-forge-mc1.20.1-2.5.1.jar"
+  },
+  {
+   "sha256": "eae5e753536614fbcf968f3f11cae54779d07e8547199ea5800dbb17617bfeee",
+   "size": 225149,
+   "name": "aquaculturedelight-1.1.1-forge-1.20.1.jar"
+  },
+  {
+   "sha256": "218b471d0b8a1f6cda14cfc1beb9eeb0df54304500acc6c5613d9b88ec65d9af",
+   "size": 580602,
+   "name": "architectury-9.2.14-forge.jar"
+  },
+  {
+   "sha256": "2172db18ab7a4f43da49a2bb245b3d90f1c6cd8f7ce7905870dbc60e3f5ad40b",
+   "size": 1459126,
+   "name": "ars_elemental-1.20.1-0.6.8.0.jar"
+  },
+  {
+   "sha256": "1f1debc282a0c379c1141f2840ea294eede6f6b544c589663f40bbe17b59a1af",
+   "size": 12430237,
+   "name": "ars_nouveau-1.20.1-4.12.7-all.jar"
+  },
+  {
+   "sha256": "64eec9cffb8847a459536096ac396b135ffb07c7d9d13c6a47d9cd7b251276ab",
+   "size": 91808,
+   "name": "athena-forge-1.20.1-3.1.2.jar"
+  },
+  {
+   "sha256": "053205e3dac0d19fcff4aa3d4f5e4df48d3398b54d446d65fb918c520429e11a",
+   "size": 559741,
+   "name": "balm-forge-1.20.1-7.3.41-all.jar"
+  },
+  {
+   "sha256": "0bc56a648bb4f5d61a1eb6ddf4539736a64da250c58385d543c0ebbb1ee0cc2f",
+   "size": 131759,
+   "name": "baubley-heart-canisters-1.20.1-1.2.0.jar"
+  },
+  {
+   "sha256": "0658aea747cfaea37171ea0794e420c4ac40e638b1d7dec50d196086b80a4cb7",
+   "size": 391010,
+   "name": "blockui-1.20.1-1.0.193.jar"
+  },
+  {
+   "sha256": "9f242f4f3330f3d0d985f5f3ce9a92fe09016ff9c6162252f201d17009b28d7d",
+   "size": 11839865,
+   "name": "born_in_chaos_[Forge]1.20.1_1.7.5.jar"
+  },
+  {
+   "sha256": "37495445e79df8b30a3a038a0051f3c8aa8447f91a9d0aa0d20baef69dda9368",
+   "size": 40125,
+   "name": "caelus-forge-3.2.0+1.20.1.jar"
+  },
+  {
+   "sha256": "51f6d78dd6c7874657e5757fd2f5d780aa3cd415052ad071077b8894c6430942",
+   "size": 594191,
+   "name": "canary-mc1.20.1-0.3.3.jar"
+  },
+  {
+   "sha256": "9e0dc303fe2b96db0707487bff0e1cb1173d4e54367364130655c25f2c219f2f",
+   "size": 169487,
+   "name": "charmofundying-forge-6.5.0+1.20.1.jar"
+  },
+  {
+   "sha256": "300e02535342b710fb34409821de9d097b0d8b17f56a57a17d75d05c4c1c5b63",
+   "size": 15060263,
+   "name": "chipped-forge-1.20.1-3.0.7.jar"
+  },
+  {
+   "sha256": "56c7ab87348a5292583aac787b6cf11b5193e77f02af1d17ea75a96f8640b3ce",
+   "size": 3185275,
+   "name": "citadel-2.6.3-1.20.1.jar"
+  },
+  {
+   "sha256": "1e895e85cf5b1e1905ef3178ec155c8badfe22a1577b92c09143a5aa1f4ce0f2",
+   "size": 1181413,
+   "name": "cloth-config-11.1.136-forge.jar"
+  },
+  {
+   "sha256": "d7cd3ec8083e294e17cb50fe607b416c1dc83ce885e53ba3995d86e028f790e0",
+   "size": 1509649,
+   "name": "cofh_core-1.20.1-11.0.2.56.jar"
+  },
+  {
+   "sha256": "594bc5d40f2a3fec1ad95732524f65e01a27ac2abeb9d59889cd9f01fd8db6cb",
+   "size": 745947,
+   "name": "collective-1.20.1-8.39.jar"
+  },
+  {
+   "sha256": "fbfa83da5a6f5717d34068af5283ebbb9f9a2474482bc818f588cd1bdbc11acd",
+   "size": 120598,
+   "name": "connectivity-1.20.1-7.6.jar"
+  },
+  {
+   "sha256": "8d77c5fc8dc981c750a8e66d4665f055457f748f0ce49a303d9bc50347bdbf7c",
+   "size": 245644,
+   "name": "corpse-forge-1.20.1-1.0.23.jar"
+  },
+  {
+   "sha256": "c790e8671625b05ec0aa19272e0ea74ea95619f953e3c6f39a6736af0d386804",
+   "size": 88752,
+   "name": "cosmeticarmorreworked-1.20.1-v1a.jar"
+  },
+  {
+   "sha256": "6fbb910c367dbce8e4fc7e5bf64b6edd4de980906ed00af8e47e4af843c0d9b0",
+   "size": 19170905,
+   "name": "create-1.20.1-6.0.8.jar"
+  },
+  {
+   "sha256": "9bf3ae15d86ec95d128542caf10e4b5498e49ca02f725b9302d6daecd5eae1db",
+   "size": 1577313,
+   "name": "createaddition-1.20.1-1.3.3.jar"
+  },
+  {
+   "sha256": "e24e1d4c6ffbe8fca9b8da4aad14f3ea9b685b2830ddc33d67ab51aaea0c3d51",
+   "size": 31724,
+   "name": "cupboard-1.20.1-3.9.jar"
+  },
+  {
+   "sha256": "1e817919a35b37cf30524aaec73f0ca5130452f23f168f844854df282eb8e51f",
+   "size": 398066,
+   "name": "curios-forge-5.14.1+1.20.1.jar"
+  },
+  {
+   "sha256": "6a8d84f68f37465f4fdc991c34623a6dcc8bb86a1eb6c6c738aacc9eeac9d999",
+   "size": 1180560,
+   "name": "domum_ornamentum-1.20.1-1.0.303-snapshot-universal.jar"
+  },
+  {
+   "sha256": "bd7f168ec56f14a25d36d9d0dc4d281e88f77b1ba678907b5c570e5c051a5ca4",
+   "size": 839685,
+   "name": "dummmmmmy-1.20-2.0.12-forge.jar"
+  },
+  {
+   "sha256": "251b531ff2882c61a4c2eba3bd7b1683aa22b6c2d459e27bfde04a2948c99e1e",
+   "size": 13161907,
+   "name": "dungeons-and-taverns-3.0.3.f[Forge].jar"
+  },
+  {
+   "sha256": "52ea663852860eef04fc55268dd3890b338c9968f8b7f3ef504fd013a05b28f0",
+   "size": 22344,
+   "name": "durabilitytooltip-1.1.6-forge-mc1.20.jar"
+  },
+  {
+   "sha256": "c170bbc32b0d2b3073413920dde2f87e612ae2a7be8596cf06d38315ef8f67cc",
+   "size": 2270248,
+   "name": "easy_npc-forge-1.20.1-7.4.1.jar"
+  },
+  {
+   "sha256": "438652873d02931e6fb82e652b48c8349afd3c2fa7068aa052fdab640534f325",
+   "size": 25438,
+   "name": "easy_npc_bundle-forge-1.20.1-7.4.1.jar"
+  },
+  {
+   "sha256": "a7c220210097cdd34287513f9f794de71d561f5e8eca48055ae37057d0aca72a",
+   "size": 978860,
+   "name": "easy_npc_config_ui-forge-1.20.1-7.4.1.jar"
+  },
+  {
+   "sha256": "f96c26e7ac9e2dade0aa04f71b9f8708a2b7af92b9cc691103ae32c62764e6ab",
+   "size": 100660,
+   "name": "elytraslot-forge-6.4.4+1.20.1.jar"
+  },
+  {
+   "sha256": "eed3d1325f2acc2fd4e69bb495e5ccb91d962126ac5330f0582ebc2a3daf47fb",
+   "size": 1320675,
+   "name": "embeddium-0.3.31+mc1.20.1.jar"
+  },
+  {
+   "sha256": "db0ee6aaf7e78d758885969e1d237e6efef07109195d4bb81fa06b304ddc12aa",
+   "size": 1590221,
+   "name": "entityculling-forge-1.10.5-mc1.20.1.jar"
+  },
+  {
+   "sha256": "69566cf70ae2d91d3f2564c608f014c87e290cef6215c2a27719851165485f73",
+   "size": 8071119,
+   "name": "epic-fight-20.14.17-mc1.20.1-forge.jar"
+  },
+  {
+   "sha256": "6043fdc77ea9651b1293e8602c8e858c728628f6f6b6e9efa247e4281f4ca733",
+   "size": 2913733,
+   "name": "epic-knights-1.20.1-forge-10.11.jar"
+  },
+  {
+   "sha256": "60723448eb979d29da51bd6fe71e6ef1b695decd3d91da76f1e970664bf80693",
+   "size": 544856,
+   "name": "fantasy_armor-forge-1.2.4-1.20.1.jar"
+  },
+  {
+   "sha256": "c3622380f9d8aeaada06a5b1bc900dd42a3ecc8acaf6efeb04e0d7141d681f25",
+   "size": 592319,
+   "name": "fantasy_weapons-forge-0.4-1.20.1.jar"
+  },
+  {
+   "sha256": "11035b688bb1018a7ebfdaa868ffe6ace87e533b678dcf3b689c15f79fe1af2c",
+   "size": 3202951,
+   "name": "fantasyfurniture-1.20.1-9.0.0.jar"
+  },
+  {
+   "sha256": "9c2c9396a49e796d88497758caa4637d2bcbb433c318e2dd9cebcffbaf0f6c54",
+   "size": 123034,
+   "name": "ferritecore-6.0.1-forge.jar"
+  },
+  {
+   "sha256": "08dc722aaa1bd61b4ee867badeb830e537b8362633197dd211c772a4a002f42e",
+   "size": 3205,
+   "name": "fixexperiencebug-1.20-46.2.2.jar"
+  },
+  {
+   "sha256": "5736fd8a36fb3c69f99bae3127fb3743b68c801ffbab71a876c2a203a2c19e0e",
+   "size": 276850,
+   "name": "flib-1.20.1-0.0.16.jar"
+  },
+  {
+   "sha256": "f65d1a3defd3d9d56d498ee79b6eeda8ec91193e6c2f989581e23f8069f4499f",
+   "size": 169369,
+   "name": "forge-medievalend-1.0.1.jar"
+  },
+  {
+   "sha256": "783f7aa42089b6f72500801284796f7cc8eb641ecddcf76f65bf586c017efb02",
+   "size": 1159043,
+   "name": "ftb-chunks-forge-2001.3.8.jar"
+  },
+  {
+   "sha256": "e0022bfe29dc10e373947701dae1bc4ce75ee15fe21f6d89269677fbb9aebf73",
+   "size": 157732,
+   "name": "ftb-essentials-forge-2001.2.4.jar"
+  },
+  {
+   "sha256": "41810281b65336265cae2c88412022d02f2f0a3f28c66a06173d86f98acf14a7",
+   "size": 780558,
+   "name": "ftb-library-forge-2001.2.13.jar"
+  },
+  {
+   "sha256": "9ea9d159a78a2724cfe0457b024680fdb52a2126eff9cfa5280a30578f647a68",
+   "size": 1255469,
+   "name": "ftb-quests-forge-2001.4.22.jar"
+  },
+  {
+   "sha256": "ec654cb94b3be8217da91f114667d7b0170c7be2ed533ac7e4faa337d1f5b872",
+   "size": 87362,
+   "name": "ftb-ranks-forge-2001.1.7.jar"
+  },
+  {
+   "sha256": "b1cb4d82ea9f137a87e12a7aaf3329619294b56f7d70337dfd557a76e10b6e07",
+   "size": 252579,
+   "name": "ftb-teams-forge-2001.3.2.jar"
+  },
+  {
+   "sha256": "16a8eb9de88d5c33d29cb076cc39dfb337b2c54348e1ef1efe9dd60cf85e5f72",
+   "size": 129725,
+   "name": "ftb-xmod-compat-forge-2.1.3.jar"
+  },
+  {
+   "sha256": "19cea280a56e533b9669d4f866aef38ebe54f6d8627efe6798016e17b6b4afda",
+   "size": 1954591,
+   "name": "ftbbackups2-forge-1.20-1.0.23.jar"
+  },
+  {
+   "sha256": "c04abba4fd354dd8c0e8a732f1f05f4dca893d2e1d962b2ab128bbd411478747",
+   "size": 1038209,
+   "name": "geckolib-forge-1.20.1-4.8.4.jar"
+  },
+  {
+   "sha256": "c06b67f0ee4a12cdcfd5048112049cadeaed6b374f8b4a4c098c6f217bf0ba5d",
+   "size": 42730,
+   "name": "globalxp-forge-1.20.1-1.12.jar"
+  },
+  {
+   "sha256": "57f7557cfe1ec8a9a72b27c0ed94587b77941402ce29acac97d9954365ff500f",
+   "size": 243520,
+   "name": "hardcorerevival-forge-1.20.1-12.0.14.jar"
+  },
+  {
+   "sha256": "2b80245fc9b7d6fdc61d71f9892f4c6114eb7f303f65634845aaab25f84d1e82",
+   "size": 21854126,
+   "name": "iceandfire-2.1.13-1.20.1-beta-5.jar"
+  },
+  {
+   "sha256": "5cd376424034f824c06361a31d4941fc1c9e2135613efbd2e69e69457cfc4e3b",
+   "size": 14420114,
+   "name": "idas_forge-1.13.0+1.20.1.jar"
+  },
+  {
+   "sha256": "fe54dd2d78591a16f44600940bc66c7d40a83888f5a9e4623da888dc6f7421de",
+   "size": 2435800,
+   "name": "immersive_aircraft-1.4.1+1.20.1-forge.jar"
+  },
+  {
+   "sha256": "3eaffc8239a87500391e93516f1eb6f05823767fe0153a2644c4996996678783",
+   "size": 5517554,
+   "name": "immersive_melodies-0.6.1+1.20.1-forge.jar"
+  },
+  {
+   "sha256": "4c7281b8d0f613df04de235dee7509ba90fbeafcfc28f9bde6f02651cb3e1ee9",
+   "size": 704838,
+   "name": "integrated_api-1.7.4+1.20.1-forge.jar"
+  },
+  {
+   "sha256": "2d3a86f503dbde51afa5142951525c37e227016ce8d9e7dfd10bbdd9233f0204",
+   "size": 1385600,
+   "name": "jei-1.20.1-forge-15.20.0.112.jar"
+  },
+  {
+   "sha256": "8b2679b7b4881e0aa430fd24345ea446de919faf8a45bd2a71d37c7e8ff6ae1e",
+   "size": 7160405,
+   "name": "journeymap-1.20.1-5.10.3-forge.jar"
+  },
+  {
+   "sha256": "e78686b92c3761ec26eb9d3c53efdd3d6ca77981cbd3723995e1163b7103ae0b",
+   "size": 625185,
+   "name": "konkrete_forge_1.8.0_MC_1.20-1.20.1.jar"
+  },
+  {
+   "sha256": "6a66c6a68ec09f8717cdbf06883394f0ee24d7cd826b7134a0f81839e8e720ae",
+   "size": 7442998,
+   "name": "kotlinforforge-4.12.0-all.jar"
+  },
+  {
+   "sha256": "7ed3229677a98159badd9250f8e9555b5e8f7f7b55981f1a99b11e30574bafd4",
+   "size": 30960,
+   "name": "kubejs-create-forge-2001.3.0-build.8.jar"
+  },
+  {
+   "sha256": "1769312192fbf9d72f45054ba61130523bfb471b5f480a4bff8c210ec09400bb",
+   "size": 1658792,
+   "name": "kubejs-forge-2001.6.5-build.26.jar"
+  },
+  {
+   "sha256": "ae6a40d1b3639b39819d131f11adc914114583441a9687936d3f90d9c3b06775",
+   "size": 44857823,
+   "name": "legendarymonsters-2.1.22 MC 1.20.1.jar"
+  },
+  {
+   "sha256": "d7527bfd0fb480e867e95a4504b278951a5e6b7857bf79c3a8ba7cb6fd2c50ab",
+   "size": 10445393,
+   "name": "lightmanscurrency-1.20.1-2.3.0.5.jar"
+  },
+  {
+   "sha256": "d2fdaf7e9bc53fde7da4a86ab17018a3ed6c16fc2d46de5054e5a83e2bef7871",
+   "size": 101931,
+   "name": "lionfishapi-3.0.jar"
+  },
+  {
+   "sha256": "8645bc1926c231c715beb2393141c97079f9a84798039734479d69753ddd42bb",
+   "size": 8134,
+   "name": "lootintegration_wda-1.8.jar"
+  },
+  {
+   "sha256": "88dc2701f90c04a4fa343be11ea0c21cbda1d675cba514f201946dcd8eae17ea",
+   "size": 42220,
+   "name": "lootintegrations-1.20.1-4.7.jar"
+  },
+  {
+   "sha256": "01200ee5889e6bcc3c5fa8f32b7b49a4bd58e653699eeb655c6f2dd314e3ce51",
+   "size": 463485,
+   "name": "lootr-forge-1.20-0.7.35.94.jar"
+  },
+  {
+   "sha256": "95c5aae4e82758d5c0ca2ba61c4cf72e9240e53f68befe8104c68fa9f9b19eed",
+   "size": 693579,
+   "name": "mcw-bridges-3.1.2-mc1.20.1forge.jar"
+  },
+  {
+   "sha256": "1e45593b718dbdb04a4ab228cf165afc27840e605bc44a65e0b0730b1ec1c178",
+   "size": 313635,
+   "name": "medieval_buildings-1.20.1-1.1.3-forge.jar"
+  },
+  {
+   "sha256": "b855f886a9e9a1c101d80f47b34f212ad0d0ef7764d549dd3544bd46de6c1e7e",
+   "size": 906743,
+   "name": "medieval_paintings-1.20-7.0.jar"
+  },
+  {
+   "sha256": "933e2a7e79c4594f965f7f7d00b1f28a98ec2a180ad8f9f90310a266fe5cf5d8",
+   "size": 37178,
+   "name": "melody_forge_1.0.3_MC_1.20.1-1.20.4.jar"
+  },
+  {
+   "sha256": "becc8cd7a7fac3fd9879bdb0c70b002f8ace36da024aa13ca95f99188818caaf",
+   "size": 77800516,
+   "name": "minecolonies-1.20.1-1.1.1231.jar"
+  },
+  {
+   "sha256": "7db0c735b9037937757dcc9d40e0b6e2dee5f01336096e1a3a2a371ed0cfda4d",
+   "size": 1002234,
+   "name": "modernfix-forge-5.27.66+mc1.20.1.jar"
+  },
+  {
+   "sha256": "007c05ae799417ca7aa26669c5d97be9dface5b6fc27aca4ca8031cafe4ddd6e",
+   "size": 1419416,
+   "name": "moonlight-1.20-2.16.34-forge.jar"
+  },
+  {
+   "sha256": "e8ce1768cda6f1e1fadd2321c92921b473bd0cee45ba4b8387fb30f8326cb31c",
+   "size": 36033850,
+   "name": "mowziesmobs-1.8.2.jar"
+  },
+  {
+   "sha256": "3102eb9915591296d14e22992d0a7baa526161b6e92058c017425c0bff19efb6",
+   "size": 38718,
+   "name": "multipiston-1.20-1.2.43-RELEASE.jar"
+  },
+  {
+   "sha256": "e944656f2671b87d52af9756c48bcfb5b90956bef1a40bf1b5fcae731a367518",
+   "size": 134885,
+   "name": "notenoughcrashes-4.4.9+1.20.1-forge.jar"
+  },
+  {
+   "sha256": "a125ef6358212d896e56fdf2db596b50e847b5f53ebe1f32eb9784b26197a80d",
+   "size": 140651,
+   "name": "nyfsquiver-1.20.1-forge-1.0.1.jar"
+  },
+  {
+   "sha256": "0945df0cba0f62b3901dd80c3268e5311b770ece78c78037a45db12ac0425fef",
+   "size": 2851119,
+   "name": "oculus-mc1.20.1-1.8.0.jar"
+  },
+  {
+   "sha256": "015f6d95e1f2f0dc98e70c9375cf21ccfc8214f308ff65aec4f696d6420b773a",
+   "size": 14034,
+   "name": "overloadedarmorbar-1.20.1-1.jar"
+  },
+  {
+   "sha256": "f692b0a24c46c954358db8535248021deaf3399973c4e746ba1e3e115a8a48c9",
+   "size": 431615,
+   "name": "pipez-forge-1.20.1-1.2.26.jar"
+  },
+  {
+   "sha256": "90d9965cb9efdbda29fdc5610be3914cf7008bf5c392ff34f7ab25f96a852691",
+   "size": 181437,
+   "name": "player-animation-lib-forge-1.0.2-rc1+1.20.jar"
+  },
+  {
+   "sha256": "87912e08fcb8903706ea3c82d6eecba3b536bc54c87dc4734d495c7d62d10274",
+   "size": 1356120,
+   "name": "pmmo-1.20.1-1.7.41.jar"
+  },
+  {
+   "sha256": "abf42a3240b083fc96b9c022a049323cd4130844fcef338e1ab8b2cd6502a04b",
+   "size": 1343694,
+   "name": "polylib-forge-2000.0.3-build.143.jar"
+  },
+  {
+   "sha256": "cbe63a0a1cb6ae8dbc0e29bb96d149a137cd4e714b295fa49d230994091d157f",
+   "size": 299601,
+   "name": "polymorph-forge-0.49.10+1.20.1.jar"
+  },
+  {
+   "sha256": "a3d42dcd63133b7542599b5e12ecb67e0719ea19dc28a1f3e3365a1ad7df5978",
+   "size": 2285835,
+   "name": "ponderjs-1.20.1-2.1.0.jar"
+  },
+  {
+   "sha256": "2a6c7e0825c69bd38dc1bb1ce8a8d6b097cac835e16e46afaa0f207fb819bb96",
+   "size": 47170,
+   "name": "radiantgear-forge-2.2.0+1.20.1.jar"
+  },
+  {
+   "sha256": "5206c8117f3869f6ea894c034f4a18d4def40ef8b0da106eb662ebd4e8ebbf36",
+   "size": 652022,
+   "name": "realmrpg_skeletons-1.1.0-forge-1.20.1.jar"
+  },
+  {
+   "sha256": "b13afb95231d88e1caea5a045967e0fc291b29020b0d26ad39e6f9e9a551fee8",
+   "size": 432753,
+   "name": "resourcefullib-forge-1.20.1-2.1.29.jar"
+  },
+  {
+   "sha256": "fed2211429301bf043864183cab9ab8e92d4cc4dbb9e488ce6c75217c54584a6",
+   "size": 1798244,
+   "name": "rhino-forge-2001.2.3-build.10.jar"
+  },
+  {
+   "sha256": "6a24c20ff92a9b804656bdb3dc1d06b601bc258d0c5b6fb644ccfc680555d6a1",
+   "size": 1973951,
+   "name": "siege-machines-1.20.1-forge-1.39.jar"
+  },
+  {
+   "sha256": "9ca45fb6d723474d145227bed27dd1791cca30ac96fd8f05084417b0779e0e01",
+   "size": 225949,
+   "name": "silent-lib-1.20.1-8.0.0.jar"
+  },
+  {
+   "sha256": "e036518b740ab399e153241d73919d9650bb9d8ba0d205a32f5995a69468c6bc",
+   "size": 14510,
+   "name": "sit-1.20.1-1.3.5.jar"
+  },
+  {
+   "sha256": "18678d24dd3182f7eb9a1bee2bc377789bd8f33f8c2a45a632c7005800b7e353",
+   "size": 259518,
+   "name": "skinrestorer-2.9.0+1.20-forge.jar"
+  },
+  {
+   "sha256": "0ee48f7bf78070a7cb5858492faa6fe7d58443acbd97a92547bd664ee710e5c1",
+   "size": 14249,
+   "name": "smoothchunk-1.20.1-4.1.jar"
+  },
+  {
+   "sha256": "ffa11da88bde6ed6158bfba25e2e33005260b080a4558cc4f85be7baea9f9220",
+   "size": 1130880,
+   "name": "sophisticatedbackpacks-1.20.1-3.24.62.2017.jar"
+  },
+  {
+   "sha256": "96c0fa99f790df039116278518fbc78d858ea43cf2d317031e7d81fb2706a7a3",
+   "size": 1622705,
+   "name": "sophisticatedcore-1.20.1-1.3.73.2192.jar"
+  },
+  {
+   "sha256": "d05d3e9052ea282e7764a963e6f66402fa11fa4bfc44faab97865503c5843a3f",
+   "size": 1821228,
+   "name": "sophisticatedstorage-1.20.1-1.4.77.2014.jar"
+  },
+  {
+   "sha256": "57ce3c7d5abe724d9fb82f3d068b7717a56b94b7d3ea98f90a2f9ca61c8f57b1",
+   "size": 203819,
+   "name": "sound-physics-remastered-forge-1.20.1-1.4.10.jar"
+  },
+  {
+   "sha256": "eba275ba9bb0cb5b542913c3138c6eeff6a752898266d63d125d185f26ac99ed",
+   "size": 3114590,
+   "name": "spark-1.10.53-forge.jar"
+  },
+  {
+   "sha256": "e543d1dc48a27015921e832591248f325b034e81546c1c3d977b2769dac0a385",
+   "size": 185835,
+   "name": "starterkit-1.20.1-8.1.jar"
+  },
+  {
+   "sha256": "602c8f17f6d805458c3da679b28183b0dfb4987457fd8a365de339d127f22831",
+   "size": 62974,
+   "name": "structureessentials-1.20.1-5.0.jar"
+  },
+  {
+   "sha256": "a4dc864c13a825546e09805ce754a4dc8d92919a69b940ce284b546dad4e9699",
+   "size": 1128298,
+   "name": "structurize-1.20.1-1.0.816.jar"
+  },
+  {
+   "sha256": "bea425ef7e9cd27a7fc0f4b89e00cbd0a1ee050f071ecaa9f28f7238f400f0a3",
+   "size": 206584,
+   "name": "supermartijn642configlib-1.1.8-forge-mc1.20.jar"
+  },
+  {
+   "sha256": "6132fc23a2fe1da0ca57439b35526ee9a1a8d898397ff8e61b2d08fb951cdf6a",
+   "size": 13667742,
+   "name": "supplementaries-1.20-3.1.43-forge.jar"
+  },
+  {
+   "sha256": "b8ebc7ea467637dc918ffa9c8eaa273f8723e6e81be93cf5f69618f8072baa11",
+   "size": 3758273,
+   "name": "takesapillage-1.0.3-1.20.1.jar"
+  },
+  {
+   "sha256": "c67640d6c41f24a28d0b2d2a48dd6014b24242ef1b1e4d6fda349d48df48c5a6",
+   "size": 10136081,
+   "name": "threateningly_mobs-1.1.1-forge-1.20.1.jar"
+  },
+  {
+   "sha256": "9c7781e6e6a82b1d3a8b0e6ddbe4fdf660c697d3df4305b2065c39c5b33673f8",
+   "size": 622073,
+   "name": "titanium-1.20.1-3.8.34.jar"
+  },
+  {
+   "sha256": "7ba6ab6ff1422b9175c3a7f232309db2c82d3ca3787547c79da7839cd78c262f",
+   "size": 49194778,
+   "name": "towntalk-1.20.1-1.1.0.jar"
+  },
+  {
+   "sha256": "36942512eed99dceff59c6b2bd3766d1bd689db3dab60c819e9527bd1abf8783",
+   "size": 11230014,
+   "name": "valarian_conquest-4.2.2-forge-1.20.1.jar"
+  },
+  {
+   "sha256": "26bb5a271fbff83c39c9f956d108157db46acb868a67175176d1233693771434",
+   "size": 4918879,
+   "name": "voicechat-forge-1.20.1-2.6.21.jar"
+  },
+  {
+   "sha256": "5ecc6535596b5954f6293224be6b35805c64f4d4aedc2b9e32d9508dd529cabd",
+   "size": 533738,
+   "name": "waystones-forge-1.20.1-14.1.20.jar"
+  }
+ ]
+}

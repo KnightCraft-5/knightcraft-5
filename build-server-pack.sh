@@ -15,14 +15,9 @@ OUT="${1:-$HOME/knightcraft5-server-$(date +%Y-%m-%d).zip}"
 STAGE="$(mktemp -d)"
 trap 'rm -rf "$STAGE"' EXIT
 
-# Client-only mods. A dedicated server either crashes on these or gains
-# nothing from them. Keep this list in sync with mc-test-server/server-disabled.
-CLIENT_ONLY=(
-    AI-Improvements BetterThirdPerson Controlling durabilitytooltip
-    embeddium EnchantmentDescriptions entityculling melody_forge
-    MouseTweaks notenoughcrashes oculus overloadedarmorbar
-    PackMenu SimpleDiscordRichPresence smoothchunk ToastControl
-)
+# Client-only mods, shared with build-mrpack.sh so the two cannot drift.
+mapfile -t CLIENT_ONLY < <(grep -v '^#' "$SRC/client-only-mods.txt" | grep -v '^[[:space:]]*$')
+[ ${#CLIENT_ONLY[@]} -gt 0 ] || { echo "client-only-mods.txt is empty or missing" >&2; exit 1; }
 
 echo "staging from $SRC"
 mkdir -p "$STAGE/mods"
