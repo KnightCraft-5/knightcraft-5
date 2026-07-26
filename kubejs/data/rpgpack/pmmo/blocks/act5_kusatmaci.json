@@ -1,0 +1,14 @@
+{
+	"override": true,
+	"isTagFor": [
+		"create:mechanical_mixer",
+		"create:encased_fan",
+		"create:copper_casing",
+		"pipez:item_pipe",
+		"pipez:fluid_pipe",
+		"pipez:energy_pipe"
+	],
+	"requirements": {
+		"PLACE": { "engineering": 30 }
+	}
+}

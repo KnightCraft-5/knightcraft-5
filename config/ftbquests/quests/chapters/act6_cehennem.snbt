@@ -1,0 +1,376 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "act6_cehennem"
+	group: ""
+	icon: "cataclysm:ignitium_ingot"
+	id: "1000000000000A06"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2000000000000A53"]
+			description: [
+				"Kapıyı aç. Ardındaki sıcaklık seni bekliyor."
+				""
+				"§7Open the gate. The heat behind it is waiting.§r"
+			]
+			icon: "minecraft:obsidian"
+			id: "2000000000000A61"
+			rewards: [{
+				id: "4000000000000A61"
+				type: "xp"
+				xp: 200
+			}]
+			subtitle: "The Other Side"
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				id: "3000000000000A61"
+				type: "dimension"
+			}]
+			title: "Öteki Taraf"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2000000000000B62"]
+			description: [
+				"Ignis kendi forjesinde oturur. Ateşe karşı hazırlıksız gidersen küle dönersin."
+				""
+				"§7Ignis sits in his own forge. Go unprepared against fire and you return as ash.§r"
+			]
+			icon: "cataclysm:ignitium_ingot"
+			id: "2000000000000A62"
+			rewards: [{
+				id: "4000000000000A62"
+				type: "xp_levels"
+				xp_levels: 30
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Lord of Fire"
+			tasks: [{
+				count: 3L
+				id: "3000000000000A62"
+				item: "cataclysm:ignitium_ingot"
+				type: "item"
+			}]
+			title: "Ateşin Efendisi"
+			x: 3.75d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2000000000000A62"
+				"2000000000000C23"
+				"2000000000000C07"
+			]
+			description: [
+				"Pirinç dökülür, buhar yükselir, taş un olur."
+				"Bu noktadan sonra madenlerin iki katı verir. Dikkatli kullan."
+				""
+				"§8Ödül: Mühendislik 45§r"
+				""
+				"§7Brass is cast, steam rises, stone becomes flour."
+				"§7Past this point your ore yields double. Use it carefully.§r"
+				""
+				"§8Reward: Engineering 45§r"
+			]
+			icon: "create:crushing_wheel"
+			id: "2000000000000A63"
+			rewards: [{
+				command: "/pmmo admin @p set engineering level 45"
+				elevate_perms: true
+				id: "4000000000000A63"
+				silent: true
+				title: "Mühendislik 45 / Engineering 45"
+				type: "command"
+			}]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "Brass and Steam"
+			tasks: [{
+				count: 8L
+				id: "3000000000000A63"
+				item: "create:brass_casing"
+				type: "item"
+			}]
+			title: "Pirinç ve Buhar"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2000000000000A61"]
+			description: [
+				"Ignis'e ateş direnci olmadan gitmek intihardır."
+				"Bu bir tavsiye değil."
+				""
+				"§7Going to Ignis without fire resistance is suicide."
+				"§7This is not a suggestion.§r"
+			]
+			icon: "minecraft:potion"
+			id: "2000000000000B62"
+			rewards: [{
+				id: "4000000000000B62"
+				type: "xp_levels"
+				xp_levels: 18
+			}]
+			subtitle: "Fireproof"
+			tasks: [
+				{
+					count: 12L
+					id: "3000000000000B62"
+					item: "minecraft:blaze_rod"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "3000000000000B63"
+					item: "minecraft:magma_cream"
+					type: "item"
+				}
+			]
+			title: "Ateşe Dayanıklı"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2000000000000A61"]
+			description: [
+				"Uzaktan vurabilen adam, vurulmayan adamdır."
+				""
+				"§bNeden:§r Erişim mesafeni ciddi şekilde arttırır. Cehennem'de"
+				"lav üstünden blok yerleştirmek, patronlara menzil dışından vurmak,"
+				"iskele kurmadan inşa etmek - hepsi bununla kolaylaşır."
+				""
+				"§eTarif:§r Pirinç + altın + bağlantı. Cehennem kuvarsı Apotheosis"
+				"büyü masası için de gerekli - ikisini birlikte topla."
+				""
+				"§7A man who strikes from range is a man who is not struck. Extends your"
+				"§7reach considerably - placing blocks over lava, hitting bosses from"
+				"§7outside their range, building without scaffolding.§r"
+			]
+			icon: {
+				Count: 1
+				id: "create:extendo_grip"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2000000000000B61"
+			optional: true
+			rewards: [{
+				id: "4000000000000E61"
+				type: "xp"
+				xp: 200
+			}]
+			shape: "square"
+			subtitle: "The Extendo Grip"
+			tasks: [{
+				id: "3000000000000B61"
+				item: {
+					Count: 1
+					id: "create:extendo_grip"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Uzatma Pençesi"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2000000000000A61"]
+			description: [
+				"Lav denizinin altında, hiçbir patlamanın yok edemediği bir metal."
+				""
+				"§7Beneath the lava sea, a metal no blast can destroy.§r"
+			]
+			icon: "minecraft:ancient_debris"
+			id: "2000000000000B63"
+			optional: true
+			rewards: [{
+				id: "4000000000000B63"
+				type: "xp_levels"
+				xp_levels: 25
+			}]
+			shape: "square"
+			subtitle: "Ancient Debris"
+			tasks: [{
+				count: 16L
+				id: "3000000000000B64"
+				item: "minecraft:ancient_debris"
+				type: "item"
+			}]
+			title: "Antik Kalıntı"
+			x: 1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2000000000000A63"]
+			description: [
+				"Bakır ve çinko. Basit görünür ama pahalıya patlar."
+				""
+				"§7Copper and zinc. It looks simple, but it costs.§r"
+			]
+			icon: "create:brass_ingot"
+			id: "2000000000000B64"
+			optional: true
+			rewards: [{
+				id: "4000000000000B64"
+				type: "xp"
+				xp: 220
+			}]
+			shape: "square"
+			subtitle: "The Brass Cast"
+			tasks: [{
+				count: 32L
+				id: "3000000000000B65"
+				item: "create:brass_ingot"
+				type: "item"
+			}]
+			title: "Pirinç Dökümü"
+			x: 8.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2000000000000A63"]
+			description: [
+				"Su ısınır, basınç yükselir, çark döner."
+				"Artık nehre ihtiyacın yok."
+				""
+				"§7Water heats, pressure rises, the wheel turns."
+				"§7You no longer need the river.§r"
+			]
+			icon: "create:steam_engine"
+			id: "2000000000000B65"
+			optional: true
+			rewards: [{
+				id: "4000000000000B65"
+				type: "xp"
+				xp: 240
+			}]
+			shape: "square"
+			subtitle: "The Steam Engine"
+			tasks: [{
+				count: 2L
+				id: "3000000000000B66"
+				item: "create:steam_engine"
+				type: "item"
+			}]
+			title: "Buhar Motoru"
+			x: 8.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2000000000000A61"]
+			description: [
+				"§eZorluk: Kolay§r"
+				""
+				"Dikilitaş ödül sandığından. Elektron tüpleri bununla yapılır,"
+				"ve her akıllı makine elektron tüpü ister."
+				""
+				"§bKullanım:§r 1 Açgözlülük = 1 Elektron Tüpü"
+				""
+				"§7Difficulty: Easy - obelisk reward chest."
+				"§7Used for: 1 Greed = 1 Electron Tube. Every smart machine wants one.§r"
+			]
+			icon: "ancient_obelisks:ancient_greed"
+			id: "2000000000000C04"
+			optional: true
+			rewards: [{
+				id: "4000000000000D04"
+				type: "xp"
+				xp: 60
+			}]
+			shape: "hexagon"
+			subtitle: "Ancient Greed - electron tubes"
+			tasks: [{
+				consume_items: false
+				id: "3000000000000D04"
+				item: "ancient_obelisks:ancient_greed"
+				type: "item"
+			}]
+			title: "Kadim Açgözlülük"
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2000000000000C04"]
+			dependency_requirement: "one_completed"
+			description: [
+				"§cZorluk: Zor§r"
+				""
+				"Bu sunucudaki en önemli kaynak."
+				"Zindan Haritası ile bir zindana gir ve Uber Patronu öldür."
+				"Her Uber Patron 3 kalıntı verir, garantili."
+				""
+				"§bKullanım:§r Pirinç Muhafaza, Hassas Mekanizma, Depo Ağı,"
+				"§bMekanik Zanaatkar, Otomatik Tezgah§r"
+				""
+				"§7Difficulty: Hard - THE backbone currency of this server."
+				"§7Enter a dungeon with a Dungeon Map and kill the Uber Boss."
+				"§73 relics guaranteed per Uber Boss."
+				"§7Used for: brass casings, precision mechanisms, storage network,"
+				"§7mechanical crafter, auto crafting table.§r"
+			]
+			icon: "dungeon_realm:general_relic"
+			id: "2000000000000C07"
+			optional: true
+			rewards: [{
+				id: "4000000000000D07"
+				type: "xp_levels"
+				xp_levels: 20
+			}]
+			shape: "gear"
+			size: 1.75d
+			subtitle: "General Relic - the backbone currency"
+			tasks: [{
+				consume_items: false
+				id: "3000000000000D07"
+				item: "dungeon_realm:general_relic"
+				type: "item"
+			}]
+			title: "Zindan Kalıntısı"
+			x: 4.375d
+			y: 2.625d
+		}
+		{
+			dependencies: ["2000000000000A61"]
+			description: [
+				"Seviye 30'a ulaş."
+				""
+				"§7Reach character level 30.§r"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:netherite_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2000000000000C23"
+			rewards: [{
+				command: "/mine_and_slash points cheat_give @p stats 20"
+				elevate_perms: true
+				id: "4000000000000C04"
+				silent: true
+				title: "20 Stat Puanı / 20 Stat Points"
+				type: "command"
+			}]
+			subtitle: "Champion - level 30"
+			tasks: [{
+				id: "3000000000000C04"
+				title: "Seviye 30 / Level 30"
+				type: "custom"
+			}]
+			title: "Şampiyon"
+			x: 3.5d
+			y: -2.0d
+		}
+	]
+	subtitle: ["Act VI - The Nether-walker"]
+	title: "6. Perde - Cehennem Yolcusu"
+}

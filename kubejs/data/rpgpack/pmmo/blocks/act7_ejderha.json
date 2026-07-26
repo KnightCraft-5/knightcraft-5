@@ -1,0 +1,24 @@
+{
+	"override": true,
+	"isTagFor": [
+		"create:deployer",
+		"create:mechanical_arm",
+		"create:item_vault",
+		"storagenetwork:master",
+		"storagenetwork:kabel",
+		"storagenetwork:storage_kabel",
+		"storagenetwork:request",
+		"storagenetwork:request_expanded",
+		"storagenetwork:import_kabel",
+		"storagenetwork:export_kabel",
+		"storagenetwork:filter_kabel",
+		"storagenetwork:import_filter_kabel",
+		"sophisticatedstorage:controller",
+		"sophisticatedstorage:storage_io",
+		"sophisticatedstorage:storage_input",
+		"sophisticatedstorage:storage_output"
+	],
+	"requirements": {
+		"PLACE": { "engineering": 60 }
+	}
+}

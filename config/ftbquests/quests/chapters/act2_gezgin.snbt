@@ -1,0 +1,552 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "act2_gezgin"
+	group: ""
+	icon: "minecraft:filled_map"
+	id: "1000000000000A02"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2000000000000A13"]
+			description: [
+				"Köyün duvarları seni korur ama sana hiçbir şey öğretmez."
+				""
+				"§7The village walls protect you but teach you nothing.§r"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:leather_boots"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2000000000000A21"
+			rewards: [{
+				id: "4000000000000A21"
+				type: "xp"
+				xp: 60
+			}]
+			shape: "circle"
+			size: 1.5d
+			subtitle: "Take to the Roads"
+			tasks: [{
+				advancement: "minecraft:adventure/sleep_in_bed"
+				criterion: ""
+				id: "3000000000000A21"
+				type: "advancement"
+			}]
+			title: "Yollara Düş"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2000000000000B22"]
+			description: [
+				"Yıkıcılar köylere iner ve arkalarında kül bırakır."
+				"Birini indir ve boynuzunu getir."
+				""
+				"§7Ravagers descend on villages and leave ash behind."
+				"§7Bring down one and take its horn.§r"
+			]
+			icon: {
+				Count: 1
+				id: "takesapillage:ravager_horn"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2000000000000A22"
+			rewards: [
+				{
+					count: 12
+					id: "4000000000000A22"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "4000000000000A23"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "The Ravager's Horn"
+			tasks: [{
+				id: "3000000000000A22"
+				item: {
+					Count: 1
+					id: "takesapillage:ravager_horn"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Yıkıcının Boynuzu"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2000000000000A21"]
+			description: [
+				"Yıkıcıya deri zırhla gitme. Gidenler geri dönmedi."
+				""
+				"§7Do not face a Ravager in leather. Those who did have not returned.§r"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2000000000000B22"
+			rewards: [{
+				id: "4000000000000B22"
+				type: "xp_levels"
+				xp_levels: 8
+			}]
+			subtitle: "Armour of Iron"
+			tasks: [
+				{
+					id: "3000000000000B22"
+					item: {
+						Count: 1
+						id: "minecraft:iron_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3000000000000B23"
+					item: {
+						Count: 1
+						id: "minecraft:shield"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Demirden Zırh"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2000000000000A21"]
+			description: [
+				"Bu sunucuda zümrüt değil, altın sikke konuşur."
+				""
+				"§bNeden:§r Lightman's Currency oyuncular arası ticaretin temeli."
+				"Kendi dükkanını kurabilir, uyurken bile satış yapabilirsin."
+				""
+				"§eStrateji:§r Sikke köy tüccarlarından ve zindan sandıklarından gelir."
+				"16 altın sikke küçük bir dükkan açmaya yeter."
+				""
+				"§7Here it is gold coins that talk, not emeralds."
+				"§7Lightman's Currency is the base of player trade - open your own shop"
+				"§7and sell while you sleep.§r"
+			]
+			icon: "lightmanscurrency:coin_gold"
+			id: "2000000000000B21"
+			optional: true
+			rewards: [{
+				id: "4000000000000E21"
+				type: "xp"
+				xp: 90
+			}]
+			shape: "square"
+			subtitle: "The Merchant's Purse"
+			tasks: [{
+				count: 16L
+				id: "3000000000000B21"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			title: "Tüccarın Kesesi"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2000000000000B12"]
+			description: [
+				"Cebinde taşınan bir kapı."
+				""
+				"§bNeden:§r Waystone'a her yerden dönmeni sağlar - bekleme süresiyle."
+				"Zindan baskınından ganimetle kaçmanın en güvenli yolu."
+				""
+				"§eTarif:§r Ametist + end incisi + obsidyen."
+				""
+				"§7A door you carry in your pocket. Returns you to any waystone, on a"
+				"§7cooldown. The safest way to escape a dungeon raid with your loot.§r"
+			]
+			icon: {
+				Count: 1
+				id: "waystones:warp_stone"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2000000000000B23"
+			optional: true
+			rewards: [{
+				id: "4000000000000E22"
+				type: "xp"
+				xp: 90
+			}]
+			shape: "square"
+			subtitle: "The Warp Stone"
+			tasks: [{
+				id: "3000000000000B26"
+				item: {
+					Count: 1
+					id: "waystones:warp_stone"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Warp Taşı"
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2000000000000A21"]
+			description: [
+				"Gezgin, iş bulan adamdır."
+				""
+				"§bNe yapar:§r Tahta düzenli olarak yeni görevler üretir - istenen"
+				"eşyayı getir, karşılığında zümrüt, teçhizat veya nadir malzeme al."
+				"Görevler sürelidir, kaçırırsan gider."
+				""
+				"§eStrateji:§r Bunu üssüne kur ve her giriş çıkışta bak. Fazla"
+				"kalan malzemeni paraya çevirmenin en kolay yolu - özellikle"
+				"3. Perde'de madenden yığınla taş ve cevherle döndüğünde."
+				""
+				"§7A wanderer is a man who finds work. The board keeps generating"
+				"§7timed contracts: bring the item, take emeralds, gear or rare"
+				"§7materials. Build it at your base and check it every time you pass -"
+				"§7it is the easiest way to turn surplus into value.§r"
+			]
+			icon: "bountiful:bountyboard"
+			id: "2100000000000201"
+			optional: true
+			rewards: [{
+				id: "4100000000000201"
+				type: "xp"
+				xp: 90
+			}]
+			shape: "square"
+			subtitle: "The Bounty Board"
+			tasks: [{
+				id: "3100000000000201"
+				item: "bountiful:bountyboard"
+				type: "item"
+			}]
+			title: "Ödül Tahtası"
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2000000000000B21"]
+			description: [
+				"Sikkeler cebinde şıngırdadıkça envanterinde yer kaplar."
+				""
+				"§bNe yapar:§r Cüzdan bir Curios yuvasına takılır ve yerdeki bütün"
+				"sikkeleri otomatik olarak içine çeker. Dükkanlarda doğrudan"
+				"cüzdandan ödeme yaparsın - envanterinde sikke taşımana gerek kalmaz."
+				""
+				"§eStrateji:§r Zindan sandıklarından çıkan sikkeler hızla birikir."
+				"Cüzdanı yükseltirsen daha fazla tür sikke taşır."
+				""
+				"§7Coins jingling in your pocket still take up inventory slots."
+				"§7The wallet sits in a Curios slot, vacuums up dropped coins, and pays"
+				"§7shops directly. Dungeon chests fill it fast.§r"
+			]
+			icon: "wallets:wallet"
+			id: "2100000000000202"
+			optional: true
+			rewards: [{
+				id: "4100000000000202"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "square"
+			subtitle: "The Wallet"
+			tasks: [{
+				id: "3100000000000202"
+				item: "wallets:wallet"
+				type: "item"
+			}]
+			title: "Cüzdan"
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2000000000000A21"]
+			description: [
+				"Yola çıkan adam, taşıyabildiği kadar uzağa gider."
+				""
+				"§bNe yapar:§r Demir çanta hem daha çok yuva hem daha çok yükseltme"
+				"yuvası verir. Çantanı yükseltmek içindekileri kaybettirmez -"
+				"eski çantayı tarife koy, yenisi dolu çıkar."
+				""
+				"§eStrateji:§r Zindan baskınlarında envanterin dolduğunda geri"
+				"dönmek zorunda kalırsın, ve geri dönüş yolu en tehlikeli kısımdır."
+				"Çanta yükseltmesi doğrudan hayatta kalma yükseltmesidir."
+				""
+				"§7A traveller goes as far as he can carry. The iron backpack adds"
+				"§7slots and upgrade slots, and upgrading never loses your contents -"
+				"§7put the old bag in the recipe and the new one comes out full."
+				"§7On a dungeon raid, a full inventory forces the walk back, and the"
+				"§7walk back is the dangerous part.§r"
+			]
+			icon: "sophisticatedbackpacks:iron_backpack"
+			id: "2100000000000203"
+			optional: true
+			rewards: [{
+				id: "4100000000000203"
+				type: "xp"
+				xp: 110
+			}]
+			shape: "square"
+			subtitle: "The Iron Backpack"
+			tasks: [{
+				id: "3100000000000203"
+				item: "sophisticatedbackpacks:iron_backpack"
+				type: "item"
+			}]
+			title: "Demir Sırt Çantası"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2000000000000B22"]
+			description: [
+				"Demir levha ağırdır. Zincir bükülür, ve seninle birlikte hareket eder."
+				""
+				"§bNeden:§r Epic Knights zincir zırhı vanilla zincirinden daha iyi"
+				"korur ve seni yavaşlatmaz. Coif kafayı ve boynu kapatır - miğferin"
+				"altına giyilir, ayrı bir yuva işgal etmez."
+				""
+				"§eStrateji:§r Yıkıcıya gitmeden önce bunu giy. Yıkıcının hücumu"
+				"hazırlıksız bir adamı havaya fırlatır ve düşerken öldürür."
+				""
+				"§7Plate is heavy. Mail bends, and moves with you. Epic Knights mail"
+				"§7protects better than vanilla chainmail without slowing you, and the"
+				"§7coif covers head and neck under the helm. Wear this before the"
+				"§7Ravager - its charge throws an unprepared man and the fall finishes him.§r"
+			]
+			icon: {
+				Count: 1
+				id: "magistuarmory:chainmail_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2100000000000204"
+			optional: true
+			rewards: [{
+				id: "4100000000000204"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+			shape: "square"
+			subtitle: "Mail and Coif"
+			tasks: [
+				{
+					id: "3100000000000204"
+					item: {
+						Count: 1
+						id: "magistuarmory:chainmail_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3100000000000205"
+					item: {
+						Count: 1
+						id: "magistuarmory:coif"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Zincir ve Başlık"
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2000000000000B22"]
+			description: [
+				"Yavaş kurulur, bir kere ateşlenir, ve genelde bir kere yeter."
+				""
+				"§bNe yapar:§r Ağır arbalet bu paketteki en yüksek tek atış hasarına"
+				"sahip erken silahtır. Yavaş dolar - o yüzden ilk atışı sakla, dövüşü"
+				"onunla aç."
+				""
+				"§eStrateji:§r Yıkıcı sana koşarken bir arbalet cıvatası, sonra"
+				"kalkanın arkasına çekil. Grup halinde giderseniz bir kişi arbalet,"
+				"bir kişi kalkan taşısın."
+				""
+				"§7Slow to load, fired once, and usually once is enough."
+				"§7The heavy crossbow has the highest single-hit damage available this"
+				"§7early. Save the first shot to open the fight, then get behind a shield.§r"
+			]
+			icon: {
+				Count: 1
+				id: "magistuarmory:heavy_crossbow"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2100000000000205"
+			optional: true
+			rewards: [{
+				id: "4100000000000205"
+				type: "xp"
+				xp: 120
+			}]
+			shape: "square"
+			subtitle: "The Heavy Crossbow"
+			tasks: [{
+				id: "3100000000000206"
+				item: {
+					Count: 1
+					id: "magistuarmory:heavy_crossbow"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Ağır Arbalet"
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2000000000000A21"]
+			description: [
+				"Görmediğin şey seni öldürür."
+				""
+				"§bNe yapar:§r Dürbün vanilla spyglass'tan daha uzağı gösterir ve"
+				"görüşünü daraltmaz. Bir yapıya girmeden önce dışarıdan bak -"
+				"kaç düşman var, patron nerede duruyor, kaçış yolu hangisi."
+				""
+				"§eStrateji:§r Dungeons Arise ve Better Dungeons yapıları uzaktan"
+				"tanınır. Hangisine hazır olduğunu bilmek, içine girip öğrenmekten"
+				"çok daha ucuzdur - canların sayılı."
+				""
+				"§7What you do not see kills you. The telescope reaches further than a"
+				"§7spyglass without narrowing your view. Scout a structure from outside:"
+				"§7how many enemies, where the boss stands, where the exit is."
+				"§7Knowing which dungeon you are ready for is cheaper than finding out"
+				"§7inside - your lives are counted.§r"
+			]
+			icon: "immersive_aircraft:telescope"
+			id: "2100000000000206"
+			optional: true
+			rewards: [{
+				id: "4100000000000206"
+				type: "xp"
+				xp: 90
+			}]
+			shape: "square"
+			subtitle: "The Telescope"
+			tasks: [{
+				id: "3100000000000207"
+				item: "immersive_aircraft:telescope"
+				type: "item"
+			}]
+			title: "Dürbün"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2000000000000B23"]
+			description: [
+				"Bir ağ, onu kuranlardan çok kullananlara yarar."
+				""
+				"§bNe yapar:§r Paylaşım Taşı renk renk kurulur ve aynı renkteki"
+				"bütün taşlar birbirine bağlanır. Waystone'dan farkı: takıma özel"
+				"bir ağ kurabilirsin."
+				""
+				"§eStrateji:§r Zindan girişlerine birer tane koy. Grup halinde"
+				"baskına giderken herkes kendi üssünden çıkıp aynı noktada buluşur."
+				"Ölen bir oyuncu da ganimetine geri dönebilir."
+				""
+				"§7A network serves the people who use it more than those who built it."
+				"§7Sharestones come in colours and every stone of the same colour links"
+				"§7together, so a team can run a private network. Put one at each dungeon"
+				"§7entrance: everyone leaves from their own base and arrives together,"
+				"§7and a player who dies can get back to their loot.§r"
+			]
+			icon: "waystones:sharestone"
+			id: "2100000000000207"
+			optional: true
+			rewards: [{
+				id: "4100000000000207"
+				type: "xp"
+				xp: 110
+			}]
+			shape: "square"
+			subtitle: "The Sharestone"
+			tasks: [{
+				id: "3100000000000208"
+				item: "waystones:sharestone"
+				type: "item"
+			}]
+			title: "Paylaşım Taşı"
+			x: 4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2000000000000A21"]
+			description: [
+				"Yürüyerek geçirdiğin her saat, oynamadığın bir saattir."
+				""
+				"§bNeden:§r Waystone ağı bu sunucudaki tek hızlı seyahat yolu."
+				"İkisini kur ve aralarında ışınlan. Diğer oyuncuların taşları da"
+				"herkese açıktır - ağ büyüdükçe herkes kazanır."
+				""
+				"§eStrateji:§r Üssüne bir tane, sık gittiğin madene bir tane koy."
+				""
+				"§7Every hour spent walking is an hour not played."
+				"§7The Waystone network is the only fast travel here. Place two and warp"
+				"§7between them. Other players' stones are public - the network grows for all.§r"
+			]
+			icon: "waystones:waystone"
+			id: "2000000000000B12"
+			optional: true
+			rewards: [{
+				id: "4000000000000E12"
+				type: "xp"
+				xp: 80
+			}]
+			shape: "square"
+			subtitle: "The First Waystone"
+			tasks: [{
+				id: "3000000000000B12"
+				item: "waystones:waystone"
+				type: "item"
+			}]
+			title: "İlk Waystone"
+			x: 2.0d
+			y: -2.0d
+		}
+	]
+	subtitle: ["Act II - The Wanderer"]
+	title: "2. Perde - Gezgin"
+}

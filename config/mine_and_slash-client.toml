@@ -16,7 +16,7 @@
 	USE_SPELL_ANIMATIONS = true
 	#If false, gui bars will only render when they aren't full
 	#Allowed Values: DEFAULT, ALWAYS, WHEN_NOT_FULL
-	RENDER_FILLED_GUI_BARS = "DEFAULT"
+	RENDER_FILLED_GUI_BARS = "ALWAYS"
 	#Range: 0.0 ~ 1.0
 	ITEM_RARITY_OPACITY = 0.75
 	#Range: 0.0 ~ 10.0

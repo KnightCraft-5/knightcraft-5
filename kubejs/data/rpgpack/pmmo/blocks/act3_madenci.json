@@ -1,0 +1,12 @@
+{
+	"override": true,
+	"isTagFor": [
+		"create:shaft",
+		"create:cogwheel",
+		"create:large_cogwheel",
+		"create:hand_crank"
+	],
+	"requirements": {
+		"PLACE": { "engineering": 10 }
+	}
+}

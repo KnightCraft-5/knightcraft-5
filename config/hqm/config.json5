@@ -13,9 +13,9 @@
 	// Settings related to server start & modes
 	"Starting": {
 		// If set to true, new worlds will automatically activate Hardcore mode
-		"AUTO_HARDCORE": false,
+		"AUTO_HARDCORE": true,
 		// If set to true, new worlds will automatically activate Questing mode
-		"AUTO_QUESTING": true,
+		"AUTO_QUESTING": false,
 	},
 	// Settings related to loot bags and loot tiers
 	"Loot": {
@@ -61,7 +61,7 @@
 	// Allow every single player in a party to claim the reward for a quest. Setting this to false will give the party one set of rewards to share.
 	"MULTI_REWARD": true,
 	// Allow teams, currently extremely buggy!
-	"ENABLE_TEAMS": true,
+	"ENABLE_TEAMS": false,
 	// Use this to specify NBT tags that should be ignored when comparing items with NBT subset
 	"NBT_SUBSET_FILTER": [
 		"RepairCost",

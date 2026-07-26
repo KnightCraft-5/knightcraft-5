@@ -1,0 +1,9 @@
+{
+	"override": true,
+	"isTagFor": [
+		"create:belt_connector"
+	],
+	"requirements": {
+		"PLACE": { "engineering": 20 }
+	}
+}

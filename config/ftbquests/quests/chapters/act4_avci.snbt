@@ -1,0 +1,814 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "act4_avci"
+	group: ""
+	icon: "create:water_wheel"
+	id: "1000000000000A04"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2000000000000B41"]
+			description: [
+				"Yeraltındaki odada bin yıldır bekleyen bir zırh var."
+				"Zırhın içindeki şey uyanırsa, tek bir vuruşu yeter."
+				""
+				"§7A suit of armour has waited a thousand years in the chamber below."
+				"§7If what sleeps inside it wakes, a single blow is enough.§r"
+			]
+			icon: "mowziesmobs:wrought_helmet"
+			id: "2000000000000A41"
+			rewards: [{
+				id: "4000000000000A41"
+				type: "xp_levels"
+				xp_levels: 20
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "The Wrought Helm"
+			tasks: [{
+				id: "3000000000000A41"
+				item: "mowziesmobs:wrought_helmet"
+				type: "item"
+			}]
+			title: "Dövülmüş Miğfer"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2000000000000A41"
+				"2000000000000C21"
+				"2000000000000B42"
+			]
+			description: [
+				"Nehir senin için çalışabilir. Yorulmaz, uyumaz, ücret istemez."
+				""
+				"§eGerekli:§r 3 Kadim Öfke ve 32 andezit alaşımı. Öfke Kadim"
+				"Dikilitaş ödül sandığından gelir - dalgaları temizlemeden"
+				"açılmaz. Alaşım ise 64 demir külçe demek."
+				""
+				"§cStrateji:§r Dikilitaşa tek başına gitme. Dalgalar arasında"
+				"nefes alacak vaktin yok ve canların sayılı. Bu perdeye kadar"
+				"topladığın oku ve arbaleti getir."
+				""
+				"§8Ödül: Mühendislik 20 - su çarkı, pres, huni, muhafaza§r"
+				""
+				"§7The river can work for you. It does not tire, sleep, or ask for pay."
+				""
+				"§7Requires 3 Ancient Wrath and 32 andesite alloy. Wrath comes from the"
+				"§7obelisk reward chest, which does not open until the waves are cleared;"
+				"§7the alloy is 64 iron ingots. Do not go to an obelisk alone - there is"
+				"§7no breathing room between waves and your lives are counted."
+				""
+				"§8Reward: Engineering 20 - water wheel, press, funnels, casings§r"
+			]
+			icon: "create:water_wheel"
+			id: "2000000000000A42"
+			rewards: [{
+				command: "/pmmo admin @p set engineering level 20"
+				elevate_perms: true
+				id: "4000000000000A42"
+				silent: true
+				title: "Mühendislik 20 / Engineering 20"
+				type: "command"
+			}]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "The Power of Water"
+			tasks: [{
+				count: 32L
+				id: "3000000000000A42"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			title: "Suyun Gücü"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2000000000000A33"]
+			description: [
+				"Dövülmüş Şövalye demirden zırhı kâğıt gibi keser."
+				"Tek vuruşu hazırlıksız bir adamı öldürür - ve senin canların sayılı."
+				"Kılıç yetmez. Zırh da giy."
+				""
+				"§7The Wroughtnaut cuts iron like paper."
+				"§7A single blow kills an unprepared man, and your lives are counted."
+				"§7A sword is not enough. Wear the armour too.§r"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:diamond_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2000000000000B41"
+			rewards: [{
+				id: "4000000000000B41"
+				type: "xp_levels"
+				xp_levels: 12
+			}]
+			subtitle: "Diamond Edge"
+			tasks: [
+				{
+					id: "3000000000000B41"
+					item: {
+						Count: 1
+						id: "minecraft:diamond_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3000000000000B46"
+					item: {
+						Count: 1
+						id: "minecraft:diamond_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Elmas Kesik"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2000000000000B41"]
+			description: [
+				"§eZorluk: Orta§r"
+				""
+				"Andezit muhafaza yapmak için Kadim Öz gerekir."
+				"Öz sadece Kadim Dikilitaşlardan gelir - dalgaları temizle,"
+				"ödül sandığını aç."
+				""
+				"Üç tane getir. Bu altı muhafaza eder;"
+				"kurmak istediğin her makine bir tane ister."
+				""
+				"§bKullanım:§r 1 Öfke = 2 Andezit Muhafaza"
+				""
+				"§cÖnemli:§r Suyun Gücü bu görev bitmeden açılmaz. Bu perdenin"
+				"mühendislik kapısı dikilitaşlardan geçiyor."
+				""
+				"§7Difficulty: Medium. Andesite casings need Ancient Essence, and"
+				"§7essence only comes from Ancient Obelisks - clear the waves, open"
+				"§7the reward chest. Bring three: that is six casings, and every"
+				"§7machine wants one. 1 Wrath = 2 Andesite Casings."
+				"§7Note: The Power of Water will not unlock until this is done -"
+				"§7this act's engineering gate runs through the obelisks.§r"
+			]
+			icon: "ancient_obelisks:ancient_wrath"
+			id: "2000000000000B42"
+			optional: true
+			rewards: [{
+				id: "4000000000000B42"
+				type: "xp_levels"
+				xp_levels: 15
+			}]
+			shape: "hexagon"
+			subtitle: "Obelisk Hunter - Ancient Wrath"
+			tasks: [{
+				count: 3L
+				id: "3000000000000B42"
+				item: "ancient_obelisks:ancient_wrath"
+				type: "item"
+			}]
+			title: "Dikilitaş Avcısı"
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2000000000000B41"]
+			description: [
+				"Deri tek başına bir şey değildir. Zırha dönüşene kadar."
+				""
+				"§bNeden:§r Epic Knights zırhları bu paketteki en iyi görünen ve"
+				"en sağlam vanilla-üstü zırhlar. Deri, her parçanın astarıdır."
+				""
+				"§eStrateji:§r İnek çiftliği kur - 128 deri avlanarak toplanmaz,"
+				"üretilir. Bir MineColonies çobanı bunu senin için yapar."
+				""
+				"§7Leather is nothing until it becomes armour. Epic Knights plate is the"
+				"§7best-looking and sturdiest armour in the pack, and leather lines every"
+				"§7piece. Farm cows - do not hunt them.§r"
+			]
+			icon: {
+				Count: 1
+				id: "magistuarmory:knight_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2000000000000B43"
+			optional: true
+			rewards: [{
+				id: "4000000000000E41"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "square"
+			subtitle: "Knight's Plate"
+			tasks: [{
+				id: "3000000000000B43"
+				item: {
+					Count: 1
+					id: "magistuarmory:knight_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Şövalye Zırhı"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2000000000000A42"]
+			description: [
+				"Demiri levhaya çevir. Makinelerin dili budur."
+				""
+				"§7Turn iron into sheets. This is the language of machines.§r"
+			]
+			icon: "create:mechanical_press"
+			id: "2000000000000B44"
+			optional: true
+			rewards: [{
+				count: 4
+				id: "4000000000000B44"
+				item: "create:andesite_casing"
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "The First Pressing"
+			tasks: [{
+				count: 16L
+				id: "3000000000000B44"
+				item: "create:iron_sheet"
+				type: "item"
+			}]
+			title: "İlk Presleme"
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2000000000000A42"]
+			description: [
+				"Her makinenin bir gövdesi olmalı."
+				""
+				"§7Every machine must have a body.§r"
+			]
+			icon: "create:andesite_casing"
+			id: "2000000000000B45"
+			optional: true
+			rewards: [{
+				id: "4000000000000B45"
+				type: "xp"
+				xp: 140
+			}]
+			shape: "square"
+			subtitle: "Andesite Wright"
+			tasks: [{
+				count: 16L
+				id: "3000000000000B45"
+				item: "create:andesite_casing"
+				type: "item"
+			}]
+			title: "Andezit Ustası"
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2000000000000B41"]
+			description: [
+				"Seviye 10'a ulaş."
+				""
+				"§7Reach character level 10.§r"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:diamond_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2000000000000C21"
+			rewards: [{
+				command: "/mine_and_slash points cheat_give @p stats 10"
+				elevate_perms: true
+				id: "4000000000000C02"
+				silent: true
+				title: "10 Stat Puanı / 10 Stat Points"
+				type: "command"
+			}]
+			subtitle: "Journeyman - level 10"
+			tasks: [{
+				id: "3000000000000C02"
+				title: "Seviye 10 / Level 10"
+				type: "custom"
+			}]
+			title: "Gezgin Dövüşçü"
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2000000000000B41"]
+			description: [
+				"Vanilla büyü masası burada bir başlangıç, bir son değil."
+				""
+				"§bNeden:§r Apotheosis büyü sistemini baştan yazar. Masanın etrafına"
+				"koyduğun her raf üç değeri değiştirir: §bEterna§r (azami seviye),"
+				"§bQuanta§r (rastgelelik) ve §bArcana§r (nadir büyü şansı)."
+				"Doğru raf karışımı ile vanilla'nın asla veremeyeceği büyüler çıkar."
+				""
+				"§eStrateji:§r Uykudaki raf (dormant deepshelf) derin taş ve kitaptan"
+				"yapılır - 3. Perde'de zaten yığınla derin taş topladın. Rafları"
+				"masanın etrafına 2 blok mesafede diz, araya 1 blok boşluk bırak."
+				"Uykudaki rafları daha sonra güçlü bir düzenekte gerçek Deepshelf'e"
+				"dönüştürebilirsin - o zaten kendi başına bir hedef."
+				""
+				"§7The vanilla table is a beginning here, not an end. Apotheosis rewrites"
+				"§7enchanting: every shelf you place changes §bEterna§7 (max level),"
+				"§7§bQuanta§7 (randomness) and §bArcana§7 (rare enchant chance)."
+				"§7Dormant deepshelves are just deepslate and books, which you already"
+				"§7have. Infusing them into true deepshelves is a later goal in itself.§r"
+			]
+			icon: "apotheosis:deepshelf"
+			id: "2100000000000401"
+			optional: true
+			rewards: [{
+				id: "4100000000000401"
+				type: "xp_levels"
+				xp_levels: 15
+			}]
+			shape: "square"
+			subtitle: "The Enchanter's Shelves"
+			tasks: [
+				{
+					id: "3100000000000401"
+					item: "minecraft:enchanting_table"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "3100000000000402"
+					item: "apotheosis:dormant_deepshelf"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "3100000000000403"
+					item: "minecraft:bookshelf"
+					type: "item"
+				}
+			]
+			title: "Büyücünün Rafları"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2000000000000B41"]
+			description: [
+				"Tek bir adam bir kale kuramaz. Ama bir adam kale kuracak adamları toplayabilir."
+				""
+				"§bNe yapar:§r MineColonies sana çalışan bir köy verir. Vatandaşlar"
+				"ekin eker, hayvan güder, cevher eritir, tahta biçer - sen zindandayken"
+				"bile. Bu paketteki tek gerçek pasif üretim kaynağı budur."
+				""
+				"§eStrateji:§r Tedarik kampını düz bir alana koy ve altın asa ile"
+				"Belediye Binası'nı yerleştir, sonra İnşaatçı'yı kur. §cÖnce"
+				"İnşaatçı§r - başka her binayı o diker. Deri, tahta ve yemek"
+				"ihtiyacının tamamı buradan gelebilir; 4. Perde'nin şövalye zırhı"
+				"128 deri istiyor ve onu avlayarak toplamazsın."
+				""
+				"§cUyarı:§r Bu sunucuda koloniler çevrimdışıyken üretim yapmaz ve"
+				"vatandaş sayısı sınırlıdır. Koloniyi üssünün yanına kur."
+				""
+				"§7One man cannot build a fortress, but he can gather the men who will."
+				"§7MineColonies gives you a working village: citizens farm, herd, smelt"
+				"§7and saw while you are in a dungeon. It is the only real passive"
+				"§7production in this pack. Place the supply camp, put down the Town Hall"
+				"§7with the golden scepter, then the §cBuilder first§7 - he raises"
+				"§7everything else. Note: colonies do not produce while offline here,"
+				"§7and citizen count is capped. Build it next to your base.§r"
+			]
+			icon: "minecolonies:blockhutbuilder"
+			id: "2100000000000402"
+			optional: true
+			rewards: [{
+				id: "4100000000000402"
+				type: "xp"
+				xp: 200
+			}]
+			shape: "square"
+			subtitle: "Founding a Colony"
+			tasks: [
+				{
+					id: "3100000000000404"
+					item: "minecolonies:supplycampdeployer"
+					type: "item"
+				}
+				{
+					id: "3100000000000405"
+					item: "minecolonies:blockhutbuilder"
+					type: "item"
+				}
+			]
+			title: "Koloninin Temeli"
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2000000000000A41"]
+			description: [
+				"Bir kapı aç, ve arkasından çıkan her şeyi öldür."
+				""
+				"§bNe yapar:§r Kapı İncisini yere at, bir Gateway açılır - dalgalar"
+				"halinde canavar gelir, hepsini öldürürsen kapı ganimetini bırakır."
+				"Kaçarsan veya süre biterse kapı kapanır ve inci gider."
+				""
+				"§eStrateji:§r Bu, seviye ve mücevher toplamanın en verimli yoludur -"
+				"düz bir alanda, hazırlıklı, tercihen grup halinde aç. Blaze kapısı"
+				"en ucuz olanıdır. Alan temiz olsun: dalga başlayınca kaçacak yerin"
+				"olmalı ama kapıdan çok uzaklaşırsan sayılmaz."
+				""
+				"§7Open a gate, then kill everything that comes out of it."
+				"§7Throw the pearl, the Gateway opens, mobs arrive in waves, and clearing"
+				"§7them all drops the reward. Flee or run out of time and the pearl is"
+				"§7lost. This is the most efficient levelling and gem farm in the pack."
+				"§7Open it on flat cleared ground, prepared, ideally as a group.§r"
+			]
+			icon: "gateways:gate_pearl"
+			id: "2100000000000404"
+			optional: true
+			rewards: [{
+				id: "4100000000000404"
+				type: "xp_levels"
+				xp_levels: 18
+			}]
+			shape: "square"
+			subtitle: "The Gate Pearl"
+			tasks: [{
+				consume_items: false
+				id: "3100000000000408"
+				item: "gateways:gate_pearl"
+				type: "item"
+			}]
+			title: "Kapı İncisi"
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2000000000000B41"]
+			description: [
+				"Dövülmüş Şövalye'ye kılıçla yaklaşan adam iki kere yaklaşamaz."
+				""
+				"§bNe yapar:§r Demir sadak daha çok ok taşır. Apotheosis okları"
+				"vanilla okundan farklı işler: §bBroadhead§r delici hasar verir,"
+				"§bObsidian§r zırhı yok sayar, §bExplosive§r kalabalığı dağıtır."
+				""
+				"§eNasıl yapılır:§r Bu oklar tezgahta değil, §bFletching Table§r"
+				"üzerinde yapılır - Apotheosis o bloğa bir arayüz ekler. Demir"
+				"külçe + çubuk + tüy, seferinde 6 ok."
+				""
+				"§eStrateji:§r Dövülmüş Şövalye yavaştır ve menzili yoktur -"
+				"sütun arkasından uzaktan indirilebilir. Bu görevi bitirmeden"
+				"o odaya girme."
+				""
+				"§7A man who walks up to the Wroughtnaut with a sword does not get to"
+				"§7walk up twice. The iron quiver carries more, and Apotheosis arrows"
+				"§7behave differently: broadheads pierce, obsidian ignores armour,"
+				"§7explosive scatters crowds. The Wroughtnaut is slow and has no ranged"
+				"§7attack - take it down from behind a pillar.§r"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"nyfsquiver:quiver_holder": {
+						currentslot: 0
+						inventory: {
+							columns: 9
+							rows: 2
+							stack0: {
+								Count: 1b
+								id: "minecraft:air"
+							}
+							stack1: {
+								Count: 1b
+								id: "minecraft:air"
+							}
+							stack10: {
+								Count: 1b
+								id: "minecraft:air"
+							}
+							stack11: {
+								Count: 1b
+								id: "minecraft:air"
+							}
+							stack12: {
+								Count: 1b
+								id: "minecraft:air"
+							}
+							stack13: {
+								Count: 1b
+								id: "minecraft:air"
+							}
+							stack14: {
+								Count: 1b
+								id: "minecraft:air"
+							}
+							stack15: {
+								Count: 1b
+								id: "minecraft:air"
+							}
+							stack16: {
+								Count: 1b
+								id: "minecraft:air"
+							}
+							stack17: {
+								Count: 1b
+								id: "minecraft:air"
+							}
+							stack2: {
+								Count: 1b
+								id: "minecraft:air"
+							}
+							stack3: {
+								Count: 1b
+								id: "minecraft:air"
+							}
+							stack4: {
+								Count: 1b
+								id: "minecraft:air"
+							}
+							stack5: {
+								Count: 1b
+								id: "minecraft:air"
+							}
+							stack6: {
+								Count: 1b
+								id: "minecraft:air"
+							}
+							stack7: {
+								Count: 1b
+								id: "minecraft:air"
+							}
+							stack8: {
+								Count: 1b
+								id: "minecraft:air"
+							}
+							stack9: {
+								Count: 1b
+								id: "minecraft:air"
+							}
+							stacks: 18
+						}
+					}
+				}
+				id: "nyfsquiver:iron_quiver"
+				tag: {
+					Damage: 0
+					inventory: {
+						currentslot: 0
+						inventory: {
+							columns: 9
+							rows: 2
+							stack0: {
+								Count: 1b
+								id: "minecraft:air"
+							}
+							stack1: {
+								Count: 1b
+								id: "minecraft:air"
+							}
+							stack10: {
+								Count: 1b
+								id: "minecraft:air"
+							}
+							stack11: {
+								Count: 1b
+								id: "minecraft:air"
+							}
+							stack12: {
+								Count: 1b
+								id: "minecraft:air"
+							}
+							stack13: {
+								Count: 1b
+								id: "minecraft:air"
+							}
+							stack14: {
+								Count: 1b
+								id: "minecraft:air"
+							}
+							stack15: {
+								Count: 1b
+								id: "minecraft:air"
+							}
+							stack16: {
+								Count: 1b
+								id: "minecraft:air"
+							}
+							stack17: {
+								Count: 1b
+								id: "minecraft:air"
+							}
+							stack2: {
+								Count: 1b
+								id: "minecraft:air"
+							}
+							stack3: {
+								Count: 1b
+								id: "minecraft:air"
+							}
+							stack4: {
+								Count: 1b
+								id: "minecraft:air"
+							}
+							stack5: {
+								Count: 1b
+								id: "minecraft:air"
+							}
+							stack6: {
+								Count: 1b
+								id: "minecraft:air"
+							}
+							stack7: {
+								Count: 1b
+								id: "minecraft:air"
+							}
+							stack8: {
+								Count: 1b
+								id: "minecraft:air"
+							}
+							stack9: {
+								Count: 1b
+								id: "minecraft:air"
+							}
+							stacks: 18
+						}
+					}
+				}
+			}
+			id: "2100000000000405"
+			optional: true
+			rewards: [{
+				id: "4100000000000405"
+				type: "xp"
+				xp: 160
+			}]
+			shape: "square"
+			subtitle: "The Hunter's Quiver"
+			tasks: [
+				{
+					id: "3100000000000409"
+					item: {
+						Count: 1
+						id: "nyfsquiver:iron_quiver"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "310000000000040A"
+					item: "apotheosis:broadhead_arrow"
+					type: "item"
+				}
+			]
+			title: "Avcının Sadağı"
+			x: -4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2000000000000B43"]
+			description: [
+				"Göğüslük tek başına bir zırh değildir. Bacakların da senin."
+				""
+				"§bNeden:§r Epic Knights zırhı parça parça toplanır ve tam takım"
+				"giymek tek parçadan çok daha fazlasını verir. Greathelm görüşünü"
+				"biraz daraltır ama en yüksek kafa korumasıdır."
+				""
+				"§eStrateji:§r Deri her parçanın astarıdır - inek çiftliği kur,"
+				"avlanma. Bir MineColonies çobanı bunu senin için üretir."
+				"5. Perde'deki Arena'ya bu takım olmadan girme."
+				""
+				"§7A chestplate is not a suit of armour. Epic Knights gear is collected"
+				"§7piece by piece and the full set gives far more than any one part."
+				"§7The greathelm narrows your view slightly but is the best head"
+				"§7protection here. Leather lines every piece - farm cows, do not hunt"
+				"§7them. Do not enter the Act V arena without this set.§r"
+			]
+			icon: {
+				Count: 1
+				id: "magistuarmory:greathelm"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2100000000000406"
+			optional: true
+			rewards: [{
+				id: "4100000000000406"
+				type: "xp_levels"
+				xp_levels: 22
+			}]
+			shape: "square"
+			subtitle: "Full Plate"
+			tasks: [
+				{
+					id: "310000000000040B"
+					item: {
+						Count: 1
+						id: "magistuarmory:knight_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "310000000000040C"
+					item: {
+						Count: 1
+						id: "magistuarmory:knight_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "310000000000040D"
+					item: {
+						Count: 1
+						id: "magistuarmory:greathelm"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Tam Takım"
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["2000000000000A42"]
+			description: [
+				"Su çarkı döner. Şimdi ona iş bul."
+				""
+				"§bNe yapar:§r Değirmen cevheri toza öğütür - bir cevherden iki"
+				"külçe çıkar. Mekanik testere kütükleri tahtaya, tahtayı çubuğa"
+				"böler ve ağaç keser."
+				""
+				"§eStrateji:§r Su çarkının verdiği gerilim sınırlıdır. Değirmen az,"
+				"testere çok tüketir - ikisini aynı hatta koyacaksan ikinci bir çark"
+				"kur. Gözlüğü tak ve gerilim çubuğuna bak."
+				""
+				"§7The water wheel turns. Now give it work. The millstone grinds ore"
+				"§7into dust - two ingots from one ore - and the mechanical saw cuts"
+				"§7logs to planks, planks to rods, and fells trees."
+				"§7Stress from one wheel is limited: the mill is cheap, the saw is not."
+				"§7Wear the goggles and watch the stress bar.§r"
+			]
+			icon: "create:millstone"
+			id: "2100000000000407"
+			optional: true
+			rewards: [{
+				id: "4100000000000407"
+				type: "xp"
+				xp: 180
+			}]
+			shape: "square"
+			subtitle: "Millstone and Saw"
+			tasks: [
+				{
+					id: "310000000000040E"
+					item: "create:millstone"
+					type: "item"
+				}
+				{
+					id: "310000000000040F"
+					item: "create:mechanical_saw"
+					type: "item"
+				}
+			]
+			title: "Değirmen ve Testere"
+			x: 6.0d
+			y: 0.0d
+		}
+	]
+	subtitle: ["Act IV - The Hunter"]
+	title: "4. Perde - Avcı"
+}
