@@ -1,0 +1,42 @@
+name: validate
+
+# Cheap structural checks. No secrets, no mods download - these run on every
+# push so a broken quest book or an invented config key is caught before it
+# reaches a release.
+on:
+  push:
+    branches: [master]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Quest book structure
+        run: python3 tools/validate_quests.py
+
+      - name: Server config keys exist
+        run: python3 tools/validate_configs.py
+
+      - name: Turkish translations
+        run: python3 tools/validate_lang.py
+
+      - name: Build scripts are sane
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq shellcheck
+          shellcheck -S warning build-*.sh sync-mods.sh upload-bundles.sh
+
+      - name: Hardcore lives are enabled
+        run: |
+          grep -q '"AUTO_HARDCORE": true' config/hqm/config.json5 \
+            || { echo "::error::AUTO_HARDCORE is not true - this would ship a pack with no limited lives"; exit 1; }
+
+      - name: No credentials committed
+        run: |
+          if git ls-files | grep -qE '(^|/)(\.sl_password|r2\.env|\.env)$'; then
+            echo "::error::a credential file is tracked"; exit 1
+          fi
+          echo "clean"

@@ -95,6 +95,10 @@ case "${1:-}" in
         need_creds
         [ -d mods ] || die "no mods/ directory"
         echo "uploading mods/ -> s3://$BUCKET/$PREFIX/"
+        # Deliberately additive - no --delete. A mod dropped from the pack must
+        # stay in the bucket, because every .mrpack we have already published
+        # links its jars by CDN url. Pruning the bucket would 404 those older
+        # releases. --pull is manifest-driven, so leftovers are never fetched.
         s3 s3 sync mods "s3://$BUCKET/$PREFIX/" --no-progress --exclude '.*'
         gen_manifest
         verify
@@ -104,8 +108,31 @@ case "${1:-}" in
         need_creds
         [ -f "$MANIFEST" ] || die "$MANIFEST not found - cannot verify what we pull"
         mkdir -p mods
-        echo "downloading s3://$BUCKET/$PREFIX/ -> mods/"
-        s3 s3 sync "s3://$BUCKET/$PREFIX/" mods --no-progress
+        # Fetch exactly what the manifest names - never `s3 sync` the whole
+        # prefix. The bucket keeps jars from older releases on purpose, and a
+        # blind sync would drag them back in and fail verification.
+        need=$(python3 - "$MANIFEST" <<'PY'
+import hashlib, json, os, sys
+for m in json.load(open(sys.argv[1]))['mods']:
+    p = os.path.join('mods', m['name'])
+    if os.path.exists(p) and os.path.getsize(p) == m['size']:
+        h = hashlib.sha256()
+        with open(p, 'rb') as fh:
+            for b in iter(lambda: fh.read(1 << 20), b''):
+                h.update(b)
+        if h.hexdigest() == m['sha256']:
+            continue
+    print(m['name'])
+PY
+)
+        count=$(printf '%s' "$need" | grep -c . || true)
+        echo "manifest lists $(python3 -c "import json;print(json.load(open('$MANIFEST'))['count'])") jars; $count to fetch"
+        if [ "$count" -gt 0 ]; then
+            printf '%s\n' "$need" | grep . | \
+                xargs -P 8 -I{} sh -c \
+                  'aws --endpoint-url "$R2_ENDPOINT" s3 cp "s3://'"$BUCKET/$PREFIX"'/{}" "mods/{}" --no-progress >/dev/null' \
+                || die "one or more downloads failed"
+        fi
         verify
         ;;
     *)

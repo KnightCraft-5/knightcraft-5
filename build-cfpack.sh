@@ -24,9 +24,13 @@ trap 'rm -rf "$STAGE"' EXIT
 
 mkdir -p "$STAGE/overrides"
 cp -r "$SRC/mods" "$STAGE/overrides/"
-for d in config defaultconfigs kubejs; do
-    cp -r "$SRC/$d" "$STAGE/overrides/"
+# packmenu/ holds the custom main menu's background, logo and buttons. Ship the
+# PackMenu mod without it and the menu renders broken - keep this list in step
+# with build-client-pack.sh.
+for d in config defaultconfigs kubejs packmenu; do
+    [ -e "$SRC/$d" ] && cp -r "$SRC/$d" "$STAGE/overrides/"
 done
+[ -f "$SRC/icon.png" ] && cp "$SRC/icon.png" "$STAGE/overrides/"
 cp "$SRC/KURULUM.txt" "$STAGE/overrides/"
 
 rm -rf "$STAGE/overrides/config/jei/world" "$STAGE/overrides/config/spark/tmp" \

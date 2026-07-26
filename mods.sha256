@@ -1,5 +1,5 @@
 {
- "count": 189,
+ "count": 188,
  "mods": [
   {
    "sha256": "575a4a8e00f982c064d54bb3e73e5cda2d14414de054a471a3daf3f58bdf560a",
@@ -250,11 +250,6 @@
    "sha256": "4908ea5694c1895ce1032efec54d0ba8226dbe9a93e09f093d8fa3c6d3d24b2e",
    "size": 355287,
    "name": "Saros-Money-Mod-Forge-1.20.1-3.5.6.jar"
-  },
-  {
-   "sha256": "6c9f1417950f548bf4d1aa53df316f75a1fd26d9fd6f6296aa3df330859575b8",
-   "size": 58254,
-   "name": "ScalingMobs-2.4.4.jar"
   },
   {
    "sha256": "c1a76e93886210574d3f298c0461241fb711e52ac22c7a04d3236840f29e6576",

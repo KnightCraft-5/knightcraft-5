@@ -1,0 +1,3 @@
+#disable create coin pouch button
+disableCoinPouch = false
+

@@ -40,3 +40,6 @@ knightcraft5-*.zip
 # R2 credentials - never commit
 r2.env
 .env
+
+# CI build output
+dist/

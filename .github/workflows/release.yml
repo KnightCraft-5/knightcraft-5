@@ -1,0 +1,81 @@
+name: release
+
+# Publishes all four artifacts when a version tag is pushed:
+#
+#   git tag v2026.07.27 && git push origin v2026.07.27
+#
+# mods/ is not in the repo (651 MB, no launcher metadata to re-download it
+# from), so the runner reconstructs it from the R2 mirror and verifies every
+# jar against the tracked mods.sha256 before building anything.
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Tag to publish (must already exist)'
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+      R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+      R2_ENDPOINT: ${{ secrets.R2_ENDPOINT }}
+      R2_BUCKET: ${{ vars.R2_BUCKET || 'knightcraft' }}
+      CDN_BASE: ${{ vars.CDN_BASE || 'https://knightcraft-cdn.umceko.com' }}
+    steps:
+      - uses: actions/checkout@v4
+
+      # Re-run the cheap checks. A tag should never publish something that
+      # would have failed validate.yml.
+      - name: Validate before building
+        run: |
+          python3 tools/validate_quests.py
+          python3 tools/validate_configs.py
+          python3 tools/validate_lang.py
+
+      - name: Restore mods/ from the R2 mirror
+        run: ./sync-mods.sh --pull
+
+      - name: Verify mods against the tracked manifest
+        run: ./sync-mods.sh --verify
+
+      - name: Re-run item-id check now that mods/ exists
+        run: python3 tools/validate_quests.py
+
+      - name: Build all four artifacts
+        id: build
+        run: |
+          set -euo pipefail
+          DATE="$(date +%Y-%m-%d)"
+          echo "date=$DATE" >> "$GITHUB_OUTPUT"
+          mkdir -p dist
+          ./build-client-pack.sh "dist/knightcraft5-client-$DATE.zip"
+          ./build-server-pack.sh "dist/knightcraft5-server-$DATE.zip"
+          ./build-cfpack.sh      "dist/knightcraft5-curseforge-$DATE.zip"
+          ./build-mrpack.sh      "dist/knightcraft5-$DATE.mrpack"
+          ls -lh dist
+
+      - name: Sanity-check the artifacts
+        run: python3 tools/verify_artifacts.py dist "${{ steps.build.outputs.date }}"
+
+      - name: Upload to R2
+        run: ./upload-bundles.sh dist/*
+
+      - name: Publish GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TAG="${{ github.event.inputs.tag || github.ref_name }}"
+          gh release create "$TAG" \
+            --repo "${{ github.repository }}" \
+            --title "KnightCraft 5 — $TAG" \
+            --generate-notes \
+            dist/* \
+          || gh release upload "$TAG" --repo "${{ github.repository }}" --clobber dist/*
