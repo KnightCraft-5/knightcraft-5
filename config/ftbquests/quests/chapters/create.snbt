@@ -24,7 +24,6 @@
 			]
 			icon: "create:goggles"
 			id: "2000000000000B31"
-			optional: true
 			rewards: [{
 				id: "4000000000000E31"
 				type: "xp"

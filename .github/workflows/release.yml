@@ -34,11 +34,14 @@ jobs:
 
       # Re-run the cheap checks. A tag should never publish something that
       # would have failed validate.yml.
-      - name: Validate before building
-        run: |
-          python3 tools/validate_quests.py
-          python3 tools/validate_configs.py
-          python3 tools/validate_lang.py
+      - name: Install shellcheck
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq shellcheck
+
+      # Same list validate.yml runs, and the same list a human runs locally via
+      # ./preflight.sh before tagging. A tag must never publish something that
+      # would have failed validate.yml.
+      - name: Preflight before building
+        run: ./preflight.sh
 
       - name: Restore mods/ from the R2 mirror
         run: ./sync-mods.sh --pull

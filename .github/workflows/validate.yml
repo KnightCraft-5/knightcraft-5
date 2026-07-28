@@ -3,6 +3,14 @@ name: validate
 # Cheap structural checks. No secrets, no mods download - these run on every
 # push so a broken quest book or an invented config key is caught before it
 # reaches a release.
+#
+# The checks live in ./preflight.sh, NOT inline here, so what CI runs and what a
+# human runs before tagging are the same list and cannot drift. A release was
+# once tagged against a tree whose quest book did not validate: the check had
+# been run locally several times, but always piped into `tail`, and `$?` after a
+# pipeline is the exit status of the LAST command - so the validator's failure
+# and its stderr were both swallowed, and it only surfaced when Actions ran the
+# command bare.
 on:
   push:
     branches: [master]
@@ -15,28 +23,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Quest book structure
-        run: python3 tools/validate_quests.py
+      - name: Install shellcheck
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq shellcheck
 
-      - name: Server config keys exist
-        run: python3 tools/validate_configs.py
-
-      - name: Turkish translations
-        run: python3 tools/validate_lang.py
-
-      - name: Build scripts are sane
-        run: |
-          sudo apt-get update -qq && sudo apt-get install -y -qq shellcheck
-          shellcheck -S warning build-*.sh sync-mods.sh upload-bundles.sh
-
-      - name: Hardcore lives are enabled
-        run: |
-          grep -q '"AUTO_HARDCORE": true' config/hqm/config.json5 \
-            || { echo "::error::AUTO_HARDCORE is not true - this would ship a pack with no limited lives"; exit 1; }
-
-      - name: No credentials committed
-        run: |
-          if git ls-files | grep -qE '(^|/)(\.sl_password|r2\.env|\.env)$'; then
-            echo "::error::a credential file is tracked"; exit 1
-          fi
-          echo "clean"
+      # preflight.sh runs each check bare and prints a pass/fail line per check,
+      # so a red build names the offending check rather than just a shell line.
+      - name: Preflight
+        run: ./preflight.sh
