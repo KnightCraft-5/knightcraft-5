@@ -1,4 +1,4 @@
-// Tech recipe hardening, tiered to the 8-act progression.
+// Tech recipe hardening. Create is SIDE-TECH, not part of the act spine.
 //
 // Three jobs:
 //   1. Price the items PMMO cannot gate. Upgrades that slot into a GUI (magnets,
@@ -6,21 +6,21 @@
 //      lever that reaches them.
 //   2. Harden the FOUNDATION. Andesite alloy, water wheels and casings were
 //      near-free, which made every gate downstream of them shallow.
-//   3. Make tech consume dungeon loot, so automation is paid for in adventure.
+//   3. Make tech consume DUNGEON loot, so automation is paid for by raiding -
+//      and so there is a standing reason to keep clearing dungeons.
 //
-// Artifacts used here are deliberately DIFFERENT from the ones the quest book
-// asks for as turn-ins -- quest tasks consume the item, and a recipe competing
-// with a progression gate for the same drop turns a gate into a grind.
+// EVERY GATE HERE IS DUNGEON LOOT. NO MOD BOSS DROPS.
+// This used to gate Create behind act-3/5/8 minibosses and, worst of all, the
+// deployer behind cataclysm:void_core - whose Ender Golem now lives in act 9,
+// past the Ender Dragon. Create was therefore unreachable until the final act
+// while its own quest chapter claimed to be standalone. Three systems disagreeing.
 //
-// Artifact tiers, all 100% guaranteed uncraftable drops:
-//   act 5  cataclysm:coral_chunk           Coralssus       160 hp miniboss
-//   act 5  cataclysm:amethyst_crab_shell   Amethyst Crab   200 hp miniboss
-//   act 7  cataclysm:void_core             Ender Golem     150 hp miniboss
-//   act 7  legendary_monsters:frozen_rune  Frostbitten Golem
-//   act 8  legendary_monsters:eye_crystal  Annihilation Pursuer
-//   act 8  born_in_chaos_v1:lifestealer_bone
-//   act 8  legendary_monsters:portal_shard The Obliterator
-//   act 8  alexsmobs:void_worm_mandible    Void Worm
+// The gates are the three relics from kubejs/startup_scripts/rpg_dungeon_items.js,
+// seeded into every dungeon chest table by rpg_dungeon_loot.js. Tiers match the
+// Mühendislik chapter exactly, so recipe, quest and loot all say the same thing:
+//   kubejs:rusted_gear       ~6%  andesite + copper casings, basic table
+//   kubejs:brass_schematic   ~4%  brass casing, mixer, fan, electron tube
+//   kubejs:precision_core    ~2%  precision mechanism, deployer, crafter, auto table
 
 ServerEvents.recipes(event => {
 
@@ -73,7 +73,7 @@ ServerEvents.recipes(event => {
 	], {
 		L: '#forge:stripped_logs',
 		A: 'create:andesite_alloy',
-		O: 'ancient_obelisks:ancient_wrath'
+		O: 'kubejs:rusted_gear'
 	})
 
 	event.remove({ output: 'create:copper_casing' })
@@ -84,7 +84,7 @@ ServerEvents.recipes(event => {
 	], {
 		L: '#forge:stripped_logs',
 		C: '#forge:ingots/copper',
-		O: 'ancient_obelisks:ancient_envy'
+		O: 'kubejs:rusted_gear'
 	})
 
 	event.remove({ output: 'create:brass_casing' })
@@ -95,7 +95,7 @@ ServerEvents.recipes(event => {
 	], {
 		L: '#forge:stripped_logs',
 		B: '#forge:ingots/brass',
-		R: 'dungeon_realm:general_relic'
+		R: 'kubejs:brass_schematic'
 	})
 
 	// ================================================================
@@ -111,7 +111,7 @@ ServerEvents.recipes(event => {
 		S: 'create:cogwheel',
 		C: 'create:andesite_casing',
 		I: 'create:whisk',
-		R: 'cataclysm:coral_chunk'
+		R: 'kubejs:brass_schematic'
 	})
 
 	event.remove({ output: 'create:encased_fan' })
@@ -123,7 +123,7 @@ ServerEvents.recipes(event => {
 		S: 'create:shaft',
 		A: 'create:andesite_casing',
 		P: 'create:propeller',
-		R: 'cataclysm:amethyst_crab_shell'
+		R: 'kubejs:brass_schematic'
 	})
 
 	// ================================================================
@@ -147,7 +147,7 @@ ServerEvents.recipes(event => {
 		L: 'create:polished_rose_quartz',
 		N: '#forge:plates/iron',
 		G: '#forge:plates/gold',
-		O: 'ancient_obelisks:ancient_greed'
+		O: 'kubejs:brass_schematic'
 	})
 
 	// Precision mechanisms are the endgame Create material.
@@ -159,7 +159,7 @@ ServerEvents.recipes(event => {
 	], {
 		G: '#forge:plates/gold',
 		C: 'create:cogwheel',
-		R: 'dungeon_realm:general_relic'
+		R: 'kubejs:precision_core'
 	})
 
 	// ================================================================
@@ -175,23 +175,8 @@ ServerEvents.recipes(event => {
 		B: 'create:electron_tube',
 		C: 'create:andesite_casing',
 		I: 'create:brass_hand',
-		R: 'cataclysm:void_core',
-		X: 'dungeon_realm:general_relic'
-	})
-
-	// Storage Network root: was 4 cable + 4 quartz + 1 diamond for unlimited
-	// networked storage. Now wants a boss drop and real diamond.
-	event.remove({ output: 'storagenetwork:master' })
-	event.shaped('storagenetwork:master', [
-		'XkX',
-		'kck',
-		'XRd'
-	], {
-		k: 'storagenetwork:kabel',
-		d: '#forge:gems/diamond',
-		c: '#forge:storage_blocks/diamond',
-		R: 'legendary_monsters:frozen_rune',
-		X: 'dungeon_realm:general_relic'
+		R: 'kubejs:precision_core',
+		X: 'create:brass_sheet'
 	})
 
 	// ================================================================
@@ -206,8 +191,8 @@ ServerEvents.recipes(event => {
 		B: 'create:electron_tube',
 		C: 'create:brass_casing',
 		T: 'minecraft:crafting_table',
-		R: 'legendary_monsters:eye_crystal',
-		X: 'dungeon_realm:general_relic'
+		R: 'kubejs:precision_core',
+		X: 'create:brass_sheet'
 	})
 
 	event.remove({ output: 'extendedcrafting:basic_table' })
@@ -221,7 +206,7 @@ ServerEvents.recipes(event => {
 		B: 'extendedcrafting:basic_component',
 		S: 'extendedcrafting:black_iron_slate',
 		A: 'extendedcrafting:basic_catalyst',
-		R: 'born_in_chaos_v1:lifestealer_bone'
+		R: 'kubejs:rusted_gear'
 	})
 
 	// The first fully automatic crafter: turns every downstream recipe from a
@@ -233,140 +218,10 @@ ServerEvents.recipes(event => {
 		'XBX'
 	], {
 		T: 'extendedcrafting:basic_table',
-		C: 'extendedcrafting:crystaltine_component',
 		B: 'extendedcrafting:black_iron_ingot',
 		S: 'extendedcrafting:redstone_component',
-		P: 'legendary_monsters:portal_shard',
-		X: 'dungeon_realm:general_relic'
+		P: 'kubejs:precision_core',
+		X: 'create:brass_sheet'
 	})
 
-	// ================================================================
-	// Ungateable by PMMO - these slot into GUIs and never fire a USE hook,
-	// so cost is the only lever that reaches them.
-	// ================================================================
-	// Stack Upgrade Tier 1 cost 8 logs, ending storage scarcity before iron.
-	event.remove({ output: 'sophisticatedstorage:stack_upgrade_tier_1' })
-	event.shaped('sophisticatedstorage:stack_upgrade_tier_1', [
-		'III',
-		'IBI',
-		'III'
-	], {
-		I: '#forge:storage_blocks/iron',
-		B: 'sophisticatedstorage:upgrade_base'
-	})
-
-	// Magnet upgrades vacuum every drop in a radius with no pipes, no power and
-	// no tech tier -- the worst passive-farming enabler in the pack.
-	// replaceInput keeps the sophisticatedcore recipe type intact; rebuilding
-	// these as plain shaped recipes would lose the upgrade-tier NBT carryover.
-	event.replaceInput(
-		{ output: 'sophisticatedbackpacks:magnet_upgrade' },
-		'#forge:gems/lapis', 'cataclysm:void_core'
-	)
-	event.replaceInput(
-		{ output: 'sophisticatedstorage:magnet_upgrade' },
-		'#forge:gems/lapis', 'cataclysm:void_core'
-	)
-
-	// ================================================================
-	// PIPEZ - gated BEHIND Create, not around it.
-	//
-	// Stock Pipez gave 16 pipes for 6 iron and a dropper, which made it
-	// strictly better and vastly cheaper than Create's own logistics. Every
-	// tier now consumes a Create component, so Pipez inherits the whole
-	// casing -> obelisk-essence chain and can only be reached through Create.
-	// ================================================================
-	event.remove({ output: 'pipez:item_pipe' })
-	event.shaped('8x pipez:item_pipe', [
-		'III',
-		'DCD',
-		'III'
-	], {
-		I: '#forge:ingots/iron',
-		D: 'minecraft:dropper',
-		C: 'create:andesite_casing'
-	})
-
-	event.remove({ output: 'pipez:fluid_pipe' })
-	event.shaped('8x pipez:fluid_pipe', [
-		'III',
-		'BCB',
-		'III'
-	], {
-		I: '#forge:ingots/iron',
-		B: 'minecraft:bucket',
-		C: 'create:copper_casing'
-	})
-
-	event.remove({ output: 'pipez:energy_pipe' })
-	event.shaped('8x pipez:energy_pipe', [
-		'III',
-		'BTB',
-		'III'
-	], {
-		I: '#forge:ingots/iron',
-		B: '#forge:storage_blocks/redstone',
-		T: 'create:electron_tube'
-	})
-
-	event.remove({ output: 'pipez:universal_pipe' })
-	event.shaped('4x pipez:universal_pipe', [
-		'IEF',
-		'MCM',
-		'IEF'
-	], {
-		I: 'pipez:item_pipe',
-		E: 'pipez:energy_pipe',
-		F: 'pipez:fluid_pipe',
-		M: '#forge:ingots/iron',
-		C: 'create:brass_casing'
-	})
-
-	// Upgrade tiers: each wants a Create component of the matching tier.
-	event.remove({ output: 'pipez:basic_upgrade' })
-	event.shaped('pipez:basic_upgrade', [
-		'INI',
-		'NAN',
-		'INI'
-	], {
-		N: '#forge:nuggets/iron',
-		I: '#forge:ingots/iron',
-		A: 'create:andesite_alloy'
-	})
-
-	event.remove({ output: 'pipez:improved_upgrade' })
-	event.shaped('pipez:improved_upgrade', [
-		'GRG',
-		'RUR',
-		'GTG'
-	], {
-		U: 'pipez:basic_upgrade',
-		G: '#forge:ingots/gold',
-		R: '#forge:dusts/redstone',
-		T: 'create:electron_tube'
-	})
-
-	event.remove({ output: 'pipez:advanced_upgrade' })
-	event.shaped('pipez:advanced_upgrade', [
-		'CPC',
-		'RUR',
-		'CPC'
-	], {
-		C: 'cataclysm:chitin_claw',
-		P: 'create:precision_mechanism',
-		R: '#forge:storage_blocks/redstone',
-		U: 'pipez:improved_upgrade'
-	})
-
-	event.remove({ output: 'pipez:ultimate_upgrade' })
-	event.shaped('pipez:ultimate_upgrade', [
-		'NMN',
-		'PUP',
-		'NMN'
-	], {
-		N: '#forge:ingots/netherite',
-		M: 'alexsmobs:void_worm_mandible',
-		P: 'create:precision_mechanism',
-		U: 'pipez:advanced_upgrade'
-	})
 })

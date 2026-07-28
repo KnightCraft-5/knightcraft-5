@@ -1,5 +1,5 @@
 {
- "count": 188,
+ "count": 190,
  "mods": [
   {
    "sha256": "575a4a8e00f982c064d54bb3e73e5cda2d14414de054a471a3daf3f58bdf560a",
@@ -25,6 +25,11 @@
    "sha256": "4c96cf0dd3363a8e15f9ef6b6bfc00ac7d4791e8e9eeebe19b8092c59e800f8f",
    "size": 601839,
    "name": "Aquaculture-1.20.1-2.5.7.jar"
+  },
+  {
+   "sha256": "43ccfd91c1a24d1b3c9d3ccf2dd6a86e9f0c2ba442b111a2238fbff3cf88af11",
+   "size": 19499,
+   "name": "AttributeFix-Forge-1.20.1-21.0.5.jar"
   },
   {
    "sha256": "e8b575996cc5ff40e010161cca8923b8367ce210999da7f00487d4ce0de63755",
@@ -185,16 +190,6 @@
    "sha256": "6052e47c3981064bd5213728eaa3c5418289f6f85b07a1cd4dd1505239248838",
    "size": 1625005,
    "name": "Mantle-1.20.1-1.11.104.jar"
-  },
-  {
-   "sha256": "42dfd48bde740414027580f9aa35ac3cc8fb8453e30f35e72cbc7846e875bac1",
-   "size": 7984414,
-   "name": "Mine_and_Slash-1.20.1-6.4.0.jar"
-  },
-  {
-   "sha256": "47dd8eb3038701a86b52ab11592de1d7b25bdf84cfffebd5dd95227e6b2f0f1c",
-   "size": 12409,
-   "name": "Mine_and_lash-Compatibility-1.20.1-1.0.0.jar"
   },
   {
    "sha256": "6c27d16aa715ac6613a55fc463739e2c7b78279e4e4c4cede299e4a2d4a70f08",
@@ -382,6 +377,11 @@
    "name": "ars_nouveau-1.20.1-4.12.7-all.jar"
   },
   {
+   "sha256": "2f1ab70bd704a3b4054b84fdfa2ac1b5894c65794b215b8dd1a516856325c8fd",
+   "size": 162682,
+   "name": "asteorbar-forge-1.20.1-1.5.3.jar"
+  },
+  {
    "sha256": "64eec9cffb8847a459536096ac396b135ffb07c7d9d13c6a47d9cd7b251276ab",
    "size": 91808,
    "name": "athena-forge-1.20.1-3.1.2.jar"
@@ -445,6 +445,11 @@
    "sha256": "594bc5d40f2a3fec1ad95732524f65e01a27ac2abeb9d59889cd9f01fd8db6cb",
    "size": 745947,
    "name": "collective-1.20.1-8.39.jar"
+  },
+  {
+   "sha256": "05dceddd57825f911135c929504ef320b75953d05e7dc918dba58a0574e5315f",
+   "size": 418929,
+   "name": "configured-forge-1.20.1-2.2.3.jar"
   },
   {
    "sha256": "fbfa83da5a6f5717d34068af5283ebbb9f9a2474482bc818f588cd1bdbc11acd",
@@ -652,6 +657,11 @@
    "name": "immersive_melodies-0.6.1+1.20.1-forge.jar"
   },
   {
+   "sha256": "85d64d0f81f6eb6e1e2fa2a97a0aeabcea9e371498c3853b12c3697891e57f2c",
+   "size": 361894,
+   "name": "incontrol-1.20-9.4.6.jar"
+  },
+  {
    "sha256": "4c7281b8d0f613df04de235dee7509ba90fbeafcfc28f9bde6f02651cb3e1ee9",
    "size": 704838,
    "name": "integrated_api-1.7.4+1.20.1-forge.jar"
@@ -710,6 +720,11 @@
    "sha256": "88dc2701f90c04a4fa343be11ea0c21cbda1d675cba514f201946dcd8eae17ea",
    "size": 42220,
    "name": "lootintegrations-1.20.1-4.7.jar"
+  },
+  {
+   "sha256": "c1672330605a691b8a91b3a4d252f2d3a280f252874f1fc5fdd7cad07d13b719",
+   "size": 242267,
+   "name": "lootjs-forge-1.20.1-2.13.1.jar"
   },
   {
    "sha256": "01200ee5889e6bcc3c5fa8f32b7b49a4bd58e653699eeb655c6f2dd314e3ce51",
@@ -775,11 +790,6 @@
    "sha256": "0945df0cba0f62b3901dd80c3268e5311b770ece78c78037a45db12ac0425fef",
    "size": 2851119,
    "name": "oculus-mc1.20.1-1.8.0.jar"
-  },
-  {
-   "sha256": "015f6d95e1f2f0dc98e70c9375cf21ccfc8214f308ff65aec4f696d6420b773a",
-   "size": 14034,
-   "name": "overloadedarmorbar-1.20.1-1.jar"
   },
   {
    "sha256": "f692b0a24c46c954358db8535248021deaf3399973c4e746ba1e3e115a8a48c9",
