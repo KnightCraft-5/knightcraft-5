@@ -198,13 +198,13 @@
 	# How much bonus xp should parties earn by skill.
 	# This value is multiplied by the party size.
 	[Party."Party Bonus"]
-		combat = 1.05
+		combat = 1.0
 		endurance = 1.1
 
 #settings related to how strong mobs get based on player level.
 [Mob_Scaling]
 	#Should mob scaling be turned on.
-	"Enable Mob Scaling" = true
+	"Enable Mob Scaling" = false
 	#How far should players be from spawning mobs to affect scaling?
 	#Range: > 0
 	"Scaling AOE" = 150

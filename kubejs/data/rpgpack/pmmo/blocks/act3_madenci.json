@@ -1,12 +1,16 @@
 {
-	"override": true,
-	"isTagFor": [
-		"create:shaft",
-		"create:cogwheel",
-		"create:large_cogwheel",
-		"create:hand_crank"
-	],
-	"requirements": {
-		"PLACE": { "engineering": 10 }
-	}
+  "override": true,
+  "isTagFor": [
+    "create:water_wheel",
+    "create:large_water_wheel",
+    "create:windmill_bearing",
+    "create:mechanical_press",
+    "create:basin",
+    "create:andesite_casing",
+    "create:millstone",
+    "create:mechanical_saw",
+    "create:mechanical_mixer",
+    "create:encased_fan",
+    "create:copper_casing"
+  ]
 }

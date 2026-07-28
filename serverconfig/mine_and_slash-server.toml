@@ -59,7 +59,7 @@
 	#Range: 5.0 ~ 99.0
 	MAP_PERCENT_COMPLETE_NEEDED_FOR_BOSS_ARENA = 50.0
 	#Range: 0.0 ~ 10.0
-	in_combat_regen_multi = 0.5
+	in_combat_regen_multi = 0.0
 	#Range: 0.0 ~ 1.0
 	COMBAT_TO_PROFESSION_RESTED_XP_GENERATION = 0.25
 	#Range: 0.0 ~ 1.0
