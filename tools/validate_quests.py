@@ -30,7 +30,13 @@ MODS = os.path.join(ROOT, 'mods')
 
 # Ars Nouveau registers its glyph items at runtime, so they never appear in a
 # lang file. Anything matching this is exempt from the item-exists check.
-RUNTIME_ITEMS = (re.compile(r'^ars_nouveau:glyph_'),)
+# Items whose display name is built at runtime, so no mod ships a lang entry for
+# them and the en_us scan cannot see them. apotheosis:gem is named from its rarity
+# plus its gem type; verified real - socketing one moved a dragonsteel axe 18.0 -> 29.75.
+RUNTIME_ITEMS = (re.compile(r'^ars_nouveau:glyph_'),
+                 re.compile(r'^apotheosis:gem$'),
+                 # items registered by KubeJS at startup exist in no jar's lang file
+                 re.compile(r'^kubejs:'))
 
 
 def mod_item_ids():
@@ -63,6 +69,134 @@ def item_of(v):
     if isinstance(v, tuple):
         return v[1]
     return None
+
+
+ACT_ORDER = ['act1_cirak', 'act2_gezgin', 'act3_madenci', 'act4_avci', 'act5_arena',
+             'act6_cehennem', 'act7_ejderha', 'act8_kadim', 'act9_son', 'act10_yakinda']
+
+
+def boss_drop_map():
+    """item id -> {entities that drop it}, from every installed mod's entity loot tables.
+
+    Items that also have a vanilla source are dropped from the map: iron, diamond and
+    emerald all appear in modded mob loot tables, and treating those as boss-gated
+    produced a page of false positives.
+    """
+    import zipfile
+    out = {}
+    for jar in glob.glob(os.path.join(MODS, '*.jar')):
+        try:
+            z = zipfile.ZipFile(jar)
+        except Exception:
+            continue
+        for n in z.namelist():
+            if '/loot_tables/entities/' not in n or not n.endswith('.json'):
+                continue
+            try:
+                body = z.read(n).decode('utf-8')
+            except Exception:
+                continue
+            ns = n.split('/')[1]
+            ent = ns + ':' + n.split('/loot_tables/entities/')[1][:-5]
+            for it in set(re.findall(r'"name": "([\w]+:[\w/]+)"', body)):
+                if it.startswith('minecraft:'):
+                    continue
+                out.setdefault(it, set()).add(ent)
+    return out
+
+
+def structural_problems():
+    """Rules the book has actually violated, each one a bug that shipped.
+
+    R1 one hexagon per act, and it must be a kill - 15 non-boss quests wore the capstone
+       shape, so act 5 looked like it had six bosses.
+    R2 a quest requiring a boss drop must sit AFTER that boss's kill - 24 of 25 did not,
+       and act 8 asked for the Ender Guardian's gauntlet to unlock the fight against it.
+    R3 no quest may need an item whose only source boss is in a later act.
+    R4 an optional quest may not gate a non-optional one.
+    R5 no duplicate titles inside a chapter.
+    """
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from questfile import Chapter
+
+    probs = []
+    chapters, where, blocks = {}, {}, {}
+    for f in sorted(glob.glob(os.path.join(CHAPTERS, '*.snbt'))):
+        name = os.path.basename(f)[:-5]
+        chapters[name] = Chapter(f)
+        for b in chapters[name].blocks:
+            where[Chapter.qid(b)] = name
+            blocks[Chapter.qid(b)] = b
+
+    for name, ch in chapters.items():
+        # R1
+        hexes = [b for b in ch.blocks if 'hexagon' in b]
+        if len(hexes) > 1:
+            probs.append(f'{name}: {len(hexes)} hexagon quests - the capstone shape must be '
+                         f'unique: {", ".join(Chapter.title(b) for b in hexes)}')
+        for b in hexes:
+            if 'type: "kill"' not in b:
+                probs.append(f'{name}/{Chapter.title(b)}: hexagon but not a kill quest')
+        # R5
+        titles = [Chapter.title(b) for b in ch.blocks]
+        for t in sorted(set(titles)):
+            if titles.count(t) > 1:
+                probs.append(f'{name}: {titles.count(t)} quests share the title "{t}"')
+
+    # R4
+    kids = {}
+    for i, b in blocks.items():
+        for d in Chapter.deps(b):
+            kids.setdefault(d, []).append(i)
+    for i, b in blocks.items():
+        if 'optional: true' not in b:
+            continue
+        for k in kids.get(i, []):
+            if 'optional: true' not in blocks[k]:
+                probs.append(f'{where[i]}/{Chapter.title(b)} is optional but gates '
+                             f'{Chapter.title(blocks[k])}')
+
+    if not (os.path.isdir(MODS) and glob.glob(os.path.join(MODS, '*.jar'))):
+        return probs
+
+    drops = boss_drop_map()
+    killed = {}          # entity -> quest that kills it
+    for i, b in blocks.items():
+        for e in re.findall(r'entity: "([\w:]+)"', b):
+            killed[e] = i
+
+    def reaches(start, target, seen=None):
+        seen = seen or set()
+        for d in Chapter.deps(blocks[start]):
+            if d in seen or d not in blocks:
+                continue
+            if d == target:
+                return True
+            seen.add(d)
+            if reaches(d, target, seen):
+                return True
+        return False
+
+    for i, b in blocks.items():
+        act = ACT_ORDER.index(where[i]) if where[i] in ACT_ORDER else None
+        for it in set(re.findall(r'item: "([\w]+:[\w_]+)"', b)):
+            srcs = drops.get(it)
+            if not srcs:
+                continue
+            # R2 - same-act boss must be killed first
+            same = [s for s in srcs if s in killed and where.get(killed[s]) == where[i]]
+            if same and not any(reaches(i, killed[s]) for s in same):
+                probs.append(f'{where[i]}/{Chapter.title(b)}: needs {it} from '
+                             f'{same[0]}, but does not come after that kill')
+            # R3 - source boss only exists in a later act
+            if act is not None:
+                later = [s for s in srcs if s in killed
+                         and where.get(killed[s]) in ACT_ORDER
+                         and ACT_ORDER.index(where[killed[s]]) > act]
+                if later and not same:
+                    probs.append(f'{where[i]}/{Chapter.title(b)}: needs {it}, only dropped '
+                                 f'by {later[0]} which is act {ACT_ORDER.index(where[killed[later[0]]])+1}')
+    return probs
 
 
 def main():
@@ -149,6 +283,8 @@ def main():
                 problems.append(f'{chapter}/{title}: no installed mod provides {it}')
     else:
         print('note: mods/ absent, skipping item-id existence check')
+
+    problems += structural_problems()
 
     per_chapter = collections.Counter(v[0] for v in quests.values())
     for c in sorted(per_chapter):
