@@ -2,7 +2,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "act1_cirak"
-	group: ""
+	group: "2000000000000001"
 	icon: "minecraft:crafting_table"
 	id: "1000000000000A01"
 	order_index: 0
@@ -68,8 +68,8 @@
 				type: "item"
 			}]
 			title: "Sığınak"
-			x: 2.0d
-			y: 0.0d
+			x: 3.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["2000000000000A12"]
@@ -93,8 +93,8 @@
 				type: "item"
 			}]
 			title: "İlk Demir"
-			x: 4.0d
-			y: 0.0d
+			x: 6.0d
+			y: -4.38d
 		}
 		{
 			dependencies: ["2000000000000A11"]
@@ -111,23 +111,23 @@
 				"§7upgrades - magnet, auto-smelt, storage.§r"
 			]
 			icon: "sophisticatedbackpacks:backpack"
-			id: "2000000000000B11"
+			id: "776F6954E6B30AB9"
 			optional: true
 			rewards: [{
-				id: "4000000000000E11"
+				id: "40E1D2591252829A"
 				type: "xp"
 				xp: 60
 			}]
 			shape: "square"
 			subtitle: "The Backpack"
 			tasks: [{
-				id: "3000000000000B11"
+				id: "6B9E72D4A57B2538"
 				item: "sophisticatedbackpacks:backpack"
 				type: "item"
 			}]
 			title: "Sırt Çantası"
-			x: 0.0d
-			y: -2.0d
+			x: 3.0d
+			y: -1.75d
 		}
 		{
 			dependencies: ["2000000000000A11"]
@@ -159,8 +159,8 @@
 				type: "item"
 			}]
 			title: "İlk Tarla"
-			x: 2.0d
-			y: 2.0d
+			x: 3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["2000000000000A11"]
@@ -195,8 +195,8 @@
 				type: "item"
 			}]
 			title: "Tencere ve Ateş"
-			x: 2.0d
-			y: -4.0d
+			x: 3.0d
+			y: 1.75d
 		}
 		{
 			dependencies: ["2100000000000101"]
@@ -251,8 +251,8 @@
 				}
 			]
 			title: "Bıçak ve Tahta"
-			x: 4.0d
-			y: -4.0d
+			x: 6.0d
+			y: 2.62d
 		}
 		{
 			dependencies: ["2000000000000A12"]
@@ -309,8 +309,8 @@
 				}
 			]
 			title: "Oltacı"
-			x: 4.0d
-			y: 2.0d
+			x: 6.0d
+			y: -2.62d
 		}
 		{
 			dependencies: ["2000000000000A12"]
@@ -469,7 +469,7 @@
 			]
 			title: "Sadak"
 			x: 6.0d
-			y: 2.0d
+			y: -0.88d
 		}
 		{
 			dependencies: ["2000000000000A13"]
@@ -518,7 +518,7 @@
 				type: "item"
 			}]
 			title: "Kaftan"
-			x: 6.0d
+			x: 9.0d
 			y: 0.0d
 		}
 		{
@@ -540,10 +540,10 @@
 				"§7Upgrades are installed from the backpack's own screen.§r"
 			]
 			icon: "sophisticatedbackpacks:magnet_upgrade"
-			id: "2100000000000106"
+			id: "4D23CDC8FCE36B57"
 			optional: true
 			rewards: [{
-				id: "4100000000000107"
+				id: "33E8B336FBC8C1AC"
 				type: "xp"
 				xp: 100
 			}]
@@ -551,19 +551,110 @@
 			subtitle: "Load Capacity"
 			tasks: [
 				{
-					id: "3100000000000109"
+					id: "227F1E98E099ABD0"
 					item: "sophisticatedbackpacks:magnet_upgrade"
 					type: "item"
 				}
 				{
-					id: "310000000000010A"
+					id: "78BB123168C01CA3"
 					item: "sophisticatedbackpacks:stack_upgrade_starter_tier"
 					type: "item"
 				}
 			]
 			title: "Yük Kapasitesi"
-			x: 0.0d
-			y: -4.0d
+			x: 6.0d
+			y: 0.88d
+		}
+		{
+			dependencies: ["2000000000000A11"]
+			description: [
+				"Kaçmak da bir beceridir. Kalkanın yoksa, ayakların kalkanındır."
+				""
+				"§bNeden:§r Bu sunucuda zırh tek başına yetmez. 1. Perde'de bir"
+				"canavar sana 12 hasar vurur - zırhsızsan iki vuruşta ölürsün."
+				"Yan adım, gelen saldırının TAMAMINI boşa çıkarır."
+				""
+				"§eNasıl:§r Kitabı sağ tıkla, sonra beceri ekranından Dodge"
+				"yuvasına yerleştir."
+				""
+				"§7Dodging is a skill. Without a shield, your feet are your shield."
+				"§7An Act I mob hits for 12 - unarmoured that is two hits. Step evades"
+				"§7the whole attack. Right-click the book, then slot it under Dodge.§r"
+			]
+			icon: {
+				Count: 1
+				id: "epicfight:skillbook"
+				tag: {
+					skill: "epicfight:step"
+				}
+			}
+			id: "2100000000000107"
+			rewards: [{
+				id: "4100000000000130"
+				item: {
+					Count: 1
+					id: "epicfight:skillbook"
+					tag: {
+						skill: "epicfight:step"
+					}
+				}
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "Step"
+			tasks: [{
+				id: "3100000000000130"
+				type: "checkmark"
+			}]
+			title: "Yan Adım"
+			x: 3.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["2100000000000107"]
+			description: [
+				"Yan adım kısa. Takla seni tehlikeden tamamen çıkarır."
+				""
+				"§bNeden:§r Takla daha uzağa götürür ve o süre boyunca gelen"
+				"her saldırıyı boşa çıkarır. Perde sonu canavarlarının geniş"
+				"saldırılarından kaçmanın en güvenli yolu budur."
+				""
+				"§eDikkat:§r İkisi de aynı Dodge yuvasını kullanır - ikisini"
+				"birden takamazsın. Yakın dövüşte takla, kalabalıkta yan adım."
+				""
+				"§7Step is short. Roll takes you clean out of danger. Both use the"
+				"§7SAME Dodge slot, so you pick one: roll for duels, step for crowds.§r"
+			]
+			icon: {
+				Count: 1
+				id: "epicfight:skillbook"
+				tag: {
+					skill: "epicfight:roll"
+				}
+			}
+			id: "2100000000000108"
+			rewards: [{
+				id: "4100000000000131"
+				item: {
+					Count: 1
+					id: "epicfight:skillbook"
+					tag: {
+						skill: "epicfight:roll"
+					}
+				}
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "Roll"
+			tasks: [{
+				entity: "minecraft:zombie"
+				id: "3100000000000131"
+				type: "kill"
+				value: 3L
+			}]
+			title: "Takla"
+			x: 6.0d
+			y: 4.38d
 		}
 	]
 	subtitle: ["Act I - The Apprentice"]

@@ -2,14 +2,14 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "act7_ejderha"
-	group: ""
+	group: "2000000000000001"
 	icon: "iceandfire:fire_dragon_heart"
 	id: "1000000000000A07"
 	order_index: 6
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["2000000000000B71"]
+			dependencies: ["200000000000C709"]
 			description: [
 				"Bir ejderha öldürmek tek başına yapılacak iş değildir."
 				"Leşini kes, kalbini al. Kalp asla iki kez verilmez."
@@ -24,8 +24,7 @@
 				type: "xp_levels"
 				xp_levels: 40
 			}]
-			shape: "hexagon"
-			size: 1.5d
+			shape: "diamond"
 			subtitle: "Heart of the Dragon"
 			tasks: [{
 				id: "3000000000000A71"
@@ -33,64 +32,11 @@
 				type: "item"
 			}]
 			title: "Ejderhanın Kalbi"
-			x: 0.75d
+			x: 12.0d
 			y: 0.0d
 		}
 		{
-			dependencies: [
-				"2000000000000A71"
-				"2000000000000C24"
-				"2000000000000C09"
-			]
-			description: [
-				"Artık eşyaların kendi kendine hareket edebilir."
-				"Ama unutma: bir ağ kurduğun an, onu savunmak da senin işin."
-				""
-				"§8Ödül: Mühendislik 60§r"
-				""
-				"§eGerekli:§r 3 Zindan Kalıntısı. Zindan Haritası ile bir zindana"
-				"gir ve Uber Patronu öldür - her patron 3 kalıntı verir, yani"
-				"tek bir başarılı baskın yeter."
-				""
-				"§cStrateji:§r Uber Patron tek başına indirilmez. Üç dört kişi"
-				"gidin, biri iyileştirme büyüsü taşısın. Kalıntı ayrıca Depo Ağı"
-				"Kökü'nün kendisi için de gerekli - toplam 6 tane lazım olacak."
-				""
-				"§7Your goods can now move on their own."
-				"§7But remember: the moment you build a network, defending it is your job too."
-				""
-				"§7Requires 3 General Relics. Enter a dungeon with a Dungeon Map and"
-				"§7kill the Uber Boss - 3 relics per boss, so one successful raid."
-				"§7Strategy: the Uber Boss is not soloable. Go with 3-4, bring a healer."
-				"§7You will need 6 relics total - 3 here, 3 for the Storage Root itself."
-				""
-				"§8Reward: Engineering 60§r"
-			]
-			icon: "storagenetwork:master"
-			id: "2000000000000A72"
-			rewards: [{
-				command: "/pmmo admin @p set engineering level 60"
-				elevate_perms: true
-				id: "4000000000000A72"
-				silent: true
-				title: "Mühendislik 60 / Engineering 60"
-				type: "command"
-			}]
-			shape: "gear"
-			size: 2.0d
-			subtitle: "Networks and Vaults"
-			tasks: [{
-				count: 3L
-				id: "3000000000000A72"
-				item: "dungeon_realm:general_relic"
-				type: "item"
-			}]
-			title: "Ağlar ve Depolar"
-			x: 4.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["2000000000000A63"]
+			dependencies: ["200000000000C70B"]
 			description: [
 				"Ejderhaya gitmeden önce küçük canavarları öğren."
 				"Gorgon taşa çevirir, deniz yılanı boğar."
@@ -126,8 +72,8 @@
 				}
 			]
 			title: "Küçük Avlar"
-			x: -3.0d
-			y: 0.0d
+			x: 3.0d
+			y: -1.75d
 		}
 		{
 			dependencies: ["2000000000000A71"]
@@ -163,8 +109,8 @@
 				type: "item"
 			}]
 			title: "Ejderha Kemiği"
-			x: 0.0d
-			y: -1.0d
+			x: 15.0d
+			y: -0.88d
 		}
 		{
 			dependencies: ["2000000000000A71"]
@@ -190,21 +136,21 @@
 				type: "item"
 			}]
 			title: "Ejderha Kanı"
-			x: 1.5d
-			y: -1.0d
+			x: 15.0d
+			y: 0.88d
 		}
 		{
-			dependencies: ["2000000000000A72"]
+			dependencies: ["200000000000C70B"]
 			description: [
 				"Bir ağ, kablolarından güçlüdür."
 				""
 				"§7A network is only as strong as its cables.§r"
 			]
 			icon: "storagenetwork:kabel"
-			id: "2000000000000B74"
+			id: "4EAC5254AB24F38B"
 			optional: true
 			rewards: [{
-				id: "4000000000000B74"
+				id: "131C2C6BBA29F0CE"
 				type: "xp"
 				xp: 200
 			}]
@@ -212,77 +158,13 @@
 			subtitle: "Network Cable"
 			tasks: [{
 				count: 32L
-				id: "3000000000000B75"
+				id: "21E101B7D7CE41B2"
 				item: "storagenetwork:kabel"
 				type: "item"
 			}]
 			title: "Ağ Kablosu"
-			x: 7.5d
-			y: -2.0d
-		}
-		{
-			dependencies: [
-				"2000000000000A72"
-				"2000000000000C08"
-			]
-			description: [
-				"Senin yerine tutar, vurur, yerleştirir."
-				"Ama asla senin yerine düşünmez."
-				""
-				"§7It holds, strikes and places for you."
-				"§7But it never thinks for you.§r"
-			]
-			icon: "create:deployer"
-			id: "2000000000000B75"
-			optional: true
-			rewards: [{
-				id: "4000000000000B75"
-				type: "xp"
-				xp: 260
-			}]
-			shape: "square"
-			subtitle: "The Deployer"
-			tasks: [{
-				count: 4L
-				id: "3000000000000B76"
-				item: "create:deployer"
-				type: "item"
-			}]
-			title: "Yerleştirici"
-			x: 7.5d
-			y: 2.0d
-		}
-		{
-			dependencies: ["2000000000000B71"]
-			description: [
-				"§cZorluk: Zor§r"
-				""
-				"Ender Golem - 150 can ama sert vurur. Garantili düşer."
-				""
-				"§bKullanım:§r Yerleştirici, Mıknatıs Yükseltmesi"
-				""
-				"§7Difficulty: Hard - Ender Golem (150 HP, hits hard). Guaranteed."
-				"§7Used for: Deployer, Magnet Upgrades.§r"
-			]
-			icon: "cataclysm:void_core"
-			id: "2000000000000C08"
-			optional: true
-			rewards: [{
-				id: "4000000000000D08"
-				type: "xp_levels"
-				xp_levels: 25
-			}]
-			shape: "hexagon"
-			subtitle: "Void Core - the Deployer"
-			tasks: [{
-				consume_items: false
-				id: "3000000000000D08"
-				item: "cataclysm:void_core"
-				type: "item"
-			}]
-			title: "Boşluk Çekirdeği"
-			x: 1.0d
-			y: 4.0d
+			x: 3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["2000000000000B71"]
@@ -298,13 +180,12 @@
 			]
 			icon: "legendary_monsters:frozen_rune"
 			id: "2000000000000C09"
-			optional: true
 			rewards: [{
 				id: "4000000000000D09"
 				type: "xp_levels"
 				xp_levels: 25
 			}]
-			shape: "hexagon"
+			shape: "square"
 			subtitle: "Frozen Rune - the Storage Network"
 			tasks: [{
 				consume_items: false
@@ -313,11 +194,11 @@
 				type: "item"
 			}]
 			title: "Donmuş Rün"
-			x: 0.5d
-			y: -3.0d
+			x: 6.0d
+			y: -7.88d
 		}
 		{
-			dependencies: ["2000000000000B71"]
+			dependencies: ["200000000000C70A"]
 			description: [
 				"§cZorluk: Zor§r"
 				""
@@ -335,7 +216,7 @@
 				type: "xp_levels"
 				xp_levels: 25
 			}]
-			shape: "hexagon"
+			shape: "square"
 			subtitle: "Chitin Claw - pipe upgrades"
 			tasks: [{
 				consume_items: false
@@ -344,61 +225,309 @@
 				type: "item"
 			}]
 			title: "Kitin Pençesi"
-			x: -3.0d
-			y: 2.5d
+			x: 6.0d
+			y: 7.88d
 		}
 		{
 			dependencies: ["2000000000000B71"]
 			description: [
-				"Seviye 45'e ulaş."
+				"Buz Ejderhası avına çık."
 				""
-				"§7Reach character level 45.§r"
+				"§7Hunt down the Ice Dragon.§r"
 			]
-			icon: "minecraft:nether_star"
-			id: "2000000000000C24"
+			icon: "iceandfire:ice_dragon_heart"
+			id: "200000000000C701"
 			rewards: [{
-				command: "/mine_and_slash points cheat_give @p stats 30"
-				elevate_perms: true
-				id: "4000000000000C05"
-				silent: true
-				title: "30 Stat Puanı / 30 Stat Points"
-				type: "command"
-			}]
-			shape: "hexagon"
-			subtitle: "Legend - level 45"
-			tasks: [{
-				id: "3000000000000C05"
-				title: "Seviye 45 / Level 45"
-				type: "custom"
-			}]
-			title: "Efsane"
-			x: 1.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["2000000000000A72"]
-			description: [
-				"120 stat puanı harca."
-				""
-				"§7Spend 120 stat points.§r"
-			]
-			icon: "minecraft:netherite_ingot"
-			id: "2000000000000C28"
-			optional: true
-			rewards: [{
-				id: "4000000000000C13"
-				type: "xp_levels"
-				xp_levels: 30
+				id: "400000000000C701"
+				type: "xp"
+				xp: 1400
 			}]
 			shape: "square"
-			subtitle: "Mastery - 120 points spent"
+			subtitle: "Ice Dragon"
 			tasks: [{
-				id: "3000000000000C13"
-				title: "120 puan harcandı / 120 points spent"
-				type: "custom"
+				entity: "iceandfire:ice_dragon"
+				id: "300000000000C701"
+				type: "kill"
+				value: 1L
 			}]
-			title: "Kusursuzluk"
-			x: 7.5d
+			title: "Buz Ejderhası"
+			x: 6.0d
+			y: -6.12d
+		}
+		{
+			dependencies: ["2000000000000B71"]
+			description: [
+				"Yıldırım Ejderhası avına çık."
+				""
+				"§7Hunt down the Lightning Dragon.§r"
+			]
+			icon: "iceandfire:lightning_dragon_heart"
+			id: "200000000000C702"
+			rewards: [{
+				id: "400000000000C702"
+				type: "xp"
+				xp: 1400
+			}]
+			shape: "square"
+			subtitle: "Lightning Dragon"
+			tasks: [{
+				entity: "iceandfire:lightning_dragon"
+				id: "300000000000C702"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Yıldırım Ejderhası"
+			x: 6.0d
+			y: -4.38d
+		}
+		{
+			dependencies: ["2000000000000B71"]
+			description: [
+				"Hidra avına çık."
+				""
+				"§7Hunt down the The Hydra.§r"
+			]
+			icon: "minecraft:dragon_breath"
+			id: "200000000000C703"
+			rewards: [{
+				id: "400000000000C703"
+				type: "xp"
+				xp: 1400
+			}]
+			shape: "square"
+			subtitle: "The Hydra"
+			tasks: [{
+				entity: "iceandfire:hydra"
+				id: "300000000000C703"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Hidra"
+			x: 6.0d
+			y: -2.62d
+		}
+		{
+			dependencies: ["2000000000000B71"]
+			description: [
+				"Leviathan avına çık."
+				""
+				"§7Hunt down the The Leviathan.§r"
+			]
+			icon: "cataclysm:void_core"
+			id: "200000000000C704"
+			rewards: [{
+				id: "400000000000C704"
+				type: "xp"
+				xp: 1400
+			}]
+			shape: "square"
+			subtitle: "The Leviathan"
+			tasks: [{
+				entity: "cataclysm:the_leviathan"
+				id: "300000000000C704"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Leviathan"
+			x: 6.0d
+			y: -0.88d
+		}
+		{
+			dependencies: ["2000000000000B71"]
+			description: [
+				"Scylla avına çık."
+				""
+				"§7Hunt down the Scylla.§r"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:trident"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "200000000000C705"
+			rewards: [{
+				id: "400000000000C705"
+				type: "xp"
+				xp: 1400
+			}]
+			shape: "square"
+			subtitle: "Scylla"
+			tasks: [{
+				entity: "cataclysm:scylla"
+				id: "300000000000C705"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Scylla"
+			x: 6.0d
+			y: 0.88d
+		}
+		{
+			dependencies: ["2000000000000B71"]
+			description: [
+				"Tongbi avına çık."
+				""
+				"§7Hunt down the Tongbi, the Sculptor.§r"
+			]
+			icon: "minecraft:clay"
+			id: "200000000000C706"
+			rewards: [{
+				id: "400000000000C706"
+				type: "xp"
+				xp: 1400
+			}]
+			shape: "square"
+			subtitle: "Tongbi, the Sculptor"
+			tasks: [{
+				entity: "mowziesmobs:sculptor"
+				id: "300000000000C706"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Tongbi"
+			x: 6.0d
+			y: 2.62d
+		}
+		{
+			dependencies: ["2000000000000B71"]
+			description: [
+				"Boşluk Solucanı avına çık."
+				""
+				"§7Hunt down the Void Worm.§r"
+			]
+			icon: "minecraft:ender_eye"
+			id: "200000000000C707"
+			rewards: [{
+				id: "400000000000C707"
+				type: "xp"
+				xp: 1400
+			}]
+			shape: "square"
+			subtitle: "Void Worm"
+			tasks: [{
+				entity: "alexsmobs:void_worm"
+				id: "300000000000C707"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Boşluk Solucanı"
+			x: 6.0d
+			y: 4.38d
+		}
+		{
+			dependencies: ["2000000000000B71"]
+			description: [
+				"Tepegöz avına çık."
+				""
+				"§7Hunt down the Cyclops.§r"
+			]
+			icon: "minecraft:beef"
+			id: "200000000000C708"
+			rewards: [{
+				id: "400000000000C708"
+				type: "xp"
+				xp: 1400
+			}]
+			shape: "square"
+			subtitle: "Cyclops"
+			tasks: [{
+				entity: "iceandfire:cyclops"
+				id: "300000000000C708"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Tepegöz"
+			x: 6.0d
+			y: 6.12d
+		}
+		{
+			dependencies: [
+				"200000000000C701"
+				"200000000000C702"
+				"200000000000C703"
+				"200000000000C704"
+				"200000000000C705"
+				"200000000000C706"
+				"200000000000C707"
+				"200000000000C708"
+			]
+			description: [
+				"Bu perdenin son sınavı. Diğer canavarları geçtiysen hazırsın."
+				""
+				"§7The act's final trial. If you cleared the rest, you are ready.§r"
+			]
+			icon: "iceandfire:fire_dragon_heart"
+			id: "200000000000C709"
+			rewards: [{
+				id: "400000000000C709"
+				type: "xp"
+				xp: 4200
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Fire Dragon"
+			tasks: [{
+				entity: "iceandfire:fire_dragon"
+				id: "300000000000C709"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Ateş Ejderhası"
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["200000000000C70B"]
+			description: [
+				"Pençeli avına çık."
+				""
+				"§7Hunt down the Clawdian. Its drop is required later in this act.§r"
+			]
+			icon: "cataclysm:chitin_claw"
+			id: "200000000000C70A"
+			rewards: [{
+				id: "400000000000C70A"
+				type: "xp"
+				xp: 300
+			}]
+			shape: "square"
+			subtitle: "Clawdian"
+			tasks: [{
+				entity: "cataclysm:clawdian"
+				id: "300000000000C70A"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Pençeli"
+			x: 3.0d
+			y: 1.75d
+		}
+		{
+			dependencies: ["2000000000000A62"]
+			description: [
+				"Deniz Yılanı avına çık."
+				""
+				"§7Hunt down the Sea Serpent. Its drop is required later in this act.§r"
+			]
+			icon: "iceandfire:sea_serpent_fang"
+			id: "200000000000C70B"
+			rewards: [{
+				id: "400000000000C70B"
+				type: "xp"
+				xp: 300
+			}]
+			shape: "square"
+			subtitle: "Sea Serpent"
+			tasks: [{
+				entity: "iceandfire:sea_serpent"
+				id: "300000000000C70B"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Deniz Yılanı"
+			x: 0.0d
 			y: 0.0d
 		}
 	]

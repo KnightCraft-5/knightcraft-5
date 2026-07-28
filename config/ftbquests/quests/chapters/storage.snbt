@@ -1,0 +1,333 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "storage"
+	group: "2000000000000002"
+	icon: "sophisticatedstorage:barrel"
+	id: "1000000000000D01"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Ellerin iki tane. Taşıman gereken şey çok daha fazla."
+				""
+				"§bNeden:§r Bu pakette envanter alanı gerçek bir kısıt. Sırt çantası"
+				"yükseltmelerle büyür - mıknatıs, otomatik eritme, sandık."
+				""
+				"§eTarif:§r Deri + ip + ahşap sandık."
+				""
+				"§7Your hands hold two things. You need to carry far more."
+				"§7Inventory space is a real constraint here. The backpack grows with"
+				"§7upgrades - magnet, auto-smelt, storage.§r"
+			]
+			icon: "sophisticatedbackpacks:backpack"
+			id: "2000000000000B11"
+			rewards: [{
+				id: "4000000000000E11"
+				type: "xp"
+				xp: 60
+			}]
+			shape: "square"
+			subtitle: "The Backpack"
+			tasks: [{
+				id: "3000000000000B11"
+				item: "sophisticatedbackpacks:backpack"
+				type: "item"
+			}]
+			title: "Sırt Çantası"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2000000000000B11"]
+			description: [
+				"Çantayı yapmak kolay. Onu işe yarar hale getirmek başka iş."
+				""
+				"§bMıknatıs Yükseltmesi§r yerdeki eşyaları sen yürürken toplar -"
+				"madende ve dövüş sonrasında hayat kurtarır."
+				"§bYığın Yükseltmesi§r her yuvanın taşıyabileceği miktarı katlar."
+				""
+				"§eStrateji:§r Yükseltmeler çantanın kendi arayüzünden takılır."
+				"Otomatik eritme yükseltmesi de erken oyunda çok işe yarar - madende"
+				"cevheri kazarken külçeye dönüşür."
+				""
+				"§7Making the backpack is easy. Making it useful is another job."
+				"§7The magnet upgrade sweeps up drops as you walk - a lifesaver in the"
+				"§7mine and after fights. Stack upgrades multiply what each slot holds."
+				"§7Upgrades are installed from the backpack's own screen.§r"
+			]
+			icon: "sophisticatedbackpacks:magnet_upgrade"
+			id: "2100000000000106"
+			optional: true
+			rewards: [{
+				id: "4100000000000107"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "square"
+			subtitle: "Load Capacity"
+			tasks: [
+				{
+					id: "3100000000000109"
+					item: "sophisticatedbackpacks:magnet_upgrade"
+					type: "item"
+				}
+				{
+					id: "310000000000010A"
+					item: "sophisticatedbackpacks:stack_upgrade_starter_tier"
+					type: "item"
+				}
+			]
+			title: "Yük Kapasitesi"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2000000000000B11"]
+			description: [
+				"Yola çıkan adam, taşıyabildiği kadar uzağa gider."
+				""
+				"§bNe yapar:§r Demir çanta hem daha çok yuva hem daha çok yükseltme"
+				"yuvası verir. Çantanı yükseltmek içindekileri kaybettirmez -"
+				"eski çantayı tarife koy, yenisi dolu çıkar."
+				""
+				"§eStrateji:§r Zindan baskınlarında envanterin dolduğunda geri"
+				"dönmek zorunda kalırsın, ve geri dönüş yolu en tehlikeli kısımdır."
+				"Çanta yükseltmesi doğrudan hayatta kalma yükseltmesidir."
+				""
+				"§7A traveller goes as far as he can carry. The iron backpack adds"
+				"§7slots and upgrade slots, and upgrading never loses your contents -"
+				"§7put the old bag in the recipe and the new one comes out full."
+				"§7On a dungeon raid, a full inventory forces the walk back, and the"
+				"§7walk back is the dangerous part.§r"
+			]
+			icon: "sophisticatedbackpacks:iron_backpack"
+			id: "2100000000000203"
+			optional: true
+			rewards: [{
+				id: "4100000000000203"
+				type: "xp"
+				xp: 110
+			}]
+			shape: "square"
+			subtitle: "The Iron Backpack"
+			tasks: [{
+				id: "3100000000000203"
+				item: "sophisticatedbackpacks:iron_backpack"
+				type: "item"
+			}]
+			title: "Demir Sırt Çantası"
+			x: 3.0d
+			y: 1.75d
+		}
+		{
+			dependencies: ["2000000000000B11"]
+			description: [
+				"Sandık yetmiyorsa varil."
+				""
+				"§bNeden:§r Sophisticated Storage varilleri yükseltme alır - kapasite,"
+				"otomatik toplama, sıkıştırma. Sandıktan farkı budur."
+				""
+				"§eİpucu:§r Varile tıklayıp yükseltme yuvalarını aç."
+				""
+				"§7Sophisticated barrels take upgrades - capacity, auto-pickup, compacting."
+				"§7That is what separates them from a chest.§r"
+			]
+			icon: "sophisticatedstorage:barrel"
+			id: "20000000000D0101"
+			rewards: [{
+				id: "40000000000D0101"
+				type: "xp"
+				xp: 200
+			}]
+			shape: "square"
+			subtitle: "The Barrel"
+			tasks: [{
+				id: "30000000000D0101"
+				item: "sophisticatedstorage:barrel"
+				type: "item"
+			}]
+			title: "Varil"
+			x: 3.0d
+			y: -1.75d
+		}
+		{
+			dependencies: ["20000000000D0101"]
+			description: [
+				"Aynı varil, dört katı eşya."
+				""
+				"§bNeden:§r Yığın yükseltmesi yuva başına taşınan miktarı büyütür."
+				"Baskın sonrası ganimeti tek varile sığdırmanın yolu."
+				""
+				"§7Stack upgrades multiply how much each slot holds - the way to fit a"
+				"§7raid's haul into one barrel.§r"
+			]
+			icon: "sophisticatedstorage:stack_upgrade_tier_1"
+			id: "20000000000D0102"
+			rewards: [{
+				id: "40000000000D0102"
+				type: "xp"
+				xp: 200
+			}]
+			shape: "square"
+			subtitle: "Stack Upgrade"
+			tasks: [{
+				id: "30000000000D0102"
+				item: "sophisticatedstorage:stack_upgrade_tier_1"
+				type: "item"
+			}]
+			title: "Yığın Yükseltmesi"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["20000000000D0102"]
+			description: [
+				"Bütün varilleri tek noktadan gör."
+				""
+				"§bNeden:§r Kontrolcü, ona değen bütün depoları tek arayüzde"
+				"birleştirir. Küçük bir üsse yeter, ağ kurmana gerek kalmaz."
+				""
+				"§7The controller merges every storage touching it into one interface."
+				"§7Enough for a small base without building a network.§r"
+			]
+			icon: "sophisticatedstorage:controller"
+			id: "20000000000D0103"
+			rewards: [{
+				id: "40000000000D0103"
+				type: "xp"
+				xp: 200
+			}]
+			shape: "square"
+			subtitle: "Storage Controller"
+			tasks: [{
+				id: "30000000000D0103"
+				item: "sophisticatedstorage:controller"
+				type: "item"
+			}]
+			title: "Depo Kontrolcüsü"
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["20000000000D0103"]
+			description: [
+				"Bir üs büyüyünce varil yetmez."
+				""
+				"§bNeden:§r Kök, ağın beynidir. Kablolarla bağladığın her sandık"
+				"tek bir envantere dönüşür - grup üssünde şart."
+				""
+				"§eSıra:§r Kök -> kablo -> bağlantı kablosu -> istek masası."
+				""
+				"§7The root is the network's brain. Every chest you wire becomes one"
+				"§7inventory - essential in a shared base.§r"
+			]
+			icon: "storagenetwork:master"
+			id: "20000000000D0104"
+			rewards: [{
+				id: "40000000000D0104"
+				type: "xp"
+				xp: 200
+			}]
+			shape: "square"
+			subtitle: "The Network Root"
+			tasks: [{
+				id: "30000000000D0104"
+				item: "storagenetwork:master"
+				type: "item"
+			}]
+			title: "Ağın Kökü"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["20000000000D0104"]
+			description: [
+				"Bir ağ, kablolarından güçlüdür."
+				""
+				"§7A network is only as strong as its cables.§r"
+			]
+			icon: "storagenetwork:kabel"
+			id: "2000000000000B74"
+			rewards: [{
+				id: "4000000000000B74"
+				type: "xp"
+				xp: 200
+			}]
+			shape: "square"
+			subtitle: "Network Cable"
+			tasks: [{
+				count: 32L
+				id: "3000000000000B75"
+				item: "storagenetwork:kabel"
+				type: "item"
+			}]
+			title: "Ağ Kablosu"
+			x: 15.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2000000000000B74"]
+			description: [
+				"Ağdaki her şeyi ara ve al."
+				""
+				"§bNeden:§r İstek masası ağın arama arayüzü. Buradan hem çekersin"
+				"hem de üretim yaparsın."
+				""
+				"§7The request table is the network's search interface - withdraw and"
+				"§7craft from one screen.§r"
+			]
+			icon: "storagenetwork:request"
+			id: "20000000000D0105"
+			rewards: [{
+				id: "40000000000D0105"
+				type: "xp"
+				xp: 200
+			}]
+			shape: "square"
+			subtitle: "Request Table"
+			tasks: [{
+				id: "30000000000D0105"
+				item: "storagenetwork:request"
+				type: "item"
+			}]
+			title: "İstek Masası"
+			x: 18.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["20000000000D0105"]
+			description: [
+				"Eşyayı elle taşımayı bırak."
+				""
+				"§bNeden:§r Pipez boruları filtreli ve hızlı. Fırın dizisini,"
+				"otomatik çiftliği, ganimet ayrıştırıcısını bunlarla bağlarsın."
+				""
+				"§eİpucu:§r Boruya anahtarla sağ tıkla - filtre ve hız yükseltmesi."
+				""
+				"§7Pipez pipes filter and upgrade. Wrench them to set filters and speed.§r"
+			]
+			icon: "pipez:item_pipe"
+			id: "20000000000D0106"
+			rewards: [{
+				id: "40000000000D0106"
+				type: "xp"
+				xp: 200
+			}]
+			shape: "square"
+			subtitle: "Pipes"
+			tasks: [{
+				count: 4L
+				id: "30000000000D0106"
+				item: "pipez:item_pipe"
+				type: "item"
+			}]
+			title: "Borular"
+			x: 21.0d
+			y: 0.0d
+		}
+	]
+	subtitle: ["Storage - free progression"]
+	title: "Depolama"
+}

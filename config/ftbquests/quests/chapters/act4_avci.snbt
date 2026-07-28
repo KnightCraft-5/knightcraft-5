@@ -2,14 +2,14 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "act4_avci"
-	group: ""
+	group: "2000000000000001"
 	icon: "create:water_wheel"
 	id: "1000000000000A04"
 	order_index: 3
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["2000000000000B41"]
+			dependencies: ["200000000000C404"]
 			description: [
 				"Yeraltındaki odada bin yıldır bekleyen bir zırh var."
 				"Zırhın içindeki şey uyanırsa, tek bir vuruşu yeter."
@@ -24,8 +24,7 @@
 				type: "xp_levels"
 				xp_levels: 20
 			}]
-			shape: "hexagon"
-			size: 1.5d
+			shape: "diamond"
 			subtitle: "The Wrought Helm"
 			tasks: [{
 				id: "3000000000000A41"
@@ -33,62 +32,11 @@
 				type: "item"
 			}]
 			title: "Dövülmüş Miğfer"
-			x: 2.0d
+			x: 9.0d
 			y: 0.0d
 		}
 		{
-			dependencies: [
-				"2000000000000A41"
-				"2000000000000C21"
-				"2000000000000B42"
-			]
-			description: [
-				"Nehir senin için çalışabilir. Yorulmaz, uyumaz, ücret istemez."
-				""
-				"§eGerekli:§r 3 Kadim Öfke ve 32 andezit alaşımı. Öfke Kadim"
-				"Dikilitaş ödül sandığından gelir - dalgaları temizlemeden"
-				"açılmaz. Alaşım ise 64 demir külçe demek."
-				""
-				"§cStrateji:§r Dikilitaşa tek başına gitme. Dalgalar arasında"
-				"nefes alacak vaktin yok ve canların sayılı. Bu perdeye kadar"
-				"topladığın oku ve arbaleti getir."
-				""
-				"§8Ödül: Mühendislik 20 - su çarkı, pres, huni, muhafaza§r"
-				""
-				"§7The river can work for you. It does not tire, sleep, or ask for pay."
-				""
-				"§7Requires 3 Ancient Wrath and 32 andesite alloy. Wrath comes from the"
-				"§7obelisk reward chest, which does not open until the waves are cleared;"
-				"§7the alloy is 64 iron ingots. Do not go to an obelisk alone - there is"
-				"§7no breathing room between waves and your lives are counted."
-				""
-				"§8Reward: Engineering 20 - water wheel, press, funnels, casings§r"
-			]
-			icon: "create:water_wheel"
-			id: "2000000000000A42"
-			rewards: [{
-				command: "/pmmo admin @p set engineering level 20"
-				elevate_perms: true
-				id: "4000000000000A42"
-				silent: true
-				title: "Mühendislik 20 / Engineering 20"
-				type: "command"
-			}]
-			shape: "gear"
-			size: 2.0d
-			subtitle: "The Power of Water"
-			tasks: [{
-				count: 32L
-				id: "3000000000000A42"
-				item: "create:andesite_alloy"
-				type: "item"
-			}]
-			title: "Suyun Gücü"
-			x: 4.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["2000000000000A33"]
+			dependencies: ["2000000000000C06"]
 			description: [
 				"Dövülmüş Şövalye demirden zırhı kâğıt gibi keser."
 				"Tek vuruşu hazırlıksız bir adamı öldürür - ve senin canların sayılı."
@@ -143,50 +91,6 @@
 		{
 			dependencies: ["2000000000000B41"]
 			description: [
-				"§eZorluk: Orta§r"
-				""
-				"Andezit muhafaza yapmak için Kadim Öz gerekir."
-				"Öz sadece Kadim Dikilitaşlardan gelir - dalgaları temizle,"
-				"ödül sandığını aç."
-				""
-				"Üç tane getir. Bu altı muhafaza eder;"
-				"kurmak istediğin her makine bir tane ister."
-				""
-				"§bKullanım:§r 1 Öfke = 2 Andezit Muhafaza"
-				""
-				"§cÖnemli:§r Suyun Gücü bu görev bitmeden açılmaz. Bu perdenin"
-				"mühendislik kapısı dikilitaşlardan geçiyor."
-				""
-				"§7Difficulty: Medium. Andesite casings need Ancient Essence, and"
-				"§7essence only comes from Ancient Obelisks - clear the waves, open"
-				"§7the reward chest. Bring three: that is six casings, and every"
-				"§7machine wants one. 1 Wrath = 2 Andesite Casings."
-				"§7Note: The Power of Water will not unlock until this is done -"
-				"§7this act's engineering gate runs through the obelisks.§r"
-			]
-			icon: "ancient_obelisks:ancient_wrath"
-			id: "2000000000000B42"
-			optional: true
-			rewards: [{
-				id: "4000000000000B42"
-				type: "xp_levels"
-				xp_levels: 15
-			}]
-			shape: "hexagon"
-			subtitle: "Obelisk Hunter - Ancient Wrath"
-			tasks: [{
-				count: 3L
-				id: "3000000000000B42"
-				item: "ancient_obelisks:ancient_wrath"
-				type: "item"
-			}]
-			title: "Dikilitaş Avcısı"
-			x: 2.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["2000000000000B41"]
-			description: [
 				"Deri tek başına bir şey değildir. Zırha dönüşene kadar."
 				""
 				"§bNeden:§r Epic Knights zırhları bu paketteki en iyi görünen ve"
@@ -227,96 +131,8 @@
 				type: "item"
 			}]
 			title: "Şövalye Zırhı"
-			x: 0.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["2000000000000A42"]
-			description: [
-				"Demiri levhaya çevir. Makinelerin dili budur."
-				""
-				"§7Turn iron into sheets. This is the language of machines.§r"
-			]
-			icon: "create:mechanical_press"
-			id: "2000000000000B44"
-			optional: true
-			rewards: [{
-				count: 4
-				id: "4000000000000B44"
-				item: "create:andesite_casing"
-				type: "item"
-			}]
-			shape: "square"
-			subtitle: "The First Pressing"
-			tasks: [{
-				count: 16L
-				id: "3000000000000B44"
-				item: "create:iron_sheet"
-				type: "item"
-			}]
-			title: "İlk Presleme"
-			x: 6.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["2000000000000A42"]
-			description: [
-				"Her makinenin bir gövdesi olmalı."
-				""
-				"§7Every machine must have a body.§r"
-			]
-			icon: "create:andesite_casing"
-			id: "2000000000000B45"
-			optional: true
-			rewards: [{
-				id: "4000000000000B45"
-				type: "xp"
-				xp: 140
-			}]
-			shape: "square"
-			subtitle: "Andesite Wright"
-			tasks: [{
-				count: 16L
-				id: "3000000000000B45"
-				item: "create:andesite_casing"
-				type: "item"
-			}]
-			title: "Andezit Ustası"
-			x: 6.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["2000000000000B41"]
-			description: [
-				"Seviye 10'a ulaş."
-				""
-				"§7Reach character level 10.§r"
-			]
-			icon: {
-				Count: 1
-				id: "minecraft:diamond_sword"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "2000000000000C21"
-			rewards: [{
-				command: "/mine_and_slash points cheat_give @p stats 10"
-				elevate_perms: true
-				id: "4000000000000C02"
-				silent: true
-				title: "10 Stat Puanı / 10 Stat Points"
-				type: "command"
-			}]
-			subtitle: "Journeyman - level 10"
-			tasks: [{
-				id: "3000000000000C02"
-				title: "Seviye 10 / Level 10"
-				type: "custom"
-			}]
-			title: "Gezgin Dövüşçü"
-			x: 2.0d
-			y: 2.0d
+			x: 3.0d
+			y: -10.5d
 		}
 		{
 			dependencies: ["2000000000000B41"]
@@ -370,8 +186,8 @@
 				}
 			]
 			title: "Büyücünün Rafları"
-			x: -2.0d
-			y: 0.0d
+			x: 3.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["2000000000000B41"]
@@ -422,8 +238,8 @@
 				}
 			]
 			title: "Koloninin Temeli"
-			x: -2.0d
-			y: 2.0d
+			x: 3.0d
+			y: 8.75d
 		}
 		{
 			dependencies: ["2000000000000A41"]
@@ -462,8 +278,8 @@
 				type: "item"
 			}]
 			title: "Kapı İncisi"
-			x: 4.0d
-			y: -2.0d
+			x: 12.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["2000000000000B41"]
@@ -686,8 +502,8 @@
 				}
 			]
 			title: "Avcının Sadağı"
-			x: -4.0d
-			y: -2.0d
+			x: 3.0d
+			y: 10.5d
 		}
 		{
 			dependencies: ["2000000000000B43"]
@@ -760,53 +576,170 @@
 				}
 			]
 			title: "Tam Takım"
-			x: 0.0d
-			y: -3.5d
+			x: 6.0d
+			y: -2.62d
 		}
 		{
-			dependencies: ["2000000000000A42"]
+			dependencies: ["2000000000000B41"]
 			description: [
-				"Su çarkı döner. Şimdi ona iş bul."
+				"Sinsi Avcı avına çık."
 				""
-				"§bNe yapar:§r Değirmen cevheri toza öğütür - bir cevherden iki"
-				"külçe çıkar. Mekanik testere kütükleri tahtaya, tahtayı çubuğa"
-				"böler ve ağaç keser."
-				""
-				"§eStrateji:§r Su çarkının verdiği gerilim sınırlıdır. Değirmen az,"
-				"testere çok tüketir - ikisini aynı hatta koyacaksan ikinci bir çark"
-				"kur. Gözlüğü tak ve gerilim çubuğuna bak."
-				""
-				"§7The water wheel turns. Now give it work. The millstone grinds ore"
-				"§7into dust - two ingots from one ore - and the mechanical saw cuts"
-				"§7logs to planks, planks to rods, and fells trees."
-				"§7Stress from one wheel is limited: the mill is cheap, the saw is not."
-				"§7Wear the goggles and watch the stress bar.§r"
+				"§7Hunt down the The Prowler.§r"
 			]
-			icon: "create:millstone"
-			id: "2100000000000407"
-			optional: true
+			icon: "minecraft:iron_ingot"
+			id: "200000000000C401"
 			rewards: [{
-				id: "4100000000000407"
+				id: "400000000000C401"
 				type: "xp"
-				xp: 180
+				xp: 400
 			}]
 			shape: "square"
-			subtitle: "Millstone and Saw"
-			tasks: [
-				{
-					id: "310000000000040E"
-					item: "create:millstone"
-					type: "item"
-				}
-				{
-					id: "310000000000040F"
-					item: "create:mechanical_saw"
-					type: "item"
-				}
+			subtitle: "The Prowler"
+			tasks: [{
+				entity: "cataclysm:the_prowler"
+				id: "300000000000C401"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Sinsi Avcı"
+			x: 3.0d
+			y: 1.75d
+		}
+		{
+			dependencies: ["2000000000000B41"]
+			description: [
+				"Yosunlu Devasa avına çık."
+				""
+				"§7Hunt down the Overgrown Colossus.§r"
 			]
-			title: "Değirmen ve Testere"
+			icon: "minecraft:moss_block"
+			id: "200000000000C402"
+			rewards: [{
+				id: "400000000000C402"
+				type: "xp"
+				xp: 400
+			}]
+			shape: "square"
+			subtitle: "Overgrown Colossus"
+			tasks: [{
+				entity: "legendary_monsters:overgrown_colossus"
+				id: "300000000000C402"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Yosunlu Devasa"
+			x: 3.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["2000000000000B41"]
+			description: [
+				"Başsız Şövalye avına çık."
+				""
+				"§7Hunt down the Beheaded Knight.§r"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "200000000000C403"
+			rewards: [{
+				id: "400000000000C403"
+				type: "xp"
+				xp: 400
+			}]
+			shape: "square"
+			subtitle: "Beheaded Knight"
+			tasks: [{
+				entity: "legendary_monsters:beheaded_knight"
+				id: "300000000000C403"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Başsız Şövalye"
+			x: 3.0d
+			y: 5.25d
+		}
+		{
+			dependencies: [
+				"200000000000C401"
+				"200000000000C402"
+				"200000000000C403"
+			]
+			description: [
+				"Bu perdenin son sınavı. Diğer canavarları geçtiysen hazırsın."
+				""
+				"§7The act's final trial. If you cleared the rest, you are ready.§r"
+			]
+			icon: "mowziesmobs:wrought_axe"
+			id: "200000000000C404"
+			rewards: [{
+				id: "400000000000C404"
+				type: "xp"
+				xp: 1200
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Ferrous Wroughtnaut"
+			tasks: [{
+				entity: "mowziesmobs:ferrous_wroughtnaut"
+				id: "300000000000C404"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Demir Muhafız"
 			x: 6.0d
-			y: 0.0d
+			y: 2.62d
+		}
+		{
+			dependencies: ["2000000000000B41"]
+			description: [
+				"Uzaktan vurabilen adam, vurulmayan adamdır."
+				""
+				"§bNeden:§r Erişim mesafeni ciddi şekilde arttırır. Cehennem'de"
+				"lav üstünden blok yerleştirmek, patronlara menzil dışından vurmak,"
+				"iskele kurmadan inşa etmek - hepsi bununla kolaylaşır."
+				""
+				"§eTarif:§r Pirinç + altın + bağlantı. Cehennem kuvarsı Apotheosis"
+				"büyü masası için de gerekli - ikisini birlikte topla."
+				""
+				"§7A man who strikes from range is a man who is not struck. Extends your"
+				"§7reach considerably - placing blocks over lava, hitting bosses from"
+				"§7outside their range, building without scaffolding.§r"
+			]
+			icon: {
+				Count: 1
+				id: "create:extendo_grip"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2000000000000B61"
+			optional: true
+			rewards: [{
+				id: "4000000000000E61"
+				type: "xp"
+				xp: 200
+			}]
+			shape: "square"
+			subtitle: "The Extendo Grip"
+			tasks: [{
+				id: "3000000000000B61"
+				item: {
+					Count: 1
+					id: "create:extendo_grip"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Uzatma Pençesi"
+			x: 3.0d
+			y: -1.75d
 		}
 	]
 	subtitle: ["Act IV - The Hunter"]

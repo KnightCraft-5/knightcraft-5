@@ -1,3 +1,6 @@
 {
-	chapter_groups: [ ]
+	chapter_groups: [
+		{ id: "2000000000000001", title: "Ana Hikâye" }
+		{ id: "2000000000000002", title: "Serbest Gelişim" }
+	]
 }

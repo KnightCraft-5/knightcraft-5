@@ -1,0 +1,39 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "act10_yakinda"
+	group: "2000000000000001"
+	icon: "minecraft:barrier"
+	id: "1000000000000A10"
+	order_index: 9
+	quest_links: [ ]
+	quests: [{
+		dependencies: ["200000000000C901"]
+		description: [
+			"Hikâye burada bitmiyor."
+			""
+			"§bDurum:§r 10. Perde yapım aşamasında. Ejderhayı indirdiysen"
+			"şimdilik yapacak bir şey yok - teçhizatını topla, grubunu"
+			"kur, sunucuyu takip et."
+			""
+			"§7The story does not end here. Act X is being built. If you have"
+			"§7felled the dragon there is nothing further for now - gather your"
+			"§7gear, build your group, and watch for the update.§r"
+		]
+		icon: "minecraft:barrier"
+		id: "4A30EF72D72BCBF1"
+		optional: true
+		shape: "gear"
+		subtitle: "Coming Soon"
+		tasks: [{
+			id: "77F1E535FC2E3679"
+			item: "ftbquests:barrier"
+			type: "item"
+		}]
+		title: "Çok Yakında"
+		x: 0.0d
+		y: 0.0d
+	}]
+	subtitle: ["Act X - Coming Soon"]
+	title: "10. Perde - Çok Yakında"
+}

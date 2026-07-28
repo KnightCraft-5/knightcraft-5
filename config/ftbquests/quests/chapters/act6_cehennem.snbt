@@ -2,18 +2,34 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "act6_cehennem"
-	group: ""
+	group: "2000000000000001"
 	icon: "cataclysm:ignitium_ingot"
 	id: "1000000000000A06"
 	order_index: 5
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["2000000000000A53"]
+			dependencies: ["2000000000000A54"]
 			description: [
 				"Kapıyı aç. Ardındaki sıcaklık seni bekliyor."
 				""
+				"§c§lDİKKAT — PORTAL TUZAĞI§r"
+				"Canavarların gücü, doğuş noktasına olan uzaklığınla artar."
+				"Nether'de attığın §e1 adım, normal dünyada 8 adıma§r denk gelir."
+				""
+				"Yani Nether'de §e1000 blok§r yol gidersen, normal dünyada"
+				"§e8000 blok§r uzaklaşmış olursun. Oraya portal kurup çıkarsan,"
+				"kendini hazır olmadığın kadar tehlikeli bir bölgede bulursun."
+				""
 				"§7Open the gate. The heat behind it is waiting.§r"
+				""
+				"§7§lWARNING — THE PORTAL TRAP§r"
+				"§7Mob strength scales with your distance from world spawn."
+				"§7One step in the Nether is §f8 steps in the overworld§7."
+				""
+				"§7Travel §f1000 blocks§7 in the Nether and you are §f8000 blocks§7"
+				"§7out in the overworld. Build a portal there and you will emerge"
+				"§7into a region far deadlier than you are ready for.§r"
 			]
 			icon: "minecraft:obsidian"
 			id: "2000000000000A61"
@@ -33,7 +49,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["2000000000000B62"]
+			dependencies: ["200000000000C605"]
 			description: [
 				"Ignis kendi forjesinde oturur. Ateşe karşı hazırlıksız gidersen küle dönersin."
 				""
@@ -46,8 +62,7 @@
 				type: "xp_levels"
 				xp_levels: 30
 			}]
-			shape: "hexagon"
-			size: 1.5d
+			shape: "diamond"
 			subtitle: "Lord of Fire"
 			tasks: [{
 				count: 3L
@@ -56,47 +71,7 @@
 				type: "item"
 			}]
 			title: "Ateşin Efendisi"
-			x: 3.75d
-			y: 0.0d
-		}
-		{
-			dependencies: [
-				"2000000000000A62"
-				"2000000000000C23"
-				"2000000000000C07"
-			]
-			description: [
-				"Pirinç dökülür, buhar yükselir, taş un olur."
-				"Bu noktadan sonra madenlerin iki katı verir. Dikkatli kullan."
-				""
-				"§8Ödül: Mühendislik 45§r"
-				""
-				"§7Brass is cast, steam rises, stone becomes flour."
-				"§7Past this point your ore yields double. Use it carefully.§r"
-				""
-				"§8Reward: Engineering 45§r"
-			]
-			icon: "create:crushing_wheel"
-			id: "2000000000000A63"
-			rewards: [{
-				command: "/pmmo admin @p set engineering level 45"
-				elevate_perms: true
-				id: "4000000000000A63"
-				silent: true
-				title: "Mühendislik 45 / Engineering 45"
-				type: "command"
-			}]
-			shape: "gear"
-			size: 2.0d
-			subtitle: "Brass and Steam"
-			tasks: [{
-				count: 8L
-				id: "3000000000000A63"
-				item: "create:brass_casing"
-				type: "item"
-			}]
-			title: "Pirinç ve Buhar"
-			x: 6.0d
+			x: 9.0d
 			y: 0.0d
 		}
 		{
@@ -131,55 +106,8 @@
 				}
 			]
 			title: "Ateşe Dayanıklı"
-			x: 2.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["2000000000000A61"]
-			description: [
-				"Uzaktan vurabilen adam, vurulmayan adamdır."
-				""
-				"§bNeden:§r Erişim mesafeni ciddi şekilde arttırır. Cehennem'de"
-				"lav üstünden blok yerleştirmek, patronlara menzil dışından vurmak,"
-				"iskele kurmadan inşa etmek - hepsi bununla kolaylaşır."
-				""
-				"§eTarif:§r Pirinç + altın + bağlantı. Cehennem kuvarsı Apotheosis"
-				"büyü masası için de gerekli - ikisini birlikte topla."
-				""
-				"§7A man who strikes from range is a man who is not struck. Extends your"
-				"§7reach considerably - placing blocks over lava, hitting bosses from"
-				"§7outside their range, building without scaffolding.§r"
-			]
-			icon: {
-				Count: 1
-				id: "create:extendo_grip"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "2000000000000B61"
-			optional: true
-			rewards: [{
-				id: "4000000000000E61"
-				type: "xp"
-				xp: 200
-			}]
-			shape: "square"
-			subtitle: "The Extendo Grip"
-			tasks: [{
-				id: "3000000000000B61"
-				item: {
-					Count: 1
-					id: "create:extendo_grip"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			title: "Uzatma Pençesi"
-			x: 0.0d
-			y: -2.0d
+			x: 3.0d
+			y: -5.25d
 		}
 		{
 			dependencies: ["2000000000000A61"]
@@ -205,64 +133,8 @@
 				type: "item"
 			}]
 			title: "Antik Kalıntı"
-			x: 1.5d
-			y: -2.0d
-		}
-		{
-			dependencies: ["2000000000000A63"]
-			description: [
-				"Bakır ve çinko. Basit görünür ama pahalıya patlar."
-				""
-				"§7Copper and zinc. It looks simple, but it costs.§r"
-			]
-			icon: "create:brass_ingot"
-			id: "2000000000000B64"
-			optional: true
-			rewards: [{
-				id: "4000000000000B64"
-				type: "xp"
-				xp: 220
-			}]
-			shape: "square"
-			subtitle: "The Brass Cast"
-			tasks: [{
-				count: 32L
-				id: "3000000000000B65"
-				item: "create:brass_ingot"
-				type: "item"
-			}]
-			title: "Pirinç Dökümü"
-			x: 8.0d
-			y: -1.0d
-		}
-		{
-			dependencies: ["2000000000000A63"]
-			description: [
-				"Su ısınır, basınç yükselir, çark döner."
-				"Artık nehre ihtiyacın yok."
-				""
-				"§7Water heats, pressure rises, the wheel turns."
-				"§7You no longer need the river.§r"
-			]
-			icon: "create:steam_engine"
-			id: "2000000000000B65"
-			optional: true
-			rewards: [{
-				id: "4000000000000B65"
-				type: "xp"
-				xp: 240
-			}]
-			shape: "square"
-			subtitle: "The Steam Engine"
-			tasks: [{
-				count: 2L
-				id: "3000000000000B66"
-				item: "create:steam_engine"
-				type: "item"
-			}]
-			title: "Buhar Motoru"
-			x: 8.0d
-			y: 1.0d
+			x: 3.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["2000000000000A61"]
@@ -279,13 +151,12 @@
 			]
 			icon: "ancient_obelisks:ancient_greed"
 			id: "2000000000000C04"
-			optional: true
 			rewards: [{
 				id: "4000000000000D04"
 				type: "xp"
 				xp: 60
 			}]
-			shape: "hexagon"
+			shape: "square"
 			subtitle: "Ancient Greed - electron tubes"
 			tasks: [{
 				consume_items: false
@@ -294,8 +165,8 @@
 				type: "item"
 			}]
 			title: "Kadim Açgözlülük"
-			x: 0.0d
-			y: 2.5d
+			x: 3.0d
+			y: -1.75d
 		}
 		{
 			dependencies: ["2000000000000C04"]
@@ -318,7 +189,6 @@
 			]
 			icon: "dungeon_realm:general_relic"
 			id: "2000000000000C07"
-			optional: true
 			rewards: [{
 				id: "4000000000000D07"
 				type: "xp_levels"
@@ -334,41 +204,144 @@
 				type: "item"
 			}]
 			title: "Zindan Kalıntısı"
-			x: 4.375d
-			y: 2.625d
+			x: 6.0d
+			y: -0.88d
 		}
 		{
 			dependencies: ["2000000000000A61"]
 			description: [
-				"Seviye 30'a ulaş."
+				"Netherit Canavarı avına çık."
 				""
-				"§7Reach character level 30.§r"
+				"§7Hunt down the Netherite Monstrosity.§r"
 			]
-			icon: {
-				Count: 1
-				id: "minecraft:netherite_chestplate"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "2000000000000C23"
+			icon: "minecraft:netherite_ingot"
+			id: "200000000000C601"
 			rewards: [{
-				command: "/mine_and_slash points cheat_give @p stats 20"
-				elevate_perms: true
-				id: "4000000000000C04"
-				silent: true
-				title: "20 Stat Puanı / 20 Stat Points"
-				type: "command"
+				id: "400000000000C601"
+				type: "xp"
+				xp: 900
 			}]
-			subtitle: "Champion - level 30"
+			shape: "square"
+			subtitle: "Netherite Monstrosity"
 			tasks: [{
-				id: "3000000000000C04"
-				title: "Seviye 30 / Level 30"
-				type: "custom"
+				entity: "cataclysm:netherite_monstrosity"
+				id: "300000000000C601"
+				type: "kill"
+				value: 1L
 			}]
-			title: "Şampiyon"
-			x: 3.5d
-			y: -2.0d
+			title: "Netherit Canavarı"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2000000000000A61"]
+			description: [
+				"Kadim Kalıntı avına çık."
+				""
+				"§7Hunt down the Ancient Remnant.§r"
+			]
+			icon: "minecraft:sandstone"
+			id: "200000000000C602"
+			rewards: [{
+				id: "400000000000C602"
+				type: "xp"
+				xp: 900
+			}]
+			shape: "square"
+			subtitle: "Ancient Remnant"
+			tasks: [{
+				entity: "cataclysm:ancient_remnant"
+				id: "300000000000C602"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Kadim Kalıntı"
+			x: 3.0d
+			y: 1.75d
+		}
+		{
+			dependencies: ["2000000000000A61"]
+			description: [
+				"Umvuthi avına çık."
+				""
+				"§7Hunt down the Umvuthi, the Sunbird.§r"
+			]
+			icon: "minecraft:gold_ingot"
+			id: "200000000000C603"
+			rewards: [{
+				id: "400000000000C603"
+				type: "xp"
+				xp: 900
+			}]
+			shape: "square"
+			subtitle: "Umvuthi, the Sunbird"
+			tasks: [{
+				entity: "mowziesmobs:umvuthi"
+				id: "300000000000C603"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Umvuthi"
+			x: 3.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["2000000000000A61"]
+			description: [
+				"Lav Yiyen avına çık."
+				""
+				"§7Hunt down the Lava Eater.§r"
+			]
+			icon: "minecraft:magma_block"
+			id: "200000000000C604"
+			rewards: [{
+				id: "400000000000C604"
+				type: "xp"
+				xp: 900
+			}]
+			shape: "square"
+			subtitle: "Lava Eater"
+			tasks: [{
+				entity: "legendary_monsters:lava_eater"
+				id: "300000000000C604"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Lav Yiyen"
+			x: 3.0d
+			y: 5.25d
+		}
+		{
+			dependencies: [
+				"200000000000C601"
+				"200000000000C602"
+				"200000000000C603"
+				"200000000000C604"
+			]
+			description: [
+				"Bu perdenin son sınavı. Diğer canavarları geçtiysen hazırsın."
+				""
+				"§7The act's final trial. If you cleared the rest, you are ready.§r"
+			]
+			icon: "cataclysm:ignitium_ingot"
+			id: "200000000000C605"
+			rewards: [{
+				id: "400000000000C605"
+				type: "xp"
+				xp: 2700
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Ignis, Lord of Fire"
+			tasks: [{
+				entity: "cataclysm:ignis"
+				id: "300000000000C605"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Ignis"
+			x: 6.0d
+			y: 0.88d
 		}
 	]
 	subtitle: ["Act VI - The Nether-walker"]

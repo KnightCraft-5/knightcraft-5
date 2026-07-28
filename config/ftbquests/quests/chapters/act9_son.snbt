@@ -1,0 +1,342 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "act9_son"
+	group: "2000000000000001"
+	icon: "minecraft:dragon_egg"
+	id: "1000000000000A09"
+	order_index: 8
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2000000000000A82"]
+			description: [
+				"Haberci düştü. Geriye tek bir şey kaldı."
+				""
+				"§bNeden:§r Ender gözü hem kaleyi bulur hem portalı açar. Portal"
+				"çerçevesinde 12 yuva var; bazıları zaten dolu çıkar."
+				""
+				"§eStrateji:§r Gözü havaya at, gittiği yönü takip et. Kırılabilir,"
+				"o yüzden fazladan yap."
+				""
+				"§7Eyes of Ender both locate the stronghold and open the portal - 12"
+				"§7sockets, some already filled. Throw one and follow it. They break,"
+				"§7so craft spares.§r"
+			]
+			icon: "minecraft:ender_eye"
+			id: "2000000000000A91"
+			rewards: [{
+				id: "4000000000000A91"
+				type: "xp"
+				xp: 400
+			}]
+			subtitle: "The Gate of the End"
+			tasks: [{
+				count: 12L
+				id: "3000000000000A91"
+				item: "minecraft:ender_eye"
+				type: "item"
+			}]
+			title: "Sonun Kapısı"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2000000000000A91"]
+			description: [
+				"Son sınav. Buraya kadar geldiysen hazırsın."
+				""
+				"§bStatlar:§r 50.000 can, 48 hasar, 24 zırh. Beş kişilik bir grup"
+				"yaklaşık 5 dakikada indirir; tek başına 25 dakika sürer."
+				""
+				"§eStrateji:§r Önce kuleleri sustur - tepelerindeki kristaller"
+				"ejderhayı iyileştirir, hepsi kırılmadan can barı düşmez. Grubu"
+				"ikiye ayır: yarısı kuleler, yarısı ejderha. Yere indiğinde"
+				"yakın dövüş, havadayken yay. Mor nefesin içinde durma."
+				""
+				"§7The final trial. 50,000 HP, 48 damage, 24 armour. Five players take"
+				"§7about 5 minutes; solo takes 25. Silence the pillars first - the"
+				"§7crystals heal it and its health will not drop until they are gone."
+				"§7Split the group. Melee when it perches, bows while it flies.§r"
+			]
+			icon: "minecraft:dragon_head"
+			id: "200000000000C901"
+			rewards: [{
+				id: "400000000000C901"
+				type: "xp"
+				xp: 1500
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "The Ender Dragon"
+			tasks: [{
+				entity: "minecraft:ender_dragon"
+				id: "300000000000C901"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Ender Ejderhası"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["200000000000C901"]
+			description: [
+				"Ejderha öldü. Kenarda bir geçit açıldı."
+				""
+				"§bNeden:§r Geçit seni dış adalara atar - End şehirleri orada."
+				"Elytra bu paketteki en büyük hareket sıçramasıdır."
+				""
+				"§eNerede:§r Her End gemisinin baş kısmında, çerçeve içinde asılı."
+				"Gemiyi shulker'lar korur."
+				""
+				"§7The dragon is dead and a gateway has opened at the edge - it throws"
+				"§7you to the outer islands where the End cities are. Elytra hangs"
+				"§7framed at the bow of every End ship, guarded by shulkers.§r"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:elytra"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2000000000000B91"
+			rewards: [{
+				id: "4000000000000B91"
+				type: "xp"
+				xp: 500
+			}]
+			subtitle: "Wings"
+			tasks: [{
+				id: "3000000000000B91"
+				item: {
+					Count: 1
+					id: "minecraft:elytra"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Kanatlar"
+			x: 6.0d
+			y: -2.62d
+		}
+		{
+			dependencies: ["2000000000000B91"]
+			description: [
+				"Taşınabilir sandık."
+				""
+				"§bNe işe yarar:§r Shulker kutusu kırıldığında içindekini korur -"
+				"baskına giderken yedek teçhizatını içine koy."
+				""
+				"§eNerede:§r Aynı End şehirlerinde. Shulker'lar ışınlanır, bu"
+				"yüzden onları köşeye sıkıştır."
+				""
+				"§7A shulker box keeps its contents when broken - carry your spare"
+				"§7kit into a raid inside one. Same End cities; shulkers teleport,"
+				"§7so corner them.§r"
+			]
+			icon: "minecraft:shulker_shell"
+			id: "2000000000000B92"
+			rewards: [{
+				id: "4000000000000B92"
+				type: "xp"
+				xp: 400
+			}]
+			subtitle: "Shell Hunter"
+			tasks: [{
+				count: 4L
+				id: "3000000000000B92"
+				item: "minecraft:shulker_shell"
+				type: "item"
+			}]
+			title: "Kabuk Avcısı"
+			x: 9.0d
+			y: -2.62d
+		}
+		{
+			dependencies: ["200000000000C901"]
+			description: [
+				"Ejderha bir kez ölür. Sen onu geri çağırırsın."
+				""
+				"§bNeden:§r Dört uç kristali portalın kenarlarına koyarsan ejderha"
+				"yeniden doğar. Grubun tekrar tekrar dövüşebilir - bu perdenin"
+				"tek tekrarlanabilir içeriği budur."
+				""
+				"§eMalzeme:§r Cam + ender gözü + ghast gözyaşı. Ghast gözyaşı"
+				"Nether'den gelir, yanına al."
+				""
+				"§7Place four end crystals on the portal rim and the dragon respawns -"
+				"§7the only repeatable content in this act. Glass + eye of ender +"
+				"§7ghast tear, so bring tears from the Nether.§r"
+			]
+			icon: "minecraft:end_crystal"
+			id: "2000000000000B93"
+			rewards: [{
+				id: "4000000000000B93"
+				type: "xp"
+				xp: 450
+			}]
+			subtitle: "The Dragon's Return"
+			tasks: [{
+				count: 4L
+				id: "3000000000000B93"
+				item: "minecraft:end_crystal"
+				type: "item"
+			}]
+			title: "Ejderhanın Dönüşü"
+			x: 6.0d
+			y: -0.88d
+		}
+		{
+			dependencies: ["2000000000000B93"]
+			description: [
+				"Nefesini şişele."
+				""
+				"§bNe işe yarar:§r Kalıcı iksirlerin tek malzemesi. Bir baskında"
+				"yere atılan kalıcı direnç iksiri bütün grubu korur."
+				""
+				"§eNasıl:§r Ejderha mor bulut bıraktığında boş şişeyle bulutun"
+				"içine sağ tıkla. Dövüş sırasında topla - sonradan alamazsın."
+				""
+				"§7The only ingredient for lingering potions; a thrown lingering"
+				"§7resistance covers the whole group. Right-click the purple cloud"
+				"§7with an empty bottle DURING the fight - there is no other source.§r"
+			]
+			icon: "minecraft:dragon_breath"
+			id: "2000000000000B94"
+			rewards: [{
+				id: "4000000000000B94"
+				type: "xp"
+				xp: 400
+			}]
+			subtitle: "Dragon's Breath"
+			tasks: [{
+				count: 4L
+				id: "3000000000000B94"
+				item: "minecraft:dragon_breath"
+				type: "item"
+			}]
+			title: "Ejderha Nefesi"
+			x: 9.0d
+			y: -0.88d
+		}
+		{
+			dependencies: ["200000000000C901"]
+			description: [
+				"Ender Muhafızı avına çık."
+				""
+				"§7Hunt down the Ender Guardian.§r"
+			]
+			icon: "minecraft:end_crystal"
+			id: "200000000000C801"
+			rewards: [{
+				id: "400000000000C801"
+				type: "xp"
+				xp: 2000
+			}]
+			shape: "square"
+			subtitle: "Ender Guardian"
+			tasks: [{
+				entity: "cataclysm:ender_guardian"
+				id: "300000000000C801"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Ender Muhafızı"
+			x: 6.0d
+			y: 0.88d
+		}
+		{
+			dependencies: ["200000000000C801"]
+			description: [
+				"End'in derinliklerinde bir muhafız duruyor. Zırhı hiçbir kılıcın delmediği."
+				""
+				"§7A guardian stands deep in the End, in armour no blade has pierced.§r"
+			]
+			icon: "cataclysm:gauntlet_of_guard"
+			id: "2000000000000A81"
+			rewards: [{
+				id: "4000000000000A81"
+				type: "xp_levels"
+				xp_levels: 50
+			}]
+			shape: "diamond"
+			subtitle: "Guardian of the End"
+			tasks: [{
+				id: "3000000000000A81"
+				item: "cataclysm:gauntlet_of_guard"
+				type: "item"
+			}]
+			title: "Sonun Bekçisi"
+			x: 9.0d
+			y: 0.88d
+		}
+		{
+			dependencies: ["200000000000C901"]
+			description: [
+				"Yıkık Kale'nin muhafızı."
+				""
+				"§bNeden:§r Boşluk Çekirdeği ondan düşer. Dış End adalarında,"
+				"ejderha öldükten sonra açılan geçitten ulaşılır."
+				""
+				"§7Drops the Void Core. Found in the Ruined Citadel on the outer End"
+				"§7islands - reachable only through the gateway the dragon's death opens.§r"
+			]
+			icon: "cataclysm:void_core"
+			id: "200000000000C902"
+			rewards: [{
+				id: "400000000000C902"
+				type: "xp"
+				xp: 300
+			}]
+			shape: "square"
+			subtitle: "Ender Golem"
+			tasks: [{
+				entity: "cataclysm:ender_golem"
+				id: "300000000000C902"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Ender Golem"
+			x: 6.0d
+			y: 2.62d
+		}
+		{
+			dependencies: ["200000000000C902"]
+			description: [
+				"§cZorluk: Zor§r"
+				""
+				"Ender Golem - 150 can ama sert vurur. Garantili düşer."
+				""
+				"§bKullanım:§r Yerleştirici, Mıknatıs Yükseltmesi"
+				""
+				"§7Difficulty: Hard - Ender Golem (150 HP, hits hard). Guaranteed."
+				"§7Used for: Deployer, Magnet Upgrades.§r"
+			]
+			icon: "cataclysm:void_core"
+			id: "2000000000000C08"
+			optional: true
+			rewards: [{
+				id: "4000000000000D08"
+				type: "xp_levels"
+				xp_levels: 25
+			}]
+			shape: "square"
+			subtitle: "Void Core - the Deployer"
+			tasks: [{
+				consume_items: false
+				id: "3000000000000D08"
+				item: "cataclysm:void_core"
+				type: "item"
+			}]
+			title: "Boşluk Çekirdeği"
+			x: 9.0d
+			y: 2.62d
+		}
+	]
+	subtitle: ["Act IX - The End"]
+	title: "9. Perde - Son"
+}

@@ -2,14 +2,14 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "act5_arena"
-	group: ""
+	group: "2000000000000001"
 	icon: "cataclysm:kobolediator_skull"
 	id: "1000000000000A05"
 	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["2000000000000B51"]
+			dependencies: ["2000000000000A41"]
 			description: [
 				"Ormanın derinliklerinde yürüyen bir dev var. Kökleri kadar yaşlı."
 				""
@@ -22,8 +22,7 @@
 				type: "xp_levels"
 				xp_levels: 25
 			}]
-			shape: "hexagon"
-			size: 1.5d
+			shape: "square"
 			subtitle: "Heart of the Forest"
 			tasks: [{
 				id: "3000000000000A51"
@@ -31,7 +30,7 @@
 				type: "item"
 			}]
 			title: "Ormanın Kalbi"
-			x: 2.0d
+			x: 0.0d
 			y: 0.0d
 		}
 		{
@@ -48,8 +47,7 @@
 				type: "xp_levels"
 				xp_levels: 25
 			}]
-			shape: "hexagon"
-			size: 1.5d
+			shape: "square"
 			subtitle: "King of the Arena"
 			tasks: [{
 				id: "3000000000000A52"
@@ -57,83 +55,11 @@
 				type: "item"
 			}]
 			title: "Arenanın Kralı"
-			x: 4.0d
-			y: 0.0d
+			x: 3.0d
+			y: -5.25d
 		}
 		{
-			dependencies: [
-				"2000000000000A52"
-				"2000000000000C22"
-				"2000000000000C03"
-			]
-			description: [
-				"Karıştır, öğüt, üfle. Makineler artık senin için düşünmeye başlıyor."
-				""
-				"§8Ödül: Mühendislik 30§r"
-				""
-				"§7Mix, grind, blow. The machines begin to think for you.§r"
-				""
-				"§8Reward: Engineering 30§r"
-			]
-			icon: "create:mechanical_mixer"
-			id: "2000000000000A53"
-			rewards: [{
-				command: "/pmmo admin @p set engineering level 30"
-				elevate_perms: true
-				id: "4000000000000A53"
-				silent: true
-				title: "Mühendislik 30 / Engineering 30"
-				type: "command"
-			}]
-			shape: "gear"
-			size: 2.0d
-			subtitle: "The Copper Age"
-			tasks: [{
-				count: 4L
-				id: "3000000000000A53"
-				item: "create:copper_casing"
-				type: "item"
-			}]
-			title: "Bakır Çağı"
-			x: 6.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["2000000000000A42"]
-			description: [
-				"Bakır ucuzdur ama her akışkan onunla taşınır."
-				""
-				"§bNe işe yarar:§r Bakır Muhafaza (her akışkan makinesi ister),"
-				"Supplementaries mekanizmaları, Immersive Aircraft gövdeleri."
-				""
-				"§eNerede:§r Y=48 civarı damla taşı mağaralarında en yoğun."
-				"Bakır damarları büyüktür - bir damar 20-30 külçe verir."
-				""
-				"§7Used for: §bCopper Casings§7 (every fluid machine wants one),"
-				"§7Supplementaries devices, Immersive Aircraft hulls."
-				"§7Where: densest around Y=48 in dripstone caves. Veins are large -"
-				"§7one vein gives 20-30 ingots.§r"
-			]
-			icon: "minecraft:copper_ingot"
-			id: "2000000000000B51"
-			rewards: [{
-				id: "4000000000000B51"
-				type: "xp"
-				xp: 150
-			}]
-			subtitle: "Coppersmith"
-			tasks: [{
-				count: 256L
-				id: "3000000000000B51"
-				item: "minecraft:copper_ingot"
-				type: "item"
-			}]
-			title: "Bakırcı"
-			x: 0.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["2000000000000B51"]
+			dependencies: ["2000000000000A51"]
 			description: [
 				"Arenaya girmeden önce iyi düşün."
 				""
@@ -175,90 +101,11 @@
 				}
 			]
 			title: "Zırh Ustası"
-			x: 0.0d
-			y: -2.0d
+			x: 3.0d
+			y: -3.5d
 		}
 		{
-			dependencies: ["2000000000000A53"]
-			description: [
-				"İki şeyi birleştirmek, üçüncüsünü yaratmaktır."
-				""
-				"§7To combine two things is to create a third.§r"
-			]
-			icon: "create:mechanical_mixer"
-			id: "2000000000000B53"
-			optional: true
-			rewards: [{
-				id: "4000000000000B53"
-				type: "xp"
-				xp: 160
-			}]
-			shape: "square"
-			subtitle: "The Mixer"
-			tasks: [{
-				id: "3000000000000B54"
-				item: "create:mechanical_mixer"
-				type: "item"
-			}]
-			title: "Karıştırıcı"
-			x: 4.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["2000000000000A53"]
-			description: [
-				"Eşyalar artık kendi başlarına yürüyor. Yavaşça."
-				""
-				"§7Goods now walk on their own. Slowly.§r"
-			]
-			icon: "pipez:item_pipe"
-			id: "2000000000000B54"
-			optional: true
-			rewards: [{
-				id: "4000000000000B54"
-				type: "xp"
-				xp: 140
-			}]
-			shape: "square"
-			subtitle: "The Pipeline"
-			tasks: [{
-				count: 16L
-				id: "3000000000000B55"
-				item: "pipez:item_pipe"
-				type: "item"
-			}]
-			title: "Boru Hattı"
-			x: 6.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["2000000000000A53"]
-			description: [
-				"Hava da bir araçtır. Yıkar, kurutur, yakar."
-				""
-				"§7Air is a tool too. It washes, dries, and burns.§r"
-			]
-			icon: "create:encased_fan"
-			id: "2000000000000B55"
-			optional: true
-			rewards: [{
-				id: "4000000000000B55"
-				type: "xp"
-				xp: 140
-			}]
-			shape: "square"
-			subtitle: "Breath of the Fan"
-			tasks: [{
-				id: "3000000000000B56"
-				item: "create:encased_fan"
-				type: "item"
-			}]
-			title: "Fanın Nefesi"
-			x: 6.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["2000000000000B51"]
+			dependencies: ["2000000000000A51"]
 			description: [
 				"§eZorluk: Kolay§r"
 				""
@@ -271,13 +118,12 @@
 			]
 			icon: "ancient_obelisks:ancient_envy"
 			id: "2000000000000C03"
-			optional: true
 			rewards: [{
 				id: "4000000000000D03"
 				type: "xp"
 				xp: 60
 			}]
-			shape: "hexagon"
+			shape: "square"
 			subtitle: "Ancient Envy - copper casings"
 			tasks: [{
 				consume_items: false
@@ -286,11 +132,11 @@
 				type: "item"
 			}]
 			title: "Kadim Haset"
-			x: 0.0d
-			y: 2.0d
+			x: 3.0d
+			y: -1.75d
 		}
 		{
-			dependencies: ["2000000000000B51"]
+			dependencies: ["200000000000C501"]
 			description: [
 				"§6Zorluk: Orta§r"
 				""
@@ -310,7 +156,7 @@
 				type: "xp"
 				xp: 120
 			}]
-			shape: "hexagon"
+			shape: "square"
 			subtitle: "Coral Chunk - the Mixer"
 			tasks: [{
 				consume_items: false
@@ -319,103 +165,184 @@
 				type: "item"
 			}]
 			title: "Mercan Parçası"
-			x: 0.0d
-			y: 4.0d
+			x: 6.0d
+			y: -0.88d
 		}
 		{
-			dependencies: ["2000000000000B51"]
+			dependencies: ["2000000000000A51"]
 			description: [
-				"§6Zorluk: Orta§r"
+				"Mercan Devi avına çık."
 				""
-				"Ametist Yengeci - 200 can. Ametist mağaralarında yaşar."
-				"Garantili düşer."
-				""
-				"§bKullanım:§r Kaplı Fan"
-				""
-				"§7Difficulty: Medium - Amethyst Crab (200 HP), lives in geodes."
-				"§7Guaranteed drop. Used for: Encased Fan.§r"
+				"§7Hunt down the Coralssus.§r"
 			]
-			icon: "cataclysm:amethyst_crab_shell"
-			id: "2000000000000C06"
-			optional: true
+			icon: "cataclysm:coral_chunk"
+			id: "200000000000C501"
 			rewards: [{
-				id: "4000000000000D06"
+				id: "400000000000C501"
 				type: "xp"
-				xp: 120
+				xp: 650
+			}]
+			shape: "square"
+			subtitle: "Coralssus"
+			tasks: [{
+				entity: "cataclysm:coralssus"
+				id: "300000000000C501"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Mercan Devi"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2000000000000A51"]
+			description: [
+				"Myrmex Kraliçesi avına çık."
+				""
+				"§7Hunt down the Myrmex Queen.§r"
+			]
+			icon: "minecraft:honeycomb"
+			id: "200000000000C502"
+			rewards: [{
+				id: "400000000000C502"
+				type: "xp"
+				xp: 650
+			}]
+			shape: "square"
+			subtitle: "Myrmex Queen"
+			tasks: [{
+				entity: "iceandfire:myrmex_queen"
+				id: "300000000000C502"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Myrmex Kraliçesi"
+			x: 3.0d
+			y: 1.75d
+		}
+		{
+			dependencies: ["2000000000000A51"]
+			description: [
+				"Donmuş Golem avına çık."
+				""
+				"§7Hunt down the Frostbitten Golem.§r"
+			]
+			icon: "minecraft:blue_ice"
+			id: "200000000000C503"
+			rewards: [{
+				id: "400000000000C503"
+				type: "xp"
+				xp: 650
+			}]
+			shape: "square"
+			subtitle: "Frostbitten Golem"
+			tasks: [{
+				entity: "legendary_monsters:frostbitten_golem"
+				id: "300000000000C503"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Donmuş Golem"
+			x: 3.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["2000000000000A51"]
+			description: [
+				"Wadjet avına çık."
+				""
+				"§7Hunt down the Wadjet.§r"
+			]
+			icon: "minecraft:sand"
+			id: "200000000000C504"
+			rewards: [{
+				id: "400000000000C504"
+				type: "xp"
+				xp: 650
+			}]
+			shape: "square"
+			subtitle: "Wadjet"
+			tasks: [{
+				entity: "cataclysm:wadjet"
+				id: "300000000000C504"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Wadjet"
+			x: 3.0d
+			y: 5.25d
+		}
+		{
+			dependencies: [
+				"200000000000C501"
+				"200000000000C502"
+				"200000000000C503"
+				"200000000000C504"
+			]
+			description: [
+				"Bu perdenin son sınavı. Diğer canavarları geçtiysen hazırsın."
+				""
+				"§7The act's final trial. If you cleared the rest, you are ready.§r"
+			]
+			icon: "minecraft:packed_ice"
+			id: "200000000000C505"
+			rewards: [{
+				id: "400000000000C505"
+				type: "xp"
+				xp: 1950
 			}]
 			shape: "hexagon"
-			subtitle: "Amethyst Crab Shell - the Fan"
+			size: 1.5d
+			subtitle: "Frostmaw"
 			tasks: [{
-				consume_items: false
-				id: "3000000000000D06"
-				item: "cataclysm:amethyst_crab_shell"
-				type: "item"
+				entity: "mowziesmobs:frostmaw"
+				id: "300000000000C505"
+				type: "kill"
+				value: 1L
 			}]
-			title: "Ametist Kabuğu"
-			x: 0.0d
-			y: 6.0d
+			title: "Buzpençe"
+			x: 6.0d
+			y: 0.88d
 		}
 		{
-			dependencies: ["2000000000000B51"]
+			dependencies: ["200000000000C505"]
 			description: [
-				"Seviye 20'ye ulaş."
+				"Buzpençe'nin kalbi. Bu perdenin kanıtı."
 				""
-				"Bu seviyede Arena ve Cehennem patronları artık"
-				"tek vuruşta öldürmez - ama yine de dikkatli ol."
+				"§bNeden:§r Cursium zırhı bu kristali ister - 5. Perde'nin en iyi"
+				"zırhı. Frostmaw'ı indirmeden 6. Perde'ye geçemezsin."
 				""
-				"§7Reach character level 20. At this point the Arena and Nether"
-				"§7bosses stop one-shotting you. Stay careful anyway.§r"
+				"§7Frostmaw's heart, and the proof of this act. Cursium armour needs it."
+				"§7You do not reach Act VI without felling Frostmaw.§r"
 			]
 			icon: {
 				Count: 1
-				id: "minecraft:netherite_sword"
+				id: "mowziesmobs:ice_crystal"
 				tag: {
 					Damage: 0
 				}
 			}
-			id: "2000000000000C22"
+			id: "2000000000000A54"
 			rewards: [{
-				command: "/mine_and_slash points cheat_give @p stats 15"
-				elevate_perms: true
-				id: "4000000000000C03"
-				silent: true
-				title: "15 Stat Puanı / 15 Stat Points"
-				type: "command"
+				id: "4000000000000A54"
+				type: "xp"
+				xp: 300
 			}]
-			subtitle: "Veteran - level 20"
+			shape: "diamond"
+			subtitle: "Ice Crystal"
 			tasks: [{
-				id: "3000000000000C03"
-				title: "Seviye 20 / Level 20"
-				type: "custom"
+				id: "3000000000000A54"
+				item: {
+					Count: 1
+					id: "mowziesmobs:ice_crystal"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
 			}]
-			title: "Usta Dövüşçü"
-			x: 2.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["2000000000000A53"]
-			description: [
-				"60 stat puanı harca."
-				""
-				"§7Spend 60 stat points.§r"
-			]
-			icon: "minecraft:diamond"
-			id: "2000000000000C27"
-			optional: true
-			rewards: [{
-				id: "4000000000000C12"
-				type: "xp_levels"
-				xp_levels: 20
-			}]
-			shape: "square"
-			subtitle: "Specialisation - 60 points spent"
-			tasks: [{
-				id: "3000000000000C12"
-				title: "60 puan harcandı / 60 points spent"
-				type: "custom"
-			}]
-			title: "Uzmanlaşma"
-			x: 8.0d
+			title: "Buz Kristali"
+			x: 9.0d
 			y: 0.0d
 		}
 	]

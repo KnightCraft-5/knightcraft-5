@@ -1,0 +1,227 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "apotheosis"
+	group: "2000000000000002"
+	icon: "apotheosis:gem_dust"
+	id: "1000000000000701"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2000000000000B41"]
+			description: [
+				"Her şey toza dönüşür. Ve tozdan yeniden doğar."
+				""
+				"§7Everything turns to dust. And from dust it is reborn.§r"
+			]
+			icon: "apotheosis:gem_dust"
+			id: "2000000000000701"
+			rewards: [{
+				id: "4000000000000701"
+				type: "xp"
+				xp: 150
+			}]
+			subtitle: "Gem Dust"
+			tasks: [{
+				id: "3000000000000701"
+				item: "apotheosis:gem_dust"
+				type: "item"
+			}]
+			title: "Taş Tozu"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2000000000000701"]
+			description: [
+				"Derin taş ve toz. Mühürlerin temeli."
+				""
+				"§7Deepslate and dust. The base of every sigil.§r"
+			]
+			icon: "apotheosis:gem_fused_slate"
+			id: "2000000000000702"
+			rewards: [{
+				id: "4000000000000702"
+				type: "xp"
+				xp: 150
+			}]
+			subtitle: "Gem-Fused Slate"
+			tasks: [{
+				id: "3000000000000702"
+				item: "apotheosis:gem_fused_slate"
+				type: "item"
+			}]
+			title: "Büyülü Levha"
+			x: 3.0d
+			y: -1.75d
+		}
+		{
+			dependencies: ["2000000000000702"]
+			description: [
+				"Zırhına bir yuva daha aç. En fazla beş."
+				""
+				"§7Open one more socket in your gear. Five at most.§r"
+			]
+			icon: "apotheosis:sigil_of_socketing"
+			id: "2000000000000703"
+			rewards: [{
+				id: "4000000000000703"
+				type: "xp"
+				xp: 150
+			}]
+			subtitle: "Sigil of Socketing"
+			tasks: [{
+				id: "3000000000000703"
+				item: "apotheosis:sigil_of_socketing"
+				type: "item"
+			}]
+			title: "Yuva Mührü"
+			x: 6.0d
+			y: -2.62d
+		}
+		{
+			dependencies: ["2000000000000702"]
+			description: [
+				"Yanlış parçaya taktığın taşı geri al. Taş kaybolmaz."
+				""
+				"§7Pull gems back out of the wrong piece. Nothing is lost.§r"
+			]
+			icon: "apotheosis:sigil_of_withdrawal"
+			id: "2000000000000704"
+			rewards: [{
+				id: "4000000000000704"
+				type: "xp"
+				xp: 150
+			}]
+			subtitle: "Sigil of Withdrawal"
+			tasks: [{
+				id: "3000000000000704"
+				item: "apotheosis:sigil_of_withdrawal"
+				type: "item"
+			}]
+			title: "Geri Çekme Mührü"
+			x: 6.0d
+			y: -0.88d
+		}
+		{
+			dependencies: ["2000000000000701"]
+			description: [
+				"Çatlak bir taş. Küçük ama başlangıç."
+				""
+				"§7A cracked gem. Small, but it begins here.§r"
+			]
+			icon: {
+				Count: 1
+				id: "apotheosis:gem"
+				tag: {
+					affix_data: {
+						rarity: "apotheosis:common"
+					}
+					gem: "apotheosis:core/ballast"
+				}
+			}
+			id: "2000000000000706"
+			rewards: [{
+				id: "4000000000000706"
+				type: "xp"
+				xp: 150
+			}]
+			subtitle: "Your First Gem"
+			tasks: [{
+				id: "3000000000000706"
+				item: "apotheosis:gem"
+				type: "item"
+			}]
+			title: "İlk Taş"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2000000000000701"]
+			description: [
+				"Ekipmanını yeniden döv, yeni ekler bul."
+				""
+				"§7Reforge your gear and reroll its affixes.§r"
+			]
+			icon: "apotheosis:reforging_table"
+			id: "2000000000000710"
+			rewards: [{
+				id: "4000000000000710"
+				type: "xp"
+				xp: 150
+			}]
+			subtitle: "Reforging Table"
+			tasks: [{
+				id: "3000000000000710"
+				item: "apotheosis:reforging_table"
+				type: "item"
+			}]
+			title: "Yeniden Dövme"
+			x: 3.0d
+			y: 1.75d
+		}
+		{
+			dependencies: ["2000000000000710"]
+			description: [
+				"İstemediğin taşı toza çevir. Hiçbir şey boşa gitmez."
+				""
+				"§7Turn unwanted gems back into dust. Nothing is wasted.§r"
+			]
+			icon: "apotheosis:salvaging_table"
+			id: "2000000000000711"
+			rewards: [{
+				id: "4000000000000711"
+				type: "xp"
+				xp: 150
+			}]
+			subtitle: "Salvaging Table"
+			tasks: [{
+				id: "3000000000000711"
+				item: "apotheosis:salvaging_table"
+				type: "item"
+			}]
+			title: "Hurdacı"
+			x: 6.0d
+			y: 2.62d
+		}
+		{
+			dependencies: [
+				"2000000000000706"
+				"2000000000000703"
+			]
+			description: [
+				"Kadim bir taş. Beş yuva, beş taş, ve sen artık başkasın."
+				""
+				"§7An ancient gem. Five sockets, five gems, and you are something else.§r"
+			]
+			icon: {
+				Count: 1
+				id: "apotheosis:gem"
+				tag: {
+					affix_data: {
+						rarity: "apotheosis:ancient"
+					}
+					gem: "apotheosis:core/ballast"
+				}
+			}
+			id: "2000000000000712"
+			rewards: [{
+				id: "4000000000000712"
+				type: "xp"
+				xp: 600
+			}]
+			shape: "square"
+			subtitle: "A Perfect Gem"
+			tasks: [{
+				id: "3000000000000712"
+				item: "apotheosis:gem"
+				type: "item"
+			}]
+			title: "Kusursuz Taş"
+			x: 9.0d
+			y: 0.0d
+		}
+	]
+	title: "Güçlenme"
+}

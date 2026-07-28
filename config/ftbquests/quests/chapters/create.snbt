@@ -1,0 +1,434 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "create"
+	group: "2000000000000002"
+	icon: "create:cogwheel"
+	id: "1000000000000C01"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Bir makineyi kuramazsan, tamir de edemezsin."
+				""
+				"§bNeden:§r Gözlük bir makineye baktığında hız, gerilim ve akışkan"
+				"seviyesini gösterir. İngiliz anahtarı blokları döndürür ve söker -"
+				"onsuz yanlış yerleştirdiğin her makineyi kırıp yeniden yaparsın."
+				""
+				"§eTarif:§r Gözlük = altın külçe + cam. Anahtar = altın + andezit alaşımı."
+				""
+				"§7You cannot repair what you cannot read. Goggles show speed, stress and"
+				"§7fluid levels. The wrench rotates and dismantles - without it every"
+				"§7misplaced machine gets broken and rebuilt.§r"
+			]
+			icon: "create:goggles"
+			id: "2000000000000B31"
+			optional: true
+			rewards: [{
+				id: "4000000000000E31"
+				type: "xp"
+				xp: 120
+			}]
+			shape: "square"
+			subtitle: "The Engineer's Tools"
+			tasks: [
+				{
+					id: "3000000000000B31"
+					item: "create:goggles"
+					type: "item"
+				}
+				{
+					id: "3000000000000B37"
+					item: "create:wrench"
+					type: "item"
+				}
+			]
+			title: "Mühendisin Aletleri"
+			x: 3.0d
+			y: -5.25d
+		}
+		{
+			dependencies: ["2000000000000B31"]
+			description: [
+				"Zindanların dibinde paslanmış bir dişli."
+				""
+				"§bNeden:§r Create artık seviyeye değil, keşfe bağlı. Bu dişli"
+				"temel makineleri açar - zindan sandıklarında bulunur."
+				""
+				"§eNerede:§r Dungeons Arise ve Dungeon Crawl sandıkları, kaleler."
+				""
+				"§7Create is gated by exploration now, not levels. Found in dungeon"
+				"§7chests - Dungeons Arise, Dungeon Crawl, strongholds.§r"
+			]
+			icon: "kubejs:rusted_gear"
+			id: "20000000000E0101"
+			rewards: [{
+				id: "40000000000E0101"
+				type: "xp"
+				xp: 250
+			}]
+			shape: "diamond"
+			subtitle: "Rusted Gear"
+			tasks: [{
+				id: "30000000000E0101"
+				item: "kubejs:rusted_gear"
+				type: "item"
+			}]
+			title: "Paslı Dişli"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["20000000000E0101"]
+			description: [
+				"Yarısı yanmış bir mühendis şeması."
+				""
+				"§bNeden:§r Pirinç çağını açar - karıştırıcı, fan, pirinç döküm."
+				""
+				"§eNerede:§r Daha derin zindanlarda, paslı dişliden nadir."
+				""
+				"§7Opens the brass age: mixer, fan, brass casting."
+				"§7Deeper dungeons; rarer than the rusted gear.§r"
+			]
+			icon: "kubejs:brass_schematic"
+			id: "20000000000E0102"
+			rewards: [{
+				id: "40000000000E0102"
+				type: "xp"
+				xp: 250
+			}]
+			shape: "diamond"
+			subtitle: "Brass Schematic"
+			tasks: [{
+				id: "30000000000E0102"
+				item: "kubejs:brass_schematic"
+				type: "item"
+			}]
+			title: "Pirinç Şema"
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["20000000000E0102"]
+			description: [
+				"Hâlâ dönen, kimsenin yapamadığı bir çekirdek."
+				""
+				"§bNeden:§r Buhar motoru ve yerleştirici - Create'in tepe noktası."
+				""
+				"§eNerede:§r En derin zindan sandıkları. Nadirdir; grup hâlinde"
+				"zindan temizlemek en hızlı yol."
+				""
+				"§7Steam engine and deployer - the top of Create."
+				"§7Deepest dungeon chests, and rare. Clearing dungeons as a group"
+				"§7is the fastest route.§r"
+			]
+			icon: "kubejs:precision_core"
+			id: "20000000000E0103"
+			rewards: [{
+				id: "40000000000E0103"
+				type: "xp"
+				xp: 250
+			}]
+			shape: "diamond"
+			subtitle: "Precision Core"
+			tasks: [{
+				id: "30000000000E0103"
+				item: "kubejs:precision_core"
+				type: "item"
+			}]
+			title: "Hassas Çekirdek"
+			x: 15.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["20000000000E0101"]
+			description: [
+				"Kendi elinle çevir. Nehri sonra çağırırsın."
+				""
+				"§bNeden:§r Ustanın verdiği alaşım sadece başlangıç. Gerçek bir"
+				"aktarma hattı kurmak için küçük ve büyük dişliyi birlikte"
+				"kullanman gerekir - hız oranını değiştiren şey budur."
+				""
+				"§eStrateji:§r Büyük dişli küçük dişliden yapılır, yani 8 büyük"
+				"dişli 8 küçük dişli daha demek - toplam 24 dişlilik alaşım."
+				"Ustanın verdiği 16 alaşım tam yetmez, biraz daha dök."
+				"Hattı kol kranı ile çevir; su çarkı 4. Perde'de gelecek."
+				""
+				"§7Turn it with your own hand. You may call the river later."
+				"§7The master's alloy is only a start - a real drivetrain needs small"
+				"§7and large cogs together, since that is what changes the speed ratio."
+				"§7Large cogs are made from small ones, so this is 24 cogs of alloy in"
+				"§7total: the master's 16 will not quite cover it. Drive it with the"
+				"§7hand crank - the water wheel comes in Act IV.§r"
+			]
+			icon: "create:cogwheel"
+			id: "2000000000000B35"
+			optional: true
+			rewards: [{
+				count: 8
+				id: "4000000000000B35"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "The First Cog"
+			tasks: [
+				{
+					count: 16L
+					id: "3000000000000B36"
+					item: "create:cogwheel"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "3100000000000B36"
+					item: "create:large_cogwheel"
+					type: "item"
+				}
+			]
+			title: "İlk Dişli"
+			x: 3.0d
+			y: 5.25d
+		}
+		{
+			dependencies: ["20000000000E0101"]
+			description: [
+				"Demiri levhaya çevir. Makinelerin dili budur."
+				""
+				"§7Turn iron into sheets. This is the language of machines.§r"
+			]
+			icon: "create:mechanical_press"
+			id: "2000000000000B44"
+			optional: true
+			rewards: [{
+				count: 4
+				id: "4000000000000B44"
+				item: "create:andesite_casing"
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "The First Pressing"
+			tasks: [{
+				count: 16L
+				id: "3000000000000B44"
+				item: "create:iron_sheet"
+				type: "item"
+			}]
+			title: "İlk Presleme"
+			x: 3.0d
+			y: -8.75d
+		}
+		{
+			dependencies: ["20000000000E0101"]
+			description: [
+				"Her makinenin bir gövdesi olmalı."
+				""
+				"§7Every machine must have a body.§r"
+			]
+			icon: "create:andesite_casing"
+			id: "2000000000000B45"
+			optional: true
+			rewards: [{
+				id: "4000000000000B45"
+				type: "xp"
+				xp: 140
+			}]
+			shape: "square"
+			subtitle: "Andesite Wright"
+			tasks: [{
+				count: 16L
+				id: "3000000000000B45"
+				item: "create:andesite_casing"
+				type: "item"
+			}]
+			title: "Andezit Ustası"
+			x: 3.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["20000000000E0101"]
+			description: [
+				"Su çarkı döner. Şimdi ona iş bul."
+				""
+				"§bNe yapar:§r Değirmen cevheri toza öğütür - bir cevherden iki"
+				"külçe çıkar. Mekanik testere kütükleri tahtaya, tahtayı çubuğa"
+				"böler ve ağaç keser."
+				""
+				"§eStrateji:§r Su çarkının verdiği gerilim sınırlıdır. Değirmen az,"
+				"testere çok tüketir - ikisini aynı hatta koyacaksan ikinci bir çark"
+				"kur. Gözlüğü tak ve gerilim çubuğuna bak."
+				""
+				"§7The water wheel turns. Now give it work. The millstone grinds ore"
+				"§7into dust - two ingots from one ore - and the mechanical saw cuts"
+				"§7logs to planks, planks to rods, and fells trees."
+				"§7Stress from one wheel is limited: the mill is cheap, the saw is not."
+				"§7Wear the goggles and watch the stress bar.§r"
+			]
+			icon: "create:millstone"
+			id: "2100000000000407"
+			optional: true
+			rewards: [{
+				id: "4100000000000407"
+				type: "xp"
+				xp: 180
+			}]
+			shape: "square"
+			subtitle: "Millstone and Saw"
+			tasks: [
+				{
+					id: "310000000000040E"
+					item: "create:millstone"
+					type: "item"
+				}
+				{
+					id: "310000000000040F"
+					item: "create:mechanical_saw"
+					type: "item"
+				}
+			]
+			title: "Değirmen ve Testere"
+			x: 3.0d
+			y: 12.25d
+		}
+		{
+			dependencies: ["20000000000E0102"]
+			description: [
+				"İki şeyi birleştirmek, üçüncüsünü yaratmaktır."
+				""
+				"§7To combine two things is to create a third.§r"
+			]
+			icon: "create:mechanical_mixer"
+			id: "2000000000000B53"
+			optional: true
+			rewards: [{
+				id: "4000000000000B53"
+				type: "xp"
+				xp: 160
+			}]
+			shape: "square"
+			subtitle: "The Mixer"
+			tasks: [{
+				id: "3000000000000B54"
+				item: "create:mechanical_mixer"
+				type: "item"
+			}]
+			title: "Karıştırıcı"
+			x: 3.0d
+			y: -5.25d
+		}
+		{
+			dependencies: ["20000000000E0102"]
+			description: [
+				"Hava da bir araçtır. Yıkar, kurutur, yakar."
+				""
+				"§7Air is a tool too. It washes, dries, and burns.§r"
+			]
+			icon: "create:encased_fan"
+			id: "2000000000000B55"
+			optional: true
+			rewards: [{
+				id: "4000000000000B55"
+				type: "xp"
+				xp: 140
+			}]
+			shape: "square"
+			subtitle: "Breath of the Fan"
+			tasks: [{
+				id: "3000000000000B56"
+				item: "create:encased_fan"
+				type: "item"
+			}]
+			title: "Fanın Nefesi"
+			x: 3.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["20000000000E0102"]
+			description: [
+				"Bakır ve çinko. Basit görünür ama pahalıya patlar."
+				""
+				"§7Copper and zinc. It looks simple, but it costs.§r"
+			]
+			icon: "create:brass_ingot"
+			id: "2000000000000B64"
+			optional: true
+			rewards: [{
+				id: "4000000000000B64"
+				type: "xp"
+				xp: 220
+			}]
+			shape: "square"
+			subtitle: "The Brass Cast"
+			tasks: [{
+				count: 32L
+				id: "3000000000000B65"
+				item: "create:brass_ingot"
+				type: "item"
+			}]
+			title: "Pirinç Dökümü"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["20000000000E0103"]
+			description: [
+				"Su ısınır, basınç yükselir, çark döner."
+				"Artık nehre ihtiyacın yok."
+				""
+				"§7Water heats, pressure rises, the wheel turns."
+				"§7You no longer need the river.§r"
+			]
+			icon: "create:steam_engine"
+			id: "2000000000000B65"
+			optional: true
+			rewards: [{
+				id: "4000000000000B65"
+				type: "xp"
+				xp: 240
+			}]
+			shape: "square"
+			subtitle: "The Steam Engine"
+			tasks: [{
+				count: 2L
+				id: "3000000000000B66"
+				item: "create:steam_engine"
+				type: "item"
+			}]
+			title: "Buhar Motoru"
+			x: 6.0d
+			y: -0.88d
+		}
+		{
+			dependencies: ["20000000000E0103"]
+			description: [
+				"Senin yerine tutar, vurur, yerleştirir."
+				"Ama asla senin yerine düşünmez."
+				""
+				"§7It holds, strikes and places for you."
+				"§7But it never thinks for you.§r"
+			]
+			icon: "create:deployer"
+			id: "2000000000000B75"
+			optional: true
+			rewards: [{
+				id: "4000000000000B75"
+				type: "xp"
+				xp: 260
+			}]
+			shape: "square"
+			subtitle: "The Deployer"
+			tasks: [{
+				count: 4L
+				id: "3000000000000B76"
+				item: "create:deployer"
+				type: "item"
+			}]
+			title: "Yerleştirici"
+			x: 6.0d
+			y: 0.88d
+		}
+	]
+	subtitle: ["Engineering - free progression"]
+	title: "Mühendislik"
+}

@@ -2,7 +2,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "act2_gezgin"
-	group: ""
+	group: "2000000000000001"
 	icon: "minecraft:filled_map"
 	id: "1000000000000A02"
 	order_index: 1
@@ -42,7 +42,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["2000000000000B22"]
+			dependencies: ["200000000000C204"]
 			description: [
 				"Yıkıcılar köylere iner ve arkalarında kül bırakır."
 				"Birini indir ve boynuzunu getir."
@@ -71,8 +71,7 @@
 					xp_levels: 10
 				}
 			]
-			shape: "hexagon"
-			size: 1.5d
+			shape: "diamond"
 			subtitle: "The Ravager's Horn"
 			tasks: [{
 				id: "3000000000000A22"
@@ -86,8 +85,8 @@
 				type: "item"
 			}]
 			title: "Yıkıcının Boynuzu"
-			x: 4.0d
-			y: 0.0d
+			x: 9.0d
+			y: 0.88d
 		}
 		{
 			dependencies: ["2000000000000A21"]
@@ -135,8 +134,8 @@
 				}
 			]
 			title: "Demirden Zırh"
-			x: 2.0d
-			y: 0.0d
+			x: 3.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["2000000000000A21"]
@@ -170,8 +169,8 @@
 				type: "item"
 			}]
 			title: "Tüccarın Kesesi"
-			x: 0.0d
-			y: -2.0d
+			x: 3.0d
+			y: -5.25d
 		}
 		{
 			dependencies: ["2000000000000B12"]
@@ -214,8 +213,8 @@
 				type: "item"
 			}]
 			title: "Warp Taşı"
-			x: 2.0d
-			y: -4.0d
+			x: 6.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["2000000000000A21"]
@@ -251,8 +250,8 @@
 				type: "item"
 			}]
 			title: "Ödül Tahtası"
-			x: 4.0d
-			y: -2.0d
+			x: 3.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["2000000000000B21"]
@@ -286,8 +285,8 @@
 				type: "item"
 			}]
 			title: "Cüzdan"
-			x: -2.0d
-			y: -2.0d
+			x: 6.0d
+			y: -1.75d
 		}
 		{
 			dependencies: ["2000000000000A21"]
@@ -309,23 +308,23 @@
 				"§7walk back is the dangerous part.§r"
 			]
 			icon: "sophisticatedbackpacks:iron_backpack"
-			id: "2100000000000203"
+			id: "4556212799E6BC4A"
 			optional: true
 			rewards: [{
-				id: "4100000000000203"
+				id: "19B45D78461B6A09"
 				type: "xp"
 				xp: 110
 			}]
 			shape: "square"
 			subtitle: "The Iron Backpack"
 			tasks: [{
-				id: "3100000000000203"
+				id: "7932F8C795BE03D8"
 				item: "sophisticatedbackpacks:iron_backpack"
 				type: "item"
 			}]
 			title: "Demir Sırt Çantası"
-			x: -2.0d
-			y: 0.0d
+			x: 3.0d
+			y: 5.25d
 		}
 		{
 			dependencies: ["2000000000000B22"]
@@ -385,8 +384,8 @@
 				}
 			]
 			title: "Zincir ve Başlık"
-			x: 2.0d
-			y: 2.0d
+			x: 6.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["2000000000000B22"]
@@ -433,8 +432,8 @@
 				type: "item"
 			}]
 			title: "Ağır Arbalet"
-			x: 4.0d
-			y: 2.0d
+			x: 6.0d
+			y: 1.75d
 		}
 		{
 			dependencies: ["2000000000000A21"]
@@ -471,8 +470,8 @@
 				type: "item"
 			}]
 			title: "Dürbün"
-			x: 0.0d
-			y: 2.0d
+			x: 3.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["2000000000000B23"]
@@ -509,8 +508,8 @@
 				type: "item"
 			}]
 			title: "Paylaşım Taşı"
-			x: 4.0d
-			y: -4.0d
+			x: 9.0d
+			y: -0.88d
 		}
 		{
 			dependencies: ["2000000000000A21"]
@@ -543,8 +542,123 @@
 				type: "item"
 			}]
 			title: "İlk Waystone"
-			x: 2.0d
-			y: -2.0d
+			x: 3.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["2000000000000A21"]
+			description: [
+				"Lord Pumpkinhead avına çık."
+				""
+				"§7Hunt down the Lord Pumpkinhead.§r"
+			]
+			icon: "minecraft:carved_pumpkin"
+			id: "200000000000C201"
+			rewards: [{
+				id: "400000000000C201"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "square"
+			subtitle: "Lord Pumpkinhead"
+			tasks: [{
+				entity: "born_in_chaos_v1:lord_pumpkinhead"
+				id: "300000000000C201"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Lord Pumpkinhead"
+			x: 3.0d
+			y: -1.75d
+		}
+		{
+			dependencies: ["2000000000000A21"]
+			description: [
+				"Sir The Headless avına çık."
+				""
+				"§7Hunt down the Sir The Headless.§r"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "200000000000C202"
+			rewards: [{
+				id: "400000000000C202"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "square"
+			subtitle: "Sir The Headless"
+			tasks: [{
+				entity: "born_in_chaos_v1:sir_the_headless"
+				id: "300000000000C202"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Sir The Headless"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2000000000000A21"]
+			description: [
+				"Supreme Bonescaller avına çık."
+				""
+				"§7Hunt down the Supreme Bonescaller.§r"
+			]
+			icon: "minecraft:bone"
+			id: "200000000000C203"
+			rewards: [{
+				id: "400000000000C203"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "square"
+			subtitle: "Supreme Bonescaller"
+			tasks: [{
+				entity: "born_in_chaos_v1:supreme_bonescaller"
+				id: "300000000000C203"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Supreme Bonescaller"
+			x: 3.0d
+			y: 1.75d
+		}
+		{
+			dependencies: [
+				"200000000000C201"
+				"200000000000C202"
+				"200000000000C203"
+			]
+			description: [
+				"Bu perdenin son sınavı. Diğer canavarları geçtiysen hazırsın."
+				""
+				"§7The act's final trial. If you cleared the rest, you are ready.§r"
+			]
+			icon: "minecraft:saddle"
+			id: "200000000000C204"
+			rewards: [{
+				id: "400000000000C204"
+				type: "xp"
+				xp: 450
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "The Ravager"
+			tasks: [{
+				entity: "minecraft:ravager"
+				id: "300000000000C204"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Yıkıcı"
+			x: 6.0d
+			y: 3.5d
 		}
 	]
 	subtitle: ["Act II - The Wanderer"]
