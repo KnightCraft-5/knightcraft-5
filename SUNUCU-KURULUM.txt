@@ -84,10 +84,13 @@ or eula.txt, so updating in place is safe.
     icinde sabit kodlanmistir, ayarla kapatilamaz.
     Kapatmak isterseniz: config/hqm/config.json5 -> AUTO_HARDCORE
 
-  * online-mode=false ile SimpleLogin gerekir. Oyuncular
-    /register <sifre> <sifre> ile kayit olur.
-    BILINEN SORUN: hic kayit olmamis bir istemci "Joining world"
-    ekraninda takilabilir. Bunu oyunculara duyurun.
+  * online-mode=false ile SimpleAuth gerekir. Oyuncular
+    /register <sifre> ile kayit olur, sonra /login <sifre>.
+    Sifreler config/simpleauth/simpleauth_users.json icinde
+    PBKDF2 ile hash'lenerek tutulur - bu dosyayi ASLA paylasmayin
+    ve depoya eklemeyin (.gitignore icinde).
+    NOT: SimpleLogin kaldirildi; eski kayitlar tasinmaz, herkes
+    yeniden /register olmali.
 
   * Cevirilerin gorunmesi icin oyuncunun oyun dili Turkce olmali.
 

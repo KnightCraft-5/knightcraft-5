@@ -262,11 +262,6 @@
    "name": "SimpleDiscordRichPresence-forge-4.0.3-build.40+mc1.20.1.jar"
   },
   {
-   "sha256": "1e923563c4d85793ef59849114c0a7c51ba1e1446e1976eeedb58acb81f52b44",
-   "size": 99700,
-   "name": "SimpleLogin-1.20.1-1.0.2-all.jar"
-  },
-  {
    "sha256": "1db6f5595e5edc255db6800de9e0e1aa8e01e10d79d1784d549d70eb2cf53012",
    "size": 509724,
    "name": "SimpleStorageNetwork-1.20.1-1.13.2.jar"
@@ -850,6 +845,11 @@
    "sha256": "9ca45fb6d723474d145227bed27dd1791cca30ac96fd8f05084417b0779e0e01",
    "size": 225949,
    "name": "silent-lib-1.20.1-8.0.0.jar"
+  },
+  {
+   "sha256": "288d9f2d2b0c28280c17a6fc6029275e92edbfe402b3e031b811c7562553e6d1",
+   "size": 63561,
+   "name": "simpleauth-5.0.0.jar"
   },
   {
    "sha256": "e036518b740ab399e153241d73919d9650bb9d8ba0d205a32f5995a69468c6bc",

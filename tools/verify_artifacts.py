@@ -74,7 +74,8 @@ def main():
               if n.startswith(('world/', 'logs/', 'backups/', 'crash-reports/'))
               or os.path.basename(n) in ('server.properties', 'ops.json',
                                          'whitelist.json', 'usercache.json',
-                                         '.sl_password')]
+                                         '.sl_password',
+                                         'simpleauth_users.json')]
     if leaked:
         fail(f'server: carries server state or credentials: {leaked[:3]}', errors)
     if HQM_OK not in srv.read('config/hqm/config.json5'):

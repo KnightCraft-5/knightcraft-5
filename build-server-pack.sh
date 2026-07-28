@@ -51,7 +51,8 @@ if ! grep -q '"AUTO_HARDCORE": true' "$STAGE/config/hqm/config.json5"; then
     exit 1
 fi
 if find "$STAGE" \( -name '.sl_password' -o -name 'server.properties' \
-                 -o -name 'ops.json' -o -name 'whitelist.json' \) | grep -q .; then
+                 -o -name 'ops.json' -o -name 'whitelist.json' \
+                 -o -name 'simpleauth_users.json' \) | grep -q .; then
     echo "ABORT: server identity or credential file in staging area" >&2
     exit 1
 fi

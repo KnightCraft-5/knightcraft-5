@@ -1,6 +1,12 @@
 # --- Secrets ---------------------------------------------------------------
-# SimpleLogin stores the password in PLAINTEXT. Never commit this.
+# SimpleLogin stored its password in PLAINTEXT here. The mod is gone, but the
+# file may still exist on older installs, so keep ignoring it.
 .sl_password
+
+# SimpleAuth keeps per-player PBKDF2 password hashes here, and unlike
+# .sl_password this sits INSIDE the tracked config/ tree - one `git add -A`
+# would publish every player's credential hash to a public repo.
+config/simpleauth/simpleauth_users.json
 
 # --- Binaries --------------------------------------------------------------
 # Mods and resource packs are distributed through the launcher manifest,

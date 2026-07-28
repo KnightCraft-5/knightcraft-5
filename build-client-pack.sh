@@ -33,7 +33,8 @@ rm -f  "$STAGE/config/skinrestorer/mojang_profile_cache.json" \
        "$STAGE/config/voicechat/username-cache.json"
 
 # --- safety net: never ship a credential -----------------------------------
-if find "$STAGE" -name '.sl_password' -o -name '*.private' | grep -q .; then
+if find "$STAGE" \( -name '.sl_password' -o -name '*.private' \
+                 -o -name 'simpleauth_users.json' \) | grep -q .; then
     echo "ABORT: credential file found in staging area" >&2
     exit 1
 fi

@@ -46,7 +46,7 @@ step "translations"      python3 tools/validate_lang.py
 step "hardcore lives on" grep -q '"AUTO_HARDCORE": true' config/hqm/config.json5
 
 # The credential check inverts: finding a match is the failure.
-if git ls-files | grep -qE '(^|/)(\.sl_password|r2\.env|\.env)$'; then
+if git ls-files | grep -qE '(^|/)(\.sl_password|r2\.env|\.env|simpleauth_users\.json)$'; then
     printf '  \033[31mFAIL\033[0m  no credentials tracked\n'; fails=$((fails + 1))
 else
     printf '  \033[32mPASS\033[0m  no credentials tracked\n'
