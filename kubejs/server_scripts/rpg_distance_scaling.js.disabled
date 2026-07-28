@@ -1,0 +1,140 @@
+// Distance-based difficulty.
+//
+// Mobs get stronger the further you are from world origin. Replaces the two
+// systems that were removed, and fixes what was wrong with both of them:
+//
+//   PMMO scaled off player LEVEL with an exponential curve (1.104^level). At
+//   level 250 that is 56 billion times normal damage - it one-shot a geared
+//   group through full armour. Anything that tracks player power lets players
+//   outrun it or, worse, blow past it.
+//
+//   Mine and Slash scaled off allocated STAT POINTS. A level-30 character went
+//   from 45 HP to 554 depending on allocation, so no boss could be tuned for
+//   both.
+//
+// Distance is a fixed number. It does not care about level, gear or points, it
+// cannot be outrun, and it is legible to the player: further out is harder.
+// It also kills spawn-camping, because standing near origin caps your rewards.
+//
+// This file only scales STATS. Swapping which species spawns is a separate
+// concern - see the note at the bottom.
+
+// ---------------------------------------------------------------------------
+// Tuning. These are the numbers to argue about; the code below is mechanical.
+// ---------------------------------------------------------------------------
+
+// Inside this radius nothing is scaled at all. New players need somewhere to
+// learn the pack without being flattened.
+const SAFE_RADIUS = 800
+
+// Distance at which scaling reaches its maximum. Beyond this it stays flat -
+// deliberately capped, so a player at 500k blocks meets the same difficulty as
+// one at 12k rather than something unkillable.
+const FULL_SCALE_AT = 12000
+
+// Multipliers at FULL_SCALE_AT. 1.0 means "unchanged".
+//
+// Health is the safe dial and damage is the dangerous one. Tonight's measurement:
+// Ignis at 1024 HP died in 81 seconds to two players with bows and dealt zero
+// damage. More health made the fight LONGER, not harder. Damage is what creates
+// threat - but players are on vanilla-scale health now (~20-30), so a big damage
+// multiplier turns every hit into a one-shot. Hence health scales harder than
+// damage even though damage is what players feel.
+const MAX_HEALTH_MULT = 5.0
+const MAX_DAMAGE_MULT = 2.0
+const MAX_ARMOR_BONUS = 8.0
+
+// Curve shape. 1.0 = linear. Below 1 front-loads the difficulty (ramps fast
+// near the safe zone), above 1 back-loads it. Explicitly NOT exponential.
+const CURVE = 1.3
+
+// Overworld coordinates are the reference. The Nether is 1:8, so 1000 blocks
+// there is 8000 overworld-equivalent - without this the Nether would max out
+// almost immediately. The End is endgame by definition, so it gets a floor
+// instead of a distance calculation.
+const DIMENSION_SCALE = {
+    'minecraft:the_nether': 8.0,
+    'minecraft:overworld': 1.0,
+}
+const END_MINIMUM_PROGRESS = 0.75
+
+// Mobs that should never be touched. Bosses are deliberately NOT here - a
+// distant boss should be harder than a nearby one, that is the whole point.
+const NEVER_SCALE = [
+    'minecraft:armor_stand',
+    'minecraft:villager',
+    'minecraft:wandering_trader',
+    'minecraft:iron_golem',
+    'minecraft:snow_golem',
+    'dummmmmmy:target_dummy',
+]
+
+// ---------------------------------------------------------------------------
+
+/**
+ * 0.0 at the edge of the safe radius, 1.0 at FULL_SCALE_AT and beyond.
+ */
+function progressFor(x, z, dimensionId) {
+    if (dimensionId === 'minecraft:the_end') {
+        return END_MINIMUM_PROGRESS
+    }
+    const dimMult = DIMENSION_SCALE[dimensionId] || 1.0
+    const raw = Math.sqrt(x * x + z * z) * dimMult
+    if (raw <= SAFE_RADIUS) {
+        return 0.0
+    }
+    const span = FULL_SCALE_AT - SAFE_RADIUS
+    const t = Math.min(1.0, (raw - SAFE_RADIUS) / span)
+    return Math.pow(t, CURVE)
+}
+
+EntityEvents.spawned(event => {
+    const entity = event.entity
+    if (!entity || !entity.living || entity.player) {
+        return
+    }
+
+    const typeId = String(entity.type)
+    if (NEVER_SCALE.indexOf(typeId) !== -1) {
+        return
+    }
+
+    // Only hostiles. Scaling cows would make leather farming worse, not harder.
+    if (entity.persistentData.getBoolean('kc5_scaled')) {
+        return  // never stack - a mob that reloads must not be scaled twice
+    }
+
+    const progress = progressFor(entity.x, entity.z, String(entity.level.dimension))
+    if (progress <= 0.0) {
+        return
+    }
+
+    const healthMult = 1.0 + (MAX_HEALTH_MULT - 1.0) * progress
+    const damageMult = 1.0 + (MAX_DAMAGE_MULT - 1.0) * progress
+    const armorBonus = MAX_ARMOR_BONUS * progress
+
+    const hp = entity.getAttribute('minecraft:generic.max_health')
+    if (hp) {
+        hp.setBaseValue(hp.getBaseValue() * healthMult)
+        entity.setHealth(hp.getValue())   // spawn at full, not at the old value
+    }
+
+    const dmg = entity.getAttribute('minecraft:generic.attack_damage')
+    if (dmg) {
+        dmg.setBaseValue(dmg.getBaseValue() * damageMult)
+    }
+
+    const armor = entity.getAttribute('minecraft:generic.armor')
+    if (armor) {
+        armor.setBaseValue(armor.getBaseValue() + armorBonus)
+    }
+
+    entity.persistentData.putBoolean('kc5_scaled', true)
+    entity.persistentData.putFloat('kc5_progress', progress)
+})
+
+// Species swapping ("different monsters further out") is deliberately not here.
+// It needs EntityEvents.checkSpawn filtered to MobSpawnType SPAWNER, and it only
+// reaches spawner-based dungeon mobs - most modded dungeons bake their occupants
+// into the structure NBT at worldgen, which never fires that event. Build it
+// once this curve is agreed, otherwise both are moving at the same time.
