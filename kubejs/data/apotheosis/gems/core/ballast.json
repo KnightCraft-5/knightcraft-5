@@ -1,0 +1,85 @@
+{
+  "variant": "ballast",
+  "weight": 10,
+  "quality": 0,
+  "dimensions": [],
+  "bonuses": [
+    {
+      "type": "apotheosis:attribute",
+      "gem_class": {
+        "key": "light_weapon",
+        "types": [
+          "sword",
+          "trident"
+        ]
+      },
+      "attribute": "minecraft:generic.attack_damage",
+      "operation": "MULTIPLY_BASE",
+      "values": {
+        "common": 0.029,
+        "uncommon": 0.058,
+        "rare": 0.1015,
+        "epic": 0.1595,
+        "mythic": 0.2175,
+        "ancient": 0.29
+      }
+    },
+    {
+      "type": "apotheosis:attribute",
+      "gem_class": {
+        "key": "heavy_weapon",
+        "types": [
+          "heavy_weapon"
+        ]
+      },
+      "attribute": "minecraft:generic.attack_damage",
+      "operation": "MULTIPLY_BASE",
+      "values": {
+        "common": 0.029,
+        "uncommon": 0.058,
+        "rare": 0.1015,
+        "epic": 0.1595,
+        "mythic": 0.2175,
+        "ancient": 0.29
+      }
+    },
+    {
+      "type": "apotheosis:durability",
+      "gem_class": {
+        "key": "breaker",
+        "types": [
+          "pickaxe",
+          "shovel"
+        ]
+      },
+      "values": {
+        "common": 0.1,
+        "uncommon": 0.15,
+        "rare": 0.25,
+        "epic": 0.35,
+        "mythic": 0.45,
+        "ancient": 0.6
+      }
+    },
+    {
+      "type": "apotheosis:attribute",
+      "gem_class": {
+        "key": "core_armor",
+        "types": [
+          "chestplate",
+          "leggings"
+        ]
+      },
+      "attribute": "minecraft:generic.knockback_resistance",
+      "operation": "ADDITION",
+      "values": {
+        "common": 0.1,
+        "uncommon": 0.2,
+        "rare": 0.3,
+        "epic": 0.4,
+        "mythic": 0.5,
+        "ancient": 0.7
+      }
+    }
+  ]
+}

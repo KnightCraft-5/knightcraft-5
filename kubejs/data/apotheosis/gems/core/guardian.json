@@ -1,0 +1,105 @@
+{
+  "variant": "guardian",
+  "weight": 10,
+  "quality": 0,
+  "dimensions": [],
+  "bonuses": [
+    {
+      "type": "apotheosis:attribute",
+      "gem_class": {
+        "key": "core_armor",
+        "types": [
+          "chestplate",
+          "leggings"
+        ]
+      },
+      "attribute": "minecraft:generic.armor",
+      "operation": "MULTIPLY_BASE",
+      "values": {
+        "common": 0.0022,
+        "uncommon": 0.0044,
+        "rare": 0.0077,
+        "epic": 0.0121,
+        "mythic": 0.0165,
+        "ancient": 0.022
+      }
+    },
+    {
+      "type": "apotheosis:attribute",
+      "gem_class": {
+        "key": "light_weapon",
+        "types": [
+          "sword",
+          "trident"
+        ]
+      },
+      "attribute": "attributeslib:life_steal",
+      "operation": "ADDITION",
+      "values": {
+        "common": 0.009,
+        "uncommon": 0.018,
+        "rare": 0.0315,
+        "epic": 0.0495,
+        "mythic": 0.0675,
+        "ancient": 0.09
+      }
+    },
+    {
+      "type": "apotheosis:attribute",
+      "gem_class": {
+        "key": "heavy_weapon",
+        "types": [
+          "heavy_weapon"
+        ]
+      },
+      "attribute": "attributeslib:overheal",
+      "operation": "ADDITION",
+      "values": {
+        "common": 0.05,
+        "uncommon": 0.1,
+        "rare": 0.15,
+        "epic": 0.2,
+        "mythic": 0.25,
+        "ancient": 0.3
+      }
+    },
+    {
+      "type": "apotheosis:attribute",
+      "gem_class": {
+        "key": "shield",
+        "types": [
+          "shield"
+        ]
+      },
+      "attribute": "minecraft:generic.armor",
+      "operation": "MULTIPLY_TOTAL",
+      "values": {
+        "common": 0.007,
+        "uncommon": 0.014,
+        "rare": 0.0245,
+        "epic": 0.0385,
+        "mythic": 0.0525,
+        "ancient": 0.07
+      }
+    },
+    {
+      "type": "apotheosis:attribute",
+      "gem_class": {
+        "key": "boots",
+        "types": [
+          "boots"
+        ]
+      },
+      "attribute": "minecraft:generic.max_health",
+      "operation": "MULTIPLY_BASE",
+      "values": {
+        "common": 0.0029,
+        "uncommon": 0.0058,
+        "rare": 0.0101,
+        "epic": 0.016,
+        "mythic": 0.0218,
+        "ancient": 0.029
+      }
+    }
+  ]
+}
