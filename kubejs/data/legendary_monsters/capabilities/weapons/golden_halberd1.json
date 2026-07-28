@@ -1,0 +1,9 @@
+{
+ "attributes": {
+  "common": {
+   "impact": 3.0,
+   "max_strikes": 2
+  }
+ },
+ "type": "epicfight:spear"
+}
