@@ -1,0 +1,16 @@
+{
+  "simpleauth.screen.login.title": "Giriş",
+  "simpleauth.screen.login.password": "Şifre",
+  "simpleauth.screen.login.password_hint": "Şifreni gir...",
+  "simpleauth.screen.login.confirm": "Giriş Yap",
+  "simpleauth.screen.login.time_left": "Kalan süre: %d sn",
+  "simpleauth.screen.login.wrong_password": "Yanlış şifre. Tekrar dene.",
+  "simpleauth.screen.login.rate_limited": "Çok fazla deneme. Lütfen bekle.",
+  "simpleauth.screen.login.waiting": "Doğrulanıyor...",
+  "simpleauth.screen.register.title": "Kayıt Ol",
+  "simpleauth.screen.register.password": "Şifre",
+  "simpleauth.screen.register.password_hint": "Bir şifre belirle...",
+  "simpleauth.screen.register.confirm": "Şifreyi Onayla",
+  "simpleauth.screen.register.confirm_hint": "Şifreni tekrar gir...",
+  "simpleauth.screen.register.confirm_btn": "Kayıt Ol"
+}
