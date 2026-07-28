@@ -1,0 +1,848 @@
+[
+  {
+    "mob": "minecraft:ender_dragon",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 50000,
+    "damageset": 48,
+    "armorset": 24,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "cataclysm:ender_golem",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 5940,
+    "damageset": 29,
+    "armorset": 20,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "cataclysm:ender_guardian",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 18000,
+    "damageset": 39,
+    "armorset": 20,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "cataclysm:maledictus",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 18000,
+    "damageset": 39,
+    "armorset": 20,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "cataclysm:the_harbinger",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 26500,
+    "damageset": 39,
+    "armorset": 20,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "legendary_monsters:annihilation_pursuer",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 5940,
+    "damageset": 29,
+    "armorset": 20,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "legendary_monsters:cloud_golem",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 18000,
+    "damageset": 39,
+    "armorset": 20,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "legendary_monsters:endersent",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 5940,
+    "damageset": 29,
+    "armorset": 20,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "legendary_monsters:posessed_paladin",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 18000,
+    "damageset": 39,
+    "armorset": 20,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "legendary_monsters:shulker_mimic",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 5940,
+    "damageset": 29,
+    "armorset": 20,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "legendary_monsters:the_obliterator",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 18000,
+    "damageset": 39,
+    "armorset": 20,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "threateningly_mobs:hypocritical_saint",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 18000,
+    "damageset": 39,
+    "armorset": 20,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "alexsmobs:cachalot_whale",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 4290,
+    "damageset": 22,
+    "armorset": 16,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "alexsmobs:void_worm",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 13000,
+    "damageset": 29,
+    "armorset": 16,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "alexsmobs:warped_mosco",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 4290,
+    "damageset": 22,
+    "armorset": 16,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "cataclysm:clawdian",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 4290,
+    "damageset": 22,
+    "armorset": 16,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "cataclysm:scylla",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 13000,
+    "damageset": 29,
+    "armorset": 16,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "cataclysm:the_leviathan",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 13000,
+    "damageset": 29,
+    "armorset": 16,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "iceandfire:cyclops",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 4290,
+    "damageset": 22,
+    "armorset": 16,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "iceandfire:dread_lich",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 4290,
+    "damageset": 22,
+    "armorset": 16,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "iceandfire:gorgon",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 4290,
+    "damageset": 22,
+    "armorset": 16,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "iceandfire:hydra",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 13000,
+    "damageset": 29,
+    "armorset": 16,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "iceandfire:sea_serpent",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 4290,
+    "damageset": 22,
+    "armorset": 16,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "mowziesmobs:sculptor",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 13000,
+    "damageset": 29,
+    "armorset": 16,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "threateningly_mobs:hydra",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 4290,
+    "damageset": 22,
+    "armorset": 16,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "threateningly_mobs:ice_brood_mother",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 4290,
+    "damageset": 22,
+    "armorset": 16,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "threateningly_mobs:terra_dragon_re",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 4290,
+    "damageset": 22,
+    "armorset": 16,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "born_in_chaos_v1:spiritof_chaos",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 2558,
+    "damageset": 18,
+    "armorset": 13,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "cataclysm:ancient_remnant",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 7750,
+    "damageset": 24,
+    "armorset": 13,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "cataclysm:aptrgangr",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 2558,
+    "damageset": 18,
+    "armorset": 13,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "cataclysm:ignis",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 549,
+    "damageset": 19,
+    "armorset": 13,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "cataclysm:ignited_berserker",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 2558,
+    "damageset": 14,
+    "armorset": 13,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "cataclysm:ignited_revenant",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 2558,
+    "damageset": 14,
+    "armorset": 13,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "cataclysm:netherite_monstrosity",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 7750,
+    "damageset": 19,
+    "armorset": 13,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "legendary_monsters:lava_eater",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 2558,
+    "damageset": 18,
+    "armorset": 13,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "legendary_monsters:warped_fungussus",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 2558,
+    "damageset": 18,
+    "armorset": 13,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "legendary_monsters:withered_abomination",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 2558,
+    "damageset": 18,
+    "armorset": 13,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "mowziesmobs:umvuthi",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 7750,
+    "damageset": 24,
+    "armorset": 13,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "threateningly_mobs:the_inferno",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 2558,
+    "damageset": 14,
+    "armorset": 13,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "born_in_chaos_v1:krampus",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 1238,
+    "damageset": 16,
+    "armorset": 10,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "cataclysm:coral_golem",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 1238,
+    "damageset": 16,
+    "armorset": 10,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "cataclysm:coralssus",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 1238,
+    "damageset": 16,
+    "armorset": 10,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "cataclysm:wadjet",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 1238,
+    "damageset": 16,
+    "armorset": 10,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "iceandfire:myrmex_queen",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 3750,
+    "damageset": 22,
+    "armorset": 10,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "legendary_monsters:ancient_guardian",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 1238,
+    "damageset": 16,
+    "armorset": 10,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "legendary_monsters:dune_sentinel",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 1238,
+    "damageset": 16,
+    "armorset": 10,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "legendary_monsters:frostbitten_golem",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 1238,
+    "damageset": 16,
+    "armorset": 10,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "legendary_monsters:skeletosaurus",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 1238,
+    "damageset": 16,
+    "armorset": 10,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "mowziesmobs:frostmaw",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 1350,
+    "damageset": 17,
+    "armorset": 10,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "threateningly_mobs:the_regalhart",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 1238,
+    "damageset": 16,
+    "armorset": 10,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "born_in_chaos_v1:lord_the_headless",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 1072,
+    "damageset": 14,
+    "armorset": 8,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "cataclysm:the_prowler",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 1072,
+    "damageset": 14,
+    "armorset": 8,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "legendary_monsters:beheaded_knight",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 1072,
+    "damageset": 14,
+    "armorset": 8,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "legendary_monsters:overgrown_colossus",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 1072,
+    "damageset": 14,
+    "armorset": 8,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "legendary_monsters:resurrected_knight",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 1072,
+    "damageset": 14,
+    "armorset": 8,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "mowziesmobs:ferrous_wroughtnaut",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 253,
+    "damageset": 18,
+    "armorset": 8,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "wom:saulomonk",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 1072,
+    "damageset": 14,
+    "armorset": 8,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "born_in_chaos_v1:fallen_chaos_knight",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 825,
+    "damageset": 10,
+    "armorset": 6,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "born_in_chaos_v1:lifestealer_true_form",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 825,
+    "damageset": 10,
+    "armorset": 6,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "born_in_chaos_v1:mother_spider",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 825,
+    "damageset": 10,
+    "armorset": 6,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "born_in_chaos_v1:nightmare_stalker",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 825,
+    "damageset": 10,
+    "armorset": 6,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "cataclysm:amethyst_crab",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 1825,
+    "damageset": 13,
+    "armorset": 6,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "cataclysm:kobolediator",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 825,
+    "damageset": 10,
+    "armorset": 6,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "iceandfire:troll",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 825,
+    "damageset": 10,
+    "armorset": 6,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "born_in_chaos_v1:lord_pumpkinhead",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 1500,
+    "damageset": 10,
+    "armorset": 4,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "born_in_chaos_v1:lord_pumpkinhead_withouta_horse",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 1500,
+    "damageset": 10,
+    "armorset": 4,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "born_in_chaos_v1:scarlet_persecutor",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 495,
+    "damageset": 8,
+    "armorset": 4,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "born_in_chaos_v1:sir_the_headless",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 495,
+    "damageset": 8,
+    "armorset": 4,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "born_in_chaos_v1:skeleton_thrasher",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 495,
+    "damageset": 8,
+    "armorset": 4,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "born_in_chaos_v1:skeleton_thrasher_not_despawn",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 495,
+    "damageset": 8,
+    "armorset": 4,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "born_in_chaos_v1:supreme_bonescaller",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 495,
+    "damageset": 8,
+    "armorset": 4,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "born_in_chaos_v1:supreme_bonescaller_not_despawn",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 495,
+    "damageset": 8,
+    "armorset": 4,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "mob": "minecraft:ravager",
+    "when": "onjoin",
+    "result": "default",
+    "healthset": 1500,
+    "damageset": 10,
+    "armorset": 4,
+    "knockbackresistanceset": 1.0
+  },
+  {
+    "dimension": "minecraft:the_end",
+    "hostile": true,
+    "when": "onjoin",
+    "result": "default",
+    "healthmultiply": 15.5,
+    "damageadd": 78,
+    "armoradd": 8
+  },
+  {
+    "dimension": "minecraft:overworld",
+    "hostile": true,
+    "minspawndist": 19000,
+    "when": "onjoin",
+    "result": "default",
+    "healthmultiply": 15.5,
+    "damageadd": 78,
+    "armoradd": 8
+  },
+  {
+    "dimension": "minecraft:overworld",
+    "hostile": true,
+    "minspawndist": 15000,
+    "when": "onjoin",
+    "result": "default",
+    "healthmultiply": 14.75,
+    "damageadd": 61,
+    "armoradd": 7
+  },
+  {
+    "dimension": "minecraft:overworld",
+    "hostile": true,
+    "minspawndist": 11500,
+    "when": "onjoin",
+    "result": "default",
+    "healthmultiply": 11.75,
+    "damageadd": 44,
+    "armoradd": 6
+  },
+  {
+    "dimension": "minecraft:overworld",
+    "hostile": true,
+    "minspawndist": 8500,
+    "when": "onjoin",
+    "result": "default",
+    "healthmultiply": 7.25,
+    "damageadd": 35,
+    "armoradd": 5
+  },
+  {
+    "dimension": "minecraft:overworld",
+    "hostile": true,
+    "minspawndist": 6000,
+    "when": "onjoin",
+    "result": "default",
+    "healthmultiply": 4.0,
+    "damageadd": 29,
+    "armoradd": 4
+  },
+  {
+    "dimension": "minecraft:overworld",
+    "hostile": true,
+    "minspawndist": 4000,
+    "when": "onjoin",
+    "result": "default",
+    "healthmultiply": 4.0,
+    "damageadd": 21,
+    "armoradd": 3
+  },
+  {
+    "dimension": "minecraft:overworld",
+    "hostile": true,
+    "minspawndist": 2500,
+    "when": "onjoin",
+    "result": "default",
+    "healthmultiply": 3.25,
+    "damageadd": 18,
+    "armoradd": 2
+  },
+  {
+    "dimension": "minecraft:overworld",
+    "hostile": true,
+    "minspawndist": 1200,
+    "when": "onjoin",
+    "result": "default",
+    "healthmultiply": 2.75,
+    "damageadd": 16,
+    "armoradd": 1
+  },
+  {
+    "dimension": "minecraft:overworld",
+    "hostile": true,
+    "minspawndist": 250,
+    "when": "onjoin",
+    "result": "default",
+    "healthmultiply": 2.5,
+    "damageadd": 9,
+    "armoradd": 0
+  },
+  {
+    "dimension": "minecraft:the_nether",
+    "hostile": true,
+    "minspawndist": 2375,
+    "when": "onjoin",
+    "result": "default",
+    "healthmultiply": 15.5,
+    "damageadd": 78,
+    "armoradd": 8
+  },
+  {
+    "dimension": "minecraft:the_nether",
+    "hostile": true,
+    "minspawndist": 1875,
+    "when": "onjoin",
+    "result": "default",
+    "healthmultiply": 14.75,
+    "damageadd": 61,
+    "armoradd": 7
+  },
+  {
+    "dimension": "minecraft:the_nether",
+    "hostile": true,
+    "minspawndist": 1437,
+    "when": "onjoin",
+    "result": "default",
+    "healthmultiply": 11.75,
+    "damageadd": 44,
+    "armoradd": 6
+  },
+  {
+    "dimension": "minecraft:the_nether",
+    "hostile": true,
+    "minspawndist": 1062,
+    "when": "onjoin",
+    "result": "default",
+    "healthmultiply": 7.25,
+    "damageadd": 35,
+    "armoradd": 5
+  },
+  {
+    "dimension": "minecraft:the_nether",
+    "hostile": true,
+    "minspawndist": 750,
+    "when": "onjoin",
+    "result": "default",
+    "healthmultiply": 4.0,
+    "damageadd": 29,
+    "armoradd": 4
+  },
+  {
+    "dimension": "minecraft:the_nether",
+    "hostile": true,
+    "minspawndist": 500,
+    "when": "onjoin",
+    "result": "default",
+    "healthmultiply": 4.0,
+    "damageadd": 21,
+    "armoradd": 3
+  },
+  {
+    "dimension": "minecraft:the_nether",
+    "hostile": true,
+    "minspawndist": 312,
+    "when": "onjoin",
+    "result": "default",
+    "healthmultiply": 3.25,
+    "damageadd": 18,
+    "armoradd": 2
+  },
+  {
+    "dimension": "minecraft:the_nether",
+    "hostile": true,
+    "minspawndist": 150,
+    "when": "onjoin",
+    "result": "default",
+    "healthmultiply": 2.75,
+    "damageadd": 16,
+    "armoradd": 1
+  },
+  {
+    "dimension": "minecraft:the_nether",
+    "hostile": true,
+    "minspawndist": 31,
+    "when": "onjoin",
+    "result": "default",
+    "healthmultiply": 2.5,
+    "damageadd": 9,
+    "armoradd": 0
+  }
+]

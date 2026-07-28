@@ -175,7 +175,7 @@
 	EnderGuardianDamageMultiplier = 1.0
 	#EnderGuardian's DamageCap
 	#Range: 0.0 ~ 1000000.0
-	EnderGuardianDamageCap = 22.0
+	EnderGuardianDamageCap = 100000.0
 	#EnderGuardian's DamageTime
 	#Range: 0 ~ 100
 	EnderGuardianDamageTime = 30
@@ -242,7 +242,7 @@
 	MonstrosityNatureHealing = 25.0
 	#Monstrosity's DamageCap
 	#Range: 0.0 ~ 1000000.0
-	MonstrosityDamageCap = 22.0
+	MonstrosityDamageCap = 100000.0
 	#Monstrosity's DamageTime
 	#Range: 0 ~ 100
 	MonstrosityDamageTime = 10
@@ -288,7 +288,7 @@
 	"Ignis's prevent attacks from far away Range" = 15.0
 	#Ignis's DamageCap
 	#Range: 0.0 ~ 1000000.0
-	IgnisDamageCap = 20.0
+	IgnisDamageCap = 100000.0
 	#Ignis's DamageTime
 	#Range: 0 ~ 100
 	IgnisDamageTime = 15
@@ -335,7 +335,7 @@
 	"The Harbinger's prevent attacks from far away Range" = 35.0
 	#Harbinger's DamageCap
 	#Range: 0.0 ~ 1000000.0
-	"The Harbinger DamageCap" = 22.0
+	"The Harbinger DamageCap" = 100000.0
 	#Harbinger's DamageTime
 	#Range: 0 ~ 100
 	"The Harbinger DamageTime" = 12
@@ -372,7 +372,7 @@
 	"Leviathan's Tentacle Hp Damage" = 0.03
 	#Leviathan's DamageCap
 	#Range: 0.0 ~ 1000000.0
-	LeviathanDamageCap = 20.0
+	LeviathanDamageCap = 100000.0
 	#Leviathan's DamageTime
 	#Range: 0 ~ 100
 	"Leviathan DamageTime" = 15
@@ -521,7 +521,7 @@
 	"Scylla Weather Change" = true
 	#Scylla's DamageCap
 	#Range: 0.0 ~ 1000000.0
-	"Scylla DamageCap" = 22.0
+	"Scylla DamageCap" = 100000.0
 	#Scylla's DamageTime
 	#Range: 0 ~ 100
 	"Scylla DamageTime" = 25
@@ -553,7 +553,7 @@
 	"Maledictus' Phantom Halberd Damage'" = 10.0
 	#Maledictus's DamageCap
 	#Range: 0.0 ~ 1000000.0
-	MaledictusDamageCap = 20.0
+	MaledictusDamageCap = 100000.0
 	#Maledictus's DamageTime
 	#Range: 0 ~ 100
 	"Maledictus DamageTime" = 30
