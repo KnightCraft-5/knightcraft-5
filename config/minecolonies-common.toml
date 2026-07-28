@@ -1,11 +1,11 @@
 
-#Ana oyunla ilgili tüm yapılandırma öğeleri.
+#All configuration items related to the core gameplay
 [gameplay]
-	#Yağma sandıklarından ikmal gemi ve kampları oluşturup oluşturmayacağı. [Varsayılan: true]
+	#Whether to generate supply ships and camps in loot chests. [Default: true]
 	generatesupplyloot = true
 
-#Talep sistemiyle ilgili tüm yapılandırmalar
+#All configurations related to the request system
 [requestsystem]
-	#İstemci sistemi hata ayıklama bilgilerini debug.log'da göstermeli mi? Sorun giderme için kullanışlıdır. [Varsayılan: false]
+	#Should the request system show debug information in the debug.log? Useful if malfunctioning. [Default: false]
 	enabledebuglogging = false
 

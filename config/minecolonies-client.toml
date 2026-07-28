@@ -1,20 +1,20 @@
 
-#Ana oyunla ilgili tüm yapılandırma öğeleri.
+#All configuration items related to the core gameplay
 [gameplay]
-	#minecolonies.config.enablecitizenvoices.comment [Varsayılan: true]
+	#minecolonies.config.enablecitizenvoices.comment [Default: true]
 	enablecitizenvoices = true
-	#Varsayılan olarak, diğer binaların yakınına bir şema yerleştirirken, önceden yerleştirilmiş binalar sanki 5. seviyedeymiş gibi görünecek ve etraflarında mavi bir çerçeve olacaktır. Bunu, istediğiniz takdirde devre dışı bırakabilirsiniz. [Varsayılan: true]
+	#By default, when placing a schematic near other buildings, the already-placed buildings will show as if they were at level 5 and have a blue outline around them. You can disable that by setting this to false. [Default: true]
 	neighborbuildingrendering = true
-	#Bir yapının başka bir yapı ile komşu sayılması için ne kadar yakın olması gerektiğini belirtir, blok cinsinden. -1 = kesişiyor, 0 = temas ediyor [Varsayılan: 4, min: -2, maks: 16]
+	#How close a building needs to be to another to be considered a neighbor, in blocks. -1 = intersecting, 0 = touching [Default: 4, min: -2, max: 16]
 	#Range: -2 ~ 16
 	neighborbuildingrange = 4
-	#İnşa gözlükleri takılıyken çalışma düzenini görebilmek için ne kadar yakın olmalısın (blok olarak). [Varsayılan: 50, min: 1, maks: 250]
+	#How close (in blocks) you need to be to see work orders while wearing the Build Goggles. [Default: 50, min: 1, max: 250]
 	#Range: 1 ~ 250
 	buildgogglerange = 50
-	#Doğru olduğunda, inşa aracını tutarken gösterilen koloni sınırları, koloninin takım renginde olacaktır. Yanlış olduğunda, içinde bulunduğunuz koloni beyaz olacak ve diğer tüm koloniler kırmızı olacaktır. [Varsayılan: true]
+	#When true, the colony borders shown when holding the build tool will be in the colony's team color. When false, the colony you're inside will be white and any other colony will be red. [Default: true]
 	colonyteamborders = true
-	#Özel tatil içerikleri gösterilmeli mi? [Varsayılan: true]
+	#Should special holiday content be displayed? [Default: true]
 	holidayfeatures = true
-	#When true, dyed leather items will show a tooltip so that you know what color to use. [Varsayılan: true]
+	#When true, dyed leather items will show a tooltip so that you know what color to use. [Default: true]
 	showdyetooltips = true
 
