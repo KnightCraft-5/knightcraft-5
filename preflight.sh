@@ -19,7 +19,7 @@
 #   ./preflight.sh            # structural checks only (no mods/, no network)
 #   ./preflight.sh --full     # also verify mods/ against the tracked manifest
 set -uo pipefail
-cd "$(dirname "$0")"
+cd "$(dirname "$0")" || exit 1
 
 FULL=0
 [ "${1:-}" = "--full" ] && FULL=1
@@ -52,10 +52,19 @@ else
     printf '  \033[32mPASS\033[0m  no credentials tracked\n'
 fi
 
+# Do NOT quietly skip this. The first version skipped when shellcheck was absent,
+# so a local run went green while CI - which installs it - failed on SC2164. A
+# check that silently does nothing is worse than no check. On NixOS shellcheck is
+# one `nix run` away, so reach for it before giving up.
 if command -v shellcheck >/dev/null 2>&1; then
     step "shell scripts" shellcheck -S warning build-*.sh sync-mods.sh upload-bundles.sh preflight.sh
+elif command -v nix >/dev/null 2>&1; then
+    step "shell scripts (via nix)" nix run nixpkgs#shellcheck -- \
+        -S warning build-*.sh sync-mods.sh upload-bundles.sh preflight.sh
 else
-    printf '  \033[33mSKIP\033[0m  shell scripts (shellcheck not installed; CI will run it)\n'
+    printf '  \033[31mFAIL\033[0m  shell scripts - shellcheck unavailable and no nix to fetch it.\n'
+    printf '          CI *will* run it, so this machine cannot clear a release.\n'
+    fails=$((fails + 1))
 fi
 
 if [ "$FULL" = 1 ]; then
