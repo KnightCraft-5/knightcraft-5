@@ -73,7 +73,13 @@ fi
 # server are legitimately behind until they update.
 echo "deployments"
 if python3 tools/deployments.py check >/tmp/dep.$$ 2>&1; then
-    printf '  \033[32mPASS\033[0m  all recorded deployments in sync\n'
+    if grep -q 'skipping deployment parity' /tmp/dep.$$; then
+        # A skip must not read as a pass - that is how a check quietly stops
+        # checking. mods/ is restored from R2 later in the release workflow.
+        printf '  \033[33mSKIP\033[0m  parity (mods/ not present yet; restored later in CI)\n'
+    else
+        printf '  \033[32mPASS\033[0m  all recorded deployments in sync\n'
+    fi
 else
     grep -q 'kc5-2.1 *DRIFTED' /tmp/dep.$$ \
         && { printf '  \033[31mFAIL\033[0m  pack has drifted from KC5 2.1 (source of truth)\n'

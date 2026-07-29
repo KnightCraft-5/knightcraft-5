@@ -139,6 +139,12 @@ def cmd_record(args):
 
 def cmd_check(_):
     st = load()
+    # mods/ is gitignored and restored from R2 mid-workflow, so on a fresh CI
+    # checkout it does not exist yet. Hashing an empty directory would report
+    # every deployment as drifted and fail the release for no reason.
+    if not pack_mods():
+        print('mods/ absent - skipping deployment parity check')
+        return 0
     cur = modset_hash(pack_mods())
     drift = [n for n, d in st['deployments'].items() if d['modset'] != cur]
     for n in sorted(st['deployments']):
