@@ -668,7 +668,7 @@
   {
     "dimension": "minecraft:overworld",
     "hostile": true,
-    "minspawndist": 19000,
+    "minspawndist": 20750,
     "when": "onjoin",
     "result": "default",
     "healthmultiply": 15.5,
@@ -678,7 +678,7 @@
   {
     "dimension": "minecraft:overworld",
     "hostile": true,
-    "minspawndist": 15000,
+    "minspawndist": 16750,
     "when": "onjoin",
     "result": "default",
     "healthmultiply": 14.75,
@@ -688,7 +688,7 @@
   {
     "dimension": "minecraft:overworld",
     "hostile": true,
-    "minspawndist": 11500,
+    "minspawndist": 13250,
     "when": "onjoin",
     "result": "default",
     "healthmultiply": 11.75,
@@ -698,7 +698,7 @@
   {
     "dimension": "minecraft:overworld",
     "hostile": true,
-    "minspawndist": 8500,
+    "minspawndist": 10250,
     "when": "onjoin",
     "result": "default",
     "healthmultiply": 7.25,
@@ -708,7 +708,7 @@
   {
     "dimension": "minecraft:overworld",
     "hostile": true,
-    "minspawndist": 6000,
+    "minspawndist": 7750,
     "when": "onjoin",
     "result": "default",
     "healthmultiply": 4.0,
@@ -718,7 +718,7 @@
   {
     "dimension": "minecraft:overworld",
     "hostile": true,
-    "minspawndist": 4000,
+    "minspawndist": 5750,
     "when": "onjoin",
     "result": "default",
     "healthmultiply": 4.0,
@@ -728,7 +728,7 @@
   {
     "dimension": "minecraft:overworld",
     "hostile": true,
-    "minspawndist": 2500,
+    "minspawndist": 4250,
     "when": "onjoin",
     "result": "default",
     "healthmultiply": 3.25,
@@ -738,7 +738,7 @@
   {
     "dimension": "minecraft:overworld",
     "hostile": true,
-    "minspawndist": 1200,
+    "minspawndist": 2950,
     "when": "onjoin",
     "result": "default",
     "healthmultiply": 2.75,
@@ -748,7 +748,7 @@
   {
     "dimension": "minecraft:overworld",
     "hostile": true,
-    "minspawndist": 250,
+    "minspawndist": 2000,
     "when": "onjoin",
     "result": "default",
     "healthmultiply": 2.5,
@@ -758,7 +758,7 @@
   {
     "dimension": "minecraft:the_nether",
     "hostile": true,
-    "minspawndist": 2375,
+    "minspawndist": 2593,
     "when": "onjoin",
     "result": "default",
     "healthmultiply": 15.5,
@@ -768,7 +768,7 @@
   {
     "dimension": "minecraft:the_nether",
     "hostile": true,
-    "minspawndist": 1875,
+    "minspawndist": 2093,
     "when": "onjoin",
     "result": "default",
     "healthmultiply": 14.75,
@@ -778,7 +778,7 @@
   {
     "dimension": "minecraft:the_nether",
     "hostile": true,
-    "minspawndist": 1437,
+    "minspawndist": 1656,
     "when": "onjoin",
     "result": "default",
     "healthmultiply": 11.75,
@@ -788,7 +788,7 @@
   {
     "dimension": "minecraft:the_nether",
     "hostile": true,
-    "minspawndist": 1062,
+    "minspawndist": 1281,
     "when": "onjoin",
     "result": "default",
     "healthmultiply": 7.25,
@@ -798,7 +798,7 @@
   {
     "dimension": "minecraft:the_nether",
     "hostile": true,
-    "minspawndist": 750,
+    "minspawndist": 968,
     "when": "onjoin",
     "result": "default",
     "healthmultiply": 4.0,
@@ -808,7 +808,7 @@
   {
     "dimension": "minecraft:the_nether",
     "hostile": true,
-    "minspawndist": 500,
+    "minspawndist": 718,
     "when": "onjoin",
     "result": "default",
     "healthmultiply": 4.0,
@@ -818,7 +818,7 @@
   {
     "dimension": "minecraft:the_nether",
     "hostile": true,
-    "minspawndist": 312,
+    "minspawndist": 531,
     "when": "onjoin",
     "result": "default",
     "healthmultiply": 3.25,
@@ -828,7 +828,7 @@
   {
     "dimension": "minecraft:the_nether",
     "hostile": true,
-    "minspawndist": 150,
+    "minspawndist": 368,
     "when": "onjoin",
     "result": "default",
     "healthmultiply": 2.75,
@@ -838,7 +838,7 @@
   {
     "dimension": "minecraft:the_nether",
     "hostile": true,
-    "minspawndist": 31,
+    "minspawndist": 250,
     "when": "onjoin",
     "result": "default",
     "healthmultiply": 2.5,

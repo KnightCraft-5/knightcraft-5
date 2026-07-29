@@ -46,8 +46,8 @@ ANCHOR_HP, ANCHOR_DMG = 50.0, 12.0
 # matching rule, so these are emitted outermost-first. Nether uses 1/8 of each
 # threshold: getSharedSpawnPos() returns the OVERWORLD spawn in every dimension,
 # so nether distance is measured from nether origin and 1:8 keeps the rings aligned.
-RING_DIST = {1: 250, 2: 1200, 3: 2500, 4: 4000, 5: 6000,
-             6: 8500, 7: 11500, 8: 15000, 9: 19000}
+RING_DIST = {1: 2000, 2: 2950, 3: 4250, 4: 5750, 5: 7750,
+             6: 10250, 7: 13250, 8: 16750, 9: 20750}
 NETHER_DIV = 8
 TRASH_ARMOR = {a: max(0, a - 1) for a in range(1, 10)}
 
