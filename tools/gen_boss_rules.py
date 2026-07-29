@@ -40,7 +40,10 @@ SPAWN = INSTANCE / "config" / "incontrol" / "spawn.json"
 # Baselines are the vanilla zombie: 20 hp, 3 attack damage, 2 armour. Tougher
 # species scale above the ring number, which is intended.
 ZOMBIE_HP, ZOMBIE_DMG, ZOMBIE_ARMOR = 20.0, 3.0, 2.0
-ANCHOR_HP, ANCHOR_DMG = 50.0, 12.0
+# Owner's call 2026-07-29: trash was hitting too hard in play, so the anchor came
+# down from 50/12 to 40/9 (-20% hp, -25% damage). Everything else is derived, so
+# the whole ladder moves with it and the per-ring invariants below still hold.
+ANCHOR_HP, ANCHOR_DMG = 40.0, 9.0
 
 # Ring radius in blocks from world spawn, per act. In Control stops at the FIRST
 # matching rule, so these are emitted outermost-first. Nether uses 1/8 of each
