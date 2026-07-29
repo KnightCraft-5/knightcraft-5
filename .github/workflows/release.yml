@@ -52,24 +52,6 @@ jobs:
       - name: Re-run item-id check now that mods/ exists
         run: python3 tools/validate_quests.py
 
-      # Parity can only be judged once mods/ is real. preflight SKIPs this on a
-      # fresh checkout because mods/ is gitignored and restored above; here it
-      # runs for real, so a tag cannot publish a mod set that differs from the
-      # source of truth.
-      - name: Mod set matches KC5 2.1
-        run: |
-          python3 tools/deployments.py check || true
-          python3 - <<'EOF'
-          import json, subprocess, sys
-          out = subprocess.run(['python3','tools/deployments.py','check'],
-                               capture_output=True, text=True).stdout
-          for line in out.splitlines():
-              if line.strip().startswith('kc5-2.1') and 'DRIFTED' in line:
-                  print('::error::pack mod set has drifted from KC5 2.1')
-                  sys.exit(1)
-          print('mod set matches KC5 2.1')
-          EOF
-
       - name: Build all four artifacts
         id: build
         run: |

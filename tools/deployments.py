@@ -19,6 +19,12 @@ A deployment is one row in deployments.json: a name, where it runs, and the
 mod-set hash it was last seen with. `check` re-hashes this pack and tells you
 which deployments have diverged. `diff` names the exact jars.
 
+This is a REPORTING tool. It is deliberately not wired into preflight.sh or CI:
+a recorded deployment is a snapshot of some machine at some moment, and gating
+builds on it would mean every legitimate mod change fails the build until
+someone re-records the snapshot - a ratchet, not a safety net. Run it when you
+want to know; nothing runs it for you.
+
 Run:
   tools/deployments.py list
   tools/deployments.py hash                     # mod-set hash of this pack
