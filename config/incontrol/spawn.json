@@ -751,8 +751,8 @@
     "minspawndist": 2000,
     "when": "onjoin",
     "result": "default",
-    "healthmultiply": 2.0,
-    "damageadd": 6,
+    "healthmultiply": 1.0,
+    "damageadd": 0,
     "armoradd": 0
   },
   {
@@ -841,8 +841,8 @@
     "minspawndist": 250,
     "when": "onjoin",
     "result": "default",
-    "healthmultiply": 2.0,
-    "damageadd": 6,
+    "healthmultiply": 1.0,
+    "damageadd": 0,
     "armoradd": 0
   }
 ]

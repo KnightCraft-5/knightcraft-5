@@ -26,10 +26,16 @@ INSTANCE = pathlib.Path(__file__).resolve().parent.parent
 SPAWN = INSTANCE / "config" / "incontrol" / "spawn.json"
 
 # --- ambient (non-boss) mobs, one distance ring per act ---------------------
-# ANCHORED BY THE OWNER: an act-1 ring mob is 50 hp and 12 attack damage. Every
-# other ring is derived from that anchor so the experience stays constant as you
-# travel out - a ring's trash kills that act's player in the same number of hits,
-# and takes the same time to kill with that act's gear.
+# ANCHORED BY THE OWNER: the reference act-1 ring mob is 40 hp and 9 attack damage.
+# Every ring from act 2 out is derived from that anchor so the experience stays
+# constant as you travel out - a ring's trash kills that act's player in the same
+# number of hits, and takes the same time to kill with that act's gear.
+#
+# ACT 1 ITSELF IS NOT SCALED. Owner's call 2026-07-29: the ring nearest spawn is a
+# plain vanilla zone, so a new player is never scaled on before they have gear. The
+# anchor above still sets the shape of every OUTER ring; it just no longer describes
+# act 1. That puts a deliberate step at the act 1 -> act 2 boundary (3 -> 14 damage),
+# which is the price of a genuinely safe starting zone and is intended.
 #
 # DAMAGE IS FLAT (`damageadd`), NOT A MULTIPLIER. Measured: a suited player at 320
 # armour mitigates ~98% of a 20-damage hit, so multiplying a zombie's base 3 can
@@ -40,10 +46,13 @@ SPAWN = INSTANCE / "config" / "incontrol" / "spawn.json"
 # Baselines are the vanilla zombie: 20 hp, 3 attack damage, 2 armour. Tougher
 # species scale above the ring number, which is intended.
 ZOMBIE_HP, ZOMBIE_DMG, ZOMBIE_ARMOR = 20.0, 3.0, 2.0
-# Owner's call 2026-07-29: trash was hitting too hard in play, so the anchor came
-# down from 50/12 to 40/9 (-20% hp, -25% damage). Everything else is derived, so
-# the whole ladder moves with it and the per-ring invariants below still hold.
+# Came down from 50/12 to 40/9 (-20% hp, -25% damage) because trash was hitting too
+# hard in play. Acts 2-9 derive from this; act 1 is pinned to vanilla by FLAT_ACT1.
 ANCHOR_HP, ANCHOR_DMG = 40.0, 9.0
+# Act 1 emits healthmultiply 1.0 / damageadd 0 / armoradd 0 - a rule that changes
+# nothing. It is still emitted rather than omitted so the ring is explicit in
+# spawn.json and In Control stops there instead of falling through.
+FLAT_ACT1 = True
 
 # Ring radius in blocks from world spawn, per act. In Control stops at the FIRST
 # matching rule, so these are emitted outermost-first. Nether uses 1/8 of each
@@ -299,8 +308,13 @@ def ambient_stats():
         ad = g["weapon"] * g["gem"]
         hp = round(ad * DPS_PER_AD * armour_mult(ad, armor) * ttk / 5.0) * 5
         out[act] = dict(hp=float(hp), dmg=float(dmg), armor=armor)
-    # the anchor is the owner's number, not a derived one - pin it exactly
-    out[1]["hp"], out[1]["dmg"] = ANCHOR_HP, ANCHOR_DMG
+    # Act 1 is the safe zone: vanilla stats exactly, so its rule is a no-op. The
+    # anchor is still what acts 2-9 above were derived from - it sets their shape,
+    # it just is not what act 1 ships as.
+    if FLAT_ACT1:
+        out[1] = dict(hp=ZOMBIE_HP, dmg=ZOMBIE_DMG, armor=0)
+    else:
+        out[1]["hp"], out[1]["dmg"] = ANCHOR_HP, ANCHOR_DMG
     return out
 
 
