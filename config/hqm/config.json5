@@ -2,7 +2,7 @@
 	// Settings related to hardcore mode
 	"Hardcore": {
 		// How many lives players should start with.
-		"DEFAULT_LIVES": 3,
+		"DEFAULT_LIVES": 5,
 		// Define in seconds how long the rot timer is.
 		"HEART_ROT_TIME": 120,
 		// Set to true to enable the heart rot timer
