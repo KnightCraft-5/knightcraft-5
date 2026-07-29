@@ -13,7 +13,7 @@
 			per_level = 0.05
 			perk = "pmmo:attribute"
 			attribute = "forge:block_reach"
-			max_boost = 10.0
+			max_boost = 1.0
 
 		[[Perks.For_Event.SKILL_UP]]
 			skill = "building"
@@ -36,7 +36,7 @@
 			per_level = 1.5E-5
 			perk = "pmmo:attribute"
 			attribute = "minecraft:generic.movement_speed"
-			max_boost = 1.0
+			max_boost = 0.02
 
 		[[Perks.For_Event.SKILL_UP]]
 			skill = "agility"
@@ -47,7 +47,7 @@
 			per_level = 0.05
 			perk = "pmmo:attribute"
 			attribute = "minecraft:generic.max_health"
-			max_boost = 10.0
+			max_boost = 4.0
 
 		[[Perks.For_Event.SKILL_UP]]
 			skill = "endurance"
@@ -58,7 +58,7 @@
 			per_level = 0.005
 			perk = "pmmo:attribute"
 			attribute = "minecraft:generic.attack_damage"
-			max_boost = 1.0
+			max_boost = 0.5
 
 		[[Perks.For_Event.SKILL_UP]]
 			skill = "combat"
@@ -162,12 +162,14 @@
 			skill = "agility"
 			per_level = 0.025
 			perk = "pmmo:damage_reduce"
+			max_boost = 4.0
 
 		[[Perks.For_Event.RECEIVE_DAMAGE]]
 			for_damage = "minecraft:mob_attack"
 			skill = "endurance"
 			per_level = 0.025
 			perk = "pmmo:damage_reduce"
+			max_boost = 2.0
 
 		[[Perks.For_Event.SPRINT_JUMP]]
 			skill = "agility"
@@ -200,21 +202,29 @@
 			applies_to = ["minecraft:bow", "minecraft:crossbow", "minecraft:trident"]
 			skill = "archery"
 			perk = "pmmo:damage_boost"
+			per_level = 0.002
+			max_boost = 1.25
 
 		[[Perks.For_Event.DEAL_DAMAGE]]
 			applies_to = ["ars_nouveau:spell_bow"]
 			skill = "magic"
 			perk = "pmmo:damage_boost"
+			per_level = 0.002
+			max_boost = 1.25
 
 		[[Perks.For_Event.DEAL_DAMAGE]]
 			for_damage = ["#pmmo:magic"]
 			skill = "magic"
 			perk = "pmmo:damage_boost"
+			per_level = 0.002
+			max_boost = 1.25
 
 		[[Perks.For_Event.DEAL_DAMAGE]]
 			for_damage = ["#pmmo:gun"]
 			skill = "gunslinging"
 			perk = "pmmo:damage_boost"
+			per_level = 0.002
+			max_boost = 1.25
 
 		[[Perks.For_Event.SUBMERGED]]
 			skill = "swimming"
