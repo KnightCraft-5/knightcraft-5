@@ -64,8 +64,15 @@ FLAT_ACT1 = True
 # matching rule, so these are emitted outermost-first. Nether uses 1/8 of each
 # threshold: getSharedSpawnPos() returns the OVERWORLD spawn in every dimension,
 # so nether distance is measured from nether origin and 1:8 keeps the rings aligned.
-RING_DIST = {1: 2000, 2: 2950, 3: 4250, 4: 5750, 5: 7750,
-             6: 10250, 7: 13250, 8: 16750, 9: 20750}
+# Act 1 is the unscaled ring ("ring 0" in owner-speak) and starts at 300 blocks;
+# act 2 is the first ring that actually scales anything and starts at 3000. The
+# gaps from act 2 outwards are unchanged (+1300, +1500, +2000, +2500, +3000,
+# +3500, +4000), so only the two inner boundaries moved.
+#
+# Net effect: everything inside 3000 blocks of spawn is vanilla, because act 1's
+# rule is a no-op (FLAT_ACT1) and nothing at all matches below 300.
+RING_DIST = {1: 300, 2: 3000, 3: 4300, 4: 5800, 5: 7800,
+             6: 10300, 7: 13300, 8: 16800, 9: 20800}
 NETHER_DIV = 8
 TRASH_ARMOR = {a: max(0, a - 1) for a in range(1, 10)}
 
