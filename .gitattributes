@@ -1,0 +1,32 @@
+# Line endings. WHY THIS EXISTS:
+#
+# This repo had no .gitattributes at all, so 116 config blobs were committed
+# with CRLF - whatever the machine that last touched them happened to use. The
+# server repo DOES normalise (`* text=auto`), so every file synced between the
+# two flipped its line endings and showed up as fully rewritten, over and over.
+#
+# `text=auto` makes the repo canonical: LF inside git, and on checkout the
+# platform's native ending - CRLF on Windows, LF on Linux. Forge on Windows then
+# rewrites configs with the CRLF that is already there, so the bytes match and
+# `git status` stays clean.
+#
+# If a Windows clone ever shows hundreds of "modified" files again with an empty
+# `git diff`, the fix is `git add --renormalize .` - it stages nothing, edits no
+# file, and clears the stale stat cache. Never `git reset --hard` for this.
+* text=auto
+
+# Never touch these - converting a binary corrupts it. `text=auto` already
+# detects most binaries by content, but a file that happens to contain no NUL
+# bytes would slip through, so the known types are pinned explicitly.
+*.png    binary
+*.so     binary
+*.pyc    binary
+*.jar    binary
+*.zip    binary
+*.rar    binary
+*.ogg    binary
+*.nbt    binary
+*.dat    binary
+*.schem  binary
+*.mca    binary
+*.mcpack binary
