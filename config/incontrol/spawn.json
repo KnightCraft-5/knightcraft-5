@@ -662,7 +662,7 @@
     "when": "onjoin",
     "result": "default",
     "healthmultiply": 9.25,
-    "damageadd": 44,
+    "damageadd": 35,
     "armoradd": 8
   },
   {
@@ -672,7 +672,7 @@
     "when": "onjoin",
     "result": "default",
     "healthmultiply": 9.25,
-    "damageadd": 44,
+    "damageadd": 35,
     "armoradd": 8
   },
   {
@@ -682,7 +682,7 @@
     "when": "onjoin",
     "result": "default",
     "healthmultiply": 8.75,
-    "damageadd": 35,
+    "damageadd": 28,
     "armoradd": 7
   },
   {
@@ -692,7 +692,7 @@
     "when": "onjoin",
     "result": "default",
     "healthmultiply": 7.0,
-    "damageadd": 26,
+    "damageadd": 21,
     "armoradd": 6
   },
   {
@@ -702,7 +702,7 @@
     "when": "onjoin",
     "result": "default",
     "healthmultiply": 4.25,
-    "damageadd": 21,
+    "damageadd": 18,
     "armoradd": 5
   },
   {
@@ -712,7 +712,7 @@
     "when": "onjoin",
     "result": "default",
     "healthmultiply": 2.5,
-    "damageadd": 18,
+    "damageadd": 17,
     "armoradd": 4
   },
   {
@@ -722,7 +722,7 @@
     "when": "onjoin",
     "result": "default",
     "healthmultiply": 2.5,
-    "damageadd": 14,
+    "damageadd": 10,
     "armoradd": 3
   },
   {
@@ -732,7 +732,7 @@
     "when": "onjoin",
     "result": "default",
     "healthmultiply": 2.0,
-    "damageadd": 10,
+    "damageadd": 6,
     "armoradd": 2
   },
   {
@@ -742,7 +742,7 @@
     "when": "onjoin",
     "result": "default",
     "healthmultiply": 1.75,
-    "damageadd": 7,
+    "damageadd": 4,
     "armoradd": 1
   },
   {
@@ -762,7 +762,7 @@
     "when": "onjoin",
     "result": "default",
     "healthmultiply": 9.25,
-    "damageadd": 44,
+    "damageadd": 35,
     "armoradd": 8
   },
   {
@@ -772,7 +772,7 @@
     "when": "onjoin",
     "result": "default",
     "healthmultiply": 8.75,
-    "damageadd": 35,
+    "damageadd": 28,
     "armoradd": 7
   },
   {
@@ -782,7 +782,7 @@
     "when": "onjoin",
     "result": "default",
     "healthmultiply": 7.0,
-    "damageadd": 26,
+    "damageadd": 21,
     "armoradd": 6
   },
   {
@@ -792,7 +792,7 @@
     "when": "onjoin",
     "result": "default",
     "healthmultiply": 4.25,
-    "damageadd": 21,
+    "damageadd": 18,
     "armoradd": 5
   },
   {
@@ -802,7 +802,7 @@
     "when": "onjoin",
     "result": "default",
     "healthmultiply": 2.5,
-    "damageadd": 18,
+    "damageadd": 17,
     "armoradd": 4
   },
   {
@@ -812,7 +812,7 @@
     "when": "onjoin",
     "result": "default",
     "healthmultiply": 2.5,
-    "damageadd": 14,
+    "damageadd": 10,
     "armoradd": 3
   },
   {
@@ -822,7 +822,7 @@
     "when": "onjoin",
     "result": "default",
     "healthmultiply": 2.0,
-    "damageadd": 10,
+    "damageadd": 6,
     "armoradd": 2
   },
   {
@@ -832,7 +832,7 @@
     "when": "onjoin",
     "result": "default",
     "healthmultiply": 1.75,
-    "damageadd": 7,
+    "damageadd": 4,
     "armoradd": 1
   },
   {

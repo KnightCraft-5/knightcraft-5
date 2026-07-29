@@ -202,29 +202,21 @@
 			applies_to = ["minecraft:bow", "minecraft:crossbow", "minecraft:trident"]
 			skill = "archery"
 			perk = "pmmo:damage_boost"
-			per_level = 0.002
-			max_boost = 1.25
 
 		[[Perks.For_Event.DEAL_DAMAGE]]
 			applies_to = ["ars_nouveau:spell_bow"]
 			skill = "magic"
 			perk = "pmmo:damage_boost"
-			per_level = 0.002
-			max_boost = 1.25
 
 		[[Perks.For_Event.DEAL_DAMAGE]]
 			for_damage = ["#pmmo:magic"]
 			skill = "magic"
 			perk = "pmmo:damage_boost"
-			per_level = 0.002
-			max_boost = 1.25
 
 		[[Perks.For_Event.DEAL_DAMAGE]]
 			for_damage = ["#pmmo:gun"]
 			skill = "gunslinging"
 			perk = "pmmo:damage_boost"
-			per_level = 0.002
-			max_boost = 1.25
 
 		[[Perks.For_Event.SUBMERGED]]
 			skill = "swimming"
