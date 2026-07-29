@@ -46,9 +46,11 @@ SPAWN = INSTANCE / "config" / "incontrol" / "spawn.json"
 # Baselines are the vanilla zombie: 20 hp, 3 attack damage, 2 armour. Tougher
 # species scale above the ring number, which is intended.
 ZOMBIE_HP, ZOMBIE_DMG, ZOMBIE_ARMOR = 20.0, 3.0, 2.0
-# Came down from 50/12 to 40/9 (-20% hp, -25% damage) because trash was hitting too
-# hard in play. Acts 2-9 derive from this; act 1 is pinned to vanilla by FLAT_ACT1.
-ANCHOR_HP, ANCHOR_DMG = 40.0, 9.0
+# Walked down in play: 50/12 -> 40/9 -> 30/6. Acts 2-9 derive from this; act 1 is
+# pinned to vanilla by FLAT_ACT1, so this only moves the outer rings now. At 30/6 a
+# player survives ~5.7 hits per ring instead of ~3.8, and the act 1 -> act 2 step
+# softens from 3 -> 14 damage to 3 -> 10. Expected to keep moving as we play.
+ANCHOR_HP, ANCHOR_DMG = 30.0, 6.0
 # Act 1 emits healthmultiply 1.0 / damageadd 0 / armoradd 0 - a rule that changes
 # nothing. It is still emitted rather than omitted so the ring is explicit in
 # spawn.json and In Control stops there instead of falling through.

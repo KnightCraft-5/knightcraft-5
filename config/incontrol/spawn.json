@@ -661,8 +661,8 @@
     "hostile": true,
     "when": "onjoin",
     "result": "default",
-    "healthmultiply": 12.5,
-    "damageadd": 61,
+    "healthmultiply": 9.25,
+    "damageadd": 44,
     "armoradd": 8
   },
   {
@@ -671,8 +671,8 @@
     "minspawndist": 20750,
     "when": "onjoin",
     "result": "default",
-    "healthmultiply": 12.5,
-    "damageadd": 61,
+    "healthmultiply": 9.25,
+    "damageadd": 44,
     "armoradd": 8
   },
   {
@@ -681,8 +681,8 @@
     "minspawndist": 16750,
     "when": "onjoin",
     "result": "default",
-    "healthmultiply": 11.75,
-    "damageadd": 48,
+    "healthmultiply": 8.75,
+    "damageadd": 35,
     "armoradd": 7
   },
   {
@@ -691,8 +691,8 @@
     "minspawndist": 13250,
     "when": "onjoin",
     "result": "default",
-    "healthmultiply": 9.5,
-    "damageadd": 35,
+    "healthmultiply": 7.0,
+    "damageadd": 26,
     "armoradd": 6
   },
   {
@@ -701,8 +701,8 @@
     "minspawndist": 10250,
     "when": "onjoin",
     "result": "default",
-    "healthmultiply": 5.75,
-    "damageadd": 28,
+    "healthmultiply": 4.25,
+    "damageadd": 21,
     "armoradd": 5
   },
   {
@@ -711,8 +711,8 @@
     "minspawndist": 7750,
     "when": "onjoin",
     "result": "default",
-    "healthmultiply": 3.25,
-    "damageadd": 23,
+    "healthmultiply": 2.5,
+    "damageadd": 18,
     "armoradd": 4
   },
   {
@@ -721,8 +721,8 @@
     "minspawndist": 5750,
     "when": "onjoin",
     "result": "default",
-    "healthmultiply": 3.25,
-    "damageadd": 18,
+    "healthmultiply": 2.5,
+    "damageadd": 14,
     "armoradd": 3
   },
   {
@@ -731,8 +731,8 @@
     "minspawndist": 4250,
     "when": "onjoin",
     "result": "default",
-    "healthmultiply": 2.5,
-    "damageadd": 16,
+    "healthmultiply": 2.0,
+    "damageadd": 10,
     "armoradd": 2
   },
   {
@@ -741,8 +741,8 @@
     "minspawndist": 2950,
     "when": "onjoin",
     "result": "default",
-    "healthmultiply": 2.25,
-    "damageadd": 11,
+    "healthmultiply": 1.75,
+    "damageadd": 7,
     "armoradd": 1
   },
   {
@@ -761,8 +761,8 @@
     "minspawndist": 2593,
     "when": "onjoin",
     "result": "default",
-    "healthmultiply": 12.5,
-    "damageadd": 61,
+    "healthmultiply": 9.25,
+    "damageadd": 44,
     "armoradd": 8
   },
   {
@@ -771,8 +771,8 @@
     "minspawndist": 2093,
     "when": "onjoin",
     "result": "default",
-    "healthmultiply": 11.75,
-    "damageadd": 48,
+    "healthmultiply": 8.75,
+    "damageadd": 35,
     "armoradd": 7
   },
   {
@@ -781,8 +781,8 @@
     "minspawndist": 1656,
     "when": "onjoin",
     "result": "default",
-    "healthmultiply": 9.5,
-    "damageadd": 35,
+    "healthmultiply": 7.0,
+    "damageadd": 26,
     "armoradd": 6
   },
   {
@@ -791,8 +791,8 @@
     "minspawndist": 1281,
     "when": "onjoin",
     "result": "default",
-    "healthmultiply": 5.75,
-    "damageadd": 28,
+    "healthmultiply": 4.25,
+    "damageadd": 21,
     "armoradd": 5
   },
   {
@@ -801,8 +801,8 @@
     "minspawndist": 968,
     "when": "onjoin",
     "result": "default",
-    "healthmultiply": 3.25,
-    "damageadd": 23,
+    "healthmultiply": 2.5,
+    "damageadd": 18,
     "armoradd": 4
   },
   {
@@ -811,8 +811,8 @@
     "minspawndist": 718,
     "when": "onjoin",
     "result": "default",
-    "healthmultiply": 3.25,
-    "damageadd": 18,
+    "healthmultiply": 2.5,
+    "damageadd": 14,
     "armoradd": 3
   },
   {
@@ -821,8 +821,8 @@
     "minspawndist": 531,
     "when": "onjoin",
     "result": "default",
-    "healthmultiply": 2.5,
-    "damageadd": 16,
+    "healthmultiply": 2.0,
+    "damageadd": 10,
     "armoradd": 2
   },
   {
@@ -831,8 +831,8 @@
     "minspawndist": 368,
     "when": "onjoin",
     "result": "default",
-    "healthmultiply": 2.25,
-    "damageadd": 11,
+    "healthmultiply": 1.75,
+    "damageadd": 7,
     "armoradd": 1
   },
   {
