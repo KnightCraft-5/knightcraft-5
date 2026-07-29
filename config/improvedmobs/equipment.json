@@ -1,0 +1,4980 @@
+{
+  "__comment": [
+    "Mobs will be able to equip items declared here",
+    "The first number is the weight while the second number is the quality",
+    "Weight is the weight of an item. Higher weight means that the item is more likely to get choosen",
+    "Quality is a modifier applied to the weight. The final weight used is weight + quality * current difficulty"
+  ],
+  "MAINHAND": {
+    "alexsmobs:skelewag_sword": [
+      25812,
+      0.7804518
+    ],
+    "alexsmobs:tendon_whip": [
+      26109,
+      0.0469
+    ],
+    "aquaculture:diamond_fillet_knife": [
+      24580,
+      2.3810277
+    ],
+    "aquaculture:gold_fillet_knife": [
+      26538,
+      0.0039999997
+    ],
+    "aquaculture:iron_fillet_knife": [
+      26256,
+      0.0322
+    ],
+    "aquaculture:neptunium_axe": [
+      23355,
+      5.9057183
+    ],
+    "aquaculture:neptunium_bow": [
+      19778,
+      13.389866
+    ],
+    "aquaculture:neptunium_fillet_knife": [
+      26569,
+      8.999999E-4
+    ],
+    "aquaculture:neptunium_sword": [
+      23421,
+      5.767269
+    ],
+    "aquaculture:stone_fillet_knife": [
+      26410,
+      0.0168
+    ],
+    "aquaculture:wooden_fillet_knife": [
+      26504,
+      0.0074
+    ],
+    "aquaculturedelight:neptunium_knife": [
+      23481,
+      5.6411676
+    ],
+    "ars_nouveau:enchanters_sword": [
+      23007,
+      6.632802
+    ],
+    "ars_nouveau:spell_bow": [
+      24778,
+      2.1195521
+    ],
+    "ars_nouveau:spell_crossbow": [
+      25234,
+      1.5245426
+    ],
+    "bhc:blade_of_vitality": [
+      23007,
+      6.632802
+    ],
+    "born_in_chaos_v1:birch_branches": [
+      26054,
+      0.40784094
+    ],
+    "born_in_chaos_v1:carrot_sword": [
+      25481,
+      1.2063804
+    ],
+    "born_in_chaos_v1:dark_ritual_dagger": [
+      25323,
+      1.4096019
+    ],
+    "born_in_chaos_v1:darkwarblade": [
+      19382,
+      14.226674
+    ],
+    "born_in_chaos_v1:frostbitten_blade": [
+      24643,
+      2.2976365
+    ],
+    "born_in_chaos_v1:great_reaper_axe": [
+      24519,
+      3.1486528
+    ],
+    "born_in_chaos_v1:icy_sweetness": [
+      23113,
+      6.411711
+    ],
+    "born_in_chaos_v1:intoxicating_dagger": [
+      24643,
+      2.2976365
+    ],
+    "born_in_chaos_v1:nightmare_scythe": [
+      25236,
+      1.5219555
+    ],
+    "born_in_chaos_v1:nut_hammer": [
+      26109,
+      0.0469
+    ],
+    "born_in_chaos_v1:sharpened_dark_metal_sword": [
+      24618,
+      2.330707
+    ],
+    "born_in_chaos_v1:shell_mace": [
+      25779,
+      0.8234185
+    ],
+    "born_in_chaos_v1:skullbreaker_hammer": [
+      23458,
+      5.689535
+    ],
+    "born_in_chaos_v1:soul_cutlass": [
+      25323,
+      1.4096019
+    ],
+    "born_in_chaos_v1:soulbane": [
+      21242,
+      10.312961
+    ],
+    "born_in_chaos_v1:spider_bite_sword": [
+      24643,
+      2.2976365
+    ],
+    "born_in_chaos_v1:spiritual_sword": [
+      25684,
+      0.94598794
+    ],
+    "born_in_chaos_v1:supreme_measure": [
+      1432,
+      53.470917
+    ],
+    "born_in_chaos_v1:sweet_axe": [
+      25406,
+      1.3027282
+    ],
+    "born_in_chaos_v1:sweet_sword": [
+      25481,
+      1.2063804
+    ],
+    "born_in_chaos_v1:trident_hayfork": [
+      25967,
+      0.56912816
+    ],
+    "born_in_chaos_v1:wood_splitter_axe": [
+      25930,
+      0.6222344
+    ],
+    "cataclysm:athame": [
+      26109,
+      0.0469
+    ],
+    "cataclysm:black_steel_axe": [
+      25151,
+      1.6320775
+    ],
+    "cataclysm:black_steel_sword": [
+      25238,
+      1.5193686
+    ],
+    "cataclysm:khopesh": [
+      25259,
+      1.4922183
+    ],
+    "create:cardboard_sword": [
+      26513,
+      0.0064999997
+    ],
+    "epicfight:bokken": [
+      26451,
+      0.0127
+    ],
+    "epicfight:diamond_dagger": [
+      23881,
+      4.790248
+    ],
+    "epicfight:diamond_greatsword": [
+      23651,
+      5.2822285
+    ],
+    "epicfight:diamond_longsword": [
+      23806,
+      4.951788
+    ],
+    "epicfight:diamond_spear": [
+      23835,
+      4.889481
+    ],
+    "epicfight:diamond_tachi": [
+      23806,
+      4.951788
+    ],
+    "epicfight:glove": [
+      26131,
+      0.044699997
+    ],
+    "epicfight:golden_dagger": [
+      26519,
+      0.0058999998
+    ],
+    "epicfight:golden_greatsword": [
+      26288,
+      0.028999997
+    ],
+    "epicfight:golden_longsword": [
+      26480,
+      0.009799999
+    ],
+    "epicfight:golden_spear": [
+      26497,
+      0.0081
+    ],
+    "epicfight:golden_tachi": [
+      26480,
+      0.009799999
+    ],
+    "epicfight:iron_dagger": [
+      26126,
+      0.045199998
+    ],
+    "epicfight:iron_greatsword": [
+      25895,
+      0.670341
+    ],
+    "epicfight:iron_longsword": [
+      26063,
+      0.37663084
+    ],
+    "epicfight:iron_spear": [
+      26088,
+      0.049
+    ],
+    "epicfight:iron_tachi": [
+      26063,
+      0.37663084
+    ],
+    "epicfight:netherite_dagger": [
+      23061,
+      6.5202
+    ],
+    "epicfight:netherite_greatsword": [
+      22834,
+      6.9932466
+    ],
+    "epicfight:netherite_longsword": [
+      22974,
+      6.701589
+    ],
+    "epicfight:netherite_spear": [
+      23007,
+      6.632802
+    ],
+    "epicfight:netherite_tachi": [
+      22974,
+      6.701589
+    ],
+    "epicfight:stone_dagger": [
+      26342,
+      0.023599999
+    ],
+    "epicfight:stone_greatsword": [
+      26110,
+      0.0468
+    ],
+    "epicfight:stone_longsword": [
+      26291,
+      0.028699998
+    ],
+    "epicfight:stone_spear": [
+      26312,
+      0.026599998
+    ],
+    "epicfight:stone_tachi": [
+      26291,
+      0.028699998
+    ],
+    "epicfight:uchigatana": [
+      23726,
+      5.1228175
+    ],
+    "epicfight:wooden_dagger": [
+      26473,
+      0.010499999
+    ],
+    "epicfight:wooden_greatsword": [
+      26242,
+      0.0336
+    ],
+    "epicfight:wooden_longsword": [
+      26434,
+      0.014399999
+    ],
+    "epicfight:wooden_spear": [
+      26451,
+      0.0127
+    ],
+    "epicfight:wooden_tachi": [
+      26434,
+      0.014399999
+    ],
+    "fantasy_weapons:weapon_banished_knight_greatsword": [
+      22937,
+      6.778693
+    ],
+    "fantasy_weapons:weapon_black_katana": [
+      22937,
+      6.778693
+    ],
+    "fantasy_weapons:weapon_chess_board_knight_polearm": [
+      22937,
+      6.778693
+    ],
+    "fantasy_weapons:weapon_crimson_reaper": [
+      22937,
+      6.778693
+    ],
+    "fantasy_weapons:weapon_crucible_greatsword": [
+      22937,
+      6.778693
+    ],
+    "fantasy_weapons:weapon_cursed_blade": [
+      22937,
+      6.778693
+    ],
+    "fantasy_weapons:weapon_dancing_blade_of_ranah": [
+      22937,
+      6.778693
+    ],
+    "fantasy_weapons:weapon_dark_cover_sword": [
+      22937,
+      6.778693
+    ],
+    "fantasy_weapons:weapon_dark_lord_sword": [
+      22937,
+      6.778693
+    ],
+    "fantasy_weapons:weapon_dark_moon_greatsword": [
+      22937,
+      6.778693
+    ],
+    "fantasy_weapons:weapon_desert_wind": [
+      22937,
+      6.778693
+    ],
+    "fantasy_weapons:weapon_dragons_doom": [
+      22937,
+      6.778693
+    ],
+    "fantasy_weapons:weapon_dragonslayer_halberd": [
+      22937,
+      6.778693
+    ],
+    "fantasy_weapons:weapon_eclipse_soldier_spear": [
+      22937,
+      6.778693
+    ],
+    "fantasy_weapons:weapon_estoc": [
+      22937,
+      6.778693
+    ],
+    "fantasy_weapons:weapon_fates_beacon": [
+      22937,
+      6.778693
+    ],
+    "fantasy_weapons:weapon_fog_guard_dagger": [
+      22937,
+      6.778693
+    ],
+    "fantasy_weapons:weapon_fog_guard_sword": [
+      22937,
+      6.778693
+    ],
+    "fantasy_weapons:weapon_forgotten_trace_spear": [
+      22937,
+      6.778693
+    ],
+    "fantasy_weapons:weapon_fury_of_the_storm": [
+      22937,
+      6.778693
+    ],
+    "fantasy_weapons:weapon_generic_rapier": [
+      22937,
+      6.778693
+    ],
+    "fantasy_weapons:weapon_golden_execution_battleaxe": [
+      22937,
+      6.778693
+    ],
+    "fantasy_weapons:weapon_golden_halberd": [
+      22937,
+      6.778693
+    ],
+    "fantasy_weapons:weapon_golden_horns_battleaxe": [
+      22937,
+      6.778693
+    ],
+    "fantasy_weapons:weapon_great_katana": [
+      22937,
+      6.778693
+    ],
+    "fantasy_weapons:weapon_hand_of_malenia": [
+      22937,
+      6.778693
+    ],
+    "fantasy_weapons:weapon_hefty_club": [
+      22937,
+      6.778693
+    ],
+    "fantasy_weapons:weapon_hero_claymore": [
+      22937,
+      6.778693
+    ],
+    "fantasy_weapons:weapon_infected_sharp_curved_sword": [
+      22937,
+      6.778693
+    ],
+    "fantasy_weapons:weapon_infected_sharp_spear": [
+      22937,
+      6.778693
+    ],
+    "fantasy_weapons:weapon_infected_sharp_sword": [
+      22937,
+      6.778693
+    ],
+    "fantasy_weapons:weapon_kingslayer": [
+      22937,
+      6.778693
+    ],
+    "fantasy_weapons:weapon_knight_greatsword": [
+      22937,
+      6.778693
+    ],
+    "fantasy_weapons:weapon_knight_halberd": [
+      22937,
+      6.778693
+    ],
+    "fantasy_weapons:weapon_marai_executioner_sword": [
+      22937,
+      6.778693
+    ],
+    "fantasy_weapons:weapon_marika_hammer": [
+      22937,
+      6.778693
+    ],
+    "fantasy_weapons:weapon_misericorde": [
+      22937,
+      6.778693
+    ],
+    "fantasy_weapons:weapon_nagakiba": [
+      22937,
+      6.778693
+    ],
+    "fantasy_weapons:weapon_old_blade": [
+      22937,
+      6.778693
+    ],
+    "fantasy_weapons:weapon_old_broadsword": [
+      22937,
+      6.778693
+    ],
+    "fantasy_weapons:weapon_old_dagger": [
+      22937,
+      6.778693
+    ],
+    "fantasy_weapons:weapon_phantom_needle": [
+      22937,
+      6.778693
+    ],
+    "fantasy_weapons:weapon_rivers_of_blood": [
+      22937,
+      6.778693
+    ],
+    "fantasy_weapons:weapon_royal_greatsword": [
+      22937,
+      6.778693
+    ],
+    "fantasy_weapons:weapon_savage_dagger": [
+      22937,
+      6.778693
+    ],
+    "fantasy_weapons:weapon_savage_hammer": [
+      22937,
+      6.778693
+    ],
+    "fantasy_weapons:weapon_savage_spear": [
+      22937,
+      6.778693
+    ],
+    "fantasy_weapons:weapon_savage_sword": [
+      22937,
+      6.778693
+    ],
+    "fantasy_weapons:weapon_sharp_curved_sword": [
+      22937,
+      6.778693
+    ],
+    "fantasy_weapons:weapon_sharp_spear": [
+      22937,
+      6.778693
+    ],
+    "fantasy_weapons:weapon_sharp_sword": [
+      22937,
+      6.778693
+    ],
+    "fantasy_weapons:weapon_soldier_greatspear": [
+      22937,
+      6.778693
+    ],
+    "fantasy_weapons:weapon_spark_of_dawn_polearm": [
+      22937,
+      6.778693
+    ],
+    "fantasy_weapons:weapon_spider_fang": [
+      22937,
+      6.778693
+    ],
+    "fantasy_weapons:weapon_sunset_wings_claymore": [
+      22937,
+      6.778693
+    ],
+    "fantasy_weapons:weapon_thief_dagger": [
+      22937,
+      6.778693
+    ],
+    "fantasy_weapons:weapon_volcano_flame": [
+      22937,
+      6.778693
+    ],
+    "fantasy_weapons:weapon_wakizashi": [
+      22937,
+      6.778693
+    ],
+    "fantasy_weapons:weapon_wandering_wizard_sword": [
+      22937,
+      6.778693
+    ],
+    "fantasy_weapons:weapon_watchdog_greatsword": [
+      22937,
+      6.778693
+    ],
+    "fantasy_weapons:weapon_zweihander": [
+      22937,
+      6.778693
+    ],
+    "iceandfire:amphithere_macuahuitl": [
+      25684,
+      0.94598794
+    ],
+    "iceandfire:copper_axe": [
+      26003,
+      0.5130528
+    ],
+    "iceandfire:copper_sword": [
+      26041,
+      0.44120392
+    ],
+    "iceandfire:dragonbone_axe": [
+      23567,
+      5.459938
+    ],
+    "iceandfire:dragonbone_bow": [
+      23610,
+      5.3690643
+    ],
+    "iceandfire:dragonbone_sword": [
+      23637,
+      5.311902
+    ],
+    "iceandfire:dragonbone_sword_fire": [
+      23008,
+      6.6307178
+    ],
+    "iceandfire:dragonbone_sword_ice": [
+      23008,
+      6.6307178
+    ],
+    "iceandfire:dragonbone_sword_lightning": [
+      23008,
+      6.6307178
+    ],
+    "iceandfire:dragonsteel_fire_axe": [
+      12112,
+      29.865591
+    ],
+    "iceandfire:dragonsteel_fire_sword": [
+      12384,
+      29.272722
+    ],
+    "iceandfire:dragonsteel_ice_axe": [
+      12112,
+      29.865591
+    ],
+    "iceandfire:dragonsteel_ice_sword": [
+      12384,
+      29.272722
+    ],
+    "iceandfire:dragonsteel_lightning_axe": [
+      12112,
+      29.865591
+    ],
+    "iceandfire:dragonsteel_lightning_sword": [
+      12384,
+      29.272722
+    ],
+    "iceandfire:dread_knight_sword": [
+      24224,
+      4.0215507
+    ],
+    "iceandfire:dread_queen_sword": [
+      12384,
+      29.272722
+    ],
+    "iceandfire:dread_sword": [
+      26364,
+      0.021399999
+    ],
+    "iceandfire:ghost_sword": [
+      21248,
+      10.300405
+    ],
+    "iceandfire:hippocampus_slapper": [
+      25723,
+      0.89580816
+    ],
+    "iceandfire:hippogryph_sword": [
+      25651,
+      0.988363
+    ],
+    "iceandfire:myrmex_desert_axe": [
+      25468,
+      1.2230678
+    ],
+    "iceandfire:myrmex_desert_sword": [
+      25514,
+      1.1640399
+    ],
+    "iceandfire:myrmex_desert_sword_venom": [
+      25514,
+      1.1640399
+    ],
+    "iceandfire:myrmex_jungle_axe": [
+      25468,
+      1.2230678
+    ],
+    "iceandfire:myrmex_jungle_sword": [
+      25514,
+      1.1640399
+    ],
+    "iceandfire:myrmex_jungle_sword_venom": [
+      25514,
+      1.1640399
+    ],
+    "iceandfire:silver_axe": [
+      25706,
+      0.91769844
+    ],
+    "iceandfire:silver_sword": [
+      25752,
+      0.8583848
+    ],
+    "iceandfire:stymphalian_bird_dagger": [
+      25663,
+      0.9729605
+    ],
+    "iceandfire:troll_weapon_axe": [
+      25754,
+      0.8557993
+    ],
+    "iceandfire:troll_weapon_column": [
+      25754,
+      0.8557993
+    ],
+    "iceandfire:troll_weapon_column_forest": [
+      25754,
+      0.8557993
+    ],
+    "iceandfire:troll_weapon_column_frost": [
+      25754,
+      0.8557993
+    ],
+    "iceandfire:troll_weapon_hammer": [
+      25754,
+      0.8557993
+    ],
+    "iceandfire:troll_weapon_trunk": [
+      25754,
+      0.8557993
+    ],
+    "iceandfire:troll_weapon_trunk_frost": [
+      25754,
+      0.8557993
+    ],
+    "legendary_monsters:anchor_handle": [
+      26088,
+      0.049
+    ],
+    "legendary_monsters:axe_of_lightning": [
+      21232,
+      10.333886
+    ],
+    "legendary_monsters:chorus_blade": [
+      25213,
+      1.5517184
+    ],
+    "legendary_monsters:chorus_cannon": [
+      24178,
+      4.129458
+    ],
+    "legendary_monsters:dinosaur_bone_club": [
+      23621,
+      5.345786
+    ],
+    "legendary_monsters:enderitium_axe": [
+      22838,
+      6.984916
+    ],
+    "legendary_monsters:enderitium_sickle": [
+      22931,
+      6.791195
+    ],
+    "legendary_monsters:enderitium_sword": [
+      22904,
+      6.8474464
+    ],
+    "legendary_monsters:fiery_jaw": [
+      25238,
+      1.5193686
+    ],
+    "legendary_monsters:golden_halbert": [
+      26076,
+      0.26597553
+    ],
+    "legendary_monsters:knights_sword": [
+      26088,
+      0.049
+    ],
+    "legendary_monsters:monstrous_anchor": [
+      24450,
+      3.4189806
+    ],
+    "legendary_monsters:sand_cannon": [
+      24178,
+      4.129458
+    ],
+    "legendary_monsters:sharp_battle_axe": [
+      25213,
+      1.5517184
+    ],
+    "legendary_monsters:sharp_sai": [
+      26088,
+      0.049
+    ],
+    "legendary_monsters:shattered_greatsword": [
+      23792,
+      4.981804
+    ],
+    "legendary_monsters:somber_key": [
+      25879,
+      0.69190335
+    ],
+    "legendary_monsters:soul_great_sword": [
+      22337,
+      8.02791
+    ],
+    "legendary_monsters:the_great_frost": [
+      25213,
+      1.5517184
+    ],
+    "legendary_monsters:the_tesseract": [
+      22734,
+      7.2014647
+    ],
+    "legendary_monsters:void_sword": [
+      26088,
+      0.049
+    ],
+    "magistuarmory:barbedclub": [
+      25987,
+      0.5387573
+    ],
+    "magistuarmory:blacksmith_hammer": [
+      25539,
+      1.1319785
+    ],
+    "magistuarmory:bronze_ahlspiess": [
+      26132,
+      0.0446
+    ],
+    "magistuarmory:bronze_bastardsword": [
+      26099,
+      0.0479
+    ],
+    "magistuarmory:bronze_chainmorgenstern": [
+      25932,
+      0.61943495
+    ],
+    "magistuarmory:bronze_chivalrylance": [
+      26140,
+      0.0438
+    ],
+    "magistuarmory:bronze_claymore": [
+      25919,
+      0.6375215
+    ],
+    "magistuarmory:bronze_concavehalberd": [
+      25918,
+      0.63890266
+    ],
+    "magistuarmory:bronze_estoc": [
+      26104,
+      0.047399998
+    ],
+    "magistuarmory:bronze_flamebladedsword": [
+      25970,
+      0.5646679
+    ],
+    "magistuarmory:bronze_guisarme": [
+      26148,
+      0.042999998
+    ],
+    "magistuarmory:bronze_heavymace": [
+      26016,
+      0.49075553
+    ],
+    "magistuarmory:bronze_heavywarhammer": [
+      26000,
+      0.51799655
+    ],
+    "magistuarmory:bronze_katzbalger": [
+      26170,
+      0.040799998
+    ],
+    "magistuarmory:bronze_lochaberaxe": [
+      25922,
+      0.63336974
+    ],
+    "magistuarmory:bronze_lucernhammer": [
+      26025,
+      0.47422305
+    ],
+    "magistuarmory:bronze_morgenstern": [
+      26026,
+      0.47231403
+    ],
+    "magistuarmory:bronze_pike": [
+      26156,
+      0.042199995
+    ],
+    "magistuarmory:bronze_ranseur": [
+      26148,
+      0.042999998
+    ],
+    "magistuarmory:bronze_shortsword": [
+      26187,
+      0.0391
+    ],
+    "magistuarmory:bronze_stylet": [
+      26194,
+      0.038399998
+    ],
+    "magistuarmory:bronze_zweihander": [
+      25970,
+      0.5646679
+    ],
+    "magistuarmory:club": [
+      26359,
+      0.0219
+    ],
+    "magistuarmory:copper_ahlspiess": [
+      26274,
+      0.030399999
+    ],
+    "magistuarmory:copper_bastardsword": [
+      26250,
+      0.0328
+    ],
+    "magistuarmory:copper_chainmorgenstern": [
+      26152,
+      0.0426
+    ],
+    "magistuarmory:copper_chivalrylance": [
+      26303,
+      0.0275
+    ],
+    "magistuarmory:copper_claymore": [
+      26124,
+      0.045399997
+    ],
+    "magistuarmory:copper_concavehalberd": [
+      26133,
+      0.044499997
+    ],
+    "magistuarmory:copper_estoc": [
+      26253,
+      0.0325
+    ],
+    "magistuarmory:copper_flamebladedsword": [
+      26171,
+      0.040699996
+    ],
+    "magistuarmory:copper_guisarme": [
+      26294,
+      0.028399998
+    ],
+    "magistuarmory:copper_heavymace": [
+      26201,
+      0.037699997
+    ],
+    "magistuarmory:copper_heavywarhammer": [
+      26196,
+      0.0382
+    ],
+    "magistuarmory:copper_katzbalger": [
+      26293,
+      0.028499998
+    ],
+    "magistuarmory:copper_lochaberaxe": [
+      26142,
+      0.0436
+    ],
+    "magistuarmory:copper_lucernhammer": [
+      26210,
+      0.036799997
+    ],
+    "magistuarmory:copper_morgenstern": [
+      26203,
+      0.037499998
+    ],
+    "magistuarmory:copper_pike": [
+      26296,
+      0.028199999
+    ],
+    "magistuarmory:copper_ranseur": [
+      26292,
+      0.028599998
+    ],
+    "magistuarmory:copper_shortsword": [
+      26303,
+      0.0275
+    ],
+    "magistuarmory:copper_stylet": [
+      26309,
+      0.0269
+    ],
+    "magistuarmory:copper_zweihander": [
+      26171,
+      0.040699996
+    ],
+    "magistuarmory:diamond_ahlspiess": [
+      23555,
+      5.485265
+    ],
+    "magistuarmory:diamond_bastardsword": [
+      23520,
+      5.5590596
+    ],
+    "magistuarmory:diamond_chainmorgenstern": [
+      22893,
+      6.8703613
+    ],
+    "magistuarmory:diamond_chivalrylance": [
+      23766,
+      5.0374475
+    ],
+    "magistuarmory:diamond_claymore": [
+      22401,
+      7.89466
+    ],
+    "magistuarmory:diamond_concavehalberd": [
+      23009,
+      6.6286325
+    ],
+    "magistuarmory:diamond_estoc": [
+      23525,
+      5.5485244
+    ],
+    "magistuarmory:diamond_flamebladedsword": [
+      23031,
+      6.5827637
+    ],
+    "magistuarmory:diamond_guisarme": [
+      23793,
+      4.9796605
+    ],
+    "magistuarmory:diamond_heavymace": [
+      23075,
+      6.490998
+    ],
+    "magistuarmory:diamond_heavywarhammer": [
+      23051,
+      6.5410576
+    ],
+    "magistuarmory:diamond_katzbalger": [
+      23833,
+      4.8937836
+    ],
+    "magistuarmory:diamond_lochaberaxe": [
+      23019,
+      6.6077847
+    ],
+    "magistuarmory:diamond_lucernhammer": [
+      23083,
+      6.4743094
+    ],
+    "magistuarmory:diamond_morgenstern": [
+      23091,
+      6.4576178
+    ],
+    "magistuarmory:diamond_pike": [
+      23803,
+      4.958223
+    ],
+    "magistuarmory:diamond_ranseur": [
+      23794,
+      4.977518
+    ],
+    "magistuarmory:diamond_shortsword": [
+      23853,
+      4.8507123
+    ],
+    "magistuarmory:diamond_stylet": [
+      23860,
+      4.8356147
+    ],
+    "magistuarmory:diamond_zweihander": [
+      23031,
+      6.5827637
+    ],
+    "magistuarmory:gold_ahlspiess": [
+      26495,
+      0.0083
+    ],
+    "magistuarmory:gold_bastardsword": [
+      26471,
+      0.0106999995
+    ],
+    "magistuarmory:gold_chainmorgenstern": [
+      26414,
+      0.0164
+    ],
+    "magistuarmory:gold_chivalrylance": [
+      26504,
+      0.0074
+    ],
+    "magistuarmory:gold_claymore": [
+      26425,
+      0.015299999
+    ],
+    "magistuarmory:gold_concavehalberd": [
+      26382,
+      0.019599998
+    ],
+    "magistuarmory:gold_estoc": [
+      26474,
+      0.010399999
+    ],
+    "magistuarmory:gold_flamebladedsword": [
+      26420,
+      0.0158
+    ],
+    "magistuarmory:gold_guisarme": [
+      26495,
+      0.0083
+    ],
+    "magistuarmory:gold_heavymace": [
+      26450,
+      0.0128
+    ],
+    "magistuarmory:gold_heavywarhammer": [
+      26445,
+      0.013299999
+    ],
+    "magistuarmory:gold_katzbalger": [
+      26494,
+      0.0084
+    ],
+    "magistuarmory:gold_lochaberaxe": [
+      26391,
+      0.0187
+    ],
+    "magistuarmory:gold_lucernhammer": [
+      26459,
+      0.011899999
+    ],
+    "magistuarmory:gold_morgenstern": [
+      26452,
+      0.0126
+    ],
+    "magistuarmory:gold_pike": [
+      26497,
+      0.0081
+    ],
+    "magistuarmory:gold_ranseur": [
+      26493,
+      0.0084999995
+    ],
+    "magistuarmory:gold_shortsword": [
+      26504,
+      0.0074
+    ],
+    "magistuarmory:gold_stylet": [
+      26510,
+      0.0068
+    ],
+    "magistuarmory:gold_zweihander": [
+      26420,
+      0.0158
+    ],
+    "magistuarmory:heavy_crossbow": [
+      24234,
+      3.9977505
+    ],
+    "magistuarmory:iron_ahlspiess": [
+      26039,
+      0.44568464
+    ],
+    "magistuarmory:iron_bastardsword": [
+      26006,
+      0.50804096
+    ],
+    "magistuarmory:iron_chainmorgenstern": [
+      25822,
+      0.7673663
+    ],
+    "magistuarmory:iron_chivalrylance": [
+      26055,
+      0.40483674
+    ],
+    "magistuarmory:iron_claymore": [
+      25792,
+      0.80652726
+    ],
+    "magistuarmory:iron_concavehalberd": [
+      25813,
+      0.7791448
+    ],
+    "magistuarmory:iron_estoc": [
+      26011,
+      0.49951923
+    ],
+    "magistuarmory:iron_flamebladedsword": [
+      25865,
+      0.7106087
+    ],
+    "magistuarmory:iron_guisarme": [
+      26063,
+      0.37663084
+    ],
+    "magistuarmory:iron_heavymace": [
+      25911,
+      0.648535
+    ],
+    "magistuarmory:iron_heavywarhammer": [
+      25895,
+      0.670341
+    ],
+    "magistuarmory:iron_katzbalger": [
+      26085,
+      0.049299996
+    ],
+    "magistuarmory:iron_lochaberaxe": [
+      25817,
+      0.7739134
+    ],
+    "magistuarmory:iron_lucernhammer": [
+      25920,
+      0.636139
+    ],
+    "magistuarmory:iron_morgenstern": [
+      25921,
+      0.634755
+    ],
+    "magistuarmory:iron_pike": [
+      26071,
+      0.33213976
+    ],
+    "magistuarmory:iron_ranseur": [
+      26063,
+      0.37663084
+    ],
+    "magistuarmory:iron_shortsword": [
+      26102,
+      0.047599997
+    ],
+    "magistuarmory:iron_stylet": [
+      26109,
+      0.0469
+    ],
+    "magistuarmory:iron_zweihander": [
+      25865,
+      0.7106087
+    ],
+    "magistuarmory:longbow": [
+      23938,
+      4.666484
+    ],
+    "magistuarmory:messer_sword": [
+      26034,
+      0.45638117
+    ],
+    "magistuarmory:netherite_ahlspiess": [
+      22636,
+      7.405473
+    ],
+    "magistuarmory:netherite_bastardsword": [
+      22599,
+      7.4824915
+    ],
+    "magistuarmory:netherite_chainmorgenstern": [
+      21837,
+      9.069859
+    ],
+    "magistuarmory:netherite_chivalrylance": [
+      22896,
+      6.8641124
+    ],
+    "magistuarmory:netherite_claymore": [
+      21167,
+      10.469944
+    ],
+    "magistuarmory:netherite_concavehalberd": [
+      21983,
+      8.7654
+    ],
+    "magistuarmory:netherite_estoc": [
+      22605,
+      7.470002
+    ],
+    "magistuarmory:netherite_flamebladedsword": [
+      22022,
+      8.684103
+    ],
+    "magistuarmory:netherite_guisarme": [
+      22943,
+      6.766191
+    ],
+    "magistuarmory:netherite_heavymace": [
+      22032,
+      8.66326
+    ],
+    "magistuarmory:netherite_heavywarhammer": [
+      22027,
+      8.673682
+    ],
+    "magistuarmory:netherite_katzbalger": [
+      23005,
+      6.636972
+    ],
+    "magistuarmory:netherite_lochaberaxe": [
+      22000,
+      8.729961
+    ],
+    "magistuarmory:netherite_lucernhammer": [
+      22033,
+      8.661177
+    ],
+    "magistuarmory:netherite_morgenstern": [
+      22042,
+      8.64242
+    ],
+    "magistuarmory:netherite_pike": [
+      22958,
+      6.734934
+    ],
+    "magistuarmory:netherite_ranseur": [
+      22946,
+      6.7599397
+    ],
+    "magistuarmory:netherite_shortsword": [
+      23029,
+      6.586934
+    ],
+    "magistuarmory:netherite_stylet": [
+      23036,
+      6.5723376
+    ],
+    "magistuarmory:netherite_zweihander": [
+      22022,
+      8.684103
+    ],
+    "magistuarmory:noble_sword": [
+      26011,
+      0.49951923
+    ],
+    "magistuarmory:pitchfork": [
+      25966,
+      0.57060856
+    ],
+    "magistuarmory:rusted_bastardsword": [
+      26065,
+      0.36782715
+    ],
+    "magistuarmory:rusted_heavymace": [
+      26065,
+      0.36782715
+    ],
+    "magistuarmory:silver_ahlspiess": [
+      26104,
+      0.047399998
+    ],
+    "magistuarmory:silver_bastardsword": [
+      26074,
+      0.3019698
+    ],
+    "magistuarmory:silver_chainmorgenstern": [
+      25925,
+      0.62920517
+    ],
+    "magistuarmory:silver_chivalrylance": [
+      26135,
+      0.044299997
+    ],
+    "magistuarmory:silver_claymore": [
+      25885,
+      0.6838428
+    ],
+    "magistuarmory:silver_concavehalberd": [
+      25899,
+      0.66491455
+    ],
+    "magistuarmory:silver_estoc": [
+      26078,
+      0.049999997
+    ],
+    "magistuarmory:silver_flamebladedsword": [
+      25959,
+      0.5808878
+    ],
+    "magistuarmory:silver_guisarme": [
+      26132,
+      0.0446
+    ],
+    "magistuarmory:silver_heavymace": [
+      25996,
+      0.5244919
+    ],
+    "magistuarmory:silver_heavywarhammer": [
+      25987,
+      0.5387573
+    ],
+    "magistuarmory:silver_katzbalger": [
+      26140,
+      0.0438
+    ],
+    "magistuarmory:silver_lochaberaxe": [
+      25918,
+      0.63890266
+    ],
+    "magistuarmory:silver_lucernhammer": [
+      26005,
+      0.50971955
+    ],
+    "magistuarmory:silver_morgenstern": [
+      26002,
+      0.51470804
+    ],
+    "magistuarmory:silver_pike": [
+      26136,
+      0.0442
+    ],
+    "magistuarmory:silver_ranseur": [
+      26130,
+      0.0448
+    ],
+    "magistuarmory:silver_shortsword": [
+      26153,
+      0.0425
+    ],
+    "magistuarmory:silver_stylet": [
+      26160,
+      0.041799996
+    ],
+    "magistuarmory:silver_zweihander": [
+      25959,
+      0.5808878
+    ],
+    "magistuarmory:steel_ahlspiess": [
+      25743,
+      0.87001157
+    ],
+    "magistuarmory:steel_bastardsword": [
+      25708,
+      0.91512454
+    ],
+    "magistuarmory:steel_chainmorgenstern": [
+      25463,
+      1.2294873
+    ],
+    "magistuarmory:steel_chivalrylance": [
+      25771,
+      0.8337938
+    ],
+    "magistuarmory:steel_claymore": [
+      25386,
+      1.328455
+    ],
+    "magistuarmory:steel_concavehalberd": [
+      25485,
+      1.2012469
+    ],
+    "magistuarmory:steel_estoc": [
+      25713,
+      0.9086883
+    ],
+    "magistuarmory:steel_flamebladedsword": [
+      25517,
+      1.1601919
+    ],
+    "magistuarmory:steel_guisarme": [
+      25788,
+      0.811729
+    ],
+    "magistuarmory:steel_heavymace": [
+      25567,
+      1.0960796
+    ],
+    "magistuarmory:steel_heavywarhammer": [
+      25547,
+      1.1217209
+    ],
+    "magistuarmory:steel_katzbalger": [
+      25818,
+      0.7726047
+    ],
+    "magistuarmory:steel_lochaberaxe": [
+      25492,
+      1.192264
+    ],
+    "magistuarmory:steel_lucernhammer": [
+      25575,
+      1.0858237
+    ],
+    "magistuarmory:steel_morgenstern": [
+      25580,
+      1.0794138
+    ],
+    "magistuarmory:steel_pike": [
+      25797,
+      0.80001926
+    ],
+    "magistuarmory:steel_ranseur": [
+      25788,
+      0.811729
+    ],
+    "magistuarmory:steel_shortsword": [
+      25837,
+      0.74766654
+    ],
+    "magistuarmory:steel_stylet": [
+      25844,
+      0.73844004
+    ],
+    "magistuarmory:steel_zweihander": [
+      25517,
+      1.1601919
+    ],
+    "magistuarmory:stone_ahlspiess": [
+      26290,
+      0.028799998
+    ],
+    "magistuarmory:stone_bastardsword": [
+      26260,
+      0.031799998
+    ],
+    "magistuarmory:stone_chainmorgenstern": [
+      26144,
+      0.043399997
+    ],
+    "magistuarmory:stone_chivalrylance": [
+      26304,
+      0.0274
+    ],
+    "magistuarmory:stone_claymore": [
+      26138,
+      0.044
+    ],
+    "magistuarmory:stone_concavehalberd": [
+      26109,
+      0.0469
+    ],
+    "magistuarmory:stone_estoc": [
+      26264,
+      0.0314
+    ],
+    "magistuarmory:stone_flamebladedsword": [
+      26169,
+      0.040899996
+    ],
+    "magistuarmory:stone_guisarme": [
+      26301,
+      0.0277
+    ],
+    "magistuarmory:stone_heavymace": [
+      26206,
+      0.0372
+    ],
+    "magistuarmory:stone_heavywarhammer": [
+      26197,
+      0.038099997
+    ],
+    "magistuarmory:stone_katzbalger": [
+      26309,
+      0.0269
+    ],
+    "magistuarmory:stone_lochaberaxe": [
+      26128,
+      0.044999998
+    ],
+    "magistuarmory:stone_lucernhammer": [
+      26215,
+      0.0363
+    ],
+    "magistuarmory:stone_morgenstern": [
+      26212,
+      0.036599997
+    ],
+    "magistuarmory:stone_pike": [
+      26305,
+      0.0273
+    ],
+    "magistuarmory:stone_ranseur": [
+      26299,
+      0.0279
+    ],
+    "magistuarmory:stone_shortsword": [
+      26322,
+      0.0256
+    ],
+    "magistuarmory:stone_stylet": [
+      26329,
+      0.024899999
+    ],
+    "magistuarmory:stone_zweihander": [
+      26169,
+      0.040899996
+    ],
+    "magistuarmory:tin_ahlspiess": [
+      26311,
+      0.026699997
+    ],
+    "magistuarmory:tin_bastardsword": [
+      26287,
+      0.029099997
+    ],
+    "magistuarmory:tin_chainmorgenstern": [
+      26196,
+      0.0382
+    ],
+    "magistuarmory:tin_chivalrylance": [
+      26337,
+      0.024099998
+    ],
+    "magistuarmory:tin_claymore": [
+      26175,
+      0.040299997
+    ],
+    "magistuarmory:tin_concavehalberd": [
+      26175,
+      0.040299997
+    ],
+    "magistuarmory:tin_estoc": [
+      26290,
+      0.028799998
+    ],
+    "magistuarmory:tin_flamebladedsword": [
+      26213,
+      0.0365
+    ],
+    "magistuarmory:tin_guisarme": [
+      26328,
+      0.024999999
+    ],
+    "magistuarmory:tin_heavymace": [
+      26243,
+      0.033499997
+    ],
+    "magistuarmory:tin_heavywarhammer": [
+      26238,
+      0.033999998
+    ],
+    "magistuarmory:tin_katzbalger": [
+      26327,
+      0.0251
+    ],
+    "magistuarmory:tin_lochaberaxe": [
+      26184,
+      0.039399996
+    ],
+    "magistuarmory:tin_lucernhammer": [
+      26252,
+      0.0326
+    ],
+    "magistuarmory:tin_morgenstern": [
+      26245,
+      0.033299997
+    ],
+    "magistuarmory:tin_pike": [
+      26330,
+      0.024799999
+    ],
+    "magistuarmory:tin_ranseur": [
+      26326,
+      0.0252
+    ],
+    "magistuarmory:tin_shortsword": [
+      26337,
+      0.024099998
+    ],
+    "magistuarmory:tin_stylet": [
+      26343,
+      0.0235
+    ],
+    "magistuarmory:tin_zweihander": [
+      26213,
+      0.0365
+    ],
+    "magistuarmory:wood_ahlspiess": [
+      26446,
+      0.013199999
+    ],
+    "magistuarmory:wood_bastardsword": [
+      26422,
+      0.015599999
+    ],
+    "magistuarmory:wood_chainmorgenstern": [
+      26354,
+      0.0224
+    ],
+    "magistuarmory:wood_chivalrylance": [
+      26458,
+      0.011999999
+    ],
+    "magistuarmory:wood_claymore": [
+      26357,
+      0.0221
+    ],
+    "magistuarmory:wood_concavehalberd": [
+      26326,
+      0.0252
+    ],
+    "magistuarmory:wood_estoc": [
+      26425,
+      0.015299999
+    ],
+    "magistuarmory:wood_flamebladedsword": [
+      26364,
+      0.021399999
+    ],
+    "magistuarmory:wood_guisarme": [
+      26449,
+      0.0128999995
+    ],
+    "magistuarmory:wood_heavymace": [
+      26394,
+      0.018399999
+    ],
+    "magistuarmory:wood_heavywarhammer": [
+      26389,
+      0.0189
+    ],
+    "magistuarmory:wood_katzbalger": [
+      26448,
+      0.012999999
+    ],
+    "magistuarmory:wood_lochaberaxe": [
+      26335,
+      0.024299998
+    ],
+    "magistuarmory:wood_lucernhammer": [
+      26403,
+      0.0175
+    ],
+    "magistuarmory:wood_morgenstern": [
+      26396,
+      0.018199999
+    ],
+    "magistuarmory:wood_pike": [
+      26451,
+      0.0127
+    ],
+    "magistuarmory:wood_ranseur": [
+      26447,
+      0.013099999
+    ],
+    "magistuarmory:wood_shortsword": [
+      26458,
+      0.011999999
+    ],
+    "magistuarmory:wood_stylet": [
+      26464,
+      0.011399999
+    ],
+    "magistuarmory:wood_zweihander": [
+      26364,
+      0.021399999
+    ],
+    "minecolonies:chiefsword": [
+      23835,
+      4.889481
+    ],
+    "minecolonies:iron_scimitar": [
+      26088,
+      0.049
+    ],
+    "minecolonies:pharaoscepter": [
+      24010,
+      4.508568
+    ],
+    "minecraft:bow": [
+      24010,
+      4.508568
+    ],
+    "minecraft:crossbow": [
+      24304,
+      3.826627
+    ],
+    "minecraft:diamond_axe": [
+      23773,
+      5.022479
+    ],
+    "minecraft:diamond_sword": [
+      23835,
+      4.889481
+    ],
+    "minecraft:enchanted_book": [
+      24978,
+      1.8573177
+    ],
+    "minecraft:golden_axe": [
+      26434,
+      0.014399999
+    ],
+    "minecraft:golden_sword": [
+      26497,
+      0.0081
+    ],
+    "minecraft:iron_axe": [
+      26001,
+      0.51635593
+    ],
+    "minecraft:iron_sword": [
+      26088,
+      0.049
+    ],
+    "minecraft:lingering_potion{Potion:\"minecraft:harming\"}": [
+      25078,
+      1.7269388
+    ],
+    "minecraft:netherite_axe": [
+      22937,
+      6.778693
+    ],
+    "minecraft:netherite_sword": [
+      23007,
+      6.632802
+    ],
+    "minecraft:snowball": [
+      26028,
+      0.46844563
+    ],
+    "minecraft:splash_potion{Potion:\"minecraft:harming\"}": [
+      25078,
+      1.7269388
+    ],
+    "minecraft:stone_axe": [
+      26204,
+      0.0374
+    ],
+    "minecraft:stone_sword": [
+      26312,
+      0.026599998
+    ],
+    "minecraft:tnt": [
+      24878,
+      1.9881918
+    ],
+    "minecraft:trident": [
+      24078,
+      4.357304
+    ],
+    "minecraft:wooden_axe": [
+      26388,
+      0.019
+    ],
+    "minecraft:wooden_sword": [
+      26451,
+      0.0127
+    ],
+    "mowziesmobs:blowgun": [
+      24178,
+      4.129458
+    ],
+    "mowziesmobs:wrought_axe": [
+      26001,
+      0.51635593
+    ],
+    "threateningly_mobs:bettle_great_sword": [
+      22187,
+      8.340299
+    ],
+    "threateningly_mobs:bionics_axe": [
+      25310,
+      1.426368
+    ],
+    "threateningly_mobs:bionics_sword": [
+      25397,
+      1.3143033
+    ],
+    "threateningly_mobs:copasmetal_axe": [
+      25929,
+      0.62363166
+    ],
+    "threateningly_mobs:copasmetal_sword": [
+      26004,
+      0.5113901
+    ],
+    "threateningly_mobs:dracoscopius_sword": [
+      25670,
+      0.96397245
+    ],
+    "threateningly_mobs:ebonlord_blade": [
+      2,
+      56.67101
+    ],
+    "threateningly_mobs:night_axe": [
+      24832,
+      2.048558
+    ],
+    "threateningly_mobs:riptooth_axe": [
+      26048,
+      0.42433748
+    ],
+    "threateningly_mobs:riptooth_sword": [
+      26141,
+      0.0437
+    ],
+    "threateningly_mobs:rosethornsword": [
+      25250,
+      1.5038515
+    ],
+    "threateningly_mobs:swordofcourage": [
+      25288,
+      1.4547591
+    ],
+    "valarian_conquest:barathian_sword": [
+      26034,
+      0.45638117
+    ],
+    "valarian_conquest:bohemian_sword": [
+      26034,
+      0.45638117
+    ],
+    "valarian_conquest:burgundian_sword": [
+      26034,
+      0.45638117
+    ],
+    "valarian_conquest:caladrian_sword": [
+      26034,
+      0.45638117
+    ],
+    "valarian_conquest:common_halberd": [
+      26001,
+      0.51635593
+    ],
+    "valarian_conquest:common_spear": [
+      26001,
+      0.51635593
+    ],
+    "valarian_conquest:common_sword": [
+      26063,
+      0.37663084
+    ],
+    "valarian_conquest:dwarven_axe": [
+      26001,
+      0.51635593
+    ],
+    "valarian_conquest:elven_longbow": [
+      24010,
+      4.508568
+    ],
+    "valarian_conquest:elven_spear": [
+      25964,
+      0.57356006
+    ],
+    "valarian_conquest:elven_sword": [
+      26034,
+      0.45638117
+    ],
+    "valarian_conquest:galician_sword": [
+      26034,
+      0.45638117
+    ],
+    "valarian_conquest:heavy_axe": [
+      26001,
+      0.51635593
+    ],
+    "valarian_conquest:hospitaller_sword": [
+      25964,
+      0.57356006
+    ],
+    "valarian_conquest:lancastian_sword": [
+      26034,
+      0.45638117
+    ],
+    "valarian_conquest:light_axe": [
+      26034,
+      0.45638117
+    ],
+    "valarian_conquest:longbow": [
+      24010,
+      4.508568
+    ],
+    "valarian_conquest:mercenary_sword": [
+      26034,
+      0.45638117
+    ],
+    "valarian_conquest:noble_sword": [
+      25917,
+      0.6402826
+    ],
+    "valarian_conquest:numerian_sword": [
+      26034,
+      0.45638117
+    ],
+    "valarian_conquest:orleanian_sword": [
+      26034,
+      0.45638117
+    ],
+    "valarian_conquest:practice_sword": [
+      26148,
+      0.042999998
+    ],
+    "valarian_conquest:soldiers_halberd": [
+      25964,
+      0.57356006
+    ],
+    "valarian_conquest:soldiers_spear": [
+      25964,
+      0.57356006
+    ],
+    "valarian_conquest:soldiers_sword": [
+      26034,
+      0.45638117
+    ],
+    "valarian_conquest:templar_sword": [
+      25964,
+      0.57356006
+    ],
+    "valarian_conquest:undead_axe": [
+      26001,
+      0.51635593
+    ],
+    "valarian_conquest:undead_spear": [
+      25964,
+      0.57356006
+    ],
+    "valarian_conquest:undead_sword": [
+      26034,
+      0.45638117
+    ],
+    "valarian_conquest:valarian_sword": [
+      26034,
+      0.45638117
+    ],
+    "valarian_conquest:visgothian_sword": [
+      26034,
+      0.45638117
+    ],
+    "wom:agony": [
+      23751,
+      5.069493
+    ],
+    "wom:antitheus": [
+      15127,
+      23.323952
+    ],
+    "wom:blackstar": [
+      19871,
+      13.193617
+    ],
+    "wom:diamond_greataxe": [
+      23695,
+      5.1888037
+    ],
+    "wom:diamond_staff": [
+      19901,
+      13.130334
+    ],
+    "wom:ender_blaster": [
+      20963,
+      10.897285
+    ],
+    "wom:evil_tachi": [
+      23007,
+      6.632802
+    ],
+    "wom:golden_greataxe": [
+      26405,
+      0.0173
+    ],
+    "wom:golden_staff": [
+      26437,
+      0.014099999
+    ],
+    "wom:herrscher": [
+      23824,
+      4.9131355
+    ],
+    "wom:hollow_longsword": [
+      26063,
+      0.37663084
+    ],
+    "wom:iron_greataxe": [
+      25964,
+      0.57356006
+    ],
+    "wom:iron_staff": [
+      25489,
+      1.1961136
+    ],
+    "wom:jabberwocky": [
+      23824,
+      4.9131355
+    ],
+    "wom:moonless": [
+      23726,
+      5.1228175
+    ],
+    "wom:napoleon": [
+      23726,
+      5.1228175
+    ],
+    "wom:netherite_greataxe": [
+      22890,
+      6.876611
+    ],
+    "wom:netherite_staff": [
+      17883,
+      17.410627
+    ],
+    "wom:nova": [
+      19979,
+      12.965847
+    ],
+    "wom:orbit": [
+      23697,
+      5.1845512
+    ],
+    "wom:ruine": [
+      23726,
+      5.1228175
+    ],
+    "wom:satsujin": [
+      23656,
+      5.271625
+    ],
+    "wom:solar": [
+      23664,
+      5.254652
+    ],
+    "wom:stone_staff": [
+      26009,
+      0.50295484
+    ],
+    "wom:tormented_mind": [
+      23664,
+      5.254652
+    ],
+    "wom:wooden_staff": [
+      26324,
+      0.0254
+    ]
+  },
+  "OFFHAND": {
+    "ars_nouveau:enchanters_shield": [
+      33387,
+      2.053812
+    ],
+    "cataclysm:azure_sea_shield": [
+      33359,
+      2.0906117
+    ],
+    "cataclysm:black_steel_targe": [
+      32707,
+      4.1986494
+    ],
+    "cataclysm:bulwark_of_the_flame": [
+      34387,
+      0.75949734
+    ],
+    "legendary_monsters:buckler_of_annihilation": [
+      32787,
+      4.012047
+    ],
+    "legendary_monsters:dinosaur_bone_shield": [
+      28887,
+      12.230802
+    ],
+    "legendary_monsters:frostbitten_shield": [
+      33687,
+      1.6619366
+    ],
+    "legendary_monsters:shulker_shield": [
+      33487,
+      1.9226934
+    ],
+    "legendary_monsters:spiky_shield": [
+      33687,
+      1.6619366
+    ],
+    "magistuarmory:bronze_buckler": [
+      33367,
+      2.0800936
+    ],
+    "magistuarmory:bronze_ellipticalshield": [
+      33327,
+      2.1327145
+    ],
+    "magistuarmory:bronze_heatershield": [
+      33367,
+      2.0800936
+    ],
+    "magistuarmory:bronze_kiteshield": [
+      33327,
+      2.1327145
+    ],
+    "magistuarmory:bronze_pavese": [
+      33207,
+      2.2910256
+    ],
+    "magistuarmory:bronze_rondache": [
+      33067,
+      3.2008622
+    ],
+    "magistuarmory:bronze_roundshield": [
+      33367,
+      2.0800936
+    ],
+    "magistuarmory:bronze_target": [
+      33367,
+      2.0800936
+    ],
+    "magistuarmory:bronze_tartsche": [
+      33367,
+      2.0800936
+    ],
+    "magistuarmory:copper_buckler": [
+      33447,
+      1.9750825
+    ],
+    "magistuarmory:copper_ellipticalshield": [
+      33407,
+      2.0275493
+    ],
+    "magistuarmory:copper_heatershield": [
+      33447,
+      1.9750825
+    ],
+    "magistuarmory:copper_kiteshield": [
+      33407,
+      2.0275493
+    ],
+    "magistuarmory:copper_pavese": [
+      33277,
+      2.1985962
+    ],
+    "magistuarmory:copper_rondache": [
+      33187,
+      2.3174753
+    ],
+    "magistuarmory:copper_roundshield": [
+      33447,
+      1.9750825
+    ],
+    "magistuarmory:copper_target": [
+      33447,
+      1.9750825
+    ],
+    "magistuarmory:copper_tartsche": [
+      33447,
+      1.9750825
+    ],
+    "magistuarmory:corruptedroundshield": [
+      34093,
+      1.13839
+    ],
+    "magistuarmory:diamond_buckler": [
+      31191,
+      7.4138
+    ],
+    "magistuarmory:diamond_ellipticalshield": [
+      31151,
+      7.497063
+    ],
+    "magistuarmory:diamond_heatershield": [
+      31191,
+      7.4138
+    ],
+    "magistuarmory:diamond_kiteshield": [
+      31151,
+      7.497063
+    ],
+    "magistuarmory:diamond_pavese": [
+      31303,
+      7.180646
+    ],
+    "magistuarmory:diamond_rondache": [
+      29801,
+      10.312961
+    ],
+    "magistuarmory:diamond_roundshield": [
+      31191,
+      7.4138
+    ],
+    "magistuarmory:diamond_target": [
+      31191,
+      7.4138
+    ],
+    "magistuarmory:diamond_tartsche": [
+      31191,
+      7.4138
+    ],
+    "magistuarmory:gold_buckler": [
+      33637,
+      1.7269388
+    ],
+    "magistuarmory:gold_ellipticalshield": [
+      33597,
+      1.7790304
+    ],
+    "magistuarmory:gold_heatershield": [
+      33637,
+      1.7269388
+    ],
+    "magistuarmory:gold_kiteshield": [
+      33597,
+      1.7790304
+    ],
+    "magistuarmory:gold_pavese": [
+      33443,
+      1.9803258
+    ],
+    "magistuarmory:gold_rondache": [
+      33471,
+      1.9436398
+    ],
+    "magistuarmory:gold_roundshield": [
+      33637,
+      1.7269388
+    ],
+    "magistuarmory:gold_target": [
+      33637,
+      1.7269388
+    ],
+    "magistuarmory:gold_tartsche": [
+      33637,
+      1.7269388
+    ],
+    "magistuarmory:iron_buckler": [
+      33287,
+      2.1854107
+    ],
+    "magistuarmory:iron_ellipticalshield": [
+      33247,
+      2.2381814
+    ],
+    "magistuarmory:iron_heatershield": [
+      33287,
+      2.1854107
+    ],
+    "magistuarmory:iron_kiteshield": [
+      33247,
+      2.2381814
+    ],
+    "magistuarmory:iron_pavese": [
+      33137,
+      2.3836782
+    ],
+    "magistuarmory:iron_rondache": [
+      32947,
+      3.6050973
+    ],
+    "magistuarmory:iron_roundshield": [
+      33287,
+      2.1854107
+    ],
+    "magistuarmory:iron_target": [
+      33287,
+      2.1854107
+    ],
+    "magistuarmory:iron_tartsche": [
+      33287,
+      2.1854107
+    ],
+    "magistuarmory:netherite_buckler": [
+      30439,
+      8.980167
+    ],
+    "magistuarmory:netherite_ellipticalshield": [
+      30399,
+      9.0636
+    ],
+    "magistuarmory:netherite_heatershield": [
+      30439,
+      8.980167
+    ],
+    "magistuarmory:netherite_kiteshield": [
+      30399,
+      9.0636
+    ],
+    "magistuarmory:netherite_pavese": [
+      30645,
+      8.550724
+    ],
+    "magistuarmory:netherite_rondache": [
+      28673,
+      12.681339
+    ],
+    "magistuarmory:netherite_roundshield": [
+      30439,
+      8.980167
+    ],
+    "magistuarmory:netherite_target": [
+      30439,
+      8.980167
+    ],
+    "magistuarmory:netherite_tartsche": [
+      30439,
+      8.980167
+    ],
+    "magistuarmory:silver_buckler": [
+      33319,
+      2.1432476
+    ],
+    "magistuarmory:silver_ellipticalshield": [
+      33279,
+      2.1959586
+    ],
+    "magistuarmory:silver_heatershield": [
+      33319,
+      2.1432476
+    ],
+    "magistuarmory:silver_kiteshield": [
+      33279,
+      2.1959586
+    ],
+    "magistuarmory:silver_pavese": [
+      33165,
+      2.3465908
+    ],
+    "magistuarmory:silver_rondache": [
+      32995,
+      3.4637072
+    ],
+    "magistuarmory:silver_roundshield": [
+      33319,
+      2.1432476
+    ],
+    "magistuarmory:silver_target": [
+      33319,
+      2.1432476
+    ],
+    "magistuarmory:silver_tartsche": [
+      33319,
+      2.1432476
+    ],
+    "magistuarmory:steel_buckler": [
+      33047,
+      3.2843132
+    ],
+    "magistuarmory:steel_ellipticalshield": [
+      33007,
+      3.425496
+    ],
+    "magistuarmory:steel_heatershield": [
+      33047,
+      3.2843132
+    ],
+    "magistuarmory:steel_kiteshield": [
+      33007,
+      3.425496
+    ],
+    "magistuarmory:steel_pavese": [
+      32927,
+      3.6601396
+    ],
+    "magistuarmory:steel_rondache": [
+      32587,
+      4.4687543
+    ],
+    "magistuarmory:steel_roundshield": [
+      33047,
+      3.2843132
+    ],
+    "magistuarmory:steel_target": [
+      33047,
+      3.2843132
+    ],
+    "magistuarmory:steel_tartsche": [
+      33047,
+      3.2843132
+    ],
+    "magistuarmory:stone_buckler": [
+      33479,
+      1.933165
+    ],
+    "magistuarmory:stone_ellipticalshield": [
+      33439,
+      1.9855696
+    ],
+    "magistuarmory:stone_heatershield": [
+      33479,
+      1.933165
+    ],
+    "magistuarmory:stone_kiteshield": [
+      33439,
+      1.9855696
+    ],
+    "magistuarmory:stone_pavese": [
+      33305,
+      2.161688
+    ],
+    "magistuarmory:stone_rondache": [
+      33233,
+      2.2566686
+    ],
+    "magistuarmory:stone_roundshield": [
+      33479,
+      1.933165
+    ],
+    "magistuarmory:stone_target": [
+      33479,
+      1.933165
+    ],
+    "magistuarmory:stone_tartsche": [
+      33479,
+      1.933165
+    ],
+    "magistuarmory:tin_buckler": [
+      33479,
+      1.933165
+    ],
+    "magistuarmory:tin_ellipticalshield": [
+      33439,
+      1.9855696
+    ],
+    "magistuarmory:tin_heatershield": [
+      33479,
+      1.933165
+    ],
+    "magistuarmory:tin_kiteshield": [
+      33439,
+      1.9855696
+    ],
+    "magistuarmory:tin_pavese": [
+      33305,
+      2.161688
+    ],
+    "magistuarmory:tin_rondache": [
+      33235,
+      2.254027
+    ],
+    "magistuarmory:tin_roundshield": [
+      33479,
+      1.933165
+    ],
+    "magistuarmory:tin_target": [
+      33479,
+      1.933165
+    ],
+    "magistuarmory:tin_tartsche": [
+      33479,
+      1.933165
+    ],
+    "magistuarmory:wood_buckler": [
+      33593,
+      1.784244
+    ],
+    "magistuarmory:wood_ellipticalshield": [
+      33553,
+      1.8364235
+    ],
+    "magistuarmory:wood_heatershield": [
+      33593,
+      1.784244
+    ],
+    "magistuarmory:wood_kiteshield": [
+      33553,
+      1.8364235
+    ],
+    "magistuarmory:wood_pavese": [
+      33405,
+      2.030175
+    ],
+    "magistuarmory:wood_rondache": [
+      33407,
+      2.0275493
+    ],
+    "magistuarmory:wood_roundshield": [
+      33593,
+      1.784244
+    ],
+    "magistuarmory:wood_target": [
+      33593,
+      1.784244
+    ],
+    "magistuarmory:wood_tartsche": [
+      33593,
+      1.784244
+    ],
+    "minecraft:ender_pearl": [
+      34037,
+      1.2102311
+    ],
+    "minecraft:flint_and_steel": [
+      34009,
+      1.2461817
+    ],
+    "minecraft:lava_bucket": [
+      33637,
+      1.7269388
+    ],
+    "minecraft:shield": [
+      33715,
+      1.6255897
+    ],
+    "threateningly_mobs:ebonlord_shield": [
+      187,
+      75.55266
+    ],
+    "threateningly_mobs:magma_shell_shield": [
+      31085,
+      7.6344457
+    ],
+    "valarian_conquest:barathian_shield": [
+      33715,
+      1.6255897
+    ],
+    "valarian_conquest:bohemian_shield": [
+      33715,
+      1.6255897
+    ],
+    "valarian_conquest:burgundian_shield": [
+      33715,
+      1.6255897
+    ],
+    "valarian_conquest:caladrian_shield": [
+      33715,
+      1.6255897
+    ],
+    "valarian_conquest:dwarven_shield": [
+      33715,
+      1.6255897
+    ],
+    "valarian_conquest:elven_shield": [
+      33715,
+      1.6255897
+    ],
+    "valarian_conquest:galician_shield": [
+      33715,
+      1.6255897
+    ],
+    "valarian_conquest:hospitaller_shield": [
+      33715,
+      1.6255897
+    ],
+    "valarian_conquest:lancastian_shield": [
+      33715,
+      1.6255897
+    ],
+    "valarian_conquest:mercenary_shield": [
+      33715,
+      1.6255897
+    ],
+    "valarian_conquest:neutral_shield": [
+      33715,
+      1.6255897
+    ],
+    "valarian_conquest:numerian_shield": [
+      33715,
+      1.6255897
+    ],
+    "valarian_conquest:orleanian_shield": [
+      33715,
+      1.6255897
+    ],
+    "valarian_conquest:templar_shield": [
+      33715,
+      1.6255897
+    ],
+    "valarian_conquest:valarian_shield": [
+      33715,
+      1.6255897
+    ],
+    "valarian_conquest:visgothian_shield": [
+      33715,
+      1.6255897
+    ],
+    "valarian_conquest:wooden_shield": [
+      33887,
+      1.4031554
+    ],
+    "wom:gesetz": [
+      26073,
+      18.198132
+    ]
+  },
+  "FEET": {
+    "alexsmobs:flying_fish_boots": [
+      10613,
+      0.014099999
+    ],
+    "alexsmobs:roadrunner_boots": [
+      10051,
+      0.6972618
+    ],
+    "aquaculture:neptunium_boots": [
+      8835,
+      2.2764862
+    ],
+    "ars_elemental:air_boots": [
+      8891,
+      2.2025528
+    ],
+    "ars_elemental:aqua_boots": [
+      8891,
+      2.2025528
+    ],
+    "ars_elemental:earth_boots": [
+      8873,
+      2.2263014
+    ],
+    "ars_elemental:fire_boots": [
+      8891,
+      2.2025528
+    ],
+    "ars_nouveau:arcanist_boots": [
+      9529,
+      1.3709393
+    ],
+    "ars_nouveau:battlemage_boots": [
+      8769,
+      2.3638055
+    ],
+    "ars_nouveau:sorcerer_boots": [
+      9945,
+      0.8363856
+    ],
+    "born_in_chaos_v1:dark_metal_armor_boots": [
+      7798,
+      5.3436694
+    ],
+    "born_in_chaos_v1:nightmare_mantleofthe_night_boots": [
+      9000,
+      2.0590668
+    ],
+    "cataclysm:cursium_boots": [
+      7108,
+      6.789111
+    ],
+    "cataclysm:ignitium_boots": [
+      5898,
+      9.309818
+    ],
+    "create:cardboard_boots": [
+      10537,
+      0.021699999
+    ],
+    "create:copper_diving_boots": [
+      10180,
+      0.5113901
+    ],
+    "create:netherite_diving_boots": [
+      9119,
+      1.9030677
+    ],
+    "fantasy_armor:chess_board_knight_boots": [
+      9119,
+      1.9030677
+    ],
+    "fantasy_armor:crucible_knight_boots": [
+      9119,
+      1.9030677
+    ],
+    "fantasy_armor:dark_cover_boots": [
+      9119,
+      1.9030677
+    ],
+    "fantasy_armor:dark_lord_boots": [
+      9119,
+      1.9030677
+    ],
+    "fantasy_armor:dead_gladiator_boots": [
+      9119,
+      1.9030677
+    ],
+    "fantasy_armor:dragonslayer_boots": [
+      9119,
+      1.9030677
+    ],
+    "fantasy_armor:eclipse_soldier_boots": [
+      9119,
+      1.9030677
+    ],
+    "fantasy_armor:evening_ghost_boots": [
+      9119,
+      1.9030677
+    ],
+    "fantasy_armor:flesh_of_the_feaster_boots": [
+      9119,
+      1.9030677
+    ],
+    "fantasy_armor:fog_guard_boots": [
+      9119,
+      1.9030677
+    ],
+    "fantasy_armor:forgotten_trace_boots": [
+      9119,
+      1.9030677
+    ],
+    "fantasy_armor:gilded_hunt_boots": [
+      9119,
+      1.9030677
+    ],
+    "fantasy_armor:golden_execution_boots": [
+      9119,
+      1.9030677
+    ],
+    "fantasy_armor:golden_horns_boots": [
+      9119,
+      1.9030677
+    ],
+    "fantasy_armor:grave_sentinel_boots": [
+      9119,
+      1.9030677
+    ],
+    "fantasy_armor:hero_boots": [
+      9119,
+      1.9030677
+    ],
+    "fantasy_armor:lady_maria_boots": [
+      9119,
+      1.9030677
+    ],
+    "fantasy_armor:malenia_boots": [
+      9119,
+      1.9030677
+    ],
+    "fantasy_armor:old_knight_boots": [
+      9119,
+      1.9030677
+    ],
+    "fantasy_armor:ornstein_boots": [
+      9119,
+      1.9030677
+    ],
+    "fantasy_armor:redeemer_boots": [
+      9119,
+      1.9030677
+    ],
+    "fantasy_armor:ronin_boots": [
+      9119,
+      1.9030677
+    ],
+    "fantasy_armor:silver_knight_boots": [
+      9119,
+      1.9030677
+    ],
+    "fantasy_armor:spark_of_dawn_boots": [
+      9119,
+      1.9030677
+    ],
+    "fantasy_armor:sunset_wings_boots": [
+      9119,
+      1.9030677
+    ],
+    "fantasy_armor:thief_boots": [
+      9119,
+      1.9030677
+    ],
+    "fantasy_armor:twinned_boots": [
+      9119,
+      1.9030677
+    ],
+    "fantasy_armor:wandering_wizard_boots": [
+      9119,
+      1.9030677
+    ],
+    "fantasy_armor:wind_worshipper_boots": [
+      9119,
+      1.9030677
+    ],
+    "iceandfire:armor_amythest_boots": [
+      7719,
+      5.510578
+    ],
+    "iceandfire:armor_black_boots": [
+      7719,
+      5.510578
+    ],
+    "iceandfire:armor_blue_boots": [
+      7719,
+      5.510578
+    ],
+    "iceandfire:armor_bronze_boots": [
+      7719,
+      5.510578
+    ],
+    "iceandfire:armor_copper_boots": [
+      7719,
+      5.510578
+    ],
+    "iceandfire:armor_copper_metal_boots": [
+      10264,
+      0.049
+    ],
+    "iceandfire:armor_electric_boots": [
+      7719,
+      5.510578
+    ],
+    "iceandfire:armor_gray_boots": [
+      7719,
+      5.510578
+    ],
+    "iceandfire:armor_green_boots": [
+      7719,
+      5.510578
+    ],
+    "iceandfire:armor_red_boots": [
+      7719,
+      5.510578
+    ],
+    "iceandfire:armor_sapphire_boots": [
+      7719,
+      5.510578
+    ],
+    "iceandfire:armor_silver_boots": [
+      7719,
+      5.510578
+    ],
+    "iceandfire:armor_silver_metal_boots": [
+      9973,
+      0.80001926
+    ],
+    "iceandfire:armor_white_boots": [
+      7719,
+      5.510578
+    ],
+    "iceandfire:deathworm_red_boots": [
+      9467,
+      1.4508864
+    ],
+    "iceandfire:deathworm_white_boots": [
+      9467,
+      1.4508864
+    ],
+    "iceandfire:deathworm_yellow_boots": [
+      9467,
+      1.4508864
+    ],
+    "iceandfire:dragonsteel_fire_boots": [
+      4752,
+      11.709396
+    ],
+    "iceandfire:dragonsteel_ice_boots": [
+      4752,
+      11.709396
+    ],
+    "iceandfire:dragonsteel_lightning_boots": [
+      4752,
+      11.709396
+    ],
+    "iceandfire:forest_troll_leather_boots": [
+      9408,
+      1.5271299
+    ],
+    "iceandfire:frost_troll_leather_boots": [
+      9408,
+      1.5271299
+    ],
+    "iceandfire:mountain_troll_leather_boots": [
+      9408,
+      1.5271299
+    ],
+    "iceandfire:myrmex_desert_boots": [
+      8939,
+      2.1392972
+    ],
+    "iceandfire:myrmex_jungle_boots": [
+      8939,
+      2.1392972
+    ],
+    "iceandfire:sheep_boots": [
+      10448,
+      0.030599998
+    ],
+    "iceandfire:tide_blue_boots": [
+      8296,
+      4.262535
+    ],
+    "iceandfire:tide_bronze_boots": [
+      8296,
+      4.262535
+    ],
+    "iceandfire:tide_deepblue_boots": [
+      8296,
+      4.262535
+    ],
+    "iceandfire:tide_green_boots": [
+      8296,
+      4.262535
+    ],
+    "iceandfire:tide_purple_boots": [
+      8296,
+      4.262535
+    ],
+    "iceandfire:tide_red_boots": [
+      8296,
+      4.262535
+    ],
+    "iceandfire:tide_teal_boots": [
+      8296,
+      4.262535
+    ],
+    "legendary_monsters:annihilator_boots": [
+      5990,
+      9.11784
+    ],
+    "legendary_monsters:atmospheric_boots": [
+      8647,
+      3.3474827
+    ],
+    "legendary_monsters:fiery_boots": [
+      8679,
+      3.22291
+    ],
+    "magistuarmory:ceremonial_boots": [
+      10044,
+      0.70661175
+    ],
+    "magistuarmory:chainmail_boots": [
+      10042,
+      0.7092771
+    ],
+    "magistuarmory:crusader_boots": [
+      9729,
+      1.1140283
+    ],
+    "magistuarmory:cuirassier_boots": [
+      10229,
+      0.41076243
+    ],
+    "magistuarmory:gambeson_boots": [
+      10512,
+      0.024199998
+    ],
+    "magistuarmory:gothic_boots": [
+      9419,
+      1.5129023
+    ],
+    "magistuarmory:jousting_boots": [
+      8077,
+      4.746931
+    ],
+    "magistuarmory:kastenbrust_boots": [
+      9419,
+      1.5129023
+    ],
+    "magistuarmory:knight_boots": [
+      9419,
+      1.5129023
+    ],
+    "magistuarmory:lamellar_boots": [
+      10202,
+      0.47231403
+    ],
+    "magistuarmory:maximilian_boots": [
+      8826,
+      2.2883818
+    ],
+    "magistuarmory:platemail_boots": [
+      9926,
+      0.8609696
+    ],
+    "magistuarmory:rustedchainmail_boots": [
+      10088,
+      0.64716274
+    ],
+    "magistuarmory:rustedcrusader_boots": [
+      10269,
+      0.048499998
+    ],
+    "magistuarmory:xivcenturyknight_boots": [
+      9812,
+      1.0076084
+    ],
+    "minecolonies:pirate_boots": [
+      9598,
+      1.2821578
+    ],
+    "minecolonies:pirate_shoes": [
+      9020,
+      2.0328007
+    ],
+    "minecolonies:plate_armor_boots": [
+      8850,
+      2.2566686
+    ],
+    "minecraft:chainmail_boots": [
+      10162,
+      0.540316
+    ],
+    "minecraft:diamond_boots": [
+      9246,
+      1.7373508
+    ],
+    "minecraft:golden_boots": [
+      10228,
+      0.4136078
+    ],
+    "minecraft:iron_boots": [
+      9914,
+      0.8764657
+    ],
+    "minecraft:leather_boots": [
+      10510,
+      0.0244
+    ],
+    "minecraft:netherite_boots": [
+      9119,
+      1.9030677
+    ],
+    "mowziesmobs:geomancer_sandals": [
+      9322,
+      1.6385665
+    ],
+    "threateningly_mobs:bionics_armor_boots": [
+      9134,
+      1.883453
+    ],
+    "threateningly_mobs:desert_armor_boots": [
+      8431,
+      3.947302
+    ],
+    "threateningly_mobs:ebonlord_armor_boots": [
+      35,
+      21.746565
+    ],
+    "valarian_conquest:barathians_armor_1_boots": [
+      9004,
+      2.053812
+    ],
+    "valarian_conquest:bohemian_armor_1_boots": [
+      9004,
+      2.053812
+    ],
+    "valarian_conquest:burgundian_armor_1_boots": [
+      9004,
+      2.053812
+    ],
+    "valarian_conquest:chainmail_armor_boots": [
+      9004,
+      2.053812
+    ],
+    "valarian_conquest:hospitaller_armor_1_boots": [
+      9004,
+      2.053812
+    ],
+    "valarian_conquest:leather_armor_boots": [
+      9004,
+      2.053812
+    ],
+    "valarian_conquest:neutral_armor_1_boots": [
+      9004,
+      2.053812
+    ],
+    "valarian_conquest:orleanian_armor_1_boots": [
+      9004,
+      2.053812
+    ],
+    "valarian_conquest:templar_armor_1_boots": [
+      9004,
+      2.053812
+    ],
+    "valarian_conquest:valarian_armor_1_boots": [
+      9004,
+      2.053812
+    ],
+    "valarian_conquest:visgothian_armor_1_boots": [
+      9004,
+      2.053812
+    ],
+    "wom:diamond_legbottomseal": [
+      9978,
+      0.7935043
+    ],
+    "wom:emerald_anklebracelet": [
+      9910,
+      0.88162655
+    ],
+    "wom:golden_mokassin": [
+      10314,
+      0.044
+    ],
+    "wom:netherite_chains": [
+      9841,
+      0.9703929
+    ]
+  },
+  "LEGS": {
+    "alexsmobs:centipede_leggings": [
+      8467,
+      3.9059477
+    ],
+    "alexsmobs:emu_leggings": [
+      9702,
+      1.173019
+    ],
+    "aquaculture:neptunium_leggings": [
+      8854,
+      2.2764862
+    ],
+    "ars_elemental:air_leggings": [
+      8915,
+      2.1959586
+    ],
+    "ars_elemental:aqua_leggings": [
+      8915,
+      2.1959586
+    ],
+    "ars_elemental:earth_leggings": [
+      8897,
+      2.2197032
+    ],
+    "ars_elemental:fire_leggings": [
+      8915,
+      2.1959586
+    ],
+    "ars_nouveau:arcanist_leggings": [
+      9548,
+      1.3709393
+    ],
+    "ars_nouveau:battlemage_leggings": [
+      8788,
+      2.3638055
+    ],
+    "ars_nouveau:sorcerer_leggings": [
+      9964,
+      0.8363856
+    ],
+    "born_in_chaos_v1:dark_metal_armor_leggings": [
+      7817,
+      5.3436694
+    ],
+    "born_in_chaos_v1:nightmare_mantleofthe_night_leggings": [
+      9019,
+      2.0590668
+    ],
+    "cataclysm:cursium_leggings": [
+      7127,
+      6.789111
+    ],
+    "cataclysm:ignitium_leggings": [
+      5917,
+      9.309818
+    ],
+    "create:cardboard_leggings": [
+      10556,
+      0.021699999
+    ],
+    "epicfight:stray_pants": [
+      10474,
+      0.0299
+    ],
+    "fantasy_armor:chess_board_knight_leggings": [
+      9138,
+      1.9030677
+    ],
+    "fantasy_armor:crucible_knight_leggings": [
+      9138,
+      1.9030677
+    ],
+    "fantasy_armor:dark_cover_leggings": [
+      9138,
+      1.9030677
+    ],
+    "fantasy_armor:dark_lord_leggings": [
+      9138,
+      1.9030677
+    ],
+    "fantasy_armor:dead_gladiator_leggings": [
+      9138,
+      1.9030677
+    ],
+    "fantasy_armor:dragonslayer_leggings": [
+      9138,
+      1.9030677
+    ],
+    "fantasy_armor:eclipse_soldier_leggings": [
+      9138,
+      1.9030677
+    ],
+    "fantasy_armor:evening_ghost_leggings": [
+      9138,
+      1.9030677
+    ],
+    "fantasy_armor:flesh_of_the_feaster_leggings": [
+      9138,
+      1.9030677
+    ],
+    "fantasy_armor:fog_guard_leggings": [
+      9138,
+      1.9030677
+    ],
+    "fantasy_armor:forgotten_trace_leggings": [
+      9138,
+      1.9030677
+    ],
+    "fantasy_armor:gilded_hunt_leggings": [
+      9138,
+      1.9030677
+    ],
+    "fantasy_armor:golden_execution_leggings": [
+      9138,
+      1.9030677
+    ],
+    "fantasy_armor:golden_horns_leggings": [
+      9138,
+      1.9030677
+    ],
+    "fantasy_armor:grave_sentinel_leggings": [
+      9138,
+      1.9030677
+    ],
+    "fantasy_armor:hero_leggings": [
+      9138,
+      1.9030677
+    ],
+    "fantasy_armor:lady_maria_leggings": [
+      9138,
+      1.9030677
+    ],
+    "fantasy_armor:malenia_leggings": [
+      9138,
+      1.9030677
+    ],
+    "fantasy_armor:old_knight_leggings": [
+      9138,
+      1.9030677
+    ],
+    "fantasy_armor:ornstein_leggings": [
+      9138,
+      1.9030677
+    ],
+    "fantasy_armor:redeemer_leggings": [
+      9138,
+      1.9030677
+    ],
+    "fantasy_armor:ronin_leggings": [
+      9138,
+      1.9030677
+    ],
+    "fantasy_armor:silver_knight_leggings": [
+      9138,
+      1.9030677
+    ],
+    "fantasy_armor:spark_of_dawn_leggings": [
+      9138,
+      1.9030677
+    ],
+    "fantasy_armor:sunset_wings_leggings": [
+      9138,
+      1.9030677
+    ],
+    "fantasy_armor:thief_leggings": [
+      9138,
+      1.9030677
+    ],
+    "fantasy_armor:twinned_leggings": [
+      9138,
+      1.9030677
+    ],
+    "fantasy_armor:wandering_wizard_leggings": [
+      9138,
+      1.9030677
+    ],
+    "fantasy_armor:wind_worshipper_leggings": [
+      9138,
+      1.9030677
+    ],
+    "iceandfire:armor_amythest_leggings": [
+      7738,
+      5.510578
+    ],
+    "iceandfire:armor_black_leggings": [
+      7738,
+      5.510578
+    ],
+    "iceandfire:armor_blue_leggings": [
+      7738,
+      5.510578
+    ],
+    "iceandfire:armor_bronze_leggings": [
+      7738,
+      5.510578
+    ],
+    "iceandfire:armor_copper_leggings": [
+      7738,
+      5.510578
+    ],
+    "iceandfire:armor_copper_metal_leggings": [
+      10283,
+      0.049
+    ],
+    "iceandfire:armor_electric_leggings": [
+      7738,
+      5.510578
+    ],
+    "iceandfire:armor_gray_leggings": [
+      7738,
+      5.510578
+    ],
+    "iceandfire:armor_green_leggings": [
+      7738,
+      5.510578
+    ],
+    "iceandfire:armor_red_leggings": [
+      7738,
+      5.510578
+    ],
+    "iceandfire:armor_sapphire_leggings": [
+      7738,
+      5.510578
+    ],
+    "iceandfire:armor_silver_leggings": [
+      7738,
+      5.510578
+    ],
+    "iceandfire:armor_silver_metal_leggings": [
+      9992,
+      0.80001926
+    ],
+    "iceandfire:armor_white_leggings": [
+      7738,
+      5.510578
+    ],
+    "iceandfire:deathworm_red_leggings": [
+      9486,
+      1.4508864
+    ],
+    "iceandfire:deathworm_white_leggings": [
+      9486,
+      1.4508864
+    ],
+    "iceandfire:deathworm_yellow_leggings": [
+      9486,
+      1.4508864
+    ],
+    "iceandfire:dragonsteel_fire_leggings": [
+      4771,
+      11.709396
+    ],
+    "iceandfire:dragonsteel_ice_leggings": [
+      4771,
+      11.709396
+    ],
+    "iceandfire:dragonsteel_lightning_leggings": [
+      4771,
+      11.709396
+    ],
+    "iceandfire:forest_troll_leather_leggings": [
+      9427,
+      1.5271299
+    ],
+    "iceandfire:frost_troll_leather_leggings": [
+      9427,
+      1.5271299
+    ],
+    "iceandfire:mountain_troll_leather_leggings": [
+      9427,
+      1.5271299
+    ],
+    "iceandfire:myrmex_desert_leggings": [
+      8958,
+      2.1392972
+    ],
+    "iceandfire:myrmex_jungle_leggings": [
+      8958,
+      2.1392972
+    ],
+    "iceandfire:sheep_leggings": [
+      10467,
+      0.030599998
+    ],
+    "iceandfire:tide_blue_leggings": [
+      8315,
+      4.262535
+    ],
+    "iceandfire:tide_bronze_leggings": [
+      8315,
+      4.262535
+    ],
+    "iceandfire:tide_deepblue_leggings": [
+      8315,
+      4.262535
+    ],
+    "iceandfire:tide_green_leggings": [
+      8315,
+      4.262535
+    ],
+    "iceandfire:tide_purple_leggings": [
+      8315,
+      4.262535
+    ],
+    "iceandfire:tide_red_leggings": [
+      8315,
+      4.262535
+    ],
+    "iceandfire:tide_teal_leggings": [
+      8315,
+      4.262535
+    ],
+    "legendary_monsters:annihilator_leggings": [
+      5990,
+      9.15748
+    ],
+    "magistuarmory:chainmail_leggings": [
+      10043,
+      0.73315716
+    ],
+    "magistuarmory:crusader_leggings": [
+      9698,
+      1.1781505
+    ],
+    "magistuarmory:cuirassier_leggings": [
+      10282,
+      0.049099997
+    ],
+    "magistuarmory:gothic_leggings": [
+      9408,
+      1.5517184
+    ],
+    "magistuarmory:jousting_leggings": [
+      8061,
+      4.8226643
+    ],
+    "magistuarmory:kastenbrust_leggings": [
+      9408,
+      1.5517184
+    ],
+    "magistuarmory:knight_leggings": [
+      9408,
+      1.5517184
+    ],
+    "magistuarmory:maximilian_leggings": [
+      8820,
+      2.3214443
+    ],
+    "magistuarmory:pantyhose": [
+      10538,
+      0.0235
+    ],
+    "magistuarmory:platemail_leggings": [
+      9945,
+      0.8609696
+    ],
+    "magistuarmory:rustedchainmail_leggings": [
+      10099,
+      0.6581088
+    ],
+    "magistuarmory:xivcenturyknight_leggings": [
+      9804,
+      1.0422343
+    ],
+    "minecolonies:pirate_leggins": [
+      9617,
+      1.2821578
+    ],
+    "minecolonies:pirate_legs": [
+      9039,
+      2.0328007
+    ],
+    "minecolonies:plate_armor_legs": [
+      8869,
+      2.2566686
+    ],
+    "minecraft:chainmail_leggings": [
+      10181,
+      0.540316
+    ],
+    "minecraft:diamond_leggings": [
+      9265,
+      1.7373508
+    ],
+    "minecraft:golden_leggings": [
+      10247,
+      0.4136078
+    ],
+    "minecraft:iron_leggings": [
+      9933,
+      0.8764657
+    ],
+    "minecraft:leather_leggings": [
+      10529,
+      0.0244
+    ],
+    "minecraft:netherite_leggings": [
+      9138,
+      1.9030677
+    ],
+    "mowziesmobs:geomancer_belt": [
+      9341,
+      1.6385665
+    ],
+    "threateningly_mobs:bionics_armor_leggings": [
+      9153,
+      1.883453
+    ],
+    "threateningly_mobs:desert_armor_leggings": [
+      8450,
+      3.947302
+    ],
+    "threateningly_mobs:ebonlord_armor_leggings": [
+      54,
+      21.746565
+    ],
+    "valarian_conquest:barathians_armor_1_leggings": [
+      9023,
+      2.053812
+    ],
+    "valarian_conquest:barathians_armor_2_leggings": [
+      9023,
+      2.053812
+    ],
+    "valarian_conquest:barathians_armor_3_leggings": [
+      9023,
+      2.053812
+    ],
+    "valarian_conquest:bohemian_armor_1_leggings": [
+      9023,
+      2.053812
+    ],
+    "valarian_conquest:bohemian_armor_2_leggings": [
+      9023,
+      2.053812
+    ],
+    "valarian_conquest:bohemian_armor_3_leggings": [
+      9023,
+      2.053812
+    ],
+    "valarian_conquest:burgundian_armor_1_leggings": [
+      9023,
+      2.053812
+    ],
+    "valarian_conquest:burgundian_armor_2_leggings": [
+      9023,
+      2.053812
+    ],
+    "valarian_conquest:burgundian_armor_3_leggings": [
+      9023,
+      2.053812
+    ],
+    "valarian_conquest:chainmail_armor_leggings": [
+      9023,
+      2.053812
+    ],
+    "valarian_conquest:hospitaller_armor_1_leggings": [
+      9023,
+      2.053812
+    ],
+    "valarian_conquest:hospitaller_armor_2_leggings": [
+      9023,
+      2.053812
+    ],
+    "valarian_conquest:hospitaller_armor_3_leggings": [
+      9023,
+      2.053812
+    ],
+    "valarian_conquest:leather_armor_leggings": [
+      9023,
+      2.053812
+    ],
+    "valarian_conquest:neutral_armor_1_leggings": [
+      9023,
+      2.053812
+    ],
+    "valarian_conquest:neutral_armor_2_leggings": [
+      9023,
+      2.053812
+    ],
+    "valarian_conquest:orleanian_armor_1_leggings": [
+      9023,
+      2.053812
+    ],
+    "valarian_conquest:orleanian_armor_2_leggings": [
+      9023,
+      2.053812
+    ],
+    "valarian_conquest:orleanian_armor_3_leggings": [
+      9023,
+      2.053812
+    ],
+    "valarian_conquest:templar_armor_1_leggings": [
+      9023,
+      2.053812
+    ],
+    "valarian_conquest:templar_armor_2_leggings": [
+      9023,
+      2.053812
+    ],
+    "valarian_conquest:templar_armor_3_leggings": [
+      9023,
+      2.053812
+    ],
+    "valarian_conquest:templar_armor_4_leggings": [
+      9023,
+      2.053812
+    ],
+    "valarian_conquest:valarian_armor_1_leggings": [
+      9023,
+      2.053812
+    ],
+    "valarian_conquest:valarian_armor_2_leggings": [
+      9023,
+      2.053812
+    ],
+    "valarian_conquest:valarian_armor_3_leggings": [
+      9023,
+      2.053812
+    ],
+    "valarian_conquest:visgothian_armor_1_leggings": [
+      9023,
+      2.053812
+    ],
+    "valarian_conquest:visgothian_armor_2_leggings": [
+      9023,
+      2.053812
+    ],
+    "valarian_conquest:visgothian_armor_3_leggings": [
+      9023,
+      2.053812
+    ],
+    "wom:diamond_legtopseal": [
+      10037,
+      0.74107856
+    ],
+    "wom:emerald_tasset": [
+      9975,
+      0.8221206
+    ],
+    "wom:golden_chrono": [
+      10362,
+      0.0411
+    ],
+    "wom:netherite_belt": [
+      9911,
+      0.9048254
+    ]
+  },
+  "CHEST": {
+    "alexsmobs:crocodile_chestplate": [
+      9474,
+      1.4444326
+    ],
+    "alexsmobs:rocky_chestplate": [
+      9553,
+      1.3426114
+    ],
+    "alexsmobs:tarantula_hawk_elytra": [
+      9901,
+      0.89580816
+    ],
+    "alexsmobs:unsettling_kimono": [
+      10124,
+      0.59963983
+    ],
+    "aquaculture:neptunium_chestplate": [
+      8837,
+      2.2764862
+    ],
+    "ars_elemental:air_robes": [
+      8900,
+      2.1933215
+    ],
+    "ars_elemental:aqua_robes": [
+      8900,
+      2.1933215
+    ],
+    "ars_elemental:earth_robes": [
+      8882,
+      2.217064
+    ],
+    "ars_elemental:fire_robes": [
+      8900,
+      2.1933215
+    ],
+    "ars_nouveau:arcanist_robes": [
+      9531,
+      1.3709393
+    ],
+    "ars_nouveau:battlemage_robes": [
+      8771,
+      2.3638055
+    ],
+    "ars_nouveau:sorcerer_robes": [
+      9947,
+      0.8363856
+    ],
+    "born_in_chaos_v1:dark_metal_armor_chestplate": [
+      7800,
+      5.3436694
+    ],
+    "born_in_chaos_v1:nightmare_mantleofthe_night_chestplate": [
+      9002,
+      2.0590668
+    ],
+    "born_in_chaos_v1:spiny_shell_armor_chestplate": [
+      10166,
+      0.53719383
+    ],
+    "cataclysm:bloom_stone_pauldrons": [
+      8721,
+      3.0056863
+    ],
+    "cataclysm:bone_reptile_chestplate": [
+      6941,
+      7.1410875
+    ],
+    "cataclysm:cursium_chestplate": [
+      7110,
+      6.789111
+    ],
+    "cataclysm:ignitium_chestplate": [
+      5900,
+      9.309818
+    ],
+    "cataclysm:ignitium_elytra_chestplate": [
+      5900,
+      9.309818
+    ],
+    "create:cardboard_chestplate": [
+      10539,
+      0.021699999
+    ],
+    "create:copper_backtank": [
+      10182,
+      0.5113901
+    ],
+    "create:netherite_backtank": [
+      9121,
+      1.9030677
+    ],
+    "epicfight:stray_robe": [
+      10457,
+      0.0299
+    ],
+    "fantasy_armor:chess_board_knight_chestplate": [
+      9121,
+      1.9030677
+    ],
+    "fantasy_armor:crucible_knight_chestplate": [
+      9121,
+      1.9030677
+    ],
+    "fantasy_armor:dark_cover_chestplate": [
+      9121,
+      1.9030677
+    ],
+    "fantasy_armor:dark_lord_chestplate": [
+      9121,
+      1.9030677
+    ],
+    "fantasy_armor:dead_gladiator_chestplate": [
+      9121,
+      1.9030677
+    ],
+    "fantasy_armor:dragonslayer_chestplate": [
+      9121,
+      1.9030677
+    ],
+    "fantasy_armor:eclipse_soldier_chestplate": [
+      9121,
+      1.9030677
+    ],
+    "fantasy_armor:evening_ghost_chestplate": [
+      9121,
+      1.9030677
+    ],
+    "fantasy_armor:flesh_of_the_feaster_chestplate": [
+      9121,
+      1.9030677
+    ],
+    "fantasy_armor:fog_guard_chestplate": [
+      9121,
+      1.9030677
+    ],
+    "fantasy_armor:forgotten_trace_chestplate": [
+      9121,
+      1.9030677
+    ],
+    "fantasy_armor:gilded_hunt_chestplate": [
+      9121,
+      1.9030677
+    ],
+    "fantasy_armor:golden_execution_chestplate": [
+      9121,
+      1.9030677
+    ],
+    "fantasy_armor:golden_horns_chestplate": [
+      9121,
+      1.9030677
+    ],
+    "fantasy_armor:grave_sentinel_chestplate": [
+      9121,
+      1.9030677
+    ],
+    "fantasy_armor:hero_chestplate": [
+      9121,
+      1.9030677
+    ],
+    "fantasy_armor:lady_maria_chestplate": [
+      9121,
+      1.9030677
+    ],
+    "fantasy_armor:malenia_chestplate": [
+      9121,
+      1.9030677
+    ],
+    "fantasy_armor:old_knight_chestplate": [
+      9121,
+      1.9030677
+    ],
+    "fantasy_armor:ornstein_chestplate": [
+      9121,
+      1.9030677
+    ],
+    "fantasy_armor:redeemer_chestplate": [
+      9121,
+      1.9030677
+    ],
+    "fantasy_armor:ronin_chestplate": [
+      9121,
+      1.9030677
+    ],
+    "fantasy_armor:silver_knight_chestplate": [
+      9121,
+      1.9030677
+    ],
+    "fantasy_armor:spark_of_dawn_chestplate": [
+      9121,
+      1.9030677
+    ],
+    "fantasy_armor:sunset_wings_chestplate": [
+      9121,
+      1.9030677
+    ],
+    "fantasy_armor:thief_chestplate": [
+      9121,
+      1.9030677
+    ],
+    "fantasy_armor:twinned_chestplate": [
+      9121,
+      1.9030677
+    ],
+    "fantasy_armor:wandering_wizard_chestplate": [
+      9121,
+      1.9030677
+    ],
+    "fantasy_armor:wind_worshipper_chestplate": [
+      9121,
+      1.9030677
+    ],
+    "iceandfire:armor_amythest_chestplate": [
+      7721,
+      5.510578
+    ],
+    "iceandfire:armor_black_chestplate": [
+      7721,
+      5.510578
+    ],
+    "iceandfire:armor_blue_chestplate": [
+      7721,
+      5.510578
+    ],
+    "iceandfire:armor_bronze_chestplate": [
+      7721,
+      5.510578
+    ],
+    "iceandfire:armor_copper_chestplate": [
+      7721,
+      5.510578
+    ],
+    "iceandfire:armor_copper_metal_chestplate": [
+      10266,
+      0.049
+    ],
+    "iceandfire:armor_electric_chestplate": [
+      7721,
+      5.510578
+    ],
+    "iceandfire:armor_gray_chestplate": [
+      7721,
+      5.510578
+    ],
+    "iceandfire:armor_green_chestplate": [
+      7721,
+      5.510578
+    ],
+    "iceandfire:armor_red_chestplate": [
+      7721,
+      5.510578
+    ],
+    "iceandfire:armor_sapphire_chestplate": [
+      7721,
+      5.510578
+    ],
+    "iceandfire:armor_silver_chestplate": [
+      7721,
+      5.510578
+    ],
+    "iceandfire:armor_silver_metal_chestplate": [
+      9975,
+      0.80001926
+    ],
+    "iceandfire:armor_white_chestplate": [
+      7721,
+      5.510578
+    ],
+    "iceandfire:deathworm_red_chestplate": [
+      9469,
+      1.4508864
+    ],
+    "iceandfire:deathworm_white_chestplate": [
+      9469,
+      1.4508864
+    ],
+    "iceandfire:deathworm_yellow_chestplate": [
+      9469,
+      1.4508864
+    ],
+    "iceandfire:dragonsteel_fire_chestplate": [
+      4754,
+      11.709396
+    ],
+    "iceandfire:dragonsteel_ice_chestplate": [
+      4754,
+      11.709396
+    ],
+    "iceandfire:dragonsteel_lightning_chestplate": [
+      4754,
+      11.709396
+    ],
+    "iceandfire:forest_troll_leather_chestplate": [
+      9410,
+      1.5271299
+    ],
+    "iceandfire:frost_troll_leather_chestplate": [
+      9410,
+      1.5271299
+    ],
+    "iceandfire:mountain_troll_leather_chestplate": [
+      9410,
+      1.5271299
+    ],
+    "iceandfire:myrmex_desert_chestplate": [
+      8941,
+      2.1392972
+    ],
+    "iceandfire:myrmex_jungle_chestplate": [
+      8941,
+      2.1392972
+    ],
+    "iceandfire:sheep_chestplate": [
+      10450,
+      0.030599998
+    ],
+    "iceandfire:tide_blue_chestplate": [
+      8298,
+      4.262535
+    ],
+    "iceandfire:tide_bronze_chestplate": [
+      8298,
+      4.262535
+    ],
+    "iceandfire:tide_deepblue_chestplate": [
+      8298,
+      4.262535
+    ],
+    "iceandfire:tide_green_chestplate": [
+      8298,
+      4.262535
+    ],
+    "iceandfire:tide_purple_chestplate": [
+      8298,
+      4.262535
+    ],
+    "iceandfire:tide_red_chestplate": [
+      8298,
+      4.262535
+    ],
+    "iceandfire:tide_teal_chestplate": [
+      8298,
+      4.262535
+    ],
+    "legendary_monsters:annihilator_chestplate": [
+      5992,
+      9.11784
+    ],
+    "legendary_monsters:mossy_chestplate": [
+      7948,
+      5.028895
+    ],
+    "legendary_monsters:withered_ribcage": [
+      8578,
+      3.571134
+    ],
+    "magistuarmory:brigandine_chestplate": [
+      10496,
+      0.025999999
+    ],
+    "magistuarmory:ceremonial_chestplate": [
+      10018,
+      0.74371517
+    ],
+    "magistuarmory:chainmail_chestplate": [
+      10026,
+      0.73315716
+    ],
+    "magistuarmory:crusader_chestplate": [
+      9682,
+      1.1768677
+    ],
+    "magistuarmory:cuirassier_chestplate": [
+      10174,
+      0.5244919
+    ],
+    "magistuarmory:gambeson_chestplate": [
+      10511,
+      0.0245
+    ],
+    "magistuarmory:gothic_chestplate": [
+      9393,
+      1.5491292
+    ],
+    "magistuarmory:halfarmor_chestplate": [
+      10430,
+      0.0326
+    ],
+    "magistuarmory:jousting_chestplate": [
+      8021,
+      4.87226
+    ],
+    "magistuarmory:kastenbrust_chestplate": [
+      9393,
+      1.5491292
+    ],
+    "magistuarmory:knight_chestplate": [
+      9393,
+      1.5491292
+    ],
+    "magistuarmory:lamellar_chestplate": [
+      10202,
+      0.47611615
+    ],
+    "magistuarmory:maximilian_chestplate": [
+      8786,
+      2.3439429
+    ],
+    "magistuarmory:platemail_chestplate": [
+      9909,
+      0.8854958
+    ],
+    "magistuarmory:rustedchainmail_chestplate": [
+      10081,
+      0.6594721
+    ],
+    "magistuarmory:rustedcrusader_chestplate": [
+      10246,
+      0.35229552
+    ],
+    "magistuarmory:rustedhalfarmor_chestplate": [
+      10493,
+      0.026299998
+    ],
+    "magistuarmory:wingedhussar_chestplate": [
+      10410,
+      0.0346
+    ],
+    "magistuarmory:xivcenturyknight_chestplate": [
+      9787,
+      1.0422343
+    ],
+    "minecolonies:pirate_chest": [
+      9022,
+      2.0328007
+    ],
+    "minecolonies:pirate_top": [
+      9600,
+      1.2821578
+    ],
+    "minecolonies:plate_armor_chest": [
+      8852,
+      2.2566686
+    ],
+    "minecraft:chainmail_chestplate": [
+      10164,
+      0.540316
+    ],
+    "minecraft:diamond_chestplate": [
+      9248,
+      1.7373508
+    ],
+    "minecraft:golden_chestplate": [
+      10230,
+      0.4136078
+    ],
+    "minecraft:iron_chestplate": [
+      9916,
+      0.8764657
+    ],
+    "minecraft:leather_chestplate": [
+      10512,
+      0.0244
+    ],
+    "minecraft:netherite_chestplate": [
+      9121,
+      1.9030677
+    ],
+    "mowziesmobs:geomancer_robe": [
+      9324,
+      1.6385665
+    ],
+    "quark:backpack": [
+      10512,
+      0.0244
+    ],
+    "threateningly_mobs:bionics_armor_chestplate": [
+      9136,
+      1.883453
+    ],
+    "threateningly_mobs:desert_armor_chestplate": [
+      8433,
+      3.947302
+    ],
+    "threateningly_mobs:ebonlord_armor_chestplate": [
+      37,
+      21.746565
+    ],
+    "valarian_conquest:barathians_armor_1_chestplate": [
+      9006,
+      2.053812
+    ],
+    "valarian_conquest:barathians_armor_2_chestplate": [
+      9006,
+      2.053812
+    ],
+    "valarian_conquest:barathians_armor_3_chestplate": [
+      9006,
+      2.053812
+    ],
+    "valarian_conquest:bohemian_armor_1_chestplate": [
+      9006,
+      2.053812
+    ],
+    "valarian_conquest:bohemian_armor_2_chestplate": [
+      9006,
+      2.053812
+    ],
+    "valarian_conquest:bohemian_armor_3_chestplate": [
+      9006,
+      2.053812
+    ],
+    "valarian_conquest:burgundian_armor_1_chestplate": [
+      9006,
+      2.053812
+    ],
+    "valarian_conquest:burgundian_armor_2_chestplate": [
+      9006,
+      2.053812
+    ],
+    "valarian_conquest:burgundian_armor_3_chestplate": [
+      9006,
+      2.053812
+    ],
+    "valarian_conquest:chainmail_armor_chestplate": [
+      9006,
+      2.053812
+    ],
+    "valarian_conquest:hospitaller_armor_1_chestplate": [
+      9006,
+      2.053812
+    ],
+    "valarian_conquest:hospitaller_armor_2_chestplate": [
+      9006,
+      2.053812
+    ],
+    "valarian_conquest:hospitaller_armor_3_chestplate": [
+      9006,
+      2.053812
+    ],
+    "valarian_conquest:leather_armor_chestplate": [
+      9006,
+      2.053812
+    ],
+    "valarian_conquest:neutral_armor_1_chestplate": [
+      9006,
+      2.053812
+    ],
+    "valarian_conquest:neutral_armor_2_chestplate": [
+      9006,
+      2.053812
+    ],
+    "valarian_conquest:orleanian_armor_1_chestplate": [
+      9006,
+      2.053812
+    ],
+    "valarian_conquest:orleanian_armor_2_chestplate": [
+      9006,
+      2.053812
+    ],
+    "valarian_conquest:orleanian_armor_3_chestplate": [
+      9006,
+      2.053812
+    ],
+    "valarian_conquest:quiver_chestplate": [
+      10607,
+      0.0149
+    ],
+    "valarian_conquest:templar_armor_1_chestplate": [
+      9006,
+      2.053812
+    ],
+    "valarian_conquest:templar_armor_2_chestplate": [
+      9006,
+      2.053812
+    ],
+    "valarian_conquest:templar_armor_3_chestplate": [
+      9006,
+      2.053812
+    ],
+    "valarian_conquest:templar_armor_4_chestplate": [
+      9006,
+      2.053812
+    ],
+    "valarian_conquest:valarian_armor_1_chestplate": [
+      9006,
+      2.053812
+    ],
+    "valarian_conquest:valarian_armor_2_chestplate": [
+      9006,
+      2.053812
+    ],
+    "valarian_conquest:valarian_armor_3_chestplate": [
+      9006,
+      2.053812
+    ],
+    "valarian_conquest:visgothian_armor_1_chestplate": [
+      9006,
+      2.053812
+    ],
+    "valarian_conquest:visgothian_armor_2_chestplate": [
+      9006,
+      2.053812
+    ],
+    "valarian_conquest:visgothian_armor_3_chestplate": [
+      9006,
+      2.053812
+    ],
+    "wom:diamond_armbracelet": [
+      10036,
+      0.7199134
+    ],
+    "wom:emerald_chakra": [
+      9976,
+      0.7987168
+    ],
+    "wom:golden_kit": [
+      10356,
+      0.04
+    ],
+    "wom:netherite_manicle": [
+      9915,
+      0.8777561
+    ]
+  },
+  "HEAD": {
+    "alexsmobs:fedora": [
+      10300,
+      0.043899998
+    ],
+    "alexsmobs:frontier_cap": [
+      9994,
+      0.75292885
+    ],
+    "alexsmobs:froststalker_helmet": [
+      10087,
+      0.62781405
+    ],
+    "alexsmobs:moose_headgear": [
+      9985,
+      0.7647448
+    ],
+    "alexsmobs:novelty_hat": [
+      10300,
+      0.043899998
+    ],
+    "alexsmobs:sombrero": [
+      10271,
+      0.0468
+    ],
+    "alexsmobs:spiked_turtle_shell": [
+      9735,
+      1.0871058
+    ],
+    "aquaculture:neptunium_helmet": [
+      8820,
+      2.2764862
+    ],
+    "ars_elemental:air_hat": [
+      8870,
+      2.2104676
+    ],
+    "ars_elemental:aqua_hat": [
+      8870,
+      2.2104676
+    ],
+    "ars_elemental:earth_hat": [
+      8852,
+      2.2342207
+    ],
+    "ars_elemental:fire_hat": [
+      8870,
+      2.2104676
+    ],
+    "ars_nouveau:arcanist_hood": [
+      9514,
+      1.3709393
+    ],
+    "ars_nouveau:battlemage_hood": [
+      8754,
+      2.3638055
+    ],
+    "ars_nouveau:sorcerer_hood": [
+      9930,
+      0.8363856
+    ],
+    "born_in_chaos_v1:damned_demomans_hat_helmet": [
+      10438,
+      0.0301
+    ],
+    "born_in_chaos_v1:dark_metal_armor_helmet": [
+      7783,
+      5.3436694
+    ],
+    "born_in_chaos_v1:killer_rabbit_ears_helmet": [
+      10458,
+      0.028099999
+    ],
+    "born_in_chaos_v1:lord_pumpkinheads_hat_helmet": [
+      8477,
+      3.7963035
+    ],
+    "born_in_chaos_v1:missionary_hat_helmet": [
+      10333,
+      0.040599998
+    ],
+    "born_in_chaos_v1:nightmare_mantleofthe_night_helmet": [
+      8985,
+      2.0590668
+    ],
+    "born_in_chaos_v1:spiny_shell_armor_helmet": [
+      10149,
+      0.53719383
+    ],
+    "born_in_chaos_v1:spiritual_guide_sombrero_helmet": [
+      10358,
+      0.038099997
+    ],
+    "cataclysm:bone_reptile_helmet": [
+      6924,
+      7.1410875
+    ],
+    "cataclysm:cursium_helmet": [
+      7093,
+      6.789111
+    ],
+    "cataclysm:ignitium_helmet": [
+      5883,
+      9.309818
+    ],
+    "cataclysm:monstrous_helm": [
+      9104,
+      1.9030677
+    ],
+    "create:cardboard_helmet": [
+      10522,
+      0.021699999
+    ],
+    "create:copper_diving_helmet": [
+      10165,
+      0.5113901
+    ],
+    "create:netherite_diving_helmet": [
+      9104,
+      1.9030677
+    ],
+    "epicfight:stray_hat": [
+      10440,
+      0.0299
+    ],
+    "fantasy_armor:chess_board_knight_helmet": [
+      9104,
+      1.9030677
+    ],
+    "fantasy_armor:crucible_knight_helmet": [
+      9104,
+      1.9030677
+    ],
+    "fantasy_armor:dark_cover_helmet": [
+      9104,
+      1.9030677
+    ],
+    "fantasy_armor:dark_lord_helmet": [
+      9104,
+      1.9030677
+    ],
+    "fantasy_armor:dead_gladiator_helmet": [
+      9104,
+      1.9030677
+    ],
+    "fantasy_armor:dragonslayer_helmet": [
+      9104,
+      1.9030677
+    ],
+    "fantasy_armor:eclipse_soldier_helmet": [
+      9104,
+      1.9030677
+    ],
+    "fantasy_armor:evening_ghost_helmet": [
+      9104,
+      1.9030677
+    ],
+    "fantasy_armor:flesh_of_the_feaster_helmet": [
+      9104,
+      1.9030677
+    ],
+    "fantasy_armor:fog_guard_helmet": [
+      9104,
+      1.9030677
+    ],
+    "fantasy_armor:forgotten_trace_helmet": [
+      9104,
+      1.9030677
+    ],
+    "fantasy_armor:gilded_hunt_helmet": [
+      9104,
+      1.9030677
+    ],
+    "fantasy_armor:golden_execution_helmet": [
+      9104,
+      1.9030677
+    ],
+    "fantasy_armor:golden_horns_helmet": [
+      9104,
+      1.9030677
+    ],
+    "fantasy_armor:grave_sentinel_helmet": [
+      9104,
+      1.9030677
+    ],
+    "fantasy_armor:hero_helmet": [
+      9104,
+      1.9030677
+    ],
+    "fantasy_armor:lady_maria_helmet": [
+      9104,
+      1.9030677
+    ],
+    "fantasy_armor:malenia_helmet": [
+      9104,
+      1.9030677
+    ],
+    "fantasy_armor:old_knight_helmet": [
+      9104,
+      1.9030677
+    ],
+    "fantasy_armor:ornstein_helmet": [
+      9104,
+      1.9030677
+    ],
+    "fantasy_armor:redeemer_helmet": [
+      9104,
+      1.9030677
+    ],
+    "fantasy_armor:ronin_helmet": [
+      9104,
+      1.9030677
+    ],
+    "fantasy_armor:silver_knight_helmet": [
+      9104,
+      1.9030677
+    ],
+    "fantasy_armor:spark_of_dawn_helmet": [
+      9104,
+      1.9030677
+    ],
+    "fantasy_armor:sunset_wings_helmet": [
+      9104,
+      1.9030677
+    ],
+    "fantasy_armor:thief_helmet": [
+      9104,
+      1.9030677
+    ],
+    "fantasy_armor:twinned_helmet": [
+      9104,
+      1.9030677
+    ],
+    "fantasy_armor:wandering_wizard_helmet": [
+      9104,
+      1.9030677
+    ],
+    "fantasy_armor:wind_worshipper_helmet": [
+      9104,
+      1.9030677
+    ],
+    "iceandfire:armor_amythest_helmet": [
+      7704,
+      5.510578
+    ],
+    "iceandfire:armor_black_helmet": [
+      7704,
+      5.510578
+    ],
+    "iceandfire:armor_blue_helmet": [
+      7704,
+      5.510578
+    ],
+    "iceandfire:armor_bronze_helmet": [
+      7704,
+      5.510578
+    ],
+    "iceandfire:armor_copper_helmet": [
+      7704,
+      5.510578
+    ],
+    "iceandfire:armor_copper_metal_helmet": [
+      10249,
+      0.049
+    ],
+    "iceandfire:armor_electric_helmet": [
+      7704,
+      5.510578
+    ],
+    "iceandfire:armor_gray_helmet": [
+      7704,
+      5.510578
+    ],
+    "iceandfire:armor_green_helmet": [
+      7704,
+      5.510578
+    ],
+    "iceandfire:armor_red_helmet": [
+      7704,
+      5.510578
+    ],
+    "iceandfire:armor_sapphire_helmet": [
+      7704,
+      5.510578
+    ],
+    "iceandfire:armor_silver_helmet": [
+      7704,
+      5.510578
+    ],
+    "iceandfire:armor_silver_metal_helmet": [
+      9958,
+      0.80001926
+    ],
+    "iceandfire:armor_white_helmet": [
+      7704,
+      5.510578
+    ],
+    "iceandfire:blindfold": [
+      10590,
+      0.0149
+    ],
+    "iceandfire:deathworm_red_helmet": [
+      9452,
+      1.4508864
+    ],
+    "iceandfire:deathworm_white_helmet": [
+      9452,
+      1.4508864
+    ],
+    "iceandfire:deathworm_yellow_helmet": [
+      9452,
+      1.4508864
+    ],
+    "iceandfire:dragonsteel_fire_helmet": [
+      4737,
+      11.709396
+    ],
+    "iceandfire:dragonsteel_ice_helmet": [
+      4737,
+      11.709396
+    ],
+    "iceandfire:dragonsteel_lightning_helmet": [
+      4737,
+      11.709396
+    ],
+    "iceandfire:earplugs": [
+      10590,
+      0.0149
+    ],
+    "iceandfire:forest_troll_leather_helmet": [
+      9393,
+      1.5271299
+    ],
+    "iceandfire:frost_troll_leather_helmet": [
+      9393,
+      1.5271299
+    ],
+    "iceandfire:mountain_troll_leather_helmet": [
+      9393,
+      1.5271299
+    ],
+    "iceandfire:myrmex_desert_helmet": [
+      8924,
+      2.1392972
+    ],
+    "iceandfire:myrmex_jungle_helmet": [
+      8924,
+      2.1392972
+    ],
+    "iceandfire:sheep_helmet": [
+      10433,
+      0.030599998
+    ],
+    "iceandfire:tide_blue_helmet": [
+      8281,
+      4.262535
+    ],
+    "iceandfire:tide_bronze_helmet": [
+      8281,
+      4.262535
+    ],
+    "iceandfire:tide_deepblue_helmet": [
+      8281,
+      4.262535
+    ],
+    "iceandfire:tide_green_helmet": [
+      8281,
+      4.262535
+    ],
+    "iceandfire:tide_purple_helmet": [
+      8281,
+      4.262535
+    ],
+    "iceandfire:tide_red_helmet": [
+      8281,
+      4.262535
+    ],
+    "iceandfire:tide_teal_helmet": [
+      8281,
+      4.262535
+    ],
+    "legendary_monsters:annihilator_helmet": [
+      5975,
+      9.11784
+    ],
+    "legendary_monsters:blastproof_helmet": [
+      8897,
+      2.1748655
+    ],
+    "legendary_monsters:chorus_mask": [
+      9016,
+      2.0183623
+    ],
+    "legendary_monsters:shulker_helmet": [
+      8984,
+      2.0603807
+    ],
+    "magistuarmory:armet": [
+      10419,
+      0.031999998
+    ],
+    "magistuarmory:barbute": [
+      10570,
+      0.0169
+    ],
+    "magistuarmory:bascinet": [
+      10499,
+      0.023999998
+    ],
+    "magistuarmory:ceremonialarmet": [
+      10419,
+      0.031999998
+    ],
+    "magistuarmory:chainmail_helmet": [
+      9988,
+      0.7608098
+    ],
+    "magistuarmory:coif": [
+      10494,
+      0.0245
+    ],
+    "magistuarmory:crown_decoration": [
+      10549,
+      0.019
+    ],
+    "magistuarmory:cuirassier_helmet": [
+      10186,
+      0.47422305
+    ],
+    "magistuarmory:face_helmet": [
+      10142,
+      0.5480389
+    ],
+    "magistuarmory:flowercrown_decoration": [
+      10640,
+      0.009899999
+    ],
+    "magistuarmory:grand_bascinet": [
+      10419,
+      0.031999998
+    ],
+    "magistuarmory:greathelm": [
+      9654,
+      1.1909808
+    ],
+    "magistuarmory:kettlehat": [
+      10526,
+      0.0213
+    ],
+    "magistuarmory:maximilian_helmet": [
+      10276,
+      0.0463
+    ],
+    "magistuarmory:minicrown_decoration": [
+      10549,
+      0.019
+    ],
+    "magistuarmory:norman_helmet": [
+      10558,
+      0.018099999
+    ],
+    "magistuarmory:rustedbarbute": [
+      10621,
+      0.0117999995
+    ],
+    "magistuarmory:rustedchainmail_helmet": [
+      10055,
+      0.67169523
+    ],
+    "magistuarmory:rustedgreathelm": [
+      10224,
+      0.37663084
+    ],
+    "magistuarmory:rustedkettlehat": [
+      10602,
+      0.0137
+    ],
+    "magistuarmory:rustednorman_helmet": [
+      10624,
+      0.011499999
+    ],
+    "magistuarmory:sallet": [
+      10419,
+      0.031999998
+    ],
+    "magistuarmory:shishak": [
+      10545,
+      0.019399999
+    ],
+    "magistuarmory:stechhelm": [
+      10113,
+      0.5910348
+    ],
+    "minecolonies:build_goggles": [
+      10637,
+      0.010199999
+    ],
+    "minecolonies:pirate_cap": [
+      9005,
+      2.0328007
+    ],
+    "minecolonies:pirate_hat": [
+      9583,
+      1.2821578
+    ],
+    "minecolonies:plate_armor_helmet": [
+      8835,
+      2.2566686
+    ],
+    "minecolonies:santa_hat": [
+      7567,
+      5.7987566
+    ],
+    "minecraft:chainmail_helmet": [
+      10147,
+      0.540316
+    ],
+    "minecraft:diamond_helmet": [
+      9231,
+      1.7373508
+    ],
+    "minecraft:golden_helmet": [
+      10213,
+      0.4136078
+    ],
+    "minecraft:iron_helmet": [
+      9899,
+      0.8764657
+    ],
+    "minecraft:leather_helmet": [
+      10495,
+      0.0244
+    ],
+    "minecraft:netherite_helmet": [
+      9104,
+      1.9030677
+    ],
+    "minecraft:shulker_shell": [
+      10658,
+      0.0081
+    ],
+    "minecraft:turtle_helmet": [
+      9843,
+      0.948558
+    ],
+    "mowziesmobs:geomancer_beads": [
+      9307,
+      1.6385665
+    ],
+    "mowziesmobs:sol_visage": [
+      10309,
+      0.042999998
+    ],
+    "mowziesmobs:umvuthana_mask_bliss": [
+      10583,
+      0.015599999
+    ],
+    "mowziesmobs:umvuthana_mask_faith": [
+      10583,
+      0.015599999
+    ],
+    "mowziesmobs:umvuthana_mask_fear": [
+      10583,
+      0.015599999
+    ],
+    "mowziesmobs:umvuthana_mask_fury": [
+      10583,
+      0.015599999
+    ],
+    "mowziesmobs:umvuthana_mask_misery": [
+      10583,
+      0.015599999
+    ],
+    "mowziesmobs:umvuthana_mask_rage": [
+      10583,
+      0.015599999
+    ],
+    "mowziesmobs:wrought_helmet": [
+      10313,
+      0.0426
+    ],
+    "quark:forgotten_hat": [
+      10495,
+      0.0244
+    ],
+    "threateningly_mobs:bionics_armor_helmet": [
+      9119,
+      1.883453
+    ],
+    "threateningly_mobs:desert_armor_helmet": [
+      8416,
+      3.947302
+    ],
+    "threateningly_mobs:ebonlord_armor_helmet": [
+      20,
+      21.746565
+    ],
+    "valarian_conquest:bandit_mask_gray_helmet": [
+      9794,
+      1.0114565
+    ],
+    "valarian_conquest:bandit_mask_helmet": [
+      9794,
+      1.0114565
+    ],
+    "valarian_conquest:barathians_armor_1_helmet": [
+      8989,
+      2.053812
+    ],
+    "valarian_conquest:barbute_helm_helmet": [
+      8989,
+      2.053812
+    ],
+    "valarian_conquest:bascinet_helm_helmet": [
+      8989,
+      2.053812
+    ],
+    "valarian_conquest:bohemian_armor_1_helmet": [
+      8989,
+      2.053812
+    ],
+    "valarian_conquest:chainmail_helm_helmet": [
+      8989,
+      2.053812
+    ],
+    "valarian_conquest:hospitaller_armor_1_helmet": [
+      8989,
+      2.053812
+    ],
+    "valarian_conquest:kalota_helm_helmet": [
+      8989,
+      2.053812
+    ],
+    "valarian_conquest:kettle_helm_helmet": [
+      8989,
+      2.053812
+    ],
+    "valarian_conquest:lord_coronet_helmet": [
+      8989,
+      2.053812
+    ],
+    "valarian_conquest:nasal_helm_2_helmet": [
+      8989,
+      2.053812
+    ],
+    "valarian_conquest:nasal_helm_helmet": [
+      8989,
+      2.053812
+    ],
+    "valarian_conquest:orleanian_armor_1_helmet": [
+      8989,
+      2.053812
+    ],
+    "valarian_conquest:templar_armor_1_helmet": [
+      8989,
+      2.053812
+    ],
+    "wom:cursed_mask": [
+      10308,
+      0.0431
+    ],
+    "wom:diamond_crown": [
+      9908,
+      0.86484563
+    ],
+    "wom:emerald_earrings": [
+      9832,
+      0.9626882
+    ],
+    "wom:golden_monocle": [
+      10260,
+      0.0479
+    ],
+    "wom:netherite_mask": [
+      9755,
+      1.061466
+    ],
+    "wom:unholy_cursed_mask": [
+      10283,
+      0.045599997
+    ]
+  }
+}

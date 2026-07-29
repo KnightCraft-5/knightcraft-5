@@ -67,6 +67,22 @@ else
     fails=$((fails + 1))
 fi
 
+# Deployment parity. KC5 2.1 is the source of truth for the mod set; if the pack
+# has drifted from it, a release would ship a different mod list than production
+# runs. This is reported, not enforced, because the test server and the friend's
+# server are legitimately behind until they update.
+echo "deployments"
+if python3 tools/deployments.py check >/tmp/dep.$$ 2>&1; then
+    printf '  \033[32mPASS\033[0m  all recorded deployments in sync\n'
+else
+    grep -q 'kc5-2.1 *DRIFTED' /tmp/dep.$$ \
+        && { printf '  \033[31mFAIL\033[0m  pack has drifted from KC5 2.1 (source of truth)\n'
+             sed 's/^/          /' /tmp/dep.$$; fails=$((fails + 1)); } \
+        || { printf '  \033[33mNOTE\033[0m  some deployments behind the pack (expected until they update)\n'
+             grep DRIFTED /tmp/dep.$$ | sed 's/^/          /'; }
+fi
+rm -f /tmp/dep.$$
+
 if [ "$FULL" = 1 ]; then
     echo "artifacts"
     step "mods match manifest" ./sync-mods.sh --verify
