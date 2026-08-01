@@ -1,0 +1,8 @@
+{
+	"override": true,
+	"isTagFor": [
+		"create:mechanical_mixer",
+		"create:encased_fan",
+		"create:copper_casing"
+	]
+}

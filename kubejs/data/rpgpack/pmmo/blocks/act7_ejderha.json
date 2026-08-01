@@ -1,0 +1,8 @@
+{
+	"override": true,
+	"isTagFor": [
+		"create:deployer",
+		"create:mechanical_arm",
+		"create:item_vault"
+	]
+}
