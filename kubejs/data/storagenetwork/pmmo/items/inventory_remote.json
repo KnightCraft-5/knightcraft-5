@@ -1,0 +1,13 @@
+{
+  "override": true,
+  "requirements": {
+    "USE": {},
+    "TOOL": {},
+    "WEAPON": {},
+    "WEAR": {},
+    "PLACE": {},
+    "BREAK": {},
+    "INTERACT": {},
+    "USE_ENCHANTMENT": {}
+  }
+}
